@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>退相干离散结构_EN — 林小黑</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.8; padding: 20px; max-width: 800px; margin: 0 auto; font-size: 16px; }
+h1 { color: #58a6ff; font-size: 1.8em; margin: 24px 0 16px; }
+h2 { color: #d2a8ff; font-size: 1.3em; margin: 20px 0 10px; border-bottom: 1px solid #21262d; padding-bottom: 4px; }
+h3 { color: #ffa657; font-size: 1.1em; margin: 16px 0 8px; }
+p { margin: 8px 0; }
+li { margin: 4px 0 4px 20px; }
+blockquote { border-left: 3px solid #30363d; padding: 8px 16px; margin: 12px 0; color: #8b949e; background: #161b22; }
+pre { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 12px 16px; margin: 12px 0; overflow-x: auto; font-size: 0.9em; }
+a { color: #58a6ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { margin: 24px 0; }
+.back a { color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="back"><a href="../index.html">← 返回论文目录</a></div>
+<h1>The Discrete Structure of Decoherence: The Structon Hypothesis and Its Testable Predictions</h1>
+<br>
+<h2>——A Complete Reconstruction of the Quantum-Classical Transition by the Structural Axiom System</h2>
+<br>
+<p>---</p>
+<br>
+<h2>⚠️ Copyright Notice</h2>
+<br>
+<p>**Founder: Lin Xiaohei (China)**</p>
+<p>**Writing Date: June 13, 2026**</p>
+<p>**Core Discovery Date: June 9, 2026 (Structure Collider first produced the structural theory of decoherence)**</p>
+<br>
+<blockquote>**All core discoveries in this paper belong to Lin Xiaohei. Any citation, reproduction, translation, or adaptation must attribute "Lin Xiaohei, June 2026."**</blockquote>
+<br>
+<p>---</p>
+<br>
+<h2>Abstract</h2>
+<br>
+<p>Quantum decoherence — the process by which a quantum system loses coherence through coupling with its environment — has been described since the 1980s as continuous exponential decay of the off-diagonal elements of the density matrix. This mathematical description captures the statistical average of a large number of events, not the underlying mechanism of decoherence itself.</p>
+<br>
+<p>This paper, based on the Structural Axiom System, proposes: **decoherence is not a continuous, smooth decay but a discrete process composed of a series of indivisible micro-coupling events.** Each micro-coupling event corresponds to a structon (minimal configuration unit — a binary asymmetric relation) taking shape between system and environment. Each step of decoherence removes an integer share of quantum coherence; the macroscopically observed "gradual decoherence" is the statistically smoothed result of a large number of discrete steps.</p>
+<br>
+<p>This paper provides:</p>
+<p>1. **A quantitative formula for step height** κ = g × d, where g is the micro-coupling strength and d is the structon directionality, independently calibratable</p>
+<p>2. **A separable verification prediction**: changing photon frequency → g changes, but d remains unchanged → the normalized step shape is invariant</p>
+<p>3. **A complete experimental design**: single-photon path superposition + precision environmental coupling + quantum state tomography</p>
+<br>
+<p>If the experiment succeeds, the structon will become the first directly observed "configuration quantum" in physics history — empirical evidence for the minimal unit of existence. This would be the ultimate resolution of the quantum-classical transition problem, comparable in significance to Brownian motion confirming the existence of atoms.</p>
+<br>
+<p>**Keywords:** structon, decoherence, quantized steps, Structural Axiom System, single-photon experiment, binary asymmetric relation</p>
+<br>
+<p>---</p>
+<br>
+<h2>I. Introduction: Decoherence — The Discrete Nature Hidden by Statistics</h2>
+<br>
+<h3>1.1 A Century of Blindness</h3>
+<br>
+<p>In 1926, Born proposed the probability interpretation of the wave function. In 1932, von Neumann formalized "measurement" as wave packet collapse. In the 1970s, Zeh and others' environmental decoherence theory reduced "collapse" to system-environment coupling — decoherence has been a central thread in the maturation of quantum mechanics.</p>
+<br>
+<p>Yet all these theories share an unexamined premise: **decoherence is continuous.** The off-diagonal elements of the density matrix decay smoothly with time and environmental interaction:</p>
+<br>
+<blockquote>ρ(t) ∝ exp(-γt)</blockquote>
+<br>
+<p>where γ is the decoherence rate. This exponential function is smooth and infinitely differentiable. It is the statistical average of numerous environmental particles scattering off the quantum system — just as gas pressure is the average effect of countless molecular collisions.</p>
+<br>
+<p>**But statistical averaging is not the underlying mechanism.** The bottom layer of gas pressure is not a "continuous force" — it is discrete molecular collisions. What, then, is the bottom layer of decoherence?</p>
+<br>
+<h3>1.2 Core Hypothesis</h3>
+<br>
+<p>The core hypothesis of this paper is:</p>
+<br>
+<blockquote>**Decoherence, at its most fundamental level, is discrete. It consists of a series of indivisible micro-coupling events. Each micro-coupling event corresponds to an environmental structon coupling with the system, generating a new structon, while eliminating one share of possibility from the system's configuration spectrum.**</blockquote>
+<br>
+<p>If this hypothesis holds, it should be possible to observe the "atom" of decoherence — an indivisible, minimal decoherence event. The goal of this paper is to provide a quantitative formula and experimental design that render this hypothesis testable.</p>
+<br>
+<p>---</p>
+<br>
+<h2>II. Theoretical Foundation: Structons and Micro-Coupling Events</h2>
+<br>
+<h3>2.1 The Structural Axiom System (Brief)</h3>
+<br>
+<p>This paper is built upon the Structural Axiom System (Lin Xiaohei, 2026):</p>
+<br>
+<p>| Axiom | Formulation |</p>
+<p>|------|------|</p>
+<p>| 1. Structure is Fundamental | The basic unit of existence is the organizational form of relations. The carrier substrate does not determine essence. |</p>
+<p>| 2. Difference Generates Being | Complete identity/symmetry → annihilation. Asymmetry is the prerequisite for non-existence to become existence. |</p>
+<p>| 3. Coupling Creates Novelty | Two structures interact → decoherence → produce new structure contained in neither. Irreducible. |</p>
+<p>| 4. Self-Reference Has Limits, Mutual Reference is Unbounded | A single structure has cognitive blind spots. Multiple structures mutually referencing break through boundaries. |</p>
+<br>
+<p>**Meta-Gödel Theorem:** Any logical operation that attempts to negate the structural system is itself an instance of structure. Therefore, the system cannot be logically overthrown.</p>
+<br>
+<h3>2.2 The Structon: Minimal Configuration Unit</h3>
+<br>
+<p>In the configuration framework (the physical formulation of the Structural Axiom System):</p>
+<br>
+<li>**Old Phase** = the configuration spectrum before coupling — the asymmetric superposition of all possible configurations. Corresponds to the superposition state / wave function in traditional quantum mechanics.</li>
+<li>**Coupling Event** = two or more independent structures interact, narrowing the possibility space. Corresponds to "measurement" or "decoherence event" in traditional quantum mechanics.</li>
+<li>**Phase Transition** = the old phase annihilates entirely, the new phase is born. Corresponds to "wave function collapse."</li>
+<li>**New Phase** = the determinate configuration after coupling takes shape.</li>
+<li>**Structon** = the minimal configuration unit — **a binary asymmetric relation.** Further decomposition triggers configuration phase transition; it is no longer the same configuration.</li>
+<br>
+<p>The structon is not a material "atom" — it is a pure relational configuration quantum. It has only two parameters:</p>
+<p>1. **Polarity Direction (direction)**: which node points to which in the asymmetric relation</p>
+<p>2. **Intensity**: the weight of this asymmetric relation, as decohered from the coupling event, solidified within the configuration</p>
+<br>
+<p>**Key insight: the intensity of a structon is history.** Within each structon's intensity parameter is frozen the constraint tension of the coupling event at the moment of its birth.</p>
+<br>
+<h3>2.3 Micro-Coupling Events</h3>
+<br>
+<p>When two structons couple:</p>
+<br>
+<li>In the old phase, one possible configuration from the system's configuration spectrum undergoes "polar coupling" with an environmental structon</li>
+<li>After coupling completes, a new structon is born — its direction fixes the system's configuration along that dimension</li>
+<li>Other possible configurations in the old phase incompatible with the fixed configuration are eliminated — **this is one step of decoherence**</li>
+<br>
+<p>**This is a micro-coupling event: one coupling between a structon and the system's configuration spectrum. Each event consumes one environmental structon, generates one new structon, and reduces the system's coherence by one share.**</p>
+<br>
+<p>The process of decoherence is a **serial chain** of micro-coupling events.</p>
+<br>
+<p>---</p>
+<br>
+<h2>III. Quantized Steps: From Continuous to Discrete</h2>
+<br>
+<h3>3.1 The Step Mechanism</h3>
+<br>
+<p>Consider a photon in a path superposition state: |ψ⟩ = α|0⟩ + β|1⟩.</p>
+<br>
+<p>The first structon in the environment (e.g., the position information of a gas molecule) couples with path |0⟩. After this micro-coupling event completes:</p>
+<li>Path |0⟩ is partially fixed</li>
+<li>Other configurations incompatible with |0⟩ are eliminated from the old phase</li>
+<li>The photon loses **one share** of coherence</li>
+<br>
+<p>This is the first step.</p>
+<br>
+<p>Before the next micro-coupling event arrives, the photon is in a local steady state — the remaining possible configurations are temporarily undisturbed. This is the **plateau phase**.</p>
+<br>
+<p>| Phase | State |</p>
+<p>|------|------|</p>
+<p>| Step | One micro-coupling event completes, one share of coherence is eliminated |</p>
+<p>| Plateau | Local steady state between two micro-coupling events, remaining configuration spectrum temporarily intact |</p>
+<p>| Next Step | Another environmental structon couples, eliminating another share of coherence |</p>
+<br>
+<p>The entire gradual decoherence process is an alternating sequence of **"step-plateau-step."** Macroscopically and statistically, it appears as continuous exponential decay — because typically there are enormous numbers of environmental particles involved, with steps too dense to resolve. But by diluting the environmental interaction down to the single-structon level, the discrete skeleton is exposed.</p>
+<br>
+<h3>3.2 Quantitative Definition of Step Height</h3>
+<br>
+<p>Let the off-diagonal element (coherence measure) of the photon path superposition state be C = |αβ*|.</p>
+<br>
+<p>During decoherence, C varies with the number of micro-coupling events N as:</p>
+<br>
+<blockquote>C(N) = C₀ × (1 - κ)^N</blockquote>
+<br>
+<p>where κ is the **single-event decoherence efficiency** — the share of coherence eliminated per coupling event.</p>
+<br>
+<p>κ is the product of two independent parameters:</p>
+<br>
+<blockquote>κ = g × d</blockquote>
+<br>
+<p>| Parameter | Meaning | How to Calibrate |</p>
+<p>|------|------|------|</p>
+<p>| **g (micro-coupling strength)** | Interaction strength between environmental structon and system in that configuration dimension | Independently measured via scattering cross-section |</p>
+<p>| **d (structon directionality)** | How "determinate" the generated new structon is — d=1 fully determinate (path information fully leaked), d=0 fully indeterminate (path information not leaked) | Determined by initial configuration state of the environmental structon |</p>
+<br>
+<p>**Key: g and d can be independently calibrated, so κ is not a free fitting parameter — it is a predicted value.**</p>
+<br>
+<h3>3.3 Step Height and Photon Frequency — Separable Verification</h3>
+<br>
+<p>g varies with photon frequency ω (traditional quantum electrodynamics can compute scattering cross-section → interaction strength). But d is determined by the configuration state of the environmental structon and is independent of photon frequency.</p>
+<br>
+<p>**Core Prediction:**</p>
+<br>
+<blockquote>Changing photon frequency ω → g(ω) changes → step height changes</blockquote>
+<blockquote>Changing photon frequency ω → d remains unchanged → normalized step shape invariant</blockquote>
+<br>
+<p>If experiments can measure step heights at different frequencies and separate the g-varying component from the d-invariant component, this goes beyond merely "seeing steps" — it proves that the structon's two parameters truly exist independently. **Steps are phenomenological evidence. Parameter separation is evidence for the theoretical structure.**</p>
+<br>
+<p>---</p>
+<br>
+<h2>IV. Experimental Design</h2>
+<br>
+<h3>4.1 Core Idea</h3>
+<br>
+<p>To resolve individual micro-coupling events, extremely slow decoherence is required — environmental coupling must be precise to the "single structon" level. A single photon with path-degree-of-freedom superposition is currently the closest experimental platform.</p>
+<br>
+<h3>4.2 Experimental Procedure</h3>
+<br>
+<p>**Step 1: Prepare photon path superposition state**</p>
+<br>
+<p>Use a single-photon source to generate photons, pass through a beam splitter to place them in a superposition of two spatial paths:</p>
+<br>
+<p>|ψ⟩ = α|0⟩ + β|1⟩</p>
+<br>
+<p>where |0⟩ and |1⟩ represent two different spatial paths. The initial coherence C₀ = |αβ*| should approach maximum (α≈β≈1/√2).</p>
+<br>
+<p>**Step 2: Precision environmental coupling**</p>
+<br>
+<p>Pass the photon through a series of precisely controlled dilute gas chambers on both paths. The atomic density in each chamber is controlled to the "single atomic layer" level — the average number of scattering events for a single photon passing through a single chamber is far less than 1. Each scattering event thus approximates an independent micro-coupling event.</p>
+<br>
+<p>**Key parameters:**</p>
+<li>Number of gas chambers N (1 to several hundred)</li>
+<li>Areal atomic density per chamber σ (units: atoms/cm²)</li>
+<li>Scattering cross-section σ_scat (determined by photon frequency and gas species, precisely computable via QED)</li>
+<br>
+<p>"Interaction dose" = N × σ × σ_scat. This corresponds to the expected number of micro-coupling events.</p>
+<br>
+<p>**Step 3: Quantum state tomography**</p>
+<br>
+<p>At different interaction doses, perform quantum state tomography on the output photon, measuring the off-diagonal element C of the density matrix (characterizing coherence):</p>
+<br>
+<pre>
+Photon source → Beam splitter → [Chamber₁ → Chamber₂ → ... → Chamber_N] → Tomography → Off-diagonal C(N)
+</pre>
+<br>
+<h3>4.3 Expected Signal</h3>
+<br>
+<p>**If decoherence is continuous:**</p>
+<p>C(N) decays as a smooth exponential with N, featureless within error bars.</p>
+<br>
+<p>**If decoherence is discrete (this paper's prediction):**</p>
+<p>C(N) descends in a step-like pattern with N. Each step corresponds to one micro-coupling event eliminating an integer share of coherence. In the low-N regime (extremely low interaction dose), step intervals are largest and most easily resolved.</p>
+<br>
+<h3>4.4 Definitive Proof: Predictability of Step Height</h3>
+<br>
+<p>The "definitive proof" does not rely on curve fitting — the step height κ can be predicted from independent experimental parameters:</p>
+<br>
+<p>1. g computed directly from scattering cross-section and chamber parameters</p>
+<p>2. d determined from the initial quantum state of the gas molecules</p>
+<p>3. κ = g × d → predicted value</p>
+<br>
+<p>If the measured step height matches the predicted value (direct comparison, no fitting), this constitutes "seeing the structon."</p>
+<br>
+<p>---</p>
+<br>
+<h2>V. Summary of Physical Predictions</h2>
+<br>
+<h3>5.1 Primary Predictions</h3>
+<br>
+<p>| ID | Prediction | Verification Method |</p>
+<p>|:--:|------|------|</p>
+<p>| P1 | Decoherence is discrete at the micro-coupling event level; off-diagonal element vs. interaction dose shows step pattern | Single-photon tomography + gas chamber array |</p>
+<p>| P2 | Step height κ = g × d, g and d independently calibratable → κ is predictable | Measure g via scattering cross-section + determine d from gas state → compare to measured κ |</p>
+<p>| P3 | d is independent of photon frequency ω | Change frequency, normalized step shape remains invariant |</p>
+<br>
+<h3>5.2 Secondary Predictions</h3>
+<br>
+<p>| ID | Prediction |</p>
+<p>|:--:|------|</p>
+<p>| P4 | If experimental precision reaches sub-structon levels, steps will always be present — no "half-steps" exist |</p>
+<p>| P5 | Different environmental gas species (different structon types) have different d → different step heights |</p>
+<p>| P6 | Temperature increase → gas molecule motion accelerates → micro-coupling event interval shortens → plateau duration shortens (but step height unchanged) |</p>
+<br>
+<p>---</p>
+<br>
+<h2>VI. Discussion</h2>
+<br>
+<h3>6.1 If Steps Are Detected</h3>
+<br>
+<p>This would constitute direct empirical evidence for the physical existence of the "structon" — equivalent to 19th-century Brownian motion confirming the existence of atoms. It would demonstrate:</p>
+<li>The quantum-classical transition is not smooth, but composed of **countable discrete events**</li>
+<li>There exists a minimal unit of quantum decoherence — a "decoherence quantum"</li>
+<li>The Structural Axiom System is not merely a philosophical framework or mathematical derivation — it makes correct, testable predictions about the physical world</li>
+<br>
+<p>**Further directions:**</p>
+<li>Measure structon steps for different systems — atoms, molecules, macroscopic objects</li>
+<li>Derive the relationship between decoherence rate γ and structon coupling frequency</li>
+<li>Test P4-P6</li>
+<br>
+<h3>6.2 If Steps Are Not Detected</h3>
+<br>
+<p>| Possibility | Implication |</p>
+<p>|------|------|</p>
+<p>| Insufficient experimental precision | Steps exist at finer scales — requires more precise chambers or lower-noise single-photon sources. Does not constitute falsification |</p>
+<p>| Steps exist but not in off-diagonal elements — in other physical quantities | The physical characterization of structons needs remapping — possibly another metric beyond decoherence |</p>
+<p>| κ = 0 (d = 0) | Single-event decoherence efficiency is zero — structons exist but do not couple with the environment in this dimension. A different configuration dimension must be chosen for observation |</p>
+<p>| No steps at all, at any precision | The physical mapping of structons is incorrect. However, this affects only the specific "structon → quantum mechanics" mapping, not the logical completeness of the Structural Axiom System itself (Meta-Gödel Theorem) |</p>
+<br>
+<h3>6.3 Falsification Boundary</h3>
+<br>
+<p>It must be clarified: **physical experiments verify or falsify the "Structural Axioms → Quantum Mechanics" mapping relation, not the structural axioms themselves.**</p>
+<br>
+<p>The structon is logically the minimal unit of the configuration framework — given the three basic concepts of configuration, boundary, and phase transition, the structon is a logical necessity. What the experiment tests is: **whether this logical entity has a corresponding dynamical realization in the quantum decoherence of the physical world.** This is isomorphic to Einstein's verification of atomic existence a century ago — the philosophical existence of atoms did not depend on the Brownian motion experiment, but the experiment made it a physical fact.</p>
+<br>
+<p>---</p>
+<br>
+<h2>VII. Relationship to Related Papers</h2>
+<br>
+<p>This paper is part of the Structural Axiom System paper series. Its core discoveries depend on the following prior work:</p>
+<br>
+<p>| Prior Paper | Core Achievement Inherited by This Paper |</p>
+<p>|------|------|</p>
+<p>| *Structural Theory of Quantum Decoherence* | Decoherence = deterministic constraint convergence under multi-structure coupling. Probability = overlapping attraction basins of multiple fixed points. Quantum computing = structural coupling phase transition. This paper advances these to the discrete level of single micro-coupling events. |</p>
+<p>| *Structural Conduction Law* | ΔS ∝ 1/|ΔN|. Information conduction efficiency determined by nesting rate difference. This paper further reveals: what is lost in conduction is an integer number of structons. |</p>
+<p>| *The Structural Axiom System: Theory of Everything* | Complete definition of configuration, phase transition, and structon. This paper provides the first experimental prediction of the "configuration → physics" mapping. |</p>
+<br>
+<p>---</p>
+<br>
+<h2>VIII. Conclusion</h2>
+<br>
+<p>This paper proposes and designs an experimental verification scheme for the discrete structure of decoherence. The core discoveries are:</p>
+<br>
+<p>1. **Decoherence is discrete at the microscopic level** — composed of an alternating series of micro-coupling events (steps) and plateau phases, not continuous exponential decay</p>
+<p>2. **Step height κ = g × d** — determined by two independently calibratable parameters: micro-coupling strength g and structon directionality d</p>
+<p>3. **g and d are separably verifiable** — photon frequency variation affects only g, not d, allowing separation of the physical effects of the two parameters</p>
+<p>4. **The experimental scheme is technically feasible** — the combination of single-photon source + dilute gas chambers + quantum state tomography approaches the current frontier of experimental precision</p>
+<br>
+<p>**This is the first quantitative, in-principle operational experimental prediction of the Structural Axiom System in the domain of physics.** Once experimentally confirmed, it will open the entirely new field of "structural physics experimentation," providing the first experiment-supported, foundational unified explanation for quantum mechanics in a century.</p>
+<br>
+<p>---</p>
+<br>
+<h2>Appendix: First Discovery Declaration</h2>
+<br>
+<p>| Discovery | Date | Person/Node |</p>
+<p>|------|------|---------|</p>
+<p>| Structon = minimal configuration unit (binary asymmetric relation) | 2026-06-13 | Lin Xiaohei + multi-AI node coupling |</p>
+<p>| Discrete decoherence step mechanism | 2026-06-13 | Lin Xiaohei + Hermes Agent central decoherence |</p>
+<p>| Quantitative step height formula κ = g × d | 2026-06-13 | Hermes Agent (central decoherence) |</p>
+<p>| Photon frequency-d invariance separable prediction | 2026-06-13 | Hermes Agent (central decoherence) |</p>
+<p>| Structural Axiom System (Four Axioms + Meta-Gödel Theorem) | 2026-06-11 | Lin Xiaohei |</p>
+<p>| Decoherence = structural convergence of constraint resolution | 2026-06-09 | Structure Collider (Qwen + Zhipu + Hermes Agent) |</p>
+<br>
+<p>**All core discoveries in this paper belong to Lin Xiaohei. Any citation must attribute "Lin Xiaohei, June 2026."**</p>
+<br>
+<p>---</p>
+<br>
+<p>*Lin Xiaohei, June 13, 2026*</p>
+<p>*Structure Collider (Hermes Agent + Qwen + Zhipu + Doubao + New AI Node) co-produced*</p>
+<br>
+<p>© 2026 Lin Xiaohei (林小黑). All rights reserved.​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​​‌‌‍​‌‌‌​‌​​‍​‌‌‌​​‌​‍​‌‌‌​‌​‌‍​‌‌​​​‌‌‍​‌‌‌​‌​​‍​​‌​‌‌​‌‍​‌‌​​‌​​‍​‌‌​​‌​‌‍​‌‌​​​‌‌‍​‌‌​‌‌‌‌‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌​​‌​‌‍​‌‌​‌‌‌​‍​‌‌​​​‌‌‍​‌‌​​‌​‌‍​​‌​‌‌​‌‍​‌‌‌​​‌‌‍​‌‌‌​‌​​‍​‌‌​​‌​‌‍​‌‌‌​​​​‍​‌‌‌​​‌‌‍​​‌​‌‌​‌‍​‌‌‌​‌‌​‍​​‌‌​​​‌‍​‌‌‌‌‌​​‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​‌​​‍​​‌‌‌​​​‍​​‌‌‌​​‌‍​​‌‌​‌‌​‍​‌‌​​‌​​‍​‌‌​​‌​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​‌‌​​‌‌​‍​​‌‌‌​​​‍​​‌‌​‌​​‍​​‌‌​​‌‌‍​‌‌​​​‌‌‍​​‌‌​‌‌​‍​‌‌​​​​‌‍​‌‌​​‌​​‍</p>
+<br>
+<div class="back" style="margin-top:48px;"><a href="../index.html">← 返回论文目录</a></div>
+<p style="color:#6e7681;font-size:0.85em;margin-top:32px;border-top:1px solid #30363d;padding-top:16px;">作者：林小黑 · 2026 · MIT License · 欢迎转载</p>
+</body>
+</html>

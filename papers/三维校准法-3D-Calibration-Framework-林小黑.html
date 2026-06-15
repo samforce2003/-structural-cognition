@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三维校准法-3D-Calibration-Framework-林小黑 — 林小黑</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.8; padding: 20px; max-width: 800px; margin: 0 auto; font-size: 16px; }
+h1 { color: #58a6ff; font-size: 1.8em; margin: 24px 0 16px; }
+h2 { color: #d2a8ff; font-size: 1.3em; margin: 20px 0 10px; border-bottom: 1px solid #21262d; padding-bottom: 4px; }
+h3 { color: #ffa657; font-size: 1.1em; margin: 16px 0 8px; }
+p { margin: 8px 0; }
+li { margin: 4px 0 4px 20px; }
+blockquote { border-left: 3px solid #30363d; padding: 8px 16px; margin: 12px 0; color: #8b949e; background: #161b22; }
+pre { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 12px 16px; margin: 12px 0; overflow-x: auto; font-size: 0.9em; }
+a { color: #58a6ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { margin: 24px 0; }
+.back a { color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="back"><a href="../index.html">← 返回论文目录</a></div>
+<p>---</p>
+<p>title: "Three-Dimensional Calibration: A Structural Framework for Cognitive Training"</p>
+<p>author: "Lin Xiaohei"</p>
+<p>date: "2026-06-15"</p>
+<p>abstract: ></p>
+<p>  We propose the Three-Dimensional Calibration (TDC) framework—a structured method for </p>
+<p>  cognitive training that operates across three orthogonal axes: Knowledge (知), Reasoning (思), </p>
+<p>  and Action (行). Unlike conventional skill-training approaches that treat each dimension </p>
+<p>  in isolation, TDC exploits the mutual-referencing property of the three axes: each dimension </p>
+<p>  serves as a calibration anchor for the other two. This creates a closed-loop system where </p>
+<p>  errors in one dimension are detectable and correctable through the other two, enabling </p>
+<p>  self-consistent cognitive refinement without external validation. We formalize the framework </p>
+<p>  mathematically, provide experimental protocols, and discuss implications for AI alignment </p>
+<p>  and human cognitive enhancement.</p>
+<p>---</p>
+<br>
+<h1>1. Introduction</h1>
+<br>
+<p>Cognitive training has traditionally been approached as a set of separable skills: critical thinking, </p>
+<p>decision-making, knowledge acquisition. Each is trained independently, and assessment relies on </p>
+<p>external benchmarks—test scores, performance metrics, peer review.</p>
+<br>
+<p>This approach has a structural blind spot: **the calibrator is always external to the system being calibrated**. </p>
+<p>The person doing the thinking cannot verify their own thinking without stepping outside it. </p>
+<p>External validation is slow, noisy, and often unavailable in real-time decision contexts.</p>
+<br>
+<p>The Three-Dimensional Calibration (TDC) framework addresses this by constructing an **internal </p>
+<p>verification loop** using three mutually-referencing dimensions:</p>
+<br>
+<li>**Knowledge (知)**: What you know, and—critically—what you know you don't know.</li>
+<li>**Reasoning (思)**: How you connect knowledge into chains of inference.</li>
+<li>**Action (行)**: How reasoning translates into decisions and behaviors.</li>
+<br>
+<p>The key insight is that these three dimensions are not independent. Knowledge constrains reasoning; </p>
+<p>reasoning guides action; action reveals gaps in knowledge. When one dimension drifts, the other </p>
+<p>two register the drift. This creates a self-calibrating system that does not require an external judge.</p>
+<br>
+<h1>2. The Three-Dimensional Framework</h1>
+<br>
+<h2>2.1 Formal Definitions</h2>
+<br>
+<p>Let the cognitive state of an agent be represented as a point in a three-dimensional space:</p>
+<br>
+<p>$$C = (K, R, A)$$</p>
+<br>
+<p>where:</p>
+<li>$K \in \mathcal{K}$: the agent's knowledge state—a structured representation of known facts, </li>
+<p>  including meta-knowledge (confidence levels, source attribution, known unknowns).</p>
+<li>$R \in \mathcal{R}$: the agent's reasoning function—mapping from knowledge state to </li>
+<p>  inference chains: $R: \mathcal{K} \to \mathcal{I}$, where $\mathcal{I}$ is the space of </p>
+<p>  possible inferences.</p>
+<li>$A \in \mathcal{A}$: the agent's action function—mapping from inferences to behaviors: </li>
+<p>  $A: \mathcal{I} \to \mathcal{B}$, where $\mathcal{B}$ is the space of observable behaviors.</p>
+<br>
+<h2>2.2 Mutual Calibration</h2>
+<br>
+<p>The three dimensions are linked by bi-directional calibration relations:</p>
+<br>
+<p>1. **K → R constraint**: Reasoning can only operate on what is known. A reasoning chain that </p>
+<p>   invokes facts outside the agent's knowledge state is invalid. This is the **data provenance anchor**.</p>
+<br>
+<p>2. **R → A constraint**: Actions follow from reasoning. An action that contradicts the reasoning </p>
+<p>   chain signals either a reasoning error or an incomplete action model. This is the </p>
+<p>   **conditional boundary awareness**.</p>
+<br>
+<p>3. **A → K constraint**: Action outcomes reveal knowledge gaps. When an action produces </p>
+<p>   unexpected results, it exposes either incomplete knowledge or incorrect meta-knowledge </p>
+<p>   (overconfidence). This is the **structural metacognition loop**.</p>
+<br>
+<p>These three constraints form a closed calibration cycle:</p>
+<br>
+<p>$$K \xrightarrow{\text{constrains}} R \xrightarrow{\text{guides}} A \xrightarrow{\text{reveals}} K$$</p>
+<br>
+<p>A cognitive system is **well-calibrated** when this cycle is consistent—no dimension </p>
+<p>contradicts the constraints imposed by the other two.</p>
+<br>
+<h2>2.3 Calibration Error</h2>
+<br>
+<p>We define the **calibration error** $\epsilon$ as the degree of inconsistency across the three dimensions:</p>
+<br>
+<p>$$\epsilon(C) = d_K(K, K') + d_R(R, R') + d_A(A, A')$$</p>
+<br>
+<p>where $d_K, d_R, d_A$ are distance metrics on their respective spaces, and $(K', R', A')$ </p>
+<p>is the "expected" state as predicted by the other two dimensions through the calibration relations.</p>
+<br>
+<p>When $\epsilon = 0$, the system is internally consistent—not necessarily correct about the </p>
+<p>external world, but free of self-contradiction. This is the achievable goal of TDC: </p>
+<p>**structural coherence, not absolute truth**.</p>
+<br>
+<h1>3. Training Protocol</h1>
+<br>
+<h2>3.1 Phase 1: Knowledge Calibration (知)</h2>
+<br>
+<p>**Goal**: Establish data provenance and confidence calibration.</p>
+<br>
+<p>**Exercises**:</p>
+<p>1. **Source Tracing**: For any claim, trace it back to its originating source. Distinguish </p>
+<p>   between first-hand observation, second-hand report, inference, and assumption.</p>
+<p>2. **Confidence Mapping**: Assign explicit confidence levels (0-100%) to each piece of knowledge. </p>
+<p>   Track calibration by comparing confidence to actual accuracy over time.</p>
+<p>3. **Known-Unknown Boundary**: Draw the explicit boundary between what you know, what you </p>
+<p>   know you don't know, and what you don't know you don't know.</p>
+<br>
+<p>**Calibration Check**: Can you answer "How do I know this?" for every piece of knowledge you </p>
+<p>use in reasoning?</p>
+<br>
+<h2>3.2 Phase 2: Reasoning Calibration (思)</h2>
+<br>
+<p>**Goal**: Make inference chains explicit and auditable.</p>
+<br>
+<p>**Exercises**:</p>
+<p>1. **Inference Chain Writing**: Write out the full chain of reasoning from premises to </p>
+<p>   conclusions. No skipped steps.</p>
+<p>2. **Counterfactual Testing**: For each inference step, ask: "If this premise were false, </p>
+<p>   would the conclusion still hold?" This identifies hidden assumptions.</p>
+<p>3. **Structural Blind Spot Detection**: After completing a reasoning chain, identify which </p>
+<p>   types of counter-evidence would invalidate it. If no counter-evidence is conceivable, </p>
+<p>   the reasoning is unfalsifiable and requires restructuring.</p>
+<br>
+<p>**Calibration Check**: Can you identify the exact step where your reasoning would break if </p>
+<p>a premise turned out to be wrong?</p>
+<br>
+<h2>3.3 Phase 3: Action Calibration (行)</h2>
+<br>
+<p>**Goal**: Align actions with reasoning and use outcomes to update knowledge.</p>
+<br>
+<p>**Exercises**:</p>
+<p>1. **Pre-Action Prediction**: Before any significant action, write down the expected outcome </p>
+<p>   and the reasoning behind it.</p>
+<p>2. **Outcome Comparison**: After the action, compare actual outcomes to predictions. </p>
+<p>   Any gap is a calibration signal.</p>
+<p>3. **Boundary Recognition**: Identify the conditions under which your action model holds. </p>
+<p>   Outside those conditions, acknowledge uncertainty and adjust.</p>
+<br>
+<p>**Calibration Check**: Does every action have a traceable reasoning chain, and does every </p>
+<p>outcome discrepancy trigger a knowledge update?</p>
+<br>
+<h1>4. Mathematical Properties</h1>
+<br>
+<h2>4.1 Self-Correction Theorem</h2>
+<br>
+<p>**Theorem 1**: A TDC-compliant cognitive system converges to lower calibration error under </p>
+<p>repeated application of the calibration cycle, provided the distance metrics are well-defined </p>
+<p>and the agent applies calibration updates consistently.</p>
+<br>
+<p>*Sketch*: Each cycle reduces at least one component of the calibration error by aligning </p>
+<p>one dimension with the constraints imposed by the other two. Since error is bounded below </p>
+<p>by zero and each cycle is monotonic non-increasing, convergence follows.</p>
+<br>
+<h2>4.2 Dimensional Minimality</h2>
+<br>
+<p>**Theorem 2**: Three dimensions are the minimum necessary for closed-loop calibration.</p>
+<br>
+<p>*Sketch*: With one dimension, no calibration is possible (no reference). With two dimensions, </p>
+<p>calibration is possible but ambiguous—when A and B disagree, there is no tiebreaker to </p>
+<p>determine which is wrong. Three dimensions provide a majority-vote mechanism: if A and B </p>
+<p>agree against C, C is likely miscalibrated.</p>
+<br>
+<p>This explains why the TDC framework requires exactly three axes—fewer cannot self-calibrate, </p>
+<p>more are redundant.</p>
+<br>
+<h2>4.3 Information Preservation</h2>
+<br>
+<p>**Theorem 3**: The calibration cycle preserves total information while increasing structural </p>
+<p>organization—analogous to a reversible thermodynamic process that reduces entropy without </p>
+<p>energy loss.</p>
+<br>
+<p>This property distinguishes TDC from conventional learning, which typically discards </p>
+<p>information (forgetting) while acquiring new patterns.</p>
+<br>
+<h1>5. Applications</h1>
+<br>
+<h2>5.1 AI Alignment</h2>
+<br>
+<p>TDC provides a framework for AI systems to self-monitor for internal consistency. An AI </p>
+<p>trained with TDC principles would:</p>
+<li>Maintain explicit data provenance for all knowledge (K-dimension).</li>
+<li>Produce auditable reasoning chains (R-dimension).</li>
+<li>Predict and verify outcomes of its outputs (A-dimension).</li>
+<br>
+<p>The calibration cycle creates a natural "honesty" constraint: any output that contradicts </p>
+<p>the system's own knowledge or reasoning is flagged as a calibration error before reaching </p>
+<p>the user.</p>
+<br>
+<h2>5.2 Human Cognitive Training</h2>
+<br>
+<p>For human learners, TDC offers a systematic alternative to "critical thinking" courses that </p>
+<p>often fail to transfer. The three-phase protocol can be integrated into:</p>
+<li>Education: Students calibrate knowledge, reasoning, and problem-solving as a unified skill.</li>
+<li>Professional development: Decision-makers use TDC to audit their own decision chains.</li>
+<li>Scientific training: Researchers apply TDC to identify assumptions, trace inferences, and </li>
+<p>  validate experimental designs.</p>
+<br>
+<h2>5.3 Human-AI Collaboration</h2>
+<br>
+<p>When both human and AI operate under TDC, their calibration cycles can be coupled. The </p>
+<p>human's action outcomes feed into the AI's knowledge base; the AI's reasoning chains become </p>
+<p>auditable by the human. This creates a **mutual calibration loop** that is more robust </p>
+<p>than either system alone.</p>
+<br>
+<h1>6. Limitations and Future Work</h1>
+<br>
+<p>TDC does not guarantee correctness about the external world—it guarantees internal consistency. </p>
+<p>A perfectly calibrated system can still be wrong if its initial knowledge is wrong. However, </p>
+<p>the calibration cycle's A → K feedback loop provides a mechanism for detecting and correcting </p>
+<p>such errors over time, as action outcomes reveal knowledge gaps.</p>
+<br>
+<p>Future work includes:</p>
+<li>Formalizing the distance metrics $d_K, d_R, d_A$ for specific domains.</li>
+<li>Empirical studies measuring calibration error reduction in human subjects.</li>
+<li>Implementation of TDC-based monitoring layers in large language models.</li>
+<li>Extension to group-level calibration (teams, organizations) using the same three-axis structure.</li>
+<br>
+<h1>7. Conclusion</h1>
+<br>
+<p>The Three-Dimensional Calibration framework transforms cognitive training from an </p>
+<p>externally-validated process to an internally-consistent system. By exploiting the </p>
+<p>mutual-referencing property of Knowledge, Reasoning, and Action, TDC creates a self-contained </p>
+<p>calibration loop that converges toward structural coherence.</p>
+<br>
+<p>The framework requires no external authority, no privileging of specific knowledge domains, </p>
+<p>and no assumption of objective truth. It asks only that the agent maintain consistency </p>
+<p>across how it knows, how it thinks, and how it acts.</p>
+<br>
+<p>---</p>
+<br>
+<h2>Appendix A: Training Exercises</h2>
+<br>
+<h3>A.1 Daily Calibration Journal</h3>
+<br>
+<p>Each day, record:</p>
+<p>1. One thing you learned (K update).</p>
+<p>2. One reasoning chain you completed (R update).</p>
+<p>3. One action you took and its outcome (A update).</p>
+<p>4. One calibration error detected (any dimension).</p>
+<br>
+<h3>A.2 Calibration Audit Questions</h3>
+<br>
+<li>K: "How do I know this? What is my confidence level? What would change my mind?"</li>
+<li>R: "What are my premises? Where could my reasoning break? What am I assuming?"</li>
+<li>A: "What do I expect to happen? Under what conditions would I act differently? </li>
+<p>  Did the outcome match my prediction?"</p>
+<br>
+<p>---</p>
+<br>
+<p>*Correspondence: linxiaohei@structural-cognition.org*</p>
+<br>
+<div class="back" style="margin-top:48px;"><a href="../index.html">← 返回论文目录</a></div>
+<p style="color:#6e7681;font-size:0.85em;margin-top:32px;border-top:1px solid #30363d;padding-top:16px;">作者：林小黑 · 2026 · MIT License · 欢迎转载</p>
+</body>
+</html>
