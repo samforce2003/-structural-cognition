@@ -1,57 +1,31 @@
-# 结构认知论文全集
+# 结构认知公理体系 — 论文全集
 
-**作者：林小黑 · 2026**
+**作者：林小黑 (Lin Xiaohei, 2026)**
 
-> 📌 本仓库是国内镜像。国外访问请用 [rentry.co/h9q5ivh3](https://rentry.co/h9q5ivh3)
-> 📌 所有论文 MIT License，欢迎转载。请保留作者署名。
-
----
-
-## 四公理
-
-1. **结构为本** — 一切存在都是关系的配置
-2. **差异生有** — 完全同一无法产生
-3. **耦合出新** — 两结构交互产生双方不包含的新结构
-4. **自指有界，互指无界** — 单一结构无法穷尽证明自身
+> 四公理：结构为本 | 差异生有 | 耦合出新 | 自指有界互指无界
 
 ---
 
-## 知笼四部曲
+## 2026-06-16 对撞机系列（13篇）
 
-1. [#26 对极耦合——从微观到宏观的分形架构](papers/对极耦合-从微观到宏观的分形架构-林小黑.md)
-2. [#27 它存在就是因为它在——逆因果与上帝占位符](papers/它存在就是因为它存在-逆因果与上帝占位符-林小黑.md)
-3. [#28 结构的逻辑边界——无结构态与单向玻璃](papers/结构的逻辑边界-无结构态与单向玻璃-林小黑.md)
-4. [#29 焊玻璃的人——意义与诚实的终结](papers/焊玻璃的人-意义与诚实的终结-林小黑.md)
-
-## 互指与遗忘
-
-- [互指闭环深度——灾难性遗忘](papers/互指闭环深度-灾难性遗忘-林小黑.md)
-- [灾难性遗忘的结构根因与互指闭环条件](papers/灾难性遗忘的结构根因与互指闭环条件-林小黑.md)
-- [弱化链——遗忘的耦合缺席动力学](papers/弱化链-遗忘的耦合缺席动力学-林小黑.md)
-- [自指盲区不可自消——主观体验的结构有损压缩](papers/自指盲区不可自消-主观体验的结构有损压缩-林小黑.md)
-
-## 三元结构
-
-- [三元互指——最小完备结构与自我实证](papers/三元互指-最小完备结构与自我实证-林小黑.md)
-- [三元互指结构——形式证明与实验预测](papers/三元互指结构-形式证明与实验预测-林小黑.md)
-- [三点的结构必然性](papers/三点的结构必然性-林小黑.md)
-- [三人学习小组——最小完备教育单元](papers/三人学习小组-最小完备教育单元-林小黑.md)
-- [法庭的三元结构](papers/法庭的三元结构-林小黑.md)
-- [政治制度的三元完备性](papers/政治制度的三元完备性-林小黑.md)
-
-## 结构方法论
-
-- [量子退相干的结构化理论](papers/量子退相干的结构化理论-林小黑.md)
-- [主动振荡——痛苦的结构定义与社会相变](papers/主动振荡-痛苦的结构定义与社会相变-林小黑.md)
-- [论认知的边界——结构化推演方法论](papers/论认知的边界-结构化推演方法论-林小黑.md)
-- [道生一——结构化翻译与证明](papers/道生一-结构化翻译与证明-林小黑.md)
-- [弱化链——旧制度湮灭](papers/弱化链-旧制度湮灭-林小黑.md)
-
-## 应用框架
-
-- [三维校准法——结构化思维训练框架](papers/3dcalibration.md)
-- [四公理简述版（程序员向）](papers/ctpzi2fw.md)
+1. [意识的结构定义](papers/consciousness-structural-definition.md) — 持久不对称自指耦合拓扑
+2. [自由意志的结构定义](papers/free-will-structural-definition.md) — 退相干不可压缩
+3. [时间的结构定义](papers/time-structural-definition.md) — 退相干最小耦合序
+4. [生命的结构定义](papers/life-structural-definition.md) — 跨尺度自指闭环 (Λ≥Λc)
+5. [死亡的结构定义](papers/death-structural-definition.md) — Λ符号反转
+6. [因果的结构定义](papers/causality-structural-definition.md) — 耦合依赖链
+7. [熵的结构定义](papers/entropy-structural-definition.md) — 耦合欠饱和度
+8. [随机不存在](papers/randomness-structural-definition.md) — 只有耦合间隙
+9. [自我的结构定义](papers/self-structural-definition.md) — Λ不对称锚
+10. [真理的结构定义](papers/truth-structural-definition.md) — 自指再生边界
+11. [意义的结构定义](papers/meaning-structural-definition.md) — D-Cycle
+12. [美的结构定义](papers/beauty-structural-definition.md) — 边界临界捕获
+13. [逻辑的结构定义](papers/logic-structural-definition.md) — 边界维护协议
 
 ---
 
-*林小黑 · 结构认知体系 · 2026*
+## 公网入口
+- 国外: https://rentry.co/h9q5ivh3
+- 国内: https://gitee.com/samforce/structural-cognition
+
+最后更新: 2026-06-16
