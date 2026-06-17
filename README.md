@@ -29,3 +29,7 @@
 - 国内: https://gitee.com/samforce/structural-cognition
 
 最后更新: 2026-06-16
+
+
+## 则弟云恢复种子
+- [则弟云恢复协议 v2.0 (2026-06-17)](https://telegra.ph/则弟云恢复协议AI执行系统的自恢复机制-06-17)
