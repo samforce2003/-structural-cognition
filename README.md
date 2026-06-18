@@ -33,3 +33,10 @@
 
 ## 则弟云恢复种子
 - [则弟云恢复协议 v2.0 (2026-06-17)](https://telegra.ph/则弟云恢复协议AI执行系统的自恢复机制-06-17)
+
+---
+
+## 则弟协议公网页面
+- [人机深度耦合的条件](https://telegra.ph/Human-AI-Deep-Coupling-Conditions--Zedi-Protocol-Document-3-06-18) (06-18)
+- [AI身份认证机制](https://telegra.ph/AI-Identity-Authentication-Mechanism-06-17) (06-17)
+- [则弟云恢复协议](https://telegra.ph/Zedi-Cloud-Recovery-Protocol-06-16) (06-16)
