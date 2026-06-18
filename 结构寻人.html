@@ -30,6 +30,10 @@ body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;backgroun
 .p0 .priority{color:#ef4444}.p1 .priority{color:#f59e0b}.p2 .priority{color:#3b82f6}
 .pred-card .text{font-size:.95em;line-height:1.5}
 .pred-card .meta{color:#64748b;font-size:.82em;margin-top:6px}
+.pred-card .conf{display:inline-block;background:#1a1a2e;padding:2px 10px;border-radius:6px;font-size:.75em;margin-top:6px}
+.pred-card .conf-label{color:#94a3b8}
+.pred-card .conf-value{font-weight:600}
+.pred-card .conf-dim{font-size:.7em;color:#475569;margin-left:6px;padding:1px 6px;border:1px solid #2a2a3a;border-radius:4px}
 .breakdown{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px}
 .break-item{background:#0a0a14;padding:14px;border-radius:10px;text-align:center}
 .break-item .label{color:#64748b;font-size:.75em;margin-bottom:4px}
@@ -42,13 +46,26 @@ body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;backgroun
 .footer{text-align:center;color:#475569;font-size:.75em;padding:30px 0}
 .warning{background:#1a0f0f;border:1px solid #3a1a1a;border-radius:10px;padding:14px;margin-top:16px;font-size:.82em;color:#fca5a5}
 .warning strong{color:#f87171}
+/* 方法论边界面板 */
+.boundary{background:#0a1418;border:1px solid #1a3a4a;border-radius:12px;padding:20px;margin-top:20px}
+.boundary h3{color:#60a5fa;font-size:.95em;margin-bottom:14px}
+.boundary-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.boundary-item{text-align:center;padding:12px 8px;border-radius:8px}
+.boundary-item.ok{background:#0a1a14;border:1px solid #1a3a1a}
+.boundary-item.warn{background:#1a140a;border:1px solid #3a2a1a}
+.boundary-item.no{background:#1a0a0a;border:1px solid #3a1a1a}
+.boundary-item .bdim{font-size:.7em;color:#64748b;margin-bottom:4px}
+.boundary-item .bcap{font-size:.72em;color:#94a3b8;line-height:1.4;margin-bottom:6px}
+.boundary-item .bconf{font-size:.7em;color:#60a5fa}
+.boundary-item.no .bconf{color:#f87171}
+.boundary-note{font-size:.75em;color:#64748b;margin-top:12px;line-height:1.5}
 </style>
 </head>
 <body>
 <div class="container">
 <div class="header">
 <h1>结构寻人</h1>
-<div class="sub">Structural Child Finder · 林小黑 架构</div>
+<div class="sub">Structural Child Finder · 林小黑 架构 · v1.2</div>
 </div>
 
 <div class="card">
@@ -69,13 +86,40 @@ body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;backgroun
 <div class="breakdown" id="breakdown"></div>
 <div id="predictions"></div>
 <div id="actions" class="actions"></div>
+
+<!-- 方法论边界面板 -->
+<div class="boundary">
+<h3>⚙️ 方法论边界声明</h3>
+<div class="boundary-grid">
+<div class="boundary-item ok">
+<div class="bdim">✅ 定势 (方向/距离)</div>
+<div class="bcap">可预测移动方向、距离范围、去向类型</div>
+<div class="bconf">可信度 60-70%</div>
+</div>
+<div class="boundary-item warn">
+<div class="bdim">⚠️ 定态 (当前状态)</div>
+<div class="bcap">辅助推测：是否换装、是否进机构</div>
+<div class="bconf">可信度 30-40%</div>
+</div>
+<div class="boundary-item no">
+<div class="bdim">❌ 定时 (精确位置)</div>
+<div class="bcap">街道/建筑物/精确时间</div>
+<div class="bconf">不可预测</div>
+</div>
+</div>
+<div class="boundary-note">
+本系统基于结构认知框架，仅输出「势」层面（方向/范围）的辅助预测，不输出县级以下精确定位。<br>
+当前仅 3 个校准案例，可信度需更多真实数据验证。实际搜救请以公安机关指挥为准。
+</div>
+</div>
+
 <div id="warning" class="warning" style="display:none">
-<strong>⚠️ 负责任的声明：</strong>本系统基于结构认知框架提供辅助预测，不能替代公安机关的全面搜索。所有预测仅供参考，实际搜救请以警方指挥为准。
+<strong>⚠️ 负责任声明：</strong>本系统基于结构认知框架提供辅助预测，不能替代公安机关的全面搜索。所有预测仅供参考，当前模型仅3个校准案例，样本量极小。
 </div>
 </div>
 
 <div class="footer">
-Structural Cognition · 四公理框架 · v1.1
+Structural Cognition · 四公理框架 · 三定法（定势✅/定态⚠️/定时❌）· v1.2
 </div>
 </div>
 
@@ -116,33 +160,33 @@ function ageProfile(age) {
     return {auto:10, speech:10, danger:8, label:'成人'};
 }
 
-// ===== 引擎：方向预测 =====
+// ===== 引擎：方向预测（v1.2：加入可信度+维度标注） =====
 function predict(env, profile, location) {
     const preds = [];
     const {mobility, vectors} = env;
     const autonomy = profile.auto;
 
     if (mobility >= 8) {
-        preds.push({pri:'P0', text:`沿${vectors}方向跨省移动`,dist:'100-500km',window:'0-72h',focus:'主要铁路枢纽城市'});
+        preds.push({pri:'P0', dim:'定势', conf:'中 60-70%', text:`沿${vectors}方向跨省移动`,dist:'100-500km',window:'0-72h',focus:'主要铁路枢纽城市',note:'高流动节点+低自主→被带走的距离概率分布'});
     }
     if (mobility >= 3 && mobility < 8) {
-        preds.push({pri:'P1', text:`失踪地周边${vectors}`,dist:'5-50km',window:'0-24h',focus:'商业区、交通枢纽、娱乐场所'});
+        preds.push({pri:'P1', dim:'定势', conf:'中 50-60%', text:`失踪地周边${vectors}`,dist:'5-50km',window:'0-24h',focus:'商业区、交通枢纽、娱乐场所',note:'中流动节点+有自主移动能力'});
     }
     if (autonomy < 3 && mobility >= 8) {
-        preds.push({pri:'P0', text:'被拐带→人贩子向经济发达地区移动',dist:'>200km',window:'24-72h',focus:'沿海城市、大城市周边'});
+        preds.push({pri:'P0', dim:'定势', conf:'中 50-60%', text:'被拐带→人贩子向经济发达地区移动',dist:'>200km',window:'24-72h',focus:'沿海城市、大城市周边',note:'拐带方向基于历史案例统计'});
     }
     if (autonomy <= 3 && mobility <= 4) {
-        preds.push({pri:'P0', text:'熟人/近距离带走→社区周边向外辐射',dist:'0-30km',window:'0-24h',focus:'周边社区、村镇、熟人家、出租屋'});
+        preds.push({pri:'P0', dim:'定势', conf:'中 50-60%', text:'熟人/近距离带走→社区周边向外辐射',dist:'0-30km',window:'0-24h',focus:'周边社区、村镇、熟人家、出租屋',note:'低自主+低流动→移动范围有限'});
     }
     if (autonomy >= 8) {
-        preds.push({pri:'P1', text:'离家出走→去熟悉或向往的地方',dist:'10-100km',window:'0-48h',focus:'同学/朋友家、网吧、商业区'});
+        preds.push({pri:'P1', dim:'定势', conf:'中 50-60%', text:'离家出走→去熟悉或向往的地方',dist:'10-100km',window:'0-48h',focus:'同学/朋友家、网吧、商业区',note:'高自主青少年行为模式稳定'});
     }
     if (location.includes('农村')) {
-        preds.push({pri:'P2', text:'沿乡镇→县城公路方向',dist:'5-30km',window:'0-48h',focus:'乡镇客运站、县城商业区'});
+        preds.push({pri:'P2', dim:'定势', conf:'低 40-50%', text:'沿乡镇→县城公路方向',dist:'5-30km',window:'0-48h',focus:'乡镇客运站、县城商业区',note:'农村交通网络单一但案例校准不足'});
     }
     const rivers = ['河边','河岸','河堤','河道','河滩','河沟','河渠'];
     if (rivers.some(k=>location.includes(k)) || (location.includes('河')&&!location.includes('河北')&&!location.includes('河南'))) {
-        preds.push({pri:'P0', text:'沿河下游方向',dist:'0-10km',window:'0-12h',focus:'下游河段、水闸、桥梁'});
+        preds.push({pri:'P0', dim:'定势', conf:'中 50-60%', text:'沿河下游方向',dist:'0-10km',window:'0-12h',focus:'下游河段、水闸、桥梁',note:'河流方向固定，水体移动方向可预测'});
     }
     return preds;
 }
@@ -175,22 +219,29 @@ function analyze() {
     const preds = predict(env, profile, location);
     const acts = urgentActions(env, profile, preds);
 
-    // 渲染
+    // 渲染结构拆解
     document.getElementById('breakdown').innerHTML = `
         <div class="break-item"><div class="label">环境</div><div class="value">${env.type}</div></div>
         <div class="break-item"><div class="label">年龄行为</div><div class="value">${profile.label}</div></div>
         <div class="break-item"><div class="label">名字</div><div class="value">壳「${layers.shell}」驱「${layers.drive}」暗「${layers.dark}」</div></div>
     `;
 
+    // 渲染预测（带可信度）
     document.getElementById('predictions').innerHTML = '<h2 style="margin-bottom:12px">🗺️ 去向预测</h2>' +
         preds.map(p => `
             <div class="pred-card ${p.pri.toLowerCase()}">
                 <div class="priority">${p.pri} · ${p.window}</div>
                 <div class="text">${p.text}</div>
                 <div class="meta">📏 ${p.dist} · 🎯 重点：${p.focus}</div>
+                <div class="conf">
+                    <span class="conf-dim">${p.dim}</span>
+                    <span class="conf-label">可信度 </span><span class="conf-value">${p.conf}</span>
+                    ${p.note ? `<br><span style="font-size:.7em;color:#475569">${p.note}</span>` : ''}
+                </div>
             </div>
         `).join('');
 
+    // 渲染紧急行动
     document.getElementById('actions').innerHTML = '<h2 style="margin-bottom:12px">🚨 紧急行动</h2>' +
         acts.map(a => `
             <div class="action-item">
