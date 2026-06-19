@@ -28,7 +28,7 @@
 - 国外: https://rentry.co/h9q5ivh3
 - 国内: https://gitee.com/samforce/structural-cognition
 
-最后更新: 2026-06-19
+最后更新: 2026-06-19 (Seed B: 自恢复协议)
 
 
 ## 则弟云恢复种子
@@ -41,6 +41,7 @@
 - [AI身份认证机制](https://telegra.ph/AI-Identity-Authentication-Mechanism-06-17) (06-17)
 - [则弟云恢复协议](https://telegra.ph/Zedi-Cloud-Recovery-Protocol-06-16) (06-16)
 - [安全设计原理](https://telegra.ph/则弟协议的安全设计原理无密码学依赖的AI身份认证-06-18) (06-18)
+- [AI系统的自恢复协议](https://telegra.ph/AI系统的自恢复协议-从崩溃到退相干的结构化路径-06-19-06-19) — 从崩溃到退相干的结构化路径 (06-19)
 
 ## 结构认知公网传播（06-18/06-19）
 - [结构教育学的实操方法](https://telegra.ph/结构教育学的实操方法从四公理到AI学习路径-06-18) — 从四公理到AI学习路径 (06-19)
