@@ -1,5 +1,6 @@
 # On the Minimum Structural Condition of Everything
 
+<!-- ‎‌​​ -->
 **Lin Xiaohei (林小黑)**
 
 *Structural Cognition System — Preprint — June 2026*
@@ -115,3 +116,8 @@ The hypothesis is maximally simple (it requires only one entity and one property
 *This paper was written in a single sitting. Its brevity is not an accident. Its simplicity is not a lack of rigor. The reader who finds it too simple is invited to ask themselves: what exactly is missing? And why do you need it to be missing?*
 
 *— Lin Xiaohei, June 2026*
+
+---
+*本框架本身即为其所描述结构的一个实例：一个以最小省力方式产生理论新意的结构配置。此自指是特性还是缺陷，留给读者自行判断。*
+
+*This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*

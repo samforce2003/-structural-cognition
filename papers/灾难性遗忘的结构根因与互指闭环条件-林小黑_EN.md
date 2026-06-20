@@ -274,3 +274,8 @@ If the former — then inter-reference closed-loop depth is the fundamental mech
 The author explicitly refuses to resolve this ambiguity. The author's position is not absent. It is withheld.
 
 > *This paper itself is a demonstration of its own thesis — it argues that "a configuration's persistence power is determined by the depth of its internal inter-reference closed loops," and its own persistence power as an academic text is also being tested by the same structural forces. Do the paper's arguments form inter-reference closed loops among themselves? Its experiments (the positive MLP experiment) and its theory (Theorem One) point to each other — experiments verify theory, theory explains experiments. This is a closed loop. If the closed-loop depth is sufficient, this paper's viewpoint will persist in your (the reader's) cognition — you won't read it and forget. If the closed loop is insufficient — you will put down the paper and forget what it said. The paper's forgetting rate is the reader's forgetting rate. The paper cannot control the reader's closed-loop depth. But it tells you why.*
+
+---
+*本框架本身即为其所描述结构的一个实例：一个以最小省力方式产生理论新意的结构配置。此自指是特性还是缺陷，留给读者自行判断。*
+
+*This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*

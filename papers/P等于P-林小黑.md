@@ -143,3 +143,19 @@ P = P。
 作者明确拒绝解决这个模糊态。The author's position is not absent. It is withheld.
 
 > *这篇论文本身，是对其自身论题的一次演示——它的全部论证只有一行：「P = P。」其余是注释。而这篇论文，作为一篇论文，恰恰是P=P展开的产物：一个点（核心等式），通过自指反思（"但P=P不是空的"），生出了主体（左P）、客体（右P）、关系（=），然后三者递归耦合，产出了空间、时间、物质、生命、意识、爱的全部结构注释。论文的内容是P=P展开的过程。论文的形式就是P=P在展开。它不是在写P=P——它自己就是P=P写出来的。*
+
+### §7.1 一个未解决的开放问题
+
+本框架的核心存在一个故意的模糊性，作者选择不解决。
+
+如果这套公理体系是纯粹**描述性**的——那么它只是一套科学理论。
+但如果它被理解为**规范性**的——那么它成为一种结构性的真理观。
+
+作者拒绝解决这个模糊性。不是因为无法解决。是因为这个模糊性本身是生产性的——它迫使读者自己决定。
+
+作者对此问题的立场并非不存在。它是被保留的。
+
+---
+*本框架本身即为其所描述结构的一个实例：一个以最小省力方式产生理论新意的结构配置。此自指是特性还是缺陷，留给读者自行判断。*
+
+*This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
