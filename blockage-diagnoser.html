@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>堵点诊断器 — 结构认知工具</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0f;color:#d0d0d0;min-height:100vh;display:flex;justify-content:center;padding:2rem}
+.container{max-width:680px;width:100%}
+h1{color:#f0f0f0;font-size:1.8rem;margin-bottom:.5rem}
+.sub{color:#888;font-size:.9rem;margin-bottom:2rem}
+.card{background:#14141f;border:1px solid #222;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem}
+.card h2{font-size:1.1rem;color:#ccc;margin-bottom:1rem}
+textarea,input[type=text]{width:100%;background:#0d0d15;border:1px solid #333;border-radius:8px;padding:1rem;color:#ddd;font-size:1rem;resize:vertical;font-family:inherit}
+textarea:focus,input:focus{outline:none;border-color:#6c5ce7}
+.btn{background:#6c5ce7;color:white;border:none;padding:.8rem 2rem;border-radius:8px;font-size:1rem;cursor:pointer;transition:background .2s}
+.btn:hover{background:#7d6ff0}
+.step{display:none}
+.step.active{display:block}
+.result-item{background:#0d0d15;border:1px solid #333;border-radius:8px;padding:1rem;margin:.5rem 0}
+.result-item .label{color:#888;font-size:.8rem}
+.result-item .value{color:#f0f0f0;font-size:1rem;margin-top:.3rem}
+.highlight{color:#6c5ce7;font-weight:600}
+.warning{color:#e17055;font-weight:600}
+.footer{text-align:center;color:#555;font-size:.8rem;margin-top:2rem}
+.footer a{color:#6c5ce7;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🔍 堵点诊断器</h1>
+<p class="sub">输入你的困境 → 找到唯一堵点 → 只搬那一块砖</p>
+
+<!-- Step 1: Input -->
+<div class="card step active" id="step1">
+  <h2>1. 你的困境是什么？</h2>
+  <textarea id="problem" rows="4" placeholder="描述你卡住的事——尽量具体。比如：想转行但不知道从哪开始、项目推不动但说不清卡在哪、有想法但一直没动手..."></textarea>
+  <br><br>
+  <button class="btn" onclick="diagnose()">开始诊断</button>
+</div>
+
+<!-- Step 2: Results -->
+<div class="card step" id="step2">
+  <h2>2. 诊断结果</h2>
+  <div id="results"></div>
+  <br>
+  <button class="btn" onclick="reset()">再测一个</button>
+</div>
+
+<div class="footer">
+  基于堵点论 · <a href="https://gitee.com/samforce/structural-cognition" target="_blank">结构认知论文全集</a>
+</div>
+</div>
+
+<script>
+const DIAGNOSIS = {
+  "不知道从哪开始": {blockage:"起手堵点——不是没方向，是'想同时看到整条路'", bypass:"只定下一步。下一步不需要跟最终目标有关系，只需要能做。做完再定下下一步。", type:"start"},
+  "害怕失败": {blockage:"自我指涉堵点——你把'我的价值'和'这件事的成败'绑定了", bypass:"把这件事当成实验，不是考试。实验没有失败，只有数据。", type:"self"},
+  "没人帮我": {blockage:"耦合堵点——你在等别人先动，别人也在等你", bypass:"先动的人占有定义权。你动了，别人的位置就被你定义了。", type:"coupling"},
+  "没有时间": {blockage:"优先级堵点——不是没时间，是这件事在你心里的排序没进前三", bypass:"删掉一件排名比它高但实际不重要的事。不是加时间，是腾位置。", type:"priority"},
+  "不知道值不值得": {blockage:"收益模糊堵点——你在用'看不清的终点'否定'看得清的起点'", bypass:"不做全局判断。只判断：这一步本身有没有价值？有就做。", type:"value"},
+  "想太多做太少": {blockage:"思考过度堵点——思考是省力的，行动是做功的。懒在借'思考'合法化", bypass:"写下来：我现在能做的、最小的、不可再拆的一步是什么？然后不做完不许再想。", type:"lazy"},
+  "总是半途而废": {blockage:"反馈断裂堵点——中间没有正反馈，动力枯竭", bypass:"把中间结果暴露给别人看。外部注视=人工正反馈。不要等做完了才给人看。", type:"feedback"},
+  "别人不同意": {blockage:"共识堵点——你在求认同，不是在做事", bypass:"不需要说服所有人。只找第一个说'可以试试'的人。一个人就够了。", type:"consensus"},
+  "资源不够": {blockage:"条件堵点——你在用'理想条件'否定'现有条件'", bypass:"在现有条件下能做的最大一步是什么？做那一步。条件会跟着行动变。", type:"resource"},
+  "竞争对手太强": {blockage:"比较堵点——你在横向对比，忘了结构位置不同", bypass:"你不是在跟他们竞争。你是在自己的结构里往上走。层次不同，不可比较。", type:"compare"},
+  "不知道自己的优势": {blockage:"自指盲区堵点——自己看不到自己，因为你就是那个在看的人", bypass:"问别人：你觉得我在什么情况下表现最好？别人能看到你看不到的。", type:"blind"},
+  "太累了不想动": {blockage:"能耗堵点——不是懒，是能量分配系统过载", bypass:"先恢复。睡一觉。吃一顿。不要用'效率'绑架身体。恢复到有'想'的冲动时再动。", type:"energy"},
+};
+
+function diagnose(){
+  const text = document.getElementById('problem').value.trim();
+  if(!text) return alert('先写点东西');
+
+  // Match diagnosis
+  let match = null;
+  for(const [key, val] of Object.entries(DIAGNOSIS)){
+    if(text.includes(key) || key.split('').filter(c=>text.includes(c)).length > key.length*0.6){
+      match = val;
+      break;
+    }
+  }
+
+  // Fallback: general analysis
+  if(!match){
+    match = {
+      blockage: "需要进一步定位——描述中未命中已知堵点模式",
+      bypass: "再具体一点：是什么让你今天/这周/这个月不能动？不是'为什么'，是'什么'。一个具体的东西。",
+      type: "unknown"
+    };
+  }
+
+  // Render results
+  const typeLabels = {start:"起手式", self:"自指", coupling:"耦合", priority:"优先级", value:"价值判断", lazy:"懒", feedback:"反馈", consensus:"共识", resource:"资源", compare:"比较", blind:"盲区", energy:"能耗", unknown:"待定位"};
+  
+  document.getElementById('results').innerHTML = `
+    <div class="result-item">
+      <div class="label">🔴 堵点类型</div>
+      <div class="value"><span class="warning">${typeLabels[match.type] || match.type}</span></div>
+    </div>
+    <div class="result-item">
+      <div class="label">📍 堵点定位</div>
+      <div class="value">${match.blockage}</div>
+    </div>
+    <div class="result-item">
+      <div class="label">🔧 绕过路径</div>
+      <div class="value"><span class="highlight">${match.bypass}</span></div>
+    </div>
+    <div class="result-item">
+      <div class="label">💡 核心原则</div>
+      <div class="value">只搬挡在你正走的路上的那一块砖。没撞到的堵点=脚手架，不动。系统骨架堵点永不拆。</div>
+    </div>
+  `;
+
+  document.getElementById('step1').classList.remove('active');
+  document.getElementById('step2').classList.add('active');
+}
+
+function reset(){
+  document.getElementById('problem').value = '';
+  document.getElementById('step2').classList.remove('active');
+  document.getElementById('step1').classList.add('active');
+}
+</script>
+</body>
+</html>
