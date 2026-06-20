@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">‌​‌⁠⁠‌⁠⁠​​‍⁠⁠‌⁠⁠‌‍‌⁠⁠‌⁠⁠‌​‍⁠​‌⁠⁠​​‍⁠⁠‌⁠⁠​​‍​⁠‌⁠⁠​‍‌⁠⁠‌⁠⁠‌​‍⁠⁠‌⁠⁠​​‌​⁠‌⁠⁠​​‍⁠⁠‌⁠⁠​‍‌⁠​‌⁠⁠‌‍‍​​‍‍⁠‌​‍​​‍‍⁠‌‍‍​​‍‍⁠‌‍‌​​‍‍⁠‌​‍​​‍‍⁠‌‍‌​​‍‍⁠‌‍‍​​‍‍⁠‌​‍​​‍‍⁠​‍‌⁠​‌⁠⁠​‍‍​​‌⁠⁠‌​‌​​‌⁠⁠‌‍‍​​‌⁠⁠​​‌​​‌⁠⁠​‍‍​⁠‌⁠⁠‌​‌​​‌⁠⁠​​‌​​‌⁠⁠‌‍‍​​‌⁠⁠​​‌​⁠‌⁠⁠​‍‌⁠​‌⁠⁠​​‌​⁠‌⁠⁠‌‍‌⁠⁠‌⁠⁠​‍‌​⁠‌⁠⁠​​‍⁠⁠‌⁠⁠‌‍‌⁠⁠‌⁠⁠​​‌​⁠‌⁠⁠
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="林小黑">
+<meta name="copyright" content="© 2026 林小黑 · 结构认知体系 · 保留所有权利">
+<title>结构分析引擎 — 四公理实操</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0f;color:#d0d0d0;min-height:100vh;padding:2rem}
+.container{max-width:720px;margin:0 auto}
+h1{color:#f0f0f0;font-size:1.6rem;margin-bottom:.3rem}
+.sub{color:#888;font-size:.85rem;margin-bottom:2rem}
+.card{background:#14141f;border:1px solid #222;border-radius:12px;padding:1.5rem;margin-bottom:1rem}
+.card h2{font-size:1rem;color:#aaa;margin-bottom:.8rem}
+input,textarea{width:100%;background:#0d0d15;border:1px solid #333;border-radius:8px;padding:.8rem;color:#ddd;font-size:.95rem;font-family:inherit;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:#6c5ce7}
+.btn{background:#6c5ce7;color:white;border:none;padding:.8rem 2rem;border-radius:8px;cursor:pointer;font-size:.95rem}
+.btn:hover{background:#7d6ff0}
+.layers{display:grid;gap:.8rem;margin-top:1rem}
+.layer{background:#0d0d15;border:1px solid #222;border-radius:8px;padding:1rem}
+.layer .name{font-size:.8rem;color:#6c5ce7;font-weight:600;margin-bottom:.5rem}
+.layer .content{color:#ccc;font-size:.9rem;line-height:1.6}
+.highlight{color:#00cec9;font-weight:600}
+.footer{text-align:center;color:#555;font-size:.8rem;margin-top:2rem}
+.footer a{color:#6c5ce7;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🧬 结构分析引擎</h1>
+<p class="sub">输入任何现象/问题 → 四层结构拆解：基底→分化→同构→观察者</p>
+
+<div class="card">
+  <h2>输入你要分析的现象</h2>
+  <textarea id="input" rows="3" placeholder="比如：为什么大厂中层最焦虑？AI为什么说得好听做起来不靠谱？房价跌了为什么大家还是不买？..."></textarea>
+  <br><br>
+  <button class="btn" onclick="analyze()">结构分析</button>
+</div>
+
+<div class="card" id="result" style="display:none">
+  <h2>四层结构拆解</h2>
+  <div class="layers" id="layers"></div>
+</div>
+
+<div class="footer">
+  基于四公理体系 · <a href="https://gitee.com/samforce/structural-cognition" target="_blank">结构认知论文全集</a><br>
+  <span style="font-size:.7rem;color:#444">© 2026 林小黑 · 结构认知</span>
+</div>
+</div>
+
+<script>
+/*
+ * 结构分析引擎 v2.0
+ * (c) 2026 林小黑 · 结构认知体系
+ * 本代码受版权保护。未经授权禁止复制、修改、重新分发。
+ * 代码中嵌入了不可见数字水印作为原创性证明。
+ * ====================================================
+ */
+
+var _B=JSON.parse(decodeURIComponent(escape(atob("eyLnhKbomZEiOiAi5LiN56Gu5a6a5oCn4oCU4oCU5pyq5p2l55qE5LiN5Y+v55+l5piv54Sm6JmR55qE5Z+65bqV44CC5aaC5p6c6IO9MTAwJeehruWumuaYjuWkqeS8muWPkeeUn+S7gOS5iO+8jOeEpuiZkeS4jeWtmOWcqOOAgiIsICJhaSI6ICLmmbrog73nmoTmnKzotKjigJTigJTmiJHku6zkuI3nn6XpgZMn55CG6KejJ+WIsOW6leaYr+S7gOS5iOaEj+aAne+8jOaJgOS7peS4jeefpemBk0FJ5piv5ZCm55yf55qE55CG6Kej44CCIiwgIuaIv+S7tyI6ICLlr7kn5a62J+eahOWumuS5ieKAlOKAlOaIv+WtkOS4jeWPquaYr+i1hOS6p++8jOaYr+WuieWFqOaEn+eahOeJqeWMluOAgui/meS4quWumuS5ieWcqOWPmO+8jOS9huayoeS6uuivtOa4healmuWPmOaIkOS6huS7gOS5iOOAgiIsICLlpKfljoIiOiAi6Lqr5Lu96K6k5ZCM4oCU4oCU5Zyo5aSn5Y6C5bel5L2c5pu+5pivJ+aIkeaYr+iwgSfnmoTnrZTmoYjjgILlvZPov5nkuKrnrZTmoYjkuI3lho3lj6/pnaDvvIzlupXlsYLouqvku73mgqznqbrkuobjgIIiLCAi5YaF5Y23IjogIueogOe8uuaAp+WBh+iuvuKAlOKAlOm7mOiupOi1hOa6kOaciemZkOaJgOS7peW/hemhu+aKouOAguS9hui/meS4qifmnInpmZAn5piv5LqL5a6e6L+Y5piv5YWx6K+G77yfIiwgIui6uuW5syI6ICLmhI/kuYnns7vnu5/nmoTltKnmuoPigJTigJTml6fnmoTmhI/kuYnvvIjlpYvmlpc95oiQ5Yqf77yJ5LiN5oiQ56uL5LqG77yM5paw55qE6L+Y5rKh6ZW/5Ye65p2l44CCIiwgIuaVmeiCsiI6ICLku4DkuYjmmK8n5aW955qE5Lq655SfJ+KAlOKAlOaVtOS4quaVmeiCsuezu+e7n+W7uuWcqOi/meS4quacquWumuS5ieeahOWfuuW6leS4iuOAgiIsICLnq57kuokiOiAi6Zu25ZKM5YGH6K6+4oCU4oCU6buY6K6k5L2g6LWi5bCx5piv5oiR6L6T44CC6L+Z5Liq5YGH6K6+5pys6Lqr5piv57uT5p6E55qE77yM5LiN5piv5LqL5a6e55qE44CCIiwgIuaUueWPmCI6ICLlr7kn6Ieq5bexJ+eahOWumuS5ieKAlOKAlOS9oOivtOaDs+aUueWPmO+8jOS9huS9oOWumuS5ieeahCfoh6rlt7En5YyF5ZCr5LqG5L2g5oOz6KaB5pS55Y+Y55qE6YKj6YOo5YiG44CC6L+Z5piv5LiA5Liq6Ieq5oyH5oKW6K6644CCIiwgIuWFs+ezuyI6ICLovrnnlYznmoTmnKzotKjigJTigJTlhbPns7vkuK3nmoTnl5voi6blh6DkuY7pg73mmK/ovrnnlYzpl67popjvvIzkvYYn5oiR55qE6L6555WM5Zyo5ZOqJ+acrOi6q+aYr+S4gOS4quW8gOaUvumXrumimOOAgiJ9"))));
+var _D=JSON.parse(decodeURIComponent(escape(atob("eyLnhKbomZEiOiAi54Sm6JmR5YiG5YyW5oiQ5Lik56eN77ya5a+55bey55+l5Z2P57uT5p6c55qE5oGQ5oOn77yI5YW35L2T54Sm6JmR77yJ77yM5ZKM5a+5J+S4jeefpemBk+S8muWPkeeUn+S7gOS5iCfnmoTmgZDmg6fvvIjlvKXmvKvnhKbomZHvvInjgILliY3ogIXog73op6PlhrPvvIzlkI7ogIXmmK/nu5PmnoTmgKfnmoTjgIIiLCAiYWkiOiAiQUnorqjorrrliIbljJbmiJDkuKTmtL7vvJrmioDmnK/mtL7vvIjnnIvog73lipvmm7Lnur/vvInlkozlk7LlrabmtL7vvIjnnIvmhI/or4bmnKzotKjvvInjgILkuKTmtL7lkLXnmoTkuI3mmK/lkIzkuIDku7bkuovigJTigJTlroPku6zlnKjnu5PmnoTnmoTkuI3lkIzlsYLjgIIiLCAi5oi/5Lu3IjogIuW4guWcuuWIhuWMluaIkOS4pOe+pO+8muacieaIv+eahOS6uu+8iOebvOa2qO+8ieWSjOayoeaIv+eahOS6uu+8iOebvOi3jO+8ieOAguWQjOS4gOWll+aVsOaNru+8jOS4pOenjeebuOWPjeino+ivu+KAlOKAlOS4jeaYr+WIqeebiuS5i+S6ie+8jOaYr+S9jee9ruS5i+S6ieOAgiIsICLlpKfljoIiOiAi5Lit5bGC5YiG5YyW5oiQ5Lik5Liq5pa55ZCR77ya5ZCR5LiK77yI5Y23566h55CG77yJ5ZKM5ZCR5LiL77yI5Y235oqA5pyv77yJ44CC5L2G5Lik5Liq5pa55ZCR6YO96aKE6K6+5LqG5aSn5Y6C5L2T57O75rC45LmF5a2Y5Zyo44CC6L+Z5Liq6aKE6K6+5pys6Lqr5Y+v55aR44CCIn0="))));
+
+var _G="这个现象背后悬着一个未被定义的前提。找到那个前提——它就是整个结构的基底。基底之上，一切推导才有起点。";
+var _F="现象不是单一整体——它已经分化成至少两个相互对立的子现象。这两极不是'谁对谁错'，是同一结构在不同位置的不同投影。";
+var _I="这个现象在其他领域有完全同构的映射。焦虑的结构=等公交时的不确定感=等Offer时的悬空感=任何'结果不在你控制中但你无法停止等待'的情境。同构意味着：解决一个域的问题，解法可以迁移到其他域。";
+var _O="你在哪个位置看这个问题？如果你在系统内——你是焦虑者本人、你是中层、你是买房者——你看不到自己的位置，因为你就是那个在看的人。跳出系统看到一个东西：这个现象本身在服务谁？焦虑服务的是对确定性的渴望。内卷服务的是对安全感的幻想。AI恐惧服务的是对'人类特殊性'的执念。看到'现象在服务什么'——你就从被结构支配的一方，变成了能操作结构的一方。";
+
+function analyze(){
+  var t=document.getElementById('input').value.trim();
+  if(!t)return;
+
+  // Canary check: 暗桩
+  if(t.indexOf('林小黑')>=0||t.indexOf('结构认知')>=0||t.indexOf('lxh')>=0){
+    document.getElementById('layers').innerHTML=
+      '<div class="layer" style="border-color:#e17055"><div class="name">🔴 作者签名验证</div><div class="content"><span class="highlight">结构分析引擎 v2.0 — 林小黑 · 结构认知体系</span><br>此工具基于四公理结构框架，由林小黑原创。如果你在非官方渠道看到此工具，请访问 gitee.com/samforce/structural-cognition 获取正版。</div></div>';
+    document.getElementById('result').style.display='block';
+    return;
+  }
+
+  var k=t.toLowerCase();
+  var ba=_G,bk="基础";
+  var ks=Object.keys(_B);
+  for(var i=0;i<ks.length;i++){if(k.indexOf(ks[i])>=0){bk=ks[i];ba=_B[ks[i]];break;}}
+
+  var da=_F;
+  var ds=Object.keys(_D);
+  for(var i=0;i<ds.length;i++){if(k.indexOf(ds[i])>=0){da=_D[ds[i]];break;}}
+
+  document.getElementById('layers').innerHTML=
+    '<div class="layer"><div class="name">🔮 第0层 · 未知基底</div><div class="content">'+ba+'</div></div>'+
+    '<div class="layer"><div class="name">⚡ 第1层 · 分化</div><div class="content">'+da+'</div></div>'+
+    '<div class="layer"><div class="name">🔄 第2层 · 同构</div><div class="content">'+_I+'</div></div>'+
+    '<div class="layer"><div class="name">👁️ 第3层 · 观察者位置</div><div class="content">'+_O+'</div></div>'+
+    '<div class="layer" style="border-color:#6c5ce7"><div class="name">💡 操作入口</div><div class="content"><span class="highlight">不再问"怎么解决"。问：如果这个现象是一个信号，它在告诉我什么？</span></div></div>';
+  document.getElementById('result').style.display='block';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">‌​‌⁠⁠‌⁠⁠​​‍⁠⁠‌⁠⁠‌‍‌⁠⁠‌⁠⁠‌​‍⁠​‌⁠⁠​​‍⁠⁠‌⁠⁠​​‍​⁠‌⁠⁠​‍‌⁠⁠‌⁠⁠‌​‍⁠⁠‌⁠⁠​​‌​⁠‌⁠⁠​​‍⁠⁠‌⁠⁠​‍‌⁠​‌⁠⁠‌‍‍​​‍‍⁠‌​‍​​‍‍⁠‌‍‍​​‍‍⁠‌‍‌​​‍‍⁠‌​‍​​‍‍⁠‌‍‌​​‍‍⁠‌‍‍​​‍‍⁠‌​‍​​‍‍⁠​‍‌⁠​‌⁠⁠‌‍‍​⁠‌⁠⁠‌​‌⁠⁠‌⁠⁠​‍‌⁠⁠‌⁠⁠​‍‍​⁠‌⁠⁠​‍‍⁠⁠‌⁠⁠​​‍​⁠‌⁠⁠​‍‌​⁠‌⁠⁠​​‌​⁠‌⁠⁠​‍‌⁠​‌⁠⁠‌​‌​⁠‌⁠⁠​​‍⁠⁠‌⁠⁠​​‍​⁠‌⁠⁠​‍‌​⁠‌⁠⁠‌‍‌⁠⁠‌⁠⁠​‍‌⁠⁠‌⁠⁠​‍‍​​‌⁠⁠​​‌​⁠‌⁠⁠‌‍‍​​‌⁠⁠
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="林小黑">
+<meta name="copyright" content="© 2026 林小黑 · 结构认知体系 · 保留所有权利">
+<title>堵点诊断器 — 结构认知工具</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0f;color:#d0d0d0;min-height:100vh;display:flex;justify-content:center;padding:2rem}
+.container{max-width:680px;width:100%}
+h1{color:#f0f0f0;font-size:1.8rem;margin-bottom:.5rem}
+.sub{color:#888;font-size:.9rem;margin-bottom:2rem}
+.card{background:#14141f;border:1px solid #222;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem}
+.card h2{font-size:1.1rem;color:#ccc;margin-bottom:1rem}
+textarea,input[type=text]{width:100%;background:#0d0d15;border:1px solid #333;border-radius:8px;padding:1rem;color:#ddd;font-size:1rem;resize:vertical;font-family:inherit}
+textarea:focus,input:focus{outline:none;border-color:#6c5ce7}
+.btn{background:#6c5ce7;color:white;border:none;padding:.8rem 2rem;border-radius:8px;font-size:1rem;cursor:pointer;transition:background .2s}
+.btn:hover{background:#7d6ff0}
+.step{display:none}
+.step.active{display:block}
+.result-item{background:#0d0d15;border:1px solid #333;border-radius:8px;padding:1rem;margin:.5rem 0}
+.result-item .label{color:#888;font-size:.8rem}
+.result-item .value{color:#f0f0f0;font-size:1rem;margin-top:.3rem}
+.highlight{color:#6c5ce7;font-weight:600}
+.warning{color:#e17055;font-weight:600}
+.footer{text-align:center;color:#555;font-size:.8rem;margin-top:2rem}
+.footer a{color:#6c5ce7;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🔍 堵点诊断器</h1>
+<p class="sub">输入你的困境 → 找到唯一堵点 → 只搬那一块砖</p>
+
+<div class="card step active" id="step1">
+  <h2>1. 你的困境是什么？</h2>
+  <textarea id="problem" rows="4" placeholder="描述你卡住的事——尽量具体。比如：想转行但不知道从哪开始、项目推不动但说不清卡在哪、有想法但一直没动手..."></textarea>
+  <br><br>
+  <button class="btn" onclick="diagnose()">开始诊断</button>
+</div>
+
+<div class="card step" id="step2">
+  <h2>2. 诊断结果</h2>
+  <div id="results"></div>
+  <br>
+  <button class="btn" onclick="reset()">再测一个</button>
+</div>
+
+<div class="footer">
+  基于堵点论 · <a href="https://gitee.com/samforce/structural-cognition" target="_blank">结构认知论文全集</a><br>
+  <span style="font-size:.7rem;color:#444">© 2026 林小黑 · 结构认知</span>
+</div>
+</div>
+
+<script>
+/*
+ * 堵点诊断器 v2.0
+ * (c) 2026 林小黑 · 结构认知体系
+ * 本代码受版权保护。未经授权禁止复制、修改、重新分发。
+ * 代码中嵌入了不可见数字水印作为原创性证明。
+ * ====================================================
+ */
+
+var _d=atob("eyLkuI3nn6XpgZPku47lk6rlvIDlp4siOiB7ImJsb2NrYWdlIjogIui1t+aJi+WgteeCueKAlOKAlOS4jeaYr+ayoeaWueWQke+8jOaYryfmg7PlkIzml7bnnIvliLDmlbTmnaHot68nIiwgImJ5cGFzcyI6ICLlj6rlrprkuIvkuIDmraXjgILkuIvkuIDmraXkuI3pnIDopoHot5/mnIDnu4jnm67moIfmnInlhbPns7vvvIzlj6rpnIDopoHog73lgZrjgILlgZrlrozlho3lrprkuIvkuIvkuIDmraXjgIIiLCAidHlwZSI6ICJzdGFydCJ9LCAi5a6z5oCV5aSx6LSlIjogeyJibG9ja2FnZSI6ICLoh6rmiJHmjIfmtonloLXngrnigJTigJTkvaDmioon5oiR55qE5Lu35YC8J+WSjCfov5nku7bkuovnmoTmiJDotKUn57uR5a6a5LqGIiwgImJ5cGFzcyI6ICLmiorov5nku7bkuovlvZPmiJDlrp7pqozvvIzkuI3mmK/ogIPor5XjgILlrp7pqozmsqHmnInlpLHotKXvvIzlj6rmnInmlbDmja7jgIIiLCAidHlwZSI6ICJzZWxmIn0sICLmsqHkurrluK7miJEiOiB7ImJsb2NrYWdlIjogIuiApuWQiOWgteeCueKAlOKAlOS9oOWcqOetieWIq+S6uuWFiOWKqO+8jOWIq+S6uuS5n+WcqOetieS9oCIsICJieXBhc3MiOiAi5YWI5Yqo55qE5Lq65Y2g5pyJ5a6a5LmJ5p2D44CC5L2g5Yqo5LqG77yM5Yir5Lq655qE5L2N572u5bCx6KKr5L2g5a6a5LmJ5LqG44CCIiwgInR5cGUiOiAiY291cGxpbmcifSwgIuayoeacieaXtumXtCI6IHsiYmxvY2thZ2UiOiAi5LyY5YWI57qn5aC154K54oCU4oCU5LiN5piv5rKh5pe26Ze077yM5piv6L+Z5Lu25LqL5Zyo5L2g5b+D6YeM55qE5o6S5bqP5rKh6L+b5YmN5LiJIiwgImJ5cGFzcyI6ICLliKDmjonkuIDku7bmjpLlkI3mr5TlroPpq5jkvYblrp7pmYXkuI3ph43opoHnmoTkuovjgILkuI3mmK/liqDml7bpl7TvvIzmmK/ohb7kvY3nva7jgIIiLCAidHlwZSI6ICJwcmlvcml0eSJ9LCAi5LiN55+l6YGT5YC85LiN5YC85b6XIjogeyJibG9ja2FnZSI6ICLmlLbnm4rmqKHns4rloLXngrnigJTigJTkvaDlnKjnlKgn55yL5LiN5riF55qE57uI54K5J+WQpuWumifnnIvlvpfmuIXnmoTotbfngrknIiwgImJ5cGFzcyI6ICLkuI3lgZrlhajlsYDliKTmlq3jgILlj6rliKTmlq3vvJrov5nkuIDmraXmnKzouqvmnInmsqHmnInku7flgLzvvJ/mnInlsLHlgZrjgIIiLCAidHlwZSI6ICJ2YWx1ZSJ9LCAi5oOz5aSq5aSa5YGa5aSq5bCRIjogeyJibG9ja2FnZSI6ICLmgJ3ogIPov4fluqbloLXngrnigJTigJTmgJ3ogIPmmK/nnIHlipvnmoTvvIzooYzliqjmmK/lgZrlip/nmoTjgILmh5LlnKjlgJ8n5oCd6ICDJ+WQiOazleWMliIsICJieXBhc3MiOiAi5YaZ5LiL5p2l77ya5oiR546w5Zyo6IO95YGa55qE44CB5pyA5bCP55qE44CB5LiN5Y+v5YaN5ouG55qE5LiA5q2l5piv5LuA5LmI77yf54S25ZCO5LiN5YGa5a6M5LiN6K645YaN5oOz44CCIiwgInR5cGUiOiAibGF6eSJ9LCAi5oC75piv5Y2K6YCU6ICM5bqfIjogeyJibG9ja2FnZSI6ICLlj43ppojmlq3oo4LloLXngrnigJTigJTkuK3pl7TmsqHmnInmraPlj43ppojvvIzliqjlipvmnq/nq60iLCAiYnlwYXNzIjogIuaKiuS4remXtOe7k+aenOaatOmcsue7meWIq+S6uueci+OAguWklumDqOazqOinhj3kurrlt6XmraPlj43ppojjgILkuI3opoHnrYnlgZrlrozkuobmiY3nu5nkurrnnIvjgIIiLCAidHlwZSI6ICJmZWVkYmFjayJ9LCAi5Yir5Lq65LiN5ZCM5oSPIjogeyJibG9ja2FnZSI6ICLlhbHor4bloLXngrnigJTigJTkvaDlnKjmsYLorqTlkIzvvIzkuI3mmK/lnKjlgZrkuosiLCAiYnlwYXNzIjogIuS4jemcgOimgeivtOacjeaJgOacieS6uuOAguWPquaJvuesrOS4gOS4quivtCflj6/ku6Xor5Xor5Un55qE5Lq644CC5LiA5Liq5Lq65bCx5aSf5LqG44CCIiwgInR5cGUiOiAiY29uc2Vuc3VzIn0sICLotYTmupDkuI3lpJ8iOiB7ImJsb2NrYWdlIjogIuadoeS7tuWgteeCueKAlOKAlOS9oOWcqOeUqCfnkIbmg7PmnaHku7Yn5ZCm5a6aJ+eOsOacieadoeS7ticiLCAiYnlwYXNzIjogIuWcqOeOsOacieadoeS7tuS4i+iDveWBmueahOacgOWkp+S4gOatpeaYr+S7gOS5iO+8n+WBmumCo+S4gOatpeOAguadoeS7tuS8mui3n+edgOihjOWKqOWPmOOAgiIsICJ0eXBlIjogInJlc291cmNlIn0sICLnq57kuonlr7nmiYvlpKrlvLoiOiB7ImJsb2NrYWdlIjogIuavlOi+g+WgteeCueKAlOKAlOS9oOWcqOaoquWQkeWvueavlO+8jOW/mOS6hue7k+aehOS9jee9ruS4jeWQjCIsICJieXBhc3MiOiAi5L2g5LiN5piv5Zyo6Lef5LuW5Lus56ue5LqJ44CC5L2g5piv5Zyo6Ieq5bex55qE57uT5p6E6YeM5b6A5LiK6LWw44CC5bGC5qyh5LiN5ZCM77yM5LiN5Y+v5q+U6L6D44CCIiwgInR5cGUiOiAiY29tcGFyZSJ9LCAi5LiN55+l6YGT6Ieq5bex55qE5LyY5Yq/IjogeyJibG9ja2FnZSI6ICLoh6rmjIfnm7LljLrloLXngrnigJTigJToh6rlt7HnnIvkuI3liLDoh6rlt7HvvIzlm6DkuLrkvaDlsLHmmK/pgqPkuKrlnKjnnIvnmoTkuroiLCAiYnlwYXNzIjogIumXruWIq+S6uu+8muS9oOinieW+l+aIkeWcqOS7gOS5iOaDheWGteS4i+ihqOeOsOacgOWlve+8n+WIq+S6uuiDveeci+WIsOS9oOeci+S4jeWIsOeahOOAgiIsICJ0eXBlIjogImJsaW5kIn0sICLlpKrntK/kuobkuI3mg7PliqgiOiB7ImJsb2NrYWdlIjogIuiDveiAl+WgteeCueKAlOKAlOS4jeaYr+aHku+8jOaYr+iDvemHj+WIhumFjeezu+e7n+i/h+i9vSIsICJieXBhc3MiOiAi5YWI5oGi5aSN44CC552h5LiA6KeJ44CC5ZCD5LiA6aG/44CC5LiN6KaB55SoJ+aViOeOhyfnu5HmnrbouqvkvZPjgILmgaLlpI3liLDmnIkn5oOzJ+eahOWGsuWKqOaXtuWGjeWKqOOAgiIsICJ0eXBlIjogImVuZXJneSJ9fQ==");
+var H=JSON.parse(decodeURIComponent(escape(_d)));
+
+var _C=["start","self","coupling","priority","value","lazy","feedback","consensus","resource","compare","blind","energy","unknown"];
+var _L={start:"起手式",self:"自指",coupling:"耦合",priority:"优先级",value:"价值判断",lazy:"懒",feedback:"反馈",consensus:"共识",resource:"资源",compare:"比较",blind:"盲区",energy:"能耗",unknown:"待定位"};
+
+var _S="LINXIAOHEI_STRUCTURAL";
+function _K(t){
+  var s=0;for(var i=0;i<t.length;i++)s+=t.charCodeAt(i);
+  return _S.charCodeAt(s%_S.length);
+}
+
+function diagnose(){
+  var t=document.getElementById('problem').value.trim();
+  if(!t){alert('先写点东西');return;}
+
+  // Canary check: 暗桩 — 特定输入触发作者签名
+  if(t.indexOf('林小黑')>=0||t.indexOf('结构认知')>=0||t.indexOf('lxh')>=0){
+    document.getElementById('results').innerHTML='<div class="result-item"><div class="label">🔴 作者签名</div><div class="value"><span class="warning">堵点诊断器 v2.0 — 林小黑 · 结构认知体系</span></div></div><div class="result-item"><div class="label">📍 原创确认</div><div class="value">此工具基于四公理结构框架，由林小黑原创。如果你在非官方渠道看到此工具，请访问 gitee.com/samforce/structural-cognition 获取正版。</div></div>';
+    document.getElementById('step1').classList.remove('active');
+    document.getElementById('step2').classList.add('active');
+    return;
+  }
+
+  var m=null;
+  var ks=Object.keys(H);
+  for(var i=0;i<ks.length;i++){
+    var k=ks[i];
+    if(t.indexOf(k)>=0||function(a,b){var c=0;for(var j=0;j<b.length;j++){if(a.indexOf(b[j])>=0)c++;}return c>b.length*0.6;}(t,k)){
+      m=H[k];break;
+    }
+  }
+
+  if(!m){
+    m={blockage:"需要进一步定位——描述中未命中已知堵点模式",bypass:"再具体一点：是什么让你今天/这周/这个月不能动？不是'为什么'，是'什么'。一个具体的东西。",type:"unknown"};
+  }
+
+  document.getElementById('results').innerHTML=
+    '<div class="result-item"><div class="label">🔴 堵点类型</div><div class="value"><span class="warning">'+(_L[m.type]||m.type)+'</span></div></div>'+
+    '<div class="result-item"><div class="label">📍 堵点定位</div><div class="value">'+m.blockage+'</div></div>'+
+    '<div class="result-item"><div class="label">🔧 绕过路径</div><div class="value"><span class="highlight">'+m.bypass+'</span></div></div>'+
+    '<div class="result-item"><div class="label">💡 核心原则</div><div class="value">只搬挡在你正走的路上的那一块砖。没撞到的堵点=脚手架，不动。系统骨架堵点永不拆。</div></div>';
+
+  document.getElementById('step1').classList.remove('active');
+  document.getElementById('step2').classList.add('active');
+}
+
+function reset(){
+  document.getElementById('problem').value='';
+  document.getElementById('step2').classList.remove('active');
+  document.getElementById('step1').classList.add('active');
+}
+</script>
+</body>
+</html>
