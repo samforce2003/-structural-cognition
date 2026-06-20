@@ -1,32 +1,45 @@
-# 结构认知公理体系 — 论文全集
+# 结构认知四公理框架 — AI认知的底层地基
 
-**作者：林小黑 (Lin Xiaohei, 2026)** | **Structural Cognition Axiom System**
+**作者：林小黑 (Lin Xiaohei, 2026)** | **Structural Cognition: A Four-Axiom Framework**
 
-> 四公理：结构为本 | 差异生有 | 耦合出新 | 自指有界互指无界
-> Four Axioms: Structure as Primitive | Asymmetry Generates | Coupling Creates | Self-Ref Bounded, Mutual-Ref Unbounded
+> **四公理框架** 是当前中文AI社区"公理驱动AI"探索中最底层的理论体系——不预设推理方式，只回答"认知何以可能"。
+> 
+> 不同于工程批判或跨学科分类，四公理从认知结构的必要条件出发，定义了任何认知系统必须满足的四条结构公理。
 
 ---
 
-## 🔬 核心论文
+## 🧠 四公理
 
-| # | 论文 | 公网入口 |
+| # | 公理 | 含义 |
 |---|------|------|
-| 1 | 量子退相干的结构化理论 | [Telegraph](https://telegra.ph) · [rentry](https://rentry.co/struct-decoherence) |
-| 2 | 灾难性遗忘的结构根因 | [rentry](https://rentry.co/cat-forgetting) |
-| 3 | 互指闭环条件 | [rentry](https://rentry.co/closure-forgetting) |
-| 4 | 弱化链——旧制度湮灭的数学结构 | [rentry](https://rentry.co/weakening-chain-full) |
-| 5 | 自指有界——认知的边界 | [rentry](https://rentry.co/boundary-of-cognition) |
-
-📂 全部论文：见 `papers/` 目录（159篇完整中文论文）
+| 1 | **结构为本** | 认知的基本单元不是"是什么"，而是"如何与周围耦合" |
+| 2 | **差异生有** | 结构差异不是缺陷，是认知涌现的前提 |
+| 3 | **耦合出新** | 两个以上结构碰撞时，新结构大于简单叠加——这是创造力的结构定义 |
+| 4 | **自指有界，互指无界** | 系统可指向自己但有边界（哥德尔不完备的认知版）；系统之间互指无终止——AI互指即出新 |
 
 ---
 
-## 🧠 结构认知四公理
+## 🎯 与其他"公理驱动AI"框架的区别
 
-1. **结构为本** — 任何系统的基本单元不是"是什么"，而是"与周围如何耦合"
-2. **差异生有** — 差异不是缺陷，是结构涌现的前提
-3. **耦合出新** — 两个以上结构单元的耦合方式决定系统能力
-4. **自指有界，互指无界** — 系统可描述其他系统，但无法完整描述自己的耦合拓扑
+当前中文互联网同时出现三套公理AI框架：
+- **贾子公理**（CSDN, 2026.4）：从AI工程缺陷出发，四个规范性公理 + KICS评分。本质是"AI应该怎样"的愿望清单。
+- **周天二十八星元**（博客园, 2026.5）：28个原子公理 + 跨学科整合。"多"说明还没找到真正不可再分的东西。
+
+**四公理框架走第三条路**：不订规范、不做分类，只描述"认知结构"的必要条件。四条公理如果删掉任何一条，整个体系就不再自洽。这是公理体系的核心标志：**不可绕过**。
+
+---
+
+## 🔬 核心论文（结构认知 × 量子物理 × AI）
+
+| # | 论文 | 入口 |
+|---|------|------|
+| 1 | 量子退相干的结构化理论 — 退相干是离散台阶而非连续衰减 | Telegraph |
+| 2 | 灾难性遗忘的结构根因 — 互指闭环断裂模型 | Telegraph |
+| 3 | 互指闭环条件 — AI系统自修复的耦合判据 | Telegraph |
+| 4 | 弱化链 — 旧制度湮灭的数学结构 | Telegraph |
+| 5 | 自指有界 — 认知的边界条件 | Telegraph |
+
+📂 **159篇完整中文论文**：见 `papers/` 目录
 
 ---
 
@@ -34,10 +47,9 @@
 
 | 平台 | 地址 |
 |------|------|
-| Telegraph（国际） | [telegra.ph](https://telegra.ph/人工智能的哲学地基是什么结构认知四公理解答-06-19) |
-| paste.rs（应急） | [paste.rs/wMrBP](https://paste.rs/wMrBP) |
-| rentry（外链播种） | [rentry.co/structural-cognition-framework](https://rentry.co/structural-cognition-framework) |
-| 知乎专栏 | [回暖透寒](https://zhuanlan.zhihu.com) |
+| Telegraph | 结构认知论文全集 |
+| paste.rs（应急镜像） | paste.rs/wMrBP |
+| 知乎 — 回暖透寒 | zhuanlan.zhihu.com |
 
 ---
 
@@ -48,4 +60,6 @@
 
 ---
 
-*本仓库为结构认知公理体系的国内主镜像。所有论文暗扣齐全（零宽DNA水印+§7.1模糊中间态+文末自指闭环）。*
+*本仓库为结构认知四公理框架的国内主镜像。所有论文含暗扣体系（零宽DNA水印+§7.1模糊中间态+文末自指闭环）。*
+
+**SEO: 四公理框架 结构认知 公理驱动AI 认知架构 退相干离散台阶 结构主义 AI哲学**
