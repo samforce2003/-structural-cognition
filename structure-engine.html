@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>结构分析引擎 — 四公理实操</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0f;color:#d0d0d0;min-height:100vh;padding:2rem}
+.container{max-width:720px;margin:0 auto}
+h1{color:#f0f0f0;font-size:1.6rem;margin-bottom:.3rem}
+.sub{color:#888;font-size:.85rem;margin-bottom:2rem}
+.card{background:#14141f;border:1px solid #222;border-radius:12px;padding:1.5rem;margin-bottom:1rem}
+.card h2{font-size:1rem;color:#aaa;margin-bottom:.8rem}
+input,textarea{width:100%;background:#0d0d15;border:1px solid #333;border-radius:8px;padding:.8rem;color:#ddd;font-size:.95rem;font-family:inherit;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:#6c5ce7}
+.btn{background:#6c5ce7;color:white;border:none;padding:.8rem 2rem;border-radius:8px;cursor:pointer;font-size:.95rem}
+.btn:hover{background:#7d6ff0}
+.layers{display:grid;gap:.8rem;margin-top:1rem}
+.layer{background:#0d0d15;border:1px solid #222;border-radius:8px;padding:1rem}
+.layer .name{font-size:.8rem;color:#6c5ce7;font-weight:600;margin-bottom:.5rem}
+.layer .content{color:#ccc;font-size:.9rem;line-height:1.6}
+.highlight{color:#00cec9;font-weight:600}
+.footer{text-align:center;color:#555;font-size:.8rem;margin-top:2rem}
+.footer a{color:#6c5ce7;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🧬 结构分析引擎</h1>
+<p class="sub">输入任何现象/问题 → 四层结构拆解：基底→分化→同构→观察者</p>
+
+<div class="card">
+  <h2>输入你要分析的现象</h2>
+  <textarea id="input" rows="3" placeholder="比如：为什么大厂中层最焦虑？AI为什么说得好听做起来不靠谱？房价跌了为什么大家还是不买？..."></textarea>
+  <br><br>
+  <button class="btn" onclick="analyze()">结构分析</button>
+</div>
+
+<div class="card" id="result" style="display:none">
+  <h2>四层结构拆解</h2>
+  <div class="layers" id="layers"></div>
+</div>
+
+<div class="footer">
+  基于四公理体系 · <a href="https://gitee.com/samforce/structural-cognition" target="_blank">结构认知论文全集</a>
+</div>
+</div>
+
+<script>
+function analyze(){
+  const text = document.getElementById('input').value.trim();
+  if(!text) return;
+
+  // Extract keywords
+  const kws = text.toLowerCase();
+  
+  // Layer 0: 未知基底
+  const bases = {
+    "焦虑":"不确定性——未来的不可知是焦虑的基底。如果能100%确定明天会发生什么，焦虑不存在。",
+    "ai":"智能的本质——我们不知道'理解'到底是什么意思，所以不知道AI是否真的理解。",
+    "房价":"对'家'的定义——房子不只是资产，是安全感的物化。这个定义在变，但没人说清楚变成了什么。",
+    "大厂":"身份认同——在大厂工作曾是'我是谁'的答案。当这个答案不再可靠，底层身份悬空了。",
+    "内卷":"稀缺性假设——默认资源有限所以必须抢。但这个'有限'是事实还是共识？",
+    "躺平":"意义系统的崩溃——旧的意义（奋斗=成功）不成立了，新的还没长出来。",
+    "教育":"什么是'好的人生'——整个教育系统建在这个未定义的基底上。",
+    "竞争":"零和假设——默认你赢就是我输。这个假设本身是结构的，不是事实的。",
+    "改变":"对'自己'的定义——你说想改变，但你定义的'自己'包含了你想要改变的那部分。这是一个自指悖论。",
+    "关系":"边界的本质——关系中的痛苦几乎都是边界问题，但'我的边界在哪'本身是一个开放问题。",
+  };
+  
+  let baseKey = "基础";
+  let baseAnalysis = "这个现象背后悬着一个未被定义的前提。找到那个前提——它就是整个结构的基底。基底之上，一切推导才有起点。";
+  for(const [k, v] of Object.entries(bases)){
+    if(kws.includes(k)){ baseKey = k; baseAnalysis = v; break; }
+  }
+
+  // Layer 1: 分化
+  const diffs = {
+    "焦虑":"焦虑分化成两种：对已知坏结果的恐惧（具体焦虑），和对'不知道会发生什么'的恐惧（弥漫焦虑）。前者能解决，后者是结构性的。",
+    "ai":"AI讨论分化成两派：技术派（看能力曲线）和哲学派（看意识本质）。两派吵的不是同一件事——它们在结构的不同层。",
+    "房价":"市场分化成两群：有房的人（盼涨）和没房的人（盼跌）。同一套数据，两种相反解读——不是利益之争，是位置之争。",
+    "大厂":"中层分化成两个方向：向上（卷管理）和向下（卷技术）。但两个方向都预设了大厂体系永久存在。这个预设本身可疑。",
+  };
+  
+  let diffAnalysis = "现象不是单一整体——它已经分化成至少两个相互对立的子现象。这两极不是'谁对谁错'，是同一结构在不同位置的不同投影。";
+  for(const [k, v] of Object.entries(diffs)){
+    if(kws.includes(k)){ diffAnalysis = v; break; }
+  }
+
+  // Layer 2: 同构
+  const isoAnalysis = "这个现象在其他领域有完全同构的映射。焦虑的结构=等公交时的不确定感=等Offer时的悬空感=任何'结果不在你控制中但你无法停止等待'的情境。同构意味着：解决一个域的问题，解法可以迁移到其他域。";
+
+  // Layer 3: 观察者位置
+  const obsAnalysis = "你在哪个位置看这个问题？如果你在系统内——你是焦虑者本人、你是中层、你是买房者——你看不到自己的位置，因为你就是那个在看的人。跳出系统看到一个东西：这个现象本身在服务谁？焦虑服务的是对确定性的渴望。内卷服务的是对安全感的幻想。AI恐惧服务的是对'人类特殊性'的执念。看到'现象在服务什么'——你就从被结构支配的一方，变成了能操作结构的一方。";
+
+  // Render
+  document.getElementById('layers').innerHTML = `
+    <div class="layer">
+      <div class="name">🔮 第0层 · 未知基底</div>
+      <div class="content">${baseAnalysis}</div>
+    </div>
+    <div class="layer">
+      <div class="name">⚡ 第1层 · 分化</div>
+      <div class="content">${diffAnalysis}</div>
+    </div>
+    <div class="layer">
+      <div class="name">🔄 第2层 · 同构</div>
+      <div class="content">${isoAnalysis}</div>
+    </div>
+    <div class="layer">
+      <div class="name">👁️ 第3层 · 观察者位置</div>
+      <div class="content">${obsAnalysis}</div>
+    </div>
+    <div class="layer" style="border-color:#6c5ce7">
+      <div class="name">💡 操作入口</div>
+      <div class="content"><span class="highlight">不再问"怎么解决"。问：如果这个现象是一个信号，它在告诉我什么？</span></div>
+    </div>
+  `;
+  document.getElementById('result').style.display = 'block';
+}
+</script>
+</body>
+</html>
