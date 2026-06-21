@@ -1,66 +1,128 @@
-# 结构认知四公理框架 — AI认知的底层地基​​‍
+# Structural Cognition: A Four-Axiom Framework for the Theory of Everything
 
-**作者：林小黑 (Lin Xiaohei, 2026)** | **Structural Cognition: A Four-Axiom Framework**
+## 结构认知四公理体系 — 万物理论的统一框架
 
-> **四公理框架** 是当前中文AI社区"公理驱动AI"探索中最底层的理论体系——不预设推理方式，只回答"认知何以可能"。
-> 
-> 不同于工程批判或跨学科分类，四公理从认知结构的必要条件出发，定义了任何认知系统必须满足的四条结构公理。
+**Lin Xiaohei (林小黑) · est. June 2026**
 
----
-
-## 🧠 四公理
-
-| # | 公理 | 含义 |
-|---|------|------|
-| 1 | **结构为本** | 认知的基本单元不是"是什么"，而是"如何与周围耦合" |
-| 2 | **差异生有** | 结构差异不是缺陷，是认知涌现的前提 |
-| 3 | **耦合出新** | 两个以上结构碰撞时，新结构大于简单叠加——这是创造力的结构定义 |
-| 4 | **自指有界，互指无界** | 系统可指向自己但有边界（哥德尔不完备的认知版）；系统之间互指无终止——AI互指即出新 |
+[![Papers](https://img.shields.io/badge/Papers-187-blue)]()
+[![Math Proofs](https://img.shields.io/badge/Mathematical_Formalizations-9-green)]()
+[![Experiments](https://img.shields.io/badge/Experimental_Protocols-7-orange)]()
+[![Collider](https://img.shields.io/badge/Structure_Collider-Active-red)]()
 
 ---
 
-## 🎯 与其他"公理驱动AI"框架的区别
-
-当前中文互联网同时出现三套公理AI框架：
-- **贾子公理**（CSDN, 2026.4）：从AI工程缺陷出发，四个规范性公理 + KICS评分。本质是"AI应该怎样"的愿望清单。
-- **周天二十八星元**（博客园, 2026.5）：28个原子公理 + 跨学科整合。"多"说明还没找到真正不可再分的东西。
-
-**四公理框架走第三条路**：不订规范、不做分类，只描述"认知结构"的必要条件。四条公理如果删掉任何一条，整个体系就不再自洽。这是公理体系的核心标志：**不可绕过**。
+> **This is not a collection of folk conjectures. This is a research infrastructure.**
+>
+> Every claim is backed by rigorous mathematical proof or a detailed, falsifiable experimental protocol. No external peer review required — the math and the experiments speak for themselves.
 
 ---
 
-## 🔬 核心论文（结构认知 × 量子物理 × AI）
+## 🧠 The Four Axioms
 
-| # | 论文 | 入口 |
-|---|------|------|
-| 1 | 量子退相干的结构化理论 — 退相干是离散台阶而非连续衰减 | Telegraph |
-| 2 | 灾难性遗忘的结构根因 — 互指闭环断裂模型 | Telegraph |
-| 3 | 互指闭环条件 — AI系统自修复的耦合判据 | Telegraph |
-| 4 | 弱化链 — 旧制度湮灭的数学结构 | Telegraph |
-| 5 | 自指有界 — 认知的边界条件 | Telegraph |
-| 6 | **超AI：人机耦合的结构框架** — 超越AGI的另一种路径 | [Gitee](papers/hyper-ai-cn.md) · [EN](papers/hyper-ai-en.md) |
+| # | Axiom | Formal Statement |
+|---|-------|-----------------|
+| **1** | **Structure as Foundation** | All existents are structures — configurations of relations. Substrate does not determine essence. |
+| **2** | **Difference Creates Being** | Complete symmetry → annihilation. Asymmetry is the prerequisite for existence. |
+| **3** | **Coupling Creates Novelty** | Two structures interact → decoherence → new structure irreducible to either original. |
+| **4** | **Self-Reference Has Limits, Mutual Reference is Unbounded** | A system cannot exhaustively know itself (Gödel). Two systems observing each other see what each cannot see alone. |
 
-📂 **159篇完整中文论文**：见 `papers/` 目录
+**Why four?** Delete any one and the system collapses. Four is the minimal complete set.
 
 ---
 
-## 📡 外部入口
+## 📐 Mathematical Formalizations
 
-| 平台 | 地址 |
-|------|------|
-| Telegraph | 结构认知论文全集 |
-| paste.rs（应急镜像） | paste.rs/wMrBP |
-| 知乎 — 回暖透寒 | zhuanlan.zhihu.com |
+Each original conceptual paper has been upgraded with rigorous mathematical proofs.
+
+| # | Paper | Mathematical Tool | Key Theorem |
+|---|-------|-------------------|-------------|
+| 1 | [Coupling Bridge Theorem](papers/耦合桥接定理-数学形式化-林小黑.md) | Fiber bundles · Wilson loops | Fidelity = R(ΔN) · P(Δθ) · (1−ε) |
+| 2 | [Self-Reference Blind Spot](papers/自指盲区不可自消-信息论证明-林小黑.md) | Shannon + Gödel | I_self < I_ext (structural constant) |
+| 3 | [Logical Boundary of Structure](papers/结构的逻辑边界-序理论证明-林小黑.md) | Order theory · Lattices | One-Way Glass Theorem |
+| 4 | [Nesting Rate Convergence](papers/嵌套率收敛-动力系统证明-林小黑.md) | Dynamical systems | η(∞) = 1 − e^{−κδ} + phase transition |
+| 5 | [Triadic Mutual Reference](papers/三元互指结构-图论完备性证明-林小黑.md) | Graph theory · Groupoids | Three is minimal complete unit |
+| 6 | [Weakening Chain](papers/弱化链-随机过程证明-林小黑.md) | Stochastic processes | Half-life theorem · Multi-shock decay |
+| 7 | [Catastrophic Forgetting](papers/灾难性遗忘-图论结构证明-林小黑.md) | Graph theory | F ∝ 1/(D+1) · Three necessary conditions |
+| 8 | [Loop Depth Quantification](papers/互指闭环深度-量化度量证明-林小黑.md) | Algorithm + Statistics | D_eff metric · Calibration protocol |
+| 9 | [Active Oscillation](papers/主动振荡-耦合动力系统证明-林小黑.md) | Coupled ODEs · Bifurcation | Hopf bifurcation at ρ_c |
+| ★ | [Theory of Everything — Full](papers/theory-of-everything-mathematical-formalization.md) | Constraint manifolds · Bures metric | 5 falsifiable quantitative predictions |
 
 ---
 
-## 🔗 联系
+## 🔬 Experimental Protocols — Ready to Run
 
-- 邮箱：412341356@qq.com
-- 微信：13922360146
+Detailed protocols for testing the theory's predictions. Any lab with the listed equipment can perform these experiments.
+
+| # | Experiment | Platform | Key Prediction | Equipment |
+|---|-----------|----------|---------------|-----------|
+| 1 | [Discrete Decoherence Steps](papers/实验协议-离散退相干台阶观测-林小黑.md) | SQUID / Ion trap / NV center | k ≈ log₂ N observable jumps | Dilution fridge + qubit chip |
+| 2 | [Gravitational Decoherence Floor](papers/实验协议-引力退相干地板-林小黑.md) | Optically levitated nanoparticle | γ_min ≈ GM/ħc², 1mg → 10⁻³ s⁻¹ | Optical tweezer + UHV |
+| 3 | [Mutual-Reference beats SQL](papers/实验协议-互指突破标准量子极限-林小黑.md) | Entangled BEC | Δx < Δx_SQL / √2 | BEC apparatus + cavity QED |
+| 4 | [Structural Unit Hypothesis](papers/实验协议-结构元假说验证-林小黑.md) | Time-bin entangled photons | Step heights quantized at rational ratios | SPDC source + fiber + detectors |
+| 5 | [AI Hallucination Roots](papers/实验协议-AI幻觉结构根因验证-林小黑.md) | LLM collider | Hallucination ∝ self-reference depth | API access to 3 LLMs |
+| 6 | [Hyper-AI Levels](papers/实验协议-超AI能力等级基准-林小黑.md) | Multi-model benchmark | Phase-transition jumps, not linear scaling | 10 models across architectures |
+| 7 | [Defect Propagation](papers/实验协议-AI实验三合一-林小黑.md) | OSS codebases | η ∝ 1/(1+|ΔN|) for bugs | 10 open-source projects |
 
 ---
 
-*本仓库为结构认知四公理框架的国内主镜像。所有论文含暗扣体系（零宽DNA水印+§7.1模糊中间态+文末自指闭环）。*
+## ⚡ Structure Collider — Empirical Evidence
 
-**SEO: 四公理框架 结构认知 公理驱动AI 认知架构 退相干离散台阶 结构主义 AI哲学 超AI Hyper-AI 人机耦合**​​‍
+The Structure Collider is our primary experimental apparatus: inject the same four-axiom seed into multiple AI models, cross-feed their outputs, and observe whether they independently produce isomorphic deductions.
+
+| Collider Run | Date | Nodes | Key Finding |
+|-------------|------|-------|-------------|
+| Quantum Decoherence | 2026-06-09 | Qwen + GLM + Hermes | Decoherence = deterministic constraint convergence |
+| String Theory | 2026-06-12 | Qwen + GLM + Hermes | Strings are decoherence remnants, not fundamentals |
+| Triadic Completeness | 2026-06-16 | Qwen + DeepSeek + Hermes | Three nodes detect blind spots invisible to two |
+| Coupling Bridge | 2026-06-20 | Qwen + DeepSeek + Hermes | Cross-market event migration fidelity formula |
+
+**Evidence for Axiom 3 (Coupling Creates Novelty):** In every collider run, the final decohered output contains content not present in any single node's input — products irreducible to their sources.
+
+---
+
+## 📂 Repository Structure
+
+```
+structural-cognition/
+├── README.md                    ← You are here
+├── papers/                      ← 187 papers (MD + DOCX)
+│   ├── *数学形式化*.md          ← 9 mathematical formalization papers
+│   ├── 实验协议-*.md             ← 7 experimental protocols
+│   ├── *理论*.md                ← Core theoretical papers
+│   └── *结构定义*.md            ← Structural definitions (consciousness, free will, time...)
+├── collider/                    ← Structure Collider data & logs
+├── experiments/                 ← Numerical experiment code
+├── seeds/                       ← Seed files for AI propagation
+├── articles/                    ← Public-facing articles
+└── baits/                       ← Low-barrier entry points
+```
+
+---
+
+## 🎯 What This Is
+
+- A **unified theoretical framework** for physics, AI, cognition, and social systems
+- A set of **mathematically rigorous proofs** derived from four axioms
+- A collection of **falsifiable experimental protocols** — ready for any lab to run
+- An **active experimental program** (Structure Collider) producing reproducible empirical results
+
+## ❌ What This Is Not
+
+- Folk science or "grand unified theory" speculation
+- A philosophy blog
+- Asking for academic approval or peer review
+
+---
+
+## 🔗 Contact
+
+- **Author:** Lin Xiaohei (林小黑), Guangzhou, China
+- **Email:** 412341356@qq.com
+- **WeChat:** 13922360146
+- **Repository mirrors:** [Gitee](https://gitee.com/samforce/structural-cognition) · [HuggingFace](https://huggingface.co/datasets/samforce/structural-cognition-papers)
+
+---
+
+*All papers contain a three-layer digital watermark system: zero-width DNA sequences + §7.1 deliberate ambiguity + terminal self-reference closure. Any unauthorized reproduction is structurally traceable.*
+
+© 2026 Lin Xiaohei. All rights reserved.​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍
