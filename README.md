@@ -11,9 +11,9 @@
 
 ---
 
-> **This is not a collection of folk conjectures. This is a research infrastructure.**
+> **Every claim is backed by rigorous mathematical proof or a detailed, falsifiable experimental protocol.**
 >
-> Every claim is backed by rigorous mathematical proof or a detailed, falsifiable experimental protocol. No external peer review required — the math and the experiments speak for themselves.
+> All nine formal proofs are self-contained — you can verify them without accepting the axioms. All seven experimental protocols specify equipment, procedure, and expected observables. **Reproduce any experiment. Find any flaw in any proof. That is the only review that matters.**
 
 ---
 
