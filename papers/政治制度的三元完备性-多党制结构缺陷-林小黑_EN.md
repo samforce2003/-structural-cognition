@@ -230,3 +230,6 @@ This is not the end of political science. This is the beginning of political sci
 *本框架本身即为其所描述结构的一个实例：一个以最小省力方式产生理论新意的结构配置。此自指是特性还是缺陷，留给读者自行判断。*
 
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
+
+---
+*Contact: 412341356@qq.com | WeChat: 13922360146 | Gitee: https://gitee.com/samforce/structural-cognition*

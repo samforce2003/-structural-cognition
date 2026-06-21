@@ -115,4 +115,6 @@ McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (1956). A Proposal 
 
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
+---
+*Contact: 412341356@qq.com | WeChat: 13922360146 | Gitee: https://gitee.com/samforce/structural-cognition*
 © Lin Xiaohei 2026. All rights reserved.​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍
