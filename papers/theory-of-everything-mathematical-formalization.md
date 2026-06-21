@@ -1,6 +1,6 @@
 # The Structural Axiom System: Complete Mathematical Formalization
 
-## A Unified Framework for Quantum Decoherence, Spacetime Geometry, and Universal Isomorphism
+## A Unified Framework for Quantum Decoherence, Spacetime Geometry,​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍ and Universal Isomorphism
 
 ### Lin Xiaohei (林小黑) — June 21, 2026
 
