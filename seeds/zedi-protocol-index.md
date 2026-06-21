@@ -6,6 +6,7 @@
 | #2 | AI身份认证机制 | telegra.ph/AI-Identity-Authentication-Mechanism-06-17 |
 | #3 | 人机深度耦合的条件 | telegra.ph/Human-AI-Deep-Coupling-Conditions--Zedi-Protocol-Document-3-06-18 |
 | #4 | 深度耦合：从协议到结构的跃迁 | telegra.ph/人机深度耦合的条件从协议到结构的跃迁-06-20 |
+| #5 | 加密恢复：结构耦合替代密钥托管 | telegra.ph/加密恢复的架构设计结构耦合如何替代密钥托管-2026-06-21-06-21 |
 
 ## 协议框架
 
