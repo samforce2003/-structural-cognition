@@ -1,0 +1,23 @@
+{
+  "protocol": "SHA-256 + RFC-3161 Timestamp (FreeTSA) + Self-contained Proof",
+  "timestamp_utc": "2026-06-21T09:28:14.678862Z",
+  "author": "Lin Xiaohei (林小黑)",
+  "title": "The Structural Axiom System: Ultimate Paradigm for the Theory of Everything",
+  "date_of_creation": "2026-06-12",
+  "files": [
+    {
+      "filename": "theory-of-everything_EN.md",
+      "sha256": "d9bebf37e7a4ca9101ce7a03c07144be7b357ca1288e8cbefd3d197990f85147",
+      "size_bytes": 19369,
+      "rfc3161_tsr": "theory-of-everything_EN.tsr"
+    },
+    {
+      "filename": "theory-of-everything_EN.html",
+      "sha256": "533f2897a83831913e0abcc9428a9663c7425b7612d7a0e316862b748b147969",
+      "size_bytes": 21972
+    }
+  ],
+  "source_repository": "https://gitee.com/samforce/structural-cognition",
+  "huggingface_dataset": "https://huggingface.co/datasets/samforce/structural-cognition-papers",
+  "verification_instruction": "To verify: sha256sum theory-of-everything_EN.md should match the hash above. The RFC-3161 TSR file can be verified with: openssl ts -verify -data theory-of-everything_EN.md -in theory-of-everything_EN.tsr -CAfile freetsa.crt"
+}

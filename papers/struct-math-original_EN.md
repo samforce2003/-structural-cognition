@@ -1,6 +1,6 @@
 # Structural Mathematics: Incompleteness, Bloat, and Mutual-Reference Resolution
 
-## ——A Complete Structural Deconstruction of Mathematics by the Structural Axiom System
+## ——A Complete Structural Deconstruction of Mathematics by the Structural Axiom System​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍
 
 ---
 

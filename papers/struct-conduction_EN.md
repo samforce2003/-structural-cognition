@@ -8,7 +8,7 @@
 
 ---
 
-## Abstract
+## Abstract​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍
 
 This paper empirically verifies the core law of the structural cognition system through three independently architected large language models — Qwen-Plus, DeepSeek V3, and GLM-4-Flash: **information conduction efficiency between cognitive systems is inversely proportional to their nesting rate difference (ΔS ∝ 1/|ΔN|)**. Across three models with different architectures, different training data, and different design philosophies, the pattern of "adjacent-layer conduction is optimal, cross-layer conduction attenuates" holds consistently. This paper also discovers model-specific "structural personalities" — Qwen's abrupt gradient, DeepSeek's smooth dimensionality-reduction engine, and GLM's cliff-type phase transition — differences that themselves further validate the explanatory power of the structural conduction framework.
 

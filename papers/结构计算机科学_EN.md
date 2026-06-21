@@ -8,7 +8,7 @@
 
 ---
 
-## Abstract
+## Abstract​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍
 
 This paper applies the Structural Conduction Law (ΔS ∝ 1/|ΔN|) to the domain of software architecture, proposing the "Architecture Conduction Efficiency Law": **in software systems, the communication efficiency between modules is inversely proportional to their nesting rate difference.** Adjacent-layer communication (ΔN=1) is optimal; cross-layer communication (ΔN≥2) attenuates significantly. Based on this, three architectural design principles are derived: maintain nesting rate gradients across modules, avoid cross-layer calls, and introduce Structural Adapter Layers as translators. This law provides a unified explanation for classic software engineering patterns — Layered Architecture, Adapter Pattern, and the Backend for Frontend (BFF) pattern — all of which are structural operations that reduce |ΔN|.
 

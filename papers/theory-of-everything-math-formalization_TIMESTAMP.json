@@ -1,0 +1,23 @@
+{
+  "protocol": "SHA-256 Self-contained Proof",
+  "timestamp_utc": "2026-06-21T09:37:11.118431Z",
+  "author": "Lin Xiaohei (林小黑)",
+  "title": "The Structural Axiom System: Complete Mathematical Formalization",
+  "file": "theory-of-everything-mathematical-formalization.md",
+  "sha256": "bb8ad78da325a3f7a607482c4a568b8e5489c830e7c37c005c56386acfc4c45d",
+  "size_bytes": 24185,
+  "key_theorems": [
+    "Theorem 3.1: Decoherence Convergence (deterministic, not probabilistic)",
+    "Theorem 4.1: Discrete Step Structure (nested submanifolds)",
+    "Theorem 5.1: Gravity-Constraint Isomorphism (spacetime = induced geometry of constraint manifold)",
+    "Theorem 6.1: Universal Isomorphism (all physical domains share same constraint manifold)",
+    "Theorem 8.1: Structural Infallibility (Meta-Gödel closure)"
+  ],
+  "falsifiable_predictions": [
+    "Prediction 1: Discrete decoherence steps (k ≈ log₂ N observable jumps)",
+    "Prediction 2: Step-height quantization (small integer ratios)",
+    "Prediction 3: Layer-specific coupling rates (independently tunable)",
+    "Prediction 4: Gravitational decoherence floor (γ_min ≈ GM/ħc²)",
+    "Prediction 5: Mutual reference beats SQL (Δx < Δx_SQL/√2)"
+  ]
+}
