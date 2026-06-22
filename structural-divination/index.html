@@ -59,6 +59,16 @@ input:focus,textarea:focus,select:focus{border-color:#555}
 .loading{text-align:center;padding:30px;color:var(--dim);display:none}
 .loading.show{display:block}
 .warn{font-size:10px;color:#444;text-align:center;padding:24px 16px;letter-spacing:1px}
+/* Modal overlay */
+.overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.75);z-index:100;justify-content:center;align-items:flex-start;padding-top:10vh}
+.overlay.show{display:flex}
+.overlay-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 22px 22px;width:90%;max-width:380px;position:relative}
+.overlay-card h3{font-size:16px;font-weight:400;text-align:center;margin-bottom:18px;letter-spacing:2px}
+.overlay-close{position:absolute;top:10px;right:14px;font-size:20px;color:var(--dim);cursor:pointer;line-height:1}
+.overlay-hint{font-size:11px;color:var(--dim);text-align:center;margin:12px 0 6px;letter-spacing:1px}
+.overlay-success{display:none;text-align:center;padding:10px 0}
+.overlay-success.show{display:block}
+.overlay-success .wx{font-size:18px;color:var(--gold);margin:8px 0;letter-spacing:1px}
 </style>
 </head>
 <body>
@@ -83,9 +93,12 @@ input:focus,textarea:focus,select:focus{border-color:#555}
     <div class="mode-card wide" onclick="openMode('blockage')">
       <span class="mode-icon">🔍</span><div class="mode-name">算 堵 点</div><div class="mode-desc">找到真正的瓶颈——不是你嘴上说的那个问题</div>
     </div>
-    <div class="mode-card wide" style="border-color:var(--gold);background:#1a1a08;" onclick="window.location.href='weixin://dl/chat?13922360146'">
+    <div class="mode-card wide" style="border-color:var(--gold);background:#1a1a08;" onclick="openServiceModal()">
       <span class="mode-icon">💎</span><div class="mode-name">定制服务 · 联系客服</div><div class="mode-desc">个人深度咨询 / 企业组织诊断 / 专属方案设计</div>
     </div>
+  </div>
+  <div style="text-align:center;padding:6px 16px 10px;font-size:11px;color:var(--dim);line-height:1.9;letter-spacing:1px;max-width:420px;margin:0 auto">
+    结构分析给出<strong style="color:var(--gold)">方向</strong>，不是精确答案。<br>越具体的条件越不准——结构是动态的，受现实因素影响。<br>想知精细条件下的解决方案 → 走<strong style="color:var(--gold)">定制化服务</strong>
   </div>
 </div>
 
@@ -196,7 +209,7 @@ function resultCard(title,icon, sections){
     if(s.tags) s.tags.forEach(t=>{h+=' <span class="tag">'+t+'</span>'});
     h+='</div></div>';
   });
-  h+='<div class="res-footer">结构镜 · 五维分析</div>';
+  h+='<div class="res-footer">以上为结构方向分析。精细方案 → <span style="color:var(--gold)">定制服务</span></div>';
   return h;
 }
 
@@ -524,6 +537,61 @@ function analyzeBlockage(){
     document.getElementById('blockResult').scrollIntoView({behavior:'smooth'});
   ;
 }
+// ====== 定制服务弹窗 ======
+function openServiceModal(){
+  document.getElementById('serviceOverlay').classList.add('show');
+  document.getElementById('serviceForm').style.display='block';
+  document.getElementById('serviceSuccess').classList.remove('show');
+  document.getElementById('svcName').value='';
+  document.getElementById('svcContact').value='';
+  document.getElementById('svcNeeds').value='';
+  document.getElementById('svcReferrer').value='';
+}
+function closeServiceModal(){
+  document.getElementById('serviceOverlay').classList.remove('show');
+}
+function submitService(){
+  var name=document.getElementById('svcName').value.trim();
+  var contact=document.getElementById('svcContact').value.trim();
+  if(!name||!contact){alert('请填写姓名和微信号');return}
+  var ref=document.getElementById('svcReferrer').value.trim();
+  var refPart=ref ? ' | 介绍人：'+ref : '';
+  var msg='你好，我是'+name+'（微信：'+contact+'），想咨询定制服务。'+refPart;
+  // 复制到剪贴板 -> 加微信后粘贴
+  navigator.clipboard.writeText(msg).then(function(){
+    // 切到成功页
+    document.getElementById('serviceForm').style.display='none';
+    document.getElementById('serviceSuccess').classList.add('show');
+  }).catch(function(){
+    // clipboard 失败也放行
+    document.getElementById('serviceForm').style.display='none';
+    document.getElementById('serviceSuccess').classList.add('show');
+  });
+}
 </script>
+
+<!-- 定制服务弹窗 -->
+<div class="overlay" id="serviceOverlay" onclick="if(event.target===this)closeServiceModal()">
+  <div class="overlay-card">
+    <span class="overlay-close" onclick="closeServiceModal()">✕</span>
+    <h3>💎 定制服务</h3>
+    <div id="serviceForm">
+      <label>姓名</label><input type="text" id="svcName" placeholder="怎么称呼您">
+      <label>微信号</label><input type="text" id="svcContact" placeholder="方便联系到您">
+      <label>需求简述</label><textarea id="svcNeeds" placeholder="想聊什么方向…"></textarea>
+      <label>介绍人（选填）</label><input type="text" id="svcReferrer" placeholder="是谁推荐您来的？">
+      <button class="btn" onclick="submitService()">提 交</button>
+      <div class="overlay-hint">个人咨询 ¥9.9起 &nbsp;|&nbsp; 企业组织诊断 ¥500起<br>如有介绍人，成交后可获红包答谢</div>
+    </div>
+    <div class="overlay-success" id="serviceSuccess">
+      <p style="font-size:14px;margin-bottom:8px">提交成功 ✓</p>
+      <p style="font-size:12px;color:var(--dim);">直接添加微信，注明您的姓名即可：</p>
+      <div class="wx">13922360146</div>
+      <button class="btn" style="margin-top:14px;background:var(--green);" onclick="window.location.href='weixin://dl/chat?13922360146'">打开微信</button>
+      <button class="btn" style="margin-top:8px;background:transparent;border:1px solid var(--border);color:var(--dim);" onclick="closeServiceModal()">关闭</button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
