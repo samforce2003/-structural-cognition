@@ -94,6 +94,75 @@
   .btn:hover { background: #e0b860; }
   .btn:disabled { background:#333; color:#666; cursor:not-allowed; }
 
+  .mode-btn {
+    flex:1;
+    padding:10px;
+    background:transparent;
+    border:1px solid var(--border);
+    border-radius:8px;
+    color:var(--dim);
+    font-size:13px;
+    cursor:pointer;
+    font-family:inherit;
+    letter-spacing:1px;
+  }
+  .mode-btn.active {
+    background:var(--card);
+    border-color:#555;
+    color:var(--text);
+  }
+
+  .paywall {
+    background:#1a1a0a;
+    border:1px solid #3a3a1a;
+    border-radius:8px;
+    padding:20px;
+    text-align:center;
+    margin-top:16px;
+  }
+  .paywall-title {
+    font-size:15px;
+    color:var(--gold);
+    margin-bottom:8px;
+  }
+  .paywall-price {
+    font-size:28px;
+    color:var(--gold);
+    font-weight:700;
+    margin:12px 0;
+  }
+  .paywall-desc {
+    font-size:12px;
+    color:#888;
+    line-height:1.8;
+    margin-bottom:16px;
+  }
+  .pay-btn {
+    display:inline-block;
+    padding:12px 32px;
+    background:var(--gold);
+    color:#0a0a0a;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    letter-spacing:2px;
+    font-family:inherit;
+  }
+  .qr-section {
+    display:none;
+    margin-top:20px;
+    padding:16px;
+    background:#111;
+    border-radius:8px;
+  }
+  .qr-section img {
+    width:180px;
+    height:180px;
+    border-radius:8px;
+  }
+
   /* 结果卡片 */
   .result-card {
     background: var(--card);
@@ -219,6 +288,12 @@
 <div class="form-card">
   <h2>输入姓名 · 查看结构</h2>
 
+  <label>模式</label>
+  <div style="display:flex;gap:10px;margin-bottom:20px;">
+    <button type="button" id="modeDivination" class="mode-btn active" onclick="switchMode('divination')">三层分析</button>
+    <button type="button" id="modeBlockage" class="mode-btn" onclick="switchMode('blockage')">堵点诊断</button>
+  </div>
+
   <label>姓名（中文2-4字）</label>
   <input type="text" id="nameInput" placeholder="输入真实姓名" maxlength="6" autocomplete="off">
 
@@ -245,6 +320,20 @@
   <div class="layer" id="shellLayer"></div>
   <div class="layer" id="driveLayer"></div>
   <div class="layer" id="gateLayer"></div>
+  <div class="paywall" id="paywall" style="display:none;">
+    <div class="paywall-title">🔒 深度完整报告</div>
+    <div class="paywall-desc">
+      含堵点形成机制 · 五行生克全链 · 耦合匹配建议 · 个性化行动路径<br>
+      人工结构分析，不是模板生成
+    </div>
+    <div class="paywall-price">¥9.9</div>
+    <button class="pay-btn" onclick="showPayment()">微 信 扫 码 解 锁</button>
+    <div class="qr-section" id="qrSection">
+      <p style="color:#888;font-size:12px;margin-bottom:12px;">微信扫码支付 ¥9.9<br>支付后截图发微信</p>
+      <p style="color:var(--gold);font-size:14px;letter-spacing:1px;">微信：13922360146</p>
+      <p style="color:#666;font-size:11px;margin-top:8px;">30分钟内发送完整报告</p>
+    </div>
+  </div>
   <div class="result-footer" id="resultFooter"></div>
 </div>
 
@@ -253,6 +342,24 @@
 <div class="warning">结构分析基于结构认知框架 · 仅供娱乐参考</div>
 
 <script>
+// ====== 模式切换 ======
+let currentMode = 'divination';
+
+function switchMode(mode) {
+  currentMode = mode;
+  document.getElementById('modeDivination').classList.toggle('active', mode === 'divination');
+  document.getElementById('modeBlockage').classList.toggle('active', mode === 'blockage');
+  const h2 = document.querySelector('.form-card h2');
+  h2.textContent = mode === 'divination' ? '输入姓名 · 查看结构' : '描述堵点 · 定位根因';
+  // 隐藏旧结果
+  document.getElementById('resultCard').style.display = 'none';
+  document.getElementById('shareBtn').style.display = 'none';
+}
+
+function showPayment() {
+  document.getElementById('qrSection').style.display = 'block';
+}
+
 // ====== 结构算命引擎 ======
 
 // 汉字结构数据库
@@ -492,6 +599,7 @@ function analyze() {
 
     cardEl.style.display = 'block';
     shareBtn.style.display = 'block';
+    document.getElementById('paywall').style.display = 'block';
     cardEl.scrollIntoView({ behavior: 'smooth' });
   }, 1500);
 }
