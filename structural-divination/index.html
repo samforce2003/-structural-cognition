@@ -60,6 +60,10 @@ input:focus,textarea:focus,select:focus{border-color:#555}
 .tier-btn{display:block;width:100%;padding:9px;background:transparent;border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:12px;text-align:center;cursor:pointer;letter-spacing:1px;font-family:inherit;transition:.15s}
 .tier-btn:active{background:#1a1a1a}
 .tier.paid .tier-btn{border-color:var(--gold);color:var(--gold)}
+/* 内测解锁 */
+.paywall.unlocked .tier{display:none}
+.paywall.unlocked::before{content:'🔓 内测体验版 · 已解锁深度报告';display:block;text-align:center;padding:16px;color:var(--gold);font-size:13px;letter-spacing:2px;border:1px dashed var(--gold);border-radius:8px;margin-bottom:8px}
+.paywall.unlocked{display:block}
 .share-btn{display:none;max-width:420px;margin:8px auto 24px;padding:12px;background:transparent;border:1px solid var(--border);border-radius:8px;color:var(--dim);font-size:12px;text-align:center;cursor:pointer;letter-spacing:2px;font-family:inherit}
 .share-btn.show{display:block}
 .snap-btn{display:none;max-width:420px;margin:4px auto;padding:12px;background:transparent;border:1px solid var(--gold);border-radius:8px;color:var(--gold);font-size:13px;text-align:center;cursor:pointer;letter-spacing:3px;font-family:inherit}
@@ -212,6 +216,29 @@ input:focus,textarea:focus,select:focus{border-color:#555}
 <div class="warn">结构镜 · 基于结构认知框架 · 仅供娱乐参考</div>
 
 <script>
+// ====== 解锁Token系统 ======
+var UNLOCK_TOKENS=['INVT01','INVT02','INVT03','INVT04','INVT05'];
+var _unlocked=false;
+(function checkUnlock(){
+  var h=location.hash||'';
+  var m=h.match(/unlock=(\w+)/);
+  if(!m)return;
+  var token=m[1];
+  // 检查token是否有效
+  if(UNLOCK_TOKENS.indexOf(token)===-1)return;
+  // 检查是否已在本设备使用过
+  var used=JSON.parse(localStorage.getItem('su_used')||'[]');
+  if(used.indexOf(token)>-1){alert('此体验链接已使用，每个内测码仅限一次');return}
+  // 解锁
+  used.push(token);
+  localStorage.setItem('su_used',JSON.stringify(used));
+  _unlocked=true;
+  // 清除URL中的token
+  history.replaceState(null,'',location.pathname);
+  // 标记所有paywall为解锁态
+  document.querySelectorAll('.paywall').forEach(function(p){p.classList.add('unlocked')});
+})();
+
 // ====== 导航 ======
 function openMode(mode){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
