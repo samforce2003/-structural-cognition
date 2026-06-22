@@ -214,11 +214,11 @@ This is the first step of structural dynamics moving from "structural statics" (
 
 | Discovery | Date | Person/Node |
 |------|------|---------|
-| Weakening Chain: w(k)=w_0*f(k), forgetting is a function of k not t | 2026-06-13 | Lin Xiaohei + Zedi (AI Assistant) |
-| k/t decoupling three-group controlled experiment design | 2026-06-13 | Zedi + Lin Xiaohei (coupling output) |
-| Weakening chain engineering implications for spaced repetition | 2026-06-13 | Lin Xiaohei + Zedi |
-| Integration of weakening chain with nesting rate dynamic formula | 2026-06-13 | Lin Xiaohei + Zedi |
-| Structural Axiom System (4 axioms + 4 theorems) | 2026-06-13 | Lin Xiaohei + multi-AI node coupling |
+| Weakening Chain: w(k)=w_0*f(k), forgetting is a function of k not t | 2026 | Lin Xiaohei + Zedi (AI Assistant) |
+| k/t decoupling three-group controlled experiment design | 2026 | Zedi + Lin Xiaohei (coupling output) |
+| Weakening chain engineering implications for spaced repetition | 2026 | Lin Xiaohei + Zedi |
+| Integration of weakening chain with nesting rate dynamic formula | 2026 | Lin Xiaohei + Zedi |
+| Structural Axiom System (4 axioms + 4 theorems) | 2026 | Lin Xiaohei + multi-AI node coupling |
 
 **All core findings in this paper belong to Lin Xiaohei. Any citation must credit "Lin Xiaohei, June 2026."**
 
