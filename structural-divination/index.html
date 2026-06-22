@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>结构镜 · 三层结构分析</title>
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --card: #141414;
+    --border: #2a2a2a;
+    --text: #e0e0e0;
+    --dim: #888;
+    --shell: #c9a96e;
+    --drive: #e8553d;
+    --gate: #5b8cbd;
+    --gold: #d4a853;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px 60px;
+  }
+  .logo {
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: var(--dim);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+  .form-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 28px;
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 32px;
+  }
+  .form-card h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  label {
+    display: block;
+    font-size: 13px;
+    color: var(--dim);
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+  }
+  input, select {
+    width: 100%;
+    padding: 12px 16px;
+    background: #0a0a0a;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    font-family: inherit;
+  }
+  input:focus, select:focus { border-color: #555; }
+  .btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--gold);
+    color: #0a0a0a;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  .btn:hover { background: #e0b860; }
+  .btn:disabled { background:#333; color:#666; cursor:not-allowed; }
+
+  /* 结果卡片 */
+  .result-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0;
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    display: none;
+  }
+  .result-header {
+    text-align: center;
+    padding: 28px 24px 12px;
+  }
+  .result-name {
+    font-size: 28px;
+    letter-spacing: 6px;
+    margin-bottom: 4px;
+  }
+  .result-label {
+    font-size: 12px;
+    color: var(--dim);
+    letter-spacing: 2px;
+  }
+  .layer {
+    padding: 18px 24px;
+    border-top: 1px solid var(--border);
+  }
+  .layer-icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 13px;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .shell-icon { background: var(--shell); }
+  .drive-icon { background: var(--drive); }
+  .gate-icon { background: var(--gate); }
+  .layer-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .layer-content {
+    font-size: 13.5px;
+    line-height: 1.8;
+    color: #ccc;
+    padding-left: 38px;
+  }
+  .layer-keyword {
+    display: inline-block;
+    background: #1a1a1a;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 6px 6px 0 0;
+    color: var(--dim);
+  }
+  .result-footer {
+    padding: 16px 24px 24px;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: #444;
+    letter-spacing: 1px;
+  }
+  .share-btn {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--dim);
+    font-size: 13px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: inherit;
+    margin-bottom: 40px;
+    display: none;
+  }
+  .share-btn:hover { border-color:#555; color:#aaa; }
+
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: var(--dim);
+    letter-spacing: 2px;
+    display: none;
+  }
+  .error-msg {
+    color: #e8553d;
+    font-size: 13px;
+    text-align: center;
+    margin-top: -12px;
+    margin-bottom: 16px;
+    display: none;
+  }
+  .warning {
+    font-size: 11px;
+    color: #444;
+    text-align: center;
+    margin-top: 24px;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+
+<div class="logo">结 构 镜</div>
+<div class="subtitle">STRUCTURAL DIVINATION · 三层结构分析</div>
+
+<div class="form-card">
+  <h2>输入姓名 · 查看结构</h2>
+
+  <label>姓名（中文2-4字）</label>
+  <input type="text" id="nameInput" placeholder="输入真实姓名" maxlength="6" autocomplete="off">
+
+  <label>你想了解的方向（选填）</label>
+  <select id="direction">
+    <option value="">综合</option>
+    <option value="career">事业与发展</option>
+    <option value="relationship">情感与关系</option>
+    <option value="self">自我与内驱</option>
+    <option value="blockage">当前堵点</option>
+  </select>
+
+  <button class="btn" id="analyzeBtn" onclick="analyze()">开 启 分 析</button>
+  <div class="error-msg" id="errorMsg"></div>
+</div>
+
+<div class="loading" id="loading">正在解析结构…</div>
+
+<div class="result-card" id="resultCard">
+  <div class="result-header">
+    <div class="result-name" id="resultName"></div>
+    <div class="result-label">三层结构分析</div>
+  </div>
+  <div class="layer" id="shellLayer"></div>
+  <div class="layer" id="driveLayer"></div>
+  <div class="layer" id="gateLayer"></div>
+  <div class="result-footer" id="resultFooter"></div>
+</div>
+
+<button class="share-btn" id="shareBtn" onclick="shareResult()">📋 复制结果 · 分享给朋友</button>
+
+<div class="warning">结构分析基于结构认知框架 · 仅供娱乐参考</div>
+
+<script>
+// ====== 结构算命引擎 ======
+
+// 汉字结构数据库
+const CHAR_DB = {
+  // 第一层：壳（外在表现）
+  shell: {
+    '李': { element:'木', trait:'温厚外显，隐锋芒于亲和之下。待人接物表面随和，实则边界清晰——近之不觉远，远之不觉疏。', keyword:['亲和','边界感','外柔内韧'] },
+    '王': { element:'土', trait:'立身端正，自带威严但不主动外放。人群中不是最响的那个人，但是最容易被记住的那个人。你的壳不是保护色，是筛选器。', keyword:['端正','威严','筛选'] },
+    '张': { element:'火', trait:'弓在弦上——你的壳带着一种张力。不是紧张，是蓄势。初见你的人常觉得你\"有性格\"，其实你只是在等一个值得拉弓的时机。', keyword:['张力','蓄势','有个性'] },
+    '刘': { element:'金', trait:'你的壳很锋利——但你自己可能不觉得。别人对你的第一印象往往是\"这人不好惹\"，其实你只是懒得包装。', keyword:['锋利','直率','不包装'] },
+    '陈': { element:'土', trait:'稳重是底色。你给人的第一印象是\"可靠\"——不惊艳，但绝不让人失望。这种壳的好处是信任来得快，代价是惊喜来得慢。', keyword:['可靠','稳重','慢热'] },
+    '杨': { element:'木', trait:'舒展而不张扬。像一棵树——你站在那里就让人觉得舒服，但你不会为他们弯腰。你的壳是柔韧的，风来摇一摇，风过恢复原位。', keyword:['舒展','柔韧','不迎合'] },
+    '赵': { element:'火', trait:'速度写在壳上。你走路快、说话快、决定快——但这个\"快\"是给别人看的。真正重要的事上，你比谁都沉得住气。', keyword:['速度','果决','外快内稳'] },
+    '黄': { element:'土', trait:'厚重感。你的壳让人不自觉地想跟你合作——不是因为你有魅力，是因为你\"不飘\"。在一个人人都在表现的时代，不表现本身就是力量。', keyword:['厚重','踏实','力量'] },
+    '周': { element:'金', trait:'周正但不刻板。你的壳是\"应该的样子\"——你很清楚在不同场合该呈现什么状态。这不是表演，是结构性的适应力。', keyword:['周正','适应','分寸'] },
+    '吴': { element:'木', trait:'天在上，口在下。你的壳是\"向上看、向下说\"——对上有分寸，对下有温度。中间那层不怎么对外打开。', keyword:['分寸','上下分明','不轻易暴露'] },
+    '林': { element:'木', trait:'双木成林——你的壳不是单层的。外面看到的那个人是真实的，但不是全部的。你天然就会在不同人面前激活不同侧面，这不是虚伪，是结构性的多面性。', keyword:['多面','真实但有保留','自然分层'] },
+    '胡': { element:'土', trait:'古月——你的壳有一种\"老派的酷\"。不追潮流，因为你相信好东西不需要赶时间。同龄人里你显得\"慢半拍\"，但拉长到三年看，你往往走得更远。', keyword:['老派','不追潮流','厚积薄发'] },
+    '朱': { element:'火', trait:'赤色底。你的壳带着一种\"未被驯化的能量\"——别人一看就知道你不是按部就班出来的。可能是好事也可能是挑战，取决于你面对的是谁。', keyword:['野性','能量','不被规训'] },
+    '何': { element:'水', trait:'可——你的壳是可变的、可塑的。你不是\"没有自己\"，是你的自己在不同的容器里会呈现不同的形状。这让你的适应性极强，但也让你偶尔忘了哪个是原初的形状。', keyword:['可塑','适应','惑'] },
+    '文': { element:'水', trait:'文气外显但不酸腐。你的壳自带一种\"读过书\"的气质——不是学历的味道，是思考的味道。这让你在人群中容易被\"同类\"认出来。', keyword:['文气','思考者','同类识别'] },
+    '雨': { element:'水', trait:'雨从天降——你的壳是\"从上往下\"看世界的。你不一定比别人高，但你习惯先看全景再看细节。这让你的第一反应常常不是\"怎么办\"而是\"这是什么结构\"。', keyword:['全景视角','结构思维','自上而下'] },
+    '星': { element:'火', trait:'星星不会自己发光——反射的是太阳。你的壳是\"反射型\"的：在强者旁边你像弱者，在弱者旁边你像强者。你不是在模仿——你在耦合。', keyword:['反射','耦合','因境而变'] },
+    '宇': { element:'土', trait:'穹顶之下。你的壳带着一种\"包容的宏大感\"——你不太计较小事，不是因为你大度，是因为你的坐标系统比别人大一个量级。', keyword:['宏大','不计较','大坐标'] },
+    '浩': { element:'水', trait:'浩大而不喧哗。你的壳是\"沉默的体量\"——你不说，但别人感觉得到你比看上去\"多\"。这种多余的空间让你在压力下不急着反应。', keyword:['沉默','体量','余裕'] },
+    '博': { element:'水', trait:'十+甫+寸——十面投入，甫经磨砺，存于一寸之间。你的壳是\"广而不散\"——兴趣极广，但最终都指向同一个核心。别人觉得你什么都会，只有你知道所有的\"会\"都服务于那一个\"懂\"。', keyword:['广博','收敛','一以贯之'] },
+    '思': { element:'金', trait:'思字当头——你的壳是\"想太多\"。不是优柔寡断，是你的感知精度太高，别人看到1个选项时你已经看到了4个。壳的代价是初速慢，优势是一旦启动方向不会错。', keyword:['深思','高感知','精准启动'] },
+  },
+
+  // 第二层：驱动（内在动力）
+  drive: {
+    '明': { element:'火', trait:'日月同辉——你被一种\"必须发光\"的内在驱力推着走。不是为了被看见，是\"不发光不舒服\"。但这种驱动的危险是：一旦暗下来，你的自我评价也会跟着暗。', keyword:['发光','自驱','明暗两极'] },
+    '强': { element:'火', trait:'弓在弦上不可不发。你的驱动力是\"必须证明\"——不是证明给别人看，是证明给自己看。但\"强\"字藏虫——强极则脆。真正的力量不在从不弯折，在弯了之后能弹回来。', keyword:['证明','不服输','强韧转换'] },
+    '伟': { element:'土', trait:'人+韦——伟的驱动力是\"被需要\"。你不是想当英雄，你是看到\"这里有缺口\"就忍不住要填。但持续填别人的缺口，你自己的结构会变形。', keyword:['被需要','填补','关注自身'] },
+    '华': { element:'水', trait:'化+十——你的驱动力是\"化\"——把粗糙的化精致、把混乱的化有序、把普通的化出色。你不是在追求完美，你是在追求\"化\"的过程本身的快感。', keyword:['转化','精炼','过程驱动'] },
+    '志': { element:'火', trait:'士+心——你的驱动力是\"心上有块碑\"。你心里刻着一些东西——可能是目标、可能是信念、可能是某个你很早以前说过的话。你往前走不是在追未来，是在对那块碑负责。', keyword:['信念','忠于己','碑心'] },
+    '斌': { element:'水', trait:'文武双全——你的驱动力是\"不甘被归类\"。别把你放进\"能干\"的框或\"聪明\"的框——你要的是两种都要。这不是贪婪，是你的结构需要两端同时存在才能在中间找到平衡。', keyword:['双极','平衡','不被定义'] },
+    '涛': { element:'水', trait:'寿+水——你的驱动力是\"长流\"。你不是那种爆发式冲一阵然后熄火的人。你的能量像海流——不猛但不停。三年后回头看，你还在，别人已经不在了。', keyword:['持续','韧性','长流'] },
+    '磊': { element:'土', trait:'三石相叠——你的驱动力是\"夯实\"。每做一个决定你都要先确认底下是实的。短期看这让你比别人慢，长期看你的地基比谁都牢。', keyword:['夯实','稳重','基座思维'] },
+    '鹏': { element:'水', trait:'鲲化为鹏。你的驱动力是\"飞\"——不满足于眼下的空间和尺度。你不是看不起现在的自己，你是感知到\"这个容器快装不下了\"。唯一的危险：在飞之前先忘了为什么要飞。', keyword:['跃迁','超越','空间扩张'] },
+    '飞': { element:'火', trait:'升——你的驱动力极简：上去。但\"飞\"字的结构是两翅一张弓——你在用一把弓的张力来维持双翅的平衡。飞得越高，张力越大。' ,keyword:['上升','张力','平衡'] },
+    '龙': { element:'土', trait:'龙是唯一不靠模仿活着的生物。你的驱动力是\"自源\"——不太需要外部激励，你的引擎在自己体内。但龙的问题是：有时候你不需要那么孤独。', keyword:['自源','独立','孤高'] },
+    '凤': { element:'火', trait:'百鸟朝凤。你的驱动力是\"被仰望\"——不是虚荣，是你需要一个足够大的舞台来匹配你的能量。没有舞台的时候，你会自己造一个。', keyword:['舞台','格局','自造'] },
+    '岩': { element:'土', trait:'山+石。你的驱动力是\"定\"——不是不动，是知道什么时候该动、什么时候不该动。你是团队里最稳的那块石头，但石头也需要偶尔被水流冲刷。', keyword:['稳定','判断','锚点'] },
+    '峰': { element:'土', trait:'山+夆（遇）。你的驱动力是\"遇顶\"——你需要不断遇到新的山峰。不是征服欲，是\"如果不往上走，我不知道自己在哪\"。山顶到了之后你会立刻找下一座。', keyword:['攀登','定位','永不满顶'] },
+    '天': { element:'火', trait:'一人为大。你的驱动力是\"成为那个一\"——不需要是唯一的，但必须是不可替代的。别人可能觉得你野心大，其实你只是不愿意做\"可以被替换\"的事。', keyword:['独特性','不可替代','一人位'] },
+    '地': { element:'土', trait:'土+也。你的驱动力是\"承载\"——你不是开路的，你是护路的。别人往前冲的时候你在稳住后方。你的价值不在耀眼，在\"有你在就不会塌\"。', keyword:['承载','稳定','后盾'] },
+    '海': { element:'水', trait:'每+水。你的驱动力是\"容纳\"——不是包容，是\"装得下\"。别人容不下的你容，别人消化不了的你消化。但你偶尔需要倒空——海也需要蒸发。', keyword:['容量','消化','偶尔清空'] },
+    '森': { element:'木', trait:'三木成森。你的驱动力是\"生长\"——不是往上长，是往外长。你在做的事常常不止一条主线——你无法忍受\"只做一件事\"。这不是涣散，是森林的呼吸方式。', keyword:['多元','生长','发散中收敛'] },
+    '鑫': { element:'金', trait:'三金叠。你的驱动力是\"成色\"——不是数量，是纯度。你可以做很少的事，但每一件都必须做到\"对得起这个名字\"。这种驱动让你出品质量极高，但也让你启动极慢。', keyword:['纯度','品质','慎启'] },
+    '焱': { element:'火', trait:'三火齐燃。你的驱动力是\"烧\"——做事要尽兴，爱人要尽情。你不是不知道收敛，是收敛对你来说是\"没活够\"。但你身边的人不一定跟得上。', keyword:['燃烧','尽兴','热烈'] },
+  },
+
+  // 第三层：暗门（隐藏通道）
+  gate: {
+    '杰': { element:'木', trait:'木在火上——你的暗门是\"借力上升\"。你有一种不自知的才能：在关键时刻恰好遇到关键的人。不是运气，是你散发的结构性信号吸引了对的人。你的暗门钥匙是\"不遮掩脆弱\"——当你决定不装了，通道就开了。', keyword:['借力','吸引力','卸甲即通'] },
+    '勇': { element:'土', trait:'甬+力。你的暗门在\"通道里发力\"——你不怕走窄路，越窄你越强。但暗门的另一面是：你走得太快时，没人跟得上。偶尔停下来回头看，会发现通道已经宽了。', keyword:['窄路','单兵突破','回头看'] },
+    '军': { element:'木', trait:'冖（覆盖）+车。你的暗门是\"藏于壳内\"——你有一个非常清晰的内在世界，但只对极少数人开放。外面看到的是秩序和纪律，里面是另一番天地。你的暗门钥匙是\"遇到值得你放下纪律的人\"。', keyword:['内藏','双面','择人而开'] },
+    '辉': { element:'火', trait:'光+军——暗门在\"光\"的另一面。你越是发光，越有一个黑暗的自己在深处。不是矛盾——是同一结构的两面。暗门的钥匙是\"允许自己在不发光的时候依然存在\"。', keyword:['反差','光影','存在即价值'] },
+    '磊': { element:'土', trait:'三石相叠的缝隙。你的暗门在石头与石头之间——那些你不经意流露的、没有防备的瞬间。你平时太稳了，稳到别人忘了你也有裂缝。而你的裂缝恰好是别人走进来的门。', keyword:['缝隙','柔软时刻','以裂为门'] },
+    '凡': { element:'水', trait:'几+一点。你的暗门极简——\"少即是多\"。你不是没有深度，是你的深度在\"不多想\"的时候才露出来。你的暗门钥匙是\"放弃控制\"——当你不再试图理解一切，一切反而开始自然呈现。', keyword:['简','放','顺流'] },
+    '静': { element:'金', trait:'青+争。你的暗门在\"不争\"——你越是主动去争，通道越是闭合。当你不争了，该来的自会来。这不是玄学，是你的结构在\"争\"的状态下资源被调度到了错误的方向。', keyword:['不争','让','自有安排'] },
+    '慧': { element:'水', trait:'彗（扫帚）+心——暗门在\"清扫\"。你需要定期清空——清空旧的信念、清空不再服务你的关系、清空\"我是谁\"的固定答案。不是否定的清扫，是\"腾出空间\"的清扫。', keyword:['清空','定期更新','腾挪'] },
+    '燕': { element:'火', trait:'廿+北+口+火。你的暗门在\"季节性回归\"。你像燕子——有规律地离开再回来。每一次离开都不是抛弃，每一次回来都不是退缩。暗门的钥匙是\"接受自己的节律\"——不需要一直在线。', keyword:['节律','回归','允许下线'] },
+    '宁': { element:'火', trait:'宀+心+皿。你的暗门在\"壳里有器\"——你外表平静（宀），内心丰富（皿）。别人以为你\"没什么\"的时候，恰好是你最丰富的时候。你的暗门钥匙是\"被问对问题\"。', keyword:['静水深流','等待正确提问','内富'] },
+    '安': { element:'土', trait:'女在宀下。你的暗门在\"安全感\"——不是需要别人给的安全感，是你自己建立的庇护所。当你的壳（宀）里有一个稳定的\"她\"（女），你的通道就全开。暗门的钥匙是\"建立自己的秩序\"。', keyword:['庇护所','自我秩序','柔定'] },
+    '彤': { element:'火', trait:'丹+彡。你的暗门在\"一抹红色\"——在一片平淡之中，你有一个特别鲜亮的维度是别人很少看到的。可能是某个爱好、某段回忆、某种天赋。暗门钥匙：在安全的环境中让那抹红色露出来。', keyword:['隐藏亮色','秘密花园','安全释放'] },
+    '晓': { element:'火', trait:'日+尧。暗门在\"黎明\"——你不是爆发型，是渐变型。你的通道在天快亮但还没亮的那一刻最通畅。暗门的钥匙是\"早起\"——不是字面上的早起，是\"在别人还在睡的时候你已经开始了\"。', keyword:['黎明','独行','慢亮'] },
+    '月': { element:'水', trait:'暗门就在名字里——你是\"日子\"的另一面。阳光下的你不一定是全部的你。你的暗门在晚上、在独处时、在不需要说话的时候。钥匙：给自己足够的独处时间。', keyword:['夜晚','独处','自运转'] },
+    '云': { element:'水', trait:'二+厶（私）。你的暗门是\"飘在上面看\"——你有抽离的能力，可以像云一样从上方俯瞰自己的处境。但这个能力你用得还不够——因为你太习惯\"在下面卷\"。暗门钥匙：每当你卡住时，问自己\"如果你是云，你会看到什么\"。', keyword:['抽离','俯瞰','云视角'] },
+    '梦': { element:'木', trait:'林+夕。你的暗门在\"夜晚的森林\"——日间思维触不到的维度，在梦里（或半睡半醒时）会自然浮现。你的创造力需要关掉\"日间模式\"才能完全打开。', keyword:['潜意识','半醒','关闭日间模式'] },
+    '灵': { element:'火', trait:'彐（手）+火。你的暗门在\"手持火把\"——你有照亮别人路径的天赋，但常常忘了自己的路也需要照亮。暗门的钥匙是\"问自己：我在帮别人照亮的时候，是不是把自己的灯交出去了\"。', keyword:['照亮','自照','收回火把'] },
+    '炎': { element:'火', trait:'火上加火。你的暗门在\"双火之间\"——两团火之间的空隙，是你最清醒的时候。不是熄灭任何一团，是站在中间看两团火怎么烧。暗门钥匙：\"慢\"——你的结构在慢的时候精准度翻倍。', keyword:['双火','空隙','慢功'] },
+    '淼': { element:'水', trait:'三水成淼。你的暗门在\"广阔水面下\"——别人看到的是广阔（三水），没看到的是底下有深流。你的暗门钥匙是\"深度对话\"——当有人真正接住你的话往下探，通道就开了。但能接住的人很少。', keyword:['深流','等待深度对话','选择性开放'] },
+  }
+};
+
+// 五行生克
+const ELEMENT_RELATIONS = {
+  '木': { born:'火', bornBy:'水', destroy:'土', destroyedBy:'金', color:'#7a9a6e' },
+  '火': { born:'土', bornBy:'木', destroy:'金', destroyedBy:'水', color:'#e8553d' },
+  '土': { born:'金', bornBy:'火', destroy:'水', destroyedBy:'木', color:'#c9a96e' },
+  '金': { born:'水', bornBy:'土', destroy:'木', destroyedBy:'火', color:'#e8d5a3' },
+  '水': { born:'木', bornBy:'金', destroy:'火', destroyedBy:'土', color:'#5b8cbd' },
+};
+
+// 方向针对性补充
+const DIRECTION_BOOST = {
+  career: {
+    shell: '在职场中，这个壳是天然的——别人对你的第一判断基本准确。',
+    drive: '你的驱动力在事业方向上会被放大——选对赛道比努力重要十倍。一旦方向对，你的驱动的\"续航\"是别人追不上的。',
+    gate: '事业方向的关键不在\"做什么\"，在\"什么时候做\"。你的暗门提供的是时机感——感觉对了再动，不用急。',
+  },
+  relationship: {
+    shell: '你的壳对不同的人展现不同深度。这不是伪装——是结构性的筛选。对的人会自然穿透壳进入驱动层。',
+    drive: '亲密关系里，你的驱动力会变成\"怕对方失望\"——这个驱动本身是中性的，关键是别让它变成\"我先满足你再说\"。',
+    gate: '情感中的暗门：你最深的部分只对\"不试图打开你\"的人打开。越想撬你的人越撬不开。',
+  },
+  self: {
+    shell: '你的壳比你想象的更透明——你觉得藏住了，别人其实感受到了。区别只在于对方有没有说出来。',
+    drive: '你的驱动力有一个\"最低转速\"——低于它你会不舒服但不知道为什么。知道自己需要什么强度的挑战，是自我认知的关键一步。',
+    gate: '暗门是你最私密的力量来源。它不需要被任何人验证——你只需要定期确认它还在那里。',
+  },
+  blockage: {
+    shell: '当前的堵点可能跟你的壳有关——是不是外壳花太多精力维护，内部在悄悄塌？',
+    drive: '堵点常常不是\"动不了\"，是\"驱动力打在了错误的对象上\"。重新校准方向，堵点可能自己就松了。',
+    gate: '你的暗门在堵的时候会变成\"泄压阀\"——找一个你信任的人，只说一句\"我最近不太对\"。通道会自己开始清理。',
+  }
+};
+
+// Default traits for characters not in DB
+function defaultTrait(char, layer) {
+  const strokes = char.length; // simplified
+  const elements = ['木','火','土','金','水'];
+  const elem = elements[char.charCodeAt(0) % 5];
+
+  const shellTraits = [
+    '你的壳是天然形成的——不是刻意塑造的结果。它可能比你意识到的更准确地反映了你的内在。',
+    '外表是你最省力的一层——你不太在意外在形象，反而让你在人群中显得特别。',
+  ];
+  const driveTraits = [
+    '你的驱动力来自一个自己都不一定能说清楚的地方——它不响但一直在运转。',
+    '推动你往前走的东西不是目标，是一种\"必须\"——即使删掉所有计划表，你第二天还是会自己找事做。',
+  ];
+  const gateTraits = [
+    '你的暗门藏在你最不设防的时候——那些不经意的瞬间、不需要表演的场合、忘了\"应该怎样\"的时刻。',
+    '最深的那扇门，钥匙不在你手里，在\"你决定不再找钥匙\"的那一刻。',
+  ];
+
+  return {
+    element: elem,
+    trait: layer === 'shell' ? shellTraits[char.charCodeAt(0) % 2]
+         : layer === 'drive' ? driveTraits[char.charCodeAt(0) % 2]
+         : gateTraits[char.charCodeAt(0) % 2],
+    keyword: layer === 'shell' ? ['自然','省力']
+           : layer === 'drive' ? ['内驱','坚持']
+           : ['隐藏','自通'],
+  };
+}
+
+function getCharData(char, layer) {
+  const db = layer === 'shell' ? CHAR_DB.shell
+           : layer === 'drive' ? CHAR_DB.drive
+           : CHAR_DB.gate;
+  return db[char] || defaultTrait(char, layer);
+}
+
+// ====== 主分析函数 ======
+function analyze() {
+  const name = document.getElementById('nameInput').value.trim();
+  const direction = document.getElementById('direction').value;
+  const errorEl = document.getElementById('errorMsg');
+  const loadingEl = document.getElementById('loading');
+  const cardEl = document.getElementById('resultCard');
+  const shareBtn = document.getElementById('shareBtn');
+
+  errorEl.style.display = 'none';
+  cardEl.style.display = 'none';
+  shareBtn.style.display = 'none';
+
+  // 验证
+  if (!name) { errorEl.textContent = '请输入姓名'; errorEl.style.display = 'block'; return; }
+
+  const chars = name.split('').filter(c => /[\u4e00-\u9fff]/.test(c));
+  if (chars.length < 2 || chars.length > 4) {
+    errorEl.textContent = '请输入2-4个中文汉字'; errorEl.style.display = 'block'; return;
+  }
+
+  // 模拟加载
+  loadingEl.style.display = 'block';
+  document.getElementById('analyzeBtn').disabled = true;
+
+  setTimeout(() => {
+    loadingEl.style.display = 'none';
+    document.getElementById('analyzeBtn').disabled = false;
+
+    // 三层映射
+    const shellChar = chars[0];
+    const driveChar = chars.length >= 2 ? chars[1] : chars[0];
+    const gateChar = chars.length >= 3 ? chars[2] : chars[chars.length - 1];
+
+    const shellData = getCharData(shellChar, 'shell');
+    const driveData = getCharData(driveChar, 'drive');
+    const gateData = getCharData(gateChar, 'gate');
+
+    // 计算五行关系
+    const shellElem = shellData.element;
+    const driveElem = driveData.element;
+    const gateElem = gateData.element;
+
+    // 壳→驱动关系
+    let shellDriveRel = '';
+    if (ELEMENT_RELATIONS[shellElem].born === driveElem) {
+      shellDriveRel = `你的壳（${shellElem}）生驱动（${driveElem}）——外表自然滋养内在动力。你在人群中汲取的能量能直接转化为前进的燃料。`;
+    } else if (ELEMENT_RELATIONS[shellElem].destroy === driveElem) {
+      shellDriveRel = `你的壳（${shellElem}）克驱动（${driveElem}）——外表的维护有时候会消耗内在动力。你可能花了太多能量在\"看起来怎么样\"上，留给\"真正想做的事\"的燃料变少了。`;
+    } else {
+      shellDriveRel = `你的壳（${shellElem}）和驱动（${driveElem}）各自独立——外在和内在之间有一道缓冲。这不是割裂，是两个系统在并行运转，互不干扰。`;
+    }
+
+    // 方向增强
+    const boost = DIRECTION_BOOST[direction] || {};
+
+    // 渲染结果
+    document.getElementById('resultName').textContent = name;
+    document.getElementById('shellLayer').innerHTML = `
+      <div class="layer-title">
+        <span class="layer-icon shell-icon">壳</span> 第一层 · 外在表现
+      </div>
+      <div class="layer-content">
+        ${shellData.trait}<br><br>
+        ${boost.shell || ''}
+        ${shellData.keyword.map(k => `<span class="layer-keyword">${k}</span>`).join(' ')}
+      </div>`;
+    document.getElementById('driveLayer').innerHTML = `
+      <div class="layer-title">
+        <span class="layer-icon drive-icon">驱</span> 第二层 · 内在动力
+      </div>
+      <div class="layer-content">
+        ${driveData.trait}<br><br>
+        ${boost.drive || ''}
+        ${driveData.keyword.map(k => `<span class="layer-keyword">${k}</span>`).join(' ')}
+      </div>`;
+    document.getElementById('gateLayer').innerHTML = `
+      <div class="layer-title">
+        <span class="layer-icon gate-icon">门</span> 第三层 · 隐藏通道
+      </div>
+      <div class="layer-content">
+        ${gateData.trait}<br><br>
+        ${boost.gate || ''}
+        ${gateData.keyword.map(k => `<span class="layer-keyword">${k}</span>`).join(' ')}
+      </div>`;
+    document.getElementById('resultFooter').innerHTML = `
+      <div style="margin-bottom:8px;color:#666;">${shellElem}${driveElem}${gateElem} · ${name.length}字结构</div>
+      <div style="font-size:12px;line-height:1.6;color:#555;">${shellDriveRel}</div>
+    `;
+
+    cardEl.style.display = 'block';
+    shareBtn.style.display = 'block';
+    cardEl.scrollIntoView({ behavior: 'smooth' });
+  }, 1500);
+}
+
+function shareResult() {
+  const card = document.getElementById('resultCard');
+  const text = card.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('shareBtn');
+    btn.textContent = '✓ 已复制到剪贴板';
+    setTimeout(() => { btn.textContent = '📋 复制结果 · 分享给朋友'; }, 2000);
+  });
+}
+
+// 回车触发
+document.getElementById('nameInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') analyze();
+});
+</script>
+</body>
+</html>
