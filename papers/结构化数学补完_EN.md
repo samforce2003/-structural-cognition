@@ -8,7 +8,7 @@
 
 ---
 
-## Abstract​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍
+## Abstract
 
 This paper reformulates Gödel's First Incompleteness Theorem within the nesting rate framework of the Structural Cognition System, proposing and arguing: **any formal system, upon reaching nesting rate N=2, necessarily encounters self-referential incompleteness — this is not a flaw of logic, but a structural hard boundary.** N=2 is the phase transition critical point at which a formal system goes from "completable" to "necessarily incomplete." Systems with N<2 can be complete; systems with N≥2 are necessarily incomplete. Nesting rate provides, for the first time, a precise positional calibration for Gödelian incompleteness — not the vague formulation of "sufficiently strong," but the measurable threshold of "N=2."
 
@@ -129,7 +129,7 @@ Gödel's genius was to find the specific mathematical construction. Structural m
 - Structural Conduction Law (https://rentry.co/struct-conduction-law)
 - Structural Mathematics v1 (https://rentry.co/gnts7u67)
 
-**Declaration:** This paper is part of the Structural Cognition Systems series. © 2026 Lin Xiaohei (林小黑). All rights reserved.​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​​‌‌‍​‌‌‌​‌​​‍​‌‌‌​​‌​‍​‌‌‌​‌​‌‍​‌‌​​​‌‌‍​‌‌‌​‌​​‍​​‌​‌‌​‌‍​‌‌​‌‌​‌‍​‌‌​​​​‌‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​​‌​‌‌​‌‍​‌‌‌​‌‌​‍​​‌‌​​​‌‍​‌‌‌‌‌​​‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​‌​‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​​‍​​‌‌​​‌‌‍​‌‌​​‌​​‍​‌‌​​‌‌​‍​‌‌​​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​‌​‌‍​‌‌​​‌​​‍​​‌‌‌​​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​​‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​​‌‌‍​‌‌‌​‌​​‍​‌‌‌​​‌​‍​‌‌‌​‌​‌‍​‌‌​​​‌‌‍​‌‌‌​‌​​‍​​‌​‌‌​‌‍​‌‌​‌‌​‌‍​‌‌​​​​‌‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​​‌​‌‌​‌‍​‌‌‌​‌‌​‍​​‌‌​​​‌‍​‌‌‌‌‌​​‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​‌​‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​​‍​​‌‌​​‌‌‍​‌‌​​‌​​‍​‌‌​​‌‌​‍​‌‌​​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​‌​‌‍​‌‌​​‌​​‍​​‌‌‌​​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​​‍​​‌‌​​​‌‍​​‌‌​​‌‌‍ 版权所有，转载需注明出处。
+**Declaration:** This paper is part of the Structural Cognition Systems series. © 2026 Lin Xiaohei (林小黑). All rights reserved. 版权所有，转载需注明出处。
 
 **Lin Xiaohei. Structural Mathematics Completion: N=2 Critical Point and the Hard Boundary of Formal System Self-Reference. 2026-06-15.**
 
@@ -150,4 +150,3 @@ Gödel's genius was to find the specific mathematical construction. Structural m
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-*Contact: 412341356@qq.com | WeChat: 13922360146 | Gitee: https://gitee.com/samforce/structural-cognition*

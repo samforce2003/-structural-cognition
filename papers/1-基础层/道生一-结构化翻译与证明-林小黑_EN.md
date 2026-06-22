@@ -36,4 +36,3 @@ Dao De Jing Chapter 42 — "Dao gives birth to One, One gives birth to Two, Two 
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-*Contact: 412341356@qq.com | WeChat: 13922360146 | Gitee: https://gitee.com/samforce/structural-cognition*

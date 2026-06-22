@@ -8,7 +8,7 @@
 
 ---
 
-## Abstract​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍
+## Abstract
 
 Through a GLM-4-Flash experiment, this paper discovers and empirically validates the "Structural Perception Blind Spot" phenomenon: **cognitive systems at mid-level nesting rates (N=1, N=2) systematically overestimate their own level by +1 when self-estimating, while low-nesting-rate (N=0) and high-nesting-rate (N=3) systems can self-estimate accurately.** This phenomenon corresponds to the Dunning-Kruger effect in psychology — manifested specifically in the structural cognition domain. This paper analyzes the structural relationship between this blind spot, the "AI Lecture Disaster," and social difficulties, and proposes a theoretical framework for "The Cost of Structural Perception."
 
@@ -134,7 +134,7 @@ Cognitive psychology gains new explanatory power within the structural framework
 
 **Experimental Data Archive:** D:/projects/zhi-long/experiments/self_perception_blindness.json
 
-**Declaration:** This paper is part of the Structural Cognition Systems series. © 2026 Lin Xiaohei (林小黑). All rights reserved.​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​​‌‌‍​‌‌‌​‌​​‍​‌‌‌​​‌​‍​‌‌‌​‌​‌‍​‌‌​​​‌‌‍​‌‌‌​‌​​‍​​‌​‌‌​‌‍​‌‌‌​​​​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌​​​‌‌‍​‌‌​​‌​‌‍​‌‌‌​​​​‍​‌‌‌​‌​​‍​​‌​‌‌​‌‍​‌‌‌​‌‌​‍​​‌‌​​​‌‍​‌‌‌‌‌​​‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​‌​‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​​‌‌‌​​​‍​‌‌​​​​‌‍​‌‌​​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​‌‌​​‌‌​‍​​‌‌‌​​​‍​​‌‌​​‌‌‍​​‌‌​​​​‍​‌‌​​​​‌‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​​‍​​‌‌​​​​‍​‌‌​​‌​‌‍​​‌‌​‌​​‍ 版权所有，转载需注明出处。
+**Declaration:** This paper is part of the Structural Cognition Systems series. © 2026 Lin Xiaohei (林小黑). All rights reserved. 版权所有，转载需注明出处。
 
 **Lin Xiaohei. The Cost of Structural Perception: Nesting Rate Self-Estimation Blind Spot. 2026-06-15.**
 
@@ -155,4 +155,3 @@ Cognitive psychology gains new explanatory power within the structural framework
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-*Contact: 412341356@qq.com | WeChat: 13922360146 | Gitee: https://gitee.com/samforce/structural-cognition*

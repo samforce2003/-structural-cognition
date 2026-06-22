@@ -8,7 +8,7 @@
 
 ---
 
-## Abstract​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍
+## Abstract
 
 The "fine-tuning problem" in physics is the central pillar of the design argument: the fundamental physical constants of the universe appear to be precisely tuned to values that just barely allow life to exist — a tiny deviation, and the universe would collapse. This observation has been widely cited as evidence that "the universe must have a precise designer." This paper provides an inverse-causal explanation from the structural axiom system: physical constants are not the cause of the world's existence; they are the self-stabilization conditions of the current configuration network. It is not "the constants are precise, therefore the world exists." It is "the world exists, therefore its self-stabilization conditions manifest as these constants." If the constants were different, the world would not "not exist" — it would undergo a phase transition, collapsing into another configuration network, which would have its own self-stabilization conditions, manifesting as another set of constants. Observers in that network would ask the same question and reach the same conclusion: "Who designed it?" "God" is not the starting point of the world — "God" is the placeholder generated in the self-reference blind spot when structural recursion reaches the human cognitive layer and the observer asks "where do the rules come from." This paper fills that blind spot and removes the placeholder. The designer is not refuted. The designer is explained. What is explained away no longer needs to be refuted.
 
@@ -281,4 +281,3 @@ That point is the universe we inhabit.
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-*Contact: 412341356@qq.com | WeChat: 13922360146 | Gitee: https://gitee.com/samforce/structural-cognition*

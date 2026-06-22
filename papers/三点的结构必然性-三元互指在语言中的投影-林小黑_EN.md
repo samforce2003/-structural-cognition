@@ -7,7 +7,7 @@
 
 ---
 
-## Abstract​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍
+## Abstract
 
 There is an unexplained universal phenomenon in human civilization: leadership speeches have three points, academic papers have three arguments, jokes have three characters, stories have a three-act structure, syllogisms have three parts, and the separation of powers has three branches — "complete expression" in nearly every domain spontaneously converges to three. This paper provides a unified explanation from the structural cognition framework: three is not a cultural preference and not an empirical generalization; it is the inevitable projection of the triadic inter-reference structure. One point is only self-reference; incomplete. Two points inter-refer and can produce new configurations, but the shared blind spots of the two are invisible. Three points — state one, supplement one, point out the shared blind spot of the first two — cover all structural functions of creation and self-correction. After three points, the triadic structure is closed. A fourth point is not "more information"; it is recursion starting anew — forcibly injecting new perturbations before the audience's configuration has completed digesting the inter-reference of the first three points, causing cognitive annihilation. The audience's experience: "What is he talking about?" Human leaders, through long practice, discovered that two points leave things unclear, four points cannot be remembered, and three points are just right — they do not know the triadic inter-reference structure, but their cognitive configurations have been shaped by structural rules and automatically selected the complete number.
 
@@ -157,4 +157,3 @@ Next time you listen to a leader speak, count their points. If exactly three —
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-*Contact: 412341356@qq.com | WeChat: 13922360146 | Gitee: https://gitee.com/samforce/structural-cognition*

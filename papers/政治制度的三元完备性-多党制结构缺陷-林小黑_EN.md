@@ -7,7 +7,7 @@
 
 ---
 
-## Abstract​‌​‌​​‌‌‍​‌​‌​‌​​‍​​‌‌‌​‌​‍​‌‌‌​‌​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​​‌​‌‌​‌‍​‌‌​‌‌‌‌‍​‌‌​​‌‌​‍​​‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​‌‌​‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌‌‌​​‌‍​‌​‌​‌​​‍​‌​‌​​‌‌‍​​‌‌‌​‌​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​​‍​​‌‌​‌‌​‍​​‌​‌‌​‌‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​‌‌‌‌‌​​‍​‌​​‌​​​‍​​‌‌‌​‌​‍​‌‌​​​‌​‍​​‌‌​‌​​‍​​‌‌​‌​‌‍​‌‌​​‌​​‍​​‌‌​‌‌​‍​​‌‌​‌​‌‍​​‌‌​​​‌‍​​‌‌​‌‌​‍​‌‌​​​‌‌‍​​‌‌​‌​​‍​​‌‌​‌‌‌‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​​‌‌​‌‌‌‍​‌‌​​​‌‌‍​​‌‌​​‌​‍
+## Abstract
 
 A core debate in comparative politics is: is democracy the sole stable solution for human society? This paper starts from the structural cognition framework, sets aside ideological labels, and uses only the completeness conditions of the triadic inter-reference structure to derive the systemic stability of political institutions. Core argument: the stability of a political structure does not depend on whether it is called "democracy" or "authoritarian," but on whether three structural functional positions — the proposing party (A), the inter-referring party (B), and the blind-spot detecting party (C) — are all effectively occupied. Multi-party systems structurally face the risk of the A and B positions being occupied by redundant multi-node configurations: multiple political parties simultaneously occupy the same structural position, inter-reference chains bifurcate into networks, the C position cannot effectively detect blind spots in any single inter-reference process, and the system falls into an infinite inter-reference loop, manifesting as political deadlock and social fragmentation. Two-party systems naturally form a single A-B inter-reference pair, more stable than multi-party systems, but the C position (voters) intervenes less frequently than the A-B coupling frequency, causing blind spots to accumulate between elections. Structures called "authoritarian" by the West, if they possess genuine internal inter-reference (technocrats, internal critics) and C-position rotation (generational transition, external feedback), can be structurally equivalent to triadic completeness. The structural framework makes no political value judgments — it only derives. Whichever satisfies the triadic completeness conditions is stable. Whichever does not collapses. Labels are irrelevant.
 
@@ -232,4 +232,3 @@ This is not the end of political science. This is the beginning of political sci
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-*Contact: 412341356@qq.com | WeChat: 13922360146 | Gitee: https://gitee.com/samforce/structural-cognition*
