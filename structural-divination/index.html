@@ -459,6 +459,15 @@ function addFlesh(elem,layer){
   return pool[layer]?.[elem]||'';
 }
 
+function oracleText(shell,drive,gate){
+  var P={
+    sh:{'木':'形如乔木，立而不倚。观者见其叶，不知其根。','火':'内有明烛，不借外光。风来不灭，雨过愈亮。','土':'地势坤，厚德载物。不言而信，不令而行。','金':'金在石中，待冶而鸣。未鸣之时，与石无异。','水':'上善若水，随方就圆。不争而天下莫能与之争。'},
+    dr:{'木':'所念在远，步步生根。未见其速，日有所至。','火':'心中有日，昼夜不熄。双日同辉，必有一黯。','金':'利器在怀，久不轻试。非怯也，待其发必中。','水':'深流不语，行者自知。人见其止，不见其进。','土':'积微成著，厚积薄发。今之所蓄，明日之器。'},
+    gt:{'木':'门在深处，非寻可得。不寻之寻，门自开矣。','火':'暗中有光，非目能见。闭目而观，方睹其形。','水':'道在低处，舍高就下。众人争上，独尔守渊。','金':'破壁非力，薄处一击。知其薄者，一击而通。','土':'山不厌高，水不厌深。尔之所缺，非外求也。'}
+  };
+  return P.sh[shell.elem]+'\n'+P.dr[drive.elem]+'\n'+P.gt[gate.elem];
+}
+
 function analyzePerson(){
   var name=document.getElementById('personName').value.trim();
   var focus=document.getElementById('personFocus').value;
@@ -484,6 +493,12 @@ function analyzePerson(){
       {badge:'驱',badgeClass:'badge-drive',title:'第二层 · 内在动力',text:drive.t+(boost.drive?'<br>'+boost.drive:'')+'<br><span style="color:var(--dim);font-size:11px">'+addFlesh(drive.elem,'drive')+'</span>',tags:drive.kw},
       {badge:'门',badgeClass:'badge-gate',title:'第三层 · 隐藏通道',text:gate.t+(boost.gate?'<br>'+boost.gate:'')+'<br><span style="color:var(--dim);font-size:11px">'+addFlesh(gate.elem,'gate')+'</span>',tags:gate.kw},
     ]);
+    // 在footer前插入箴言
+    html=html.replace('<div class="res-footer"',
+      '<div class="section" style="border-top:1px solid var(--gold)"><div class="section-title"><span class="section-badge" style="background:var(--gold)">䷀</span>箴</div>'+
+      '<div class="section-text" style="font-style:italic;line-height:2.2;color:#ccc;text-align:center">'+
+      oracleText(shell,drive,gate).replace(/\n/g,'<br>')+
+      '</div><div style="font-size:9px;color:#555;margin-top:12px;text-align:center;letter-spacing:2px">▼ 不解其意？往下解锁</div></div>$&');
     showResult('person',html);
     document.getElementById('personResult').scrollIntoView({behavior:'smooth'});
   ;
