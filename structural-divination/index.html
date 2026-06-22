@@ -46,20 +46,26 @@ input:focus,textarea:focus,select:focus{border-color:#555}
 .section-text{font-size:13px;line-height:1.8;color:#ccc}
 .tag{display:inline-block;background:#1a1a1a;padding:2px 10px;border-radius:4px;font-size:11px;margin:4px 4px 0 0;color:var(--dim)}
 .res-footer{text-align:center;padding:14px 20px 20px;border-top:1px solid var(--border);font-size:10px;color:#444}
-/* Paywall */
-.paywall{background:#1a1a0a;border:1px solid #3a3a1a;border-radius:8px;padding:18px;text-align:center;margin:16px 20px;display:none}
+/* Tier gradient comparison */
+.paywall{display:none;max-width:420px;margin:12px auto 0}
 .paywall.show{display:block}
-.pay-price{font-size:26px;color:var(--gold);font-weight:700;margin:8px 0}
-.pay-desc{font-size:11px;color:#888;margin-bottom:12px;line-height:1.6}
-.pay-btn{display:inline-block;padding:12px 28px;background:var(--gold);color:#0a0a0a;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;letter-spacing:2px;font-family:inherit}
-.qr-info{display:none;margin-top:14px;padding:12px;background:#111;border-radius:8px;font-size:12px;color:#888;line-height:1.8}
-.qr-info.show{display:block}
+.tier{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin-bottom:8px}
+.tier.free{opacity:.55}
+.tier.paid{border-color:var(--gold)}
+.tier.pro{border-color:var(--blue)}
+.tier.apex{border-color:var(--green)}
+.tier-head{font-size:13px;margin-bottom:6px;letter-spacing:1px}
+.tier-price{color:var(--gold);font-weight:600;margin-right:6px}
+.tier-body{font-size:11px;color:var(--dim);line-height:1.7;margin-bottom:8px}
+.tier-btn{display:block;width:100%;padding:9px;background:transparent;border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:12px;text-align:center;cursor:pointer;letter-spacing:1px;font-family:inherit;transition:.15s}
+.tier-btn:active{background:#1a1a1a}
+.tier.paid .tier-btn{border-color:var(--gold);color:var(--gold)}
 .share-btn{display:none;max-width:420px;margin:8px auto 24px;padding:12px;background:transparent;border:1px solid var(--border);border-radius:8px;color:var(--dim);font-size:12px;text-align:center;cursor:pointer;letter-spacing:2px;font-family:inherit}
 .share-btn.show{display:block}
 .loading{text-align:center;padding:30px;color:var(--dim);display:none}
 .loading.show{display:block}
 .warn{font-size:10px;color:#444;text-align:center;padding:24px 16px;letter-spacing:1px}
-/* Modal overlay */
+</style>
 .overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.75);z-index:100;justify-content:center;align-items:flex-start;padding-top:10vh}
 .overlay.show{display:flex}
 .overlay-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px 22px 22px;width:90%;max-width:380px;position:relative}
@@ -112,8 +118,12 @@ input:focus,textarea:focus,select:focus{border-color:#555}
   </div>
   <div class="loading" id="personLoading">解析结构中…</div>
   <div class="result" id="personResult"></div>
-  <div class="paywall" id="personPaywall"><div class="pay-price">¥9.9</div><div class="pay-desc">深度完整报告：五行生克 · 耦合匹配 · 暗门钥匙 · 行动路径</div><button class="pay-btn" onclick="window.location.href='weixin://dl/chat?13922360146'">联系客服 · 获取深度报告</button>
-    <div class="qr-info" id="personQR">微信：13922360146<br>发送姓名，30分钟内回复完整报告</div></div>
+  <div class="paywall" id="personPaywall">
+    <div class="tier free"><div class="tier-head">📊 已解锁：免费方向层</div><div class="tier-body">壳/驱动/暗门 · 结构框架 · 方向定位</div></div>
+    <div class="tier paid"><div class="tier-head"><span class="tier-price">¥9.9</span>深度层</div><div class="tier-body">五行生克 · C值分布 · 耦合匹配 · 暗门钥匙 · 行动路径</div><button class="tier-btn" onclick="openServiceModal()">获取深度报告 →</button></div>
+    <div class="tier pro"><div class="tier-head"><span class="tier-price">¥500起</span>组织全栈</div><div class="tier-body">C值分布图 · 耦合断裂点 · 堵点根因 · 最小干预方案</div><button class="tier-btn" onclick="openServiceModal()">定制企业诊断 →</button></div>
+    <div class="tier apex"><div class="tier-head"><span class="tier-price">¥3000起</span>跳出系统</div><div class="tier-body">三路径推演 · 退相干跃迁 · 跨域耦合分析 · 全盘方案</div><button class="tier-btn" onclick="openServiceModal()">预约深度推演 →</button></div>
+  </div>
   <button class="share-btn" id="personShare" onclick="copyResult('personResult')">📋 复制结果 · 分享</button>
 </div>
 
@@ -126,7 +136,12 @@ input:focus,textarea:focus,select:focus{border-color:#555}
   </div>
   <div class="loading" id="sitLoading">解析结构中…</div>
   <div class="result" id="sitResult"></div>
-  <div class="paywall" id="sitPaywall"><div class="pay-price">¥9.9</div><div class="pay-desc">深度报告：张力溯源 · 相关方C值 · 突破窗口 · 行动顺序</div><button class="pay-btn" onclick="window.location.href='weixin://dl/chat?13922360146'">联系客服 · 获取深度报告</button><div class="qr-info" id="sitQR">微信：13922360146<br>发送需求，30分钟内回复完整报告</div></div>
+  <div class="paywall" id="sitPaywall">
+    <div class="tier free"><div class="tier-head">📊 已解锁：免费方向层</div><div class="tier-body">张力评估 · 结构变形 · 最小行动方向</div></div>
+    <div class="tier paid"><div class="tier-head"><span class="tier-price">¥9.9</span>深度层</div><div class="tier-body">张力溯源 · 相关方C值 · 突破窗口 · 行动顺序</div><button class="tier-btn" onclick="openServiceModal()">获取深度报告 →</button></div>
+    <div class="tier pro"><div class="tier-head"><span class="tier-price">¥500起</span>组织全栈</div><div class="tier-body">C值分布图 · 耦合断裂点 · 堵点根因 · 最小干预方案</div><button class="tier-btn" onclick="openServiceModal()">定制企业诊断 →</button></div>
+    <div class="tier apex"><div class="tier-head"><span class="tier-price">¥3000起</span>跳出系统</div><div class="tier-body">三路径推演 · 退相干跃迁 · 跨域耦合分析 · 全盘方案</div><button class="tier-btn" onclick="openServiceModal()">预约深度推演 →</button></div>
+  </div>
   <button class="share-btn" id="sitShare" onclick="copyResult('sitResult')">📋 复制结果 · 分享</button>
 </div>
 
@@ -140,7 +155,12 @@ input:focus,textarea:focus,select:focus{border-color:#555}
   </div>
   <div class="loading" id="objLoading">解析结构中…</div>
   <div class="result" id="objResult"></div>
-  <div class="paywall" id="objPaywall"><div class="pay-price">¥9.9</div><div class="pay-desc">深度拆解：结构骨架 · 耦合强度 · 脆弱点 · 优化路径</div><button class="pay-btn" onclick="window.location.href='weixin://dl/chat?13922360146'">联系客服 · 获取深度报告</button><div class="qr-info" id="objQR">微信：13922360146<br>发送需求，30分钟内回复完整报告</div></div>
+  <div class="paywall" id="objPaywall">
+    <div class="tier free"><div class="tier-head">📊 已解锁：免费方向层</div><div class="tier-body">耦合强度 · 脆弱点定位 · 优化杠杆</div></div>
+    <div class="tier paid"><div class="tier-head"><span class="tier-price">¥9.9</span>深度层</div><div class="tier-body">结构骨架 · 耦合热力图 · 脆弱点根因 · 优化路线图</div><button class="tier-btn" onclick="openServiceModal()">获取深度拆解 →</button></div>
+    <div class="tier pro"><div class="tier-head"><span class="tier-price">¥500起</span>组织全栈</div><div class="tier-body">C值分布图 · 耦合断裂点 · 堵点根因 · 最小干预方案</div><button class="tier-btn" onclick="openServiceModal()">定制企业诊断 →</button></div>
+    <div class="tier apex"><div class="tier-head"><span class="tier-price">¥3000起</span>跳出系统</div><div class="tier-body">三路径推演 · 退相干跃迁 · 跨域耦合分析 · 全盘方案</div><button class="tier-btn" onclick="openServiceModal()">预约深度推演 →</button></div>
+  </div>
   <button class="share-btn" id="objShare" onclick="copyResult('objResult')">📋 复制结果 · 分享</button>
 </div>
 
@@ -154,7 +174,12 @@ input:focus,textarea:focus,select:focus{border-color:#555}
   </div>
   <div class="loading" id="compLoading">诊断结构中…</div>
   <div class="result" id="compResult"></div>
-  <div class="paywall" id="compPaywall"><div class="pay-price">¥9.9</div><div class="pay-desc">组织深度诊断：C值分布 · 耦合断裂点 · 堵点根因 · 最小干预方案</div><button class="pay-btn" onclick="window.location.href='weixin://dl/chat?13922360146'">联系客服 · 获取深度报告</button><div class="qr-info" id="compQR">微信：13922360146<br>发送需求，30分钟内回复完整报告</div></div>
+  <div class="paywall" id="compPaywall">
+    <div class="tier free"><div class="tier-head">📊 已解锁：免费方向层</div><div class="tier-body">核心堵点 · 最小干预 · 耦合修复方向</div></div>
+    <div class="tier paid"><div class="tier-head"><span class="tier-price">¥9.9</span>深度层</div><div class="tier-body">C值分布 · 耦合断裂点定位 · 堵点根因 · 干预序列</div><button class="tier-btn" onclick="openServiceModal()">获取深度诊断 →</button></div>
+    <div class="tier pro"><div class="tier-head"><span class="tier-price">¥500起</span>组织全栈</div><div class="tier-body">组织C值分布图 · 断裂点精确定位 · 重设计方案</div><button class="tier-btn" onclick="openServiceModal()">定制企业诊断 →</button></div>
+    <div class="tier apex"><div class="tier-head"><span class="tier-price">¥3000起</span>跳出系统</div><div class="tier-body">跨域耦合 · 三路径推演 · 退相干跃迁 · 全盘方案</div><button class="tier-btn" onclick="openServiceModal()">预约深度推演 →</button></div>
+  </div>
   <button class="share-btn" id="compShare" onclick="copyResult('compResult')">📋 复制结果 · 分享</button>
 </div>
 
@@ -167,7 +192,12 @@ input:focus,textarea:focus,select:focus{border-color:#555}
   </div>
   <div class="loading" id="blockLoading">定位堵点中…</div>
   <div class="result" id="blockResult"></div>
-  <div class="paywall" id="blockPaywall"><div class="pay-price">¥9.9</div><div class="pay-desc">堵点深度报告：根因拆解 · 绕过路径 · 最小突破口 · 时间窗口</div><button class="pay-btn" onclick="window.location.href='weixin://dl/chat?13922360146'">联系客服 · 获取深度报告</button><div class="qr-info" id="blockQR">微信：13922360146<br>发送需求，30分钟内回复完整报告</div></div>
+  <div class="paywall" id="blockPaywall">
+    <div class="tier free"><div class="tier-head">📊 已解锁：免费方向层</div><div class="tier-body">真堵点位置 · 为什么没通 · 突破口方向</div></div>
+    <div class="tier paid"><div class="tier-head"><span class="tier-price">¥9.9</span>深度层</div><div class="tier-body">堵点根因拆解 · 绕过路径 · 时间窗口 · 最小突破口</div><button class="tier-btn" onclick="openServiceModal()">获取深度报告 →</button></div>
+    <div class="tier pro"><div class="tier-head"><span class="tier-price">¥500起</span>组织全栈</div><div class="tier-body">C值分布图 · 耦合断裂点 · 堵点根因 · 最小干预方案</div><button class="tier-btn" onclick="openServiceModal()">定制企业诊断 →</button></div>
+    <div class="tier apex"><div class="tier-head"><span class="tier-price">¥3000起</span>跳出系统</div><div class="tier-body">三路径推演 · 退相干跃迁 · 跨域耦合分析 · 全盘方案</div><button class="tier-btn" onclick="openServiceModal()">预约深度推演 →</button></div>
+  </div>
   <button class="share-btn" id="blockShare" onclick="copyResult('blockResult')">📋 复制结果 · 分享</button>
 </div>
 
