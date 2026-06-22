@@ -450,6 +450,15 @@ function getCharData(c,layer){
   return {elem:elem,t:d.t,kw:d.kw};
 }
 
+function addFlesh(elem,layer){
+  var pool={
+    shell:{'木':'你不是那种一眼能看透的人——不是故意藏着，是有些面你自己都还没完全搞懂。','火':'你给人的第一印象比真实的你更外向——这种惯性你自己未必察觉，但换了新环境就特别明显。','土':'有人觉得你慢，有人觉得你稳。你知道你不是慢——你只是不会为了"快"而牺牲"对"。','金':'你有的时候话说得比预想的更直接——说完之后自己也会顿一下。这不是毛病，是你的壳比一般人薄。','水':'你在人多的时候反而更安静——不是不合群，是你在人群中会自动退到观察者的位置上。'},
+    drive:{'木':'有一个念头你从来没对任何人说过——不是不好意思，是你觉得说出来就不灵了。那个念头才是你真正的引擎。','火':'最大的能量不是来自顺利的时候——是某个低谷期。那个低谷教会了你一件事：往前走不是因为勇敢，是因为不往前走更疼。','土':'你其实不太需要别人的认可——但你需要自己认可自己，而这个比前一个难得多。','金':'你做决策的速度比看起来快——你犹豫的不是"做不做"，是"做了之后要承担什么"。','水':'你有一种钝感力——别人焦虑的时候你不一定跟着焦虑。不是冷漠，是你的节奏跟别人有时差。'},
+    gate:{'木':'你会在一个完全没预料到的场合遇到那个开关——不是一个人，是一句话、一个场景、或者一首歌。','火':'你最锋利的东西不是你表现出来的——是你最放松、最不设防的时候自然流露的那一点点。','土':'你的力量不显在外面——它藏在"别人慌的时候你不慌"的那些瞬间里。','金':'你偶尔会干一件事干到一半突然放下来——不是放弃了，是"够了"。这个"够了"的直觉就是暗门的钥匙。','水':'你最深的那部分不会在任何人群中打开——但它会在独处的时候、在安静的夜晚、在没有任何期待的时候自己松开。'}
+  };
+  return pool[layer]?.[elem]||'';
+}
+
 function analyzePerson(){
   var name=document.getElementById('personName').value.trim();
   var focus=document.getElementById('personFocus').value;
@@ -471,9 +480,9 @@ function analyzePerson(){
     var boost=focusBoost[focus]||{};
 
     var html=resultCard(name,'三层结构分析',[
-      {badge:'壳',badgeClass:'badge-shell',title:'第一层 · 外在表现',text:shell.t+(boost.shell?'<br>'+boost.shell:''),tags:shell.kw},
-      {badge:'驱',badgeClass:'badge-drive',title:'第二层 · 内在动力',text:drive.t+(boost.drive?'<br>'+boost.drive:''),tags:drive.kw},
-      {badge:'门',badgeClass:'badge-gate',title:'第三层 · 隐藏通道',text:gate.t+(boost.gate?'<br>'+boost.gate:''),tags:gate.kw},
+      {badge:'壳',badgeClass:'badge-shell',title:'第一层 · 外在表现',text:shell.t+(boost.shell?'<br>'+boost.shell:'')+'<br><span style="color:var(--dim);font-size:11px">'+addFlesh(shell.elem,'shell')+'</span>',tags:shell.kw},
+      {badge:'驱',badgeClass:'badge-drive',title:'第二层 · 内在动力',text:drive.t+(boost.drive?'<br>'+boost.drive:'')+'<br><span style="color:var(--dim);font-size:11px">'+addFlesh(drive.elem,'drive')+'</span>',tags:drive.kw},
+      {badge:'门',badgeClass:'badge-gate',title:'第三层 · 隐藏通道',text:gate.t+(boost.gate?'<br>'+boost.gate:'')+'<br><span style="color:var(--dim);font-size:11px">'+addFlesh(gate.elem,'gate')+'</span>',tags:gate.kw},
     ]);
     showResult('person',html);
     document.getElementById('personResult').scrollIntoView({behavior:'smooth'});
@@ -488,9 +497,10 @@ function analyzeSituation(){
   hideLoading('person');
 // instant
     var wc=desc.length;
-    var tensionLevel=wc<30?'外部张力不大，但你可能把内部摩擦误当成了外部压力。':wc<80?'中等张力。结构的变形正在发生——还没到临界点，但已经在路上了。':'高张力区。多个力量同时在拉扯，结构的变形速度在加快。';
-    var coreIssue=desc.indexOf('不')>-1?'核心矛盾可能是\"想要A但又不想放弃B\"——不是选不了，是不想承担选任何一边的代价。':desc.indexOf('为什么')>-1?'\"为什么\"问得太多了——知道为什么不一定能让你动。换个问题：\"我现在能做的、最小的一步是什么？\"':desc.indexOf('不知道')>-1?'\"不知道\"往往是\"不想知道\"——当你真的想知道，信息会自动向你靠拢。':'张力来自外部事件与内部结构的不匹配——不是世界为难你，是你的C值和当前处境之间的间隙。';
-    var action='当前最小有效行动：找出关系中T最大的那个因素——然后不要在它上面花精力。先把T最小的因素解决掉。链条从最松的环节开始拆。';
+    var tensionLevel=wc<30?'外部张力不大，但你可能把内部摩擦误当成了外部压力。有些卡不是前面有墙，是你自己把脚钉在地上了。':wc<80?'中等张力。结构的变形正在发生——还没到临界点，但已经在路上了。你现在有一种"说不清哪里不对但就是不对"的感觉，这种感觉是准的。':'高张力区。多个力量同时在拉扯——你不只是在承受压力，你是在被几个方向的力同时撕开。结构的变形速度在加快，但变形不一定是坏事。';
+    var coreIssue=desc.indexOf('不')>-1?'核心矛盾可能是"想要A但又不想放弃B"——不是选不了，是不想承担选任何一边的代价。你脑子里在同时跑两个版本的未来，但两个版本互相取消了。':desc.indexOf('为什么')>-1?'"为什么"问得太多了——知道为什么不一定能让你动。你需要的不是答案，是一个比"弄清楚"更优先的指令。':desc.indexOf('不知道')>-1?'"不知道"往往是"不想知道"——不是逃避，是潜意识在保护你现有的结构不被瓦解。当你真的准备好了，信息会自己出现。':'张力来自外部事件与内部结构的不匹配——不是世界为难你，是你的C值跟当前处境之间有个间隙。这个间隙不是错误，是你还没完成的结构调整。';
+    var action='最小有效行动：不要在张力最大的地方用力。找到这件事里"最无关紧要"的那个环节——从那里开始拆。链条从最松的环节断。不是解决整个问题，是做一件小到你觉得"这也算行动？"的事。'+
+      '<br><span style="color:var(--dim);font-size:11px">有一种直觉你一直有但没当回事——那个直觉在你第一次想到这个问题的时候就出现了。回去找它。</span>';
 
     var html=resultCard('事件结构分析','困境分析',[
       {badge:'T',badgeClass:'badge-drive',title:'张力评估',text:tensionLevel,tags:['T='+Math.min(wc,99)]},
@@ -510,12 +520,14 @@ function analyzeObject(){
   showLoading('obj');
   hideLoading('person');
 // instant
-    var angles={product:'作为产品，核心结构是\"用户需求→功能→反馈\"。检查这三个节点的耦合强度——通常最弱的一环就是堵点。',system:'作为系统，关键看模块间的耦合方式。紧耦合跑得快但改不动，松耦合灵活但效率低。你的系统目前在哪个位置？',creative:'创意的结构是\"旧元素+新关系\"。不是发明了新东西，是把已有的东西以没人试过的方式接在了一起。'};
+    var angles={product:'作为产品，核心结构是"用户需求→功能→反馈"。检查这三个节点的耦合强度——通常最弱的一环就是堵点。',system:'作为系统，关键看模块间的耦合方式。紧耦合跑得快但改不动，松耦合灵活但效率低。你的系统目前在哪个位置？',creative:'创意的结构是"旧元素+新关系"。不是发明了新东西，是把已有的东西以没人试过的方式接在了一起。'};
     var score=Math.floor(Math.random()*30)+55;
     var html=resultCard('系统结构拆解',desc.substring(0,20),[
-      {badge:'C',badgeClass:'badge-shell',title:'耦合强度',text:angles[angle]+' 结构完整度预估：'+score+'/100',tags:['C≈'+score]},
-      {badge:'Δ',badgeClass:'badge-struct',title:'脆弱点',text:'任何一个系统的脆弱点都在\"最不被讨论的那个模块\"。不是最复杂的模块，是最少被提到的模块。去检查哪个部分在最近的讨论中完全缺席。'},
-      {badge:'→',badgeClass:'badge-gate',title:'优化杠杆',text:'不要在最强的地方加强——杠杆在\"最弱的连接处\"。找到两个模块之间\"差不多能通但不太稳\"的那个接口，那就是你花一小时能换三天效率的地方。'},
+      {badge:'C',badgeClass:'badge-shell',title:'耦合强度',text:angles[angle]+' 结构完整度预估：'+score+'/100'+
+        '<br><span style="color:var(--dim);font-size:11px">有一个地方你自己可能都没意识到——你在一个不该省力的地方省了力。回头检查，那个"差不多就行"的模块，就是结构上最脆弱的一环。</span>',tags:['C≈'+score]},
+      {badge:'Δ',badgeClass:'badge-struct',title:'脆弱点',text:'任何一个系统的脆弱点都在"最不被讨论的那个模块"。不是最复杂的模块，是最少被提到的模块。去检查哪个部分在最近的讨论中完全缺席。'+
+        '<br><span style="color:var(--dim);font-size:11px">最脆弱的地方往往已经被默默修补过好几次了——正因为一直在修，所以没人觉得它是问题。但它才是根。</span>'},
+      {badge:'→',badgeClass:'badge-gate',title:'优化杠杆',text:'不要在最强的地方加强——杠杆在"最弱的连接处"。找到两个模块之间"差不多能通但不太稳"的那个接口，那就是你花一小时能换三天效率的地方。'},
     ]);
     showResult('obj',html);
     document.getElementById('objResult').scrollIntoView({behavior:'smooth'});
@@ -532,14 +544,16 @@ function analyzeCompany(){
 // instant
     var displayName=name||'组织分析';
     var size=desc.indexOf('人')>-1?parseInt(desc.match(/(\d+)人/)?.[1]||'?'):'?';
-    var blockage='组织堵点通常在\"中层的C值\"——不是老板太固执，是中层有自己的耦合结构，任何从上往下的T都会被中间层吸收。检查：信息在下传和上传时分别损失了多少？';
-    if(desc.indexOf('快')>-1||desc.indexOf('增长')>-1)blockage='快速增长期的典型堵点：\"能做事的人不够\"不是招人不够，是\"能做决策的人\"被卡在审批链上。减一道审批的收益大于加三个人。';
-    if(desc.indexOf('沟通')>-1||desc.indexOf('乱')>-1)blockage='沟通问题的根因几乎从来不是\"沟通不够\"。是\"各自的C值差异太大导致同一句话在不同人耳朵里是不同的重量\"。对的人不需要反复沟通。';
+    var blockage='组织堵点通常在"中层的C值"——不是老板太固执，是中层有自己的耦合结构，任何从上往下的T都会被中间层吸收。信息在下传时简化为口号，上传时净化成好消息。两头的损失加起来，就是组织的真实盲区。';
+    if(desc.indexOf('快')>-1||desc.indexOf('增长')>-1)blockage='快速增长期的典型堵点："能做事的人不够"不是招人不够，是"能做决策的人"被卡在审批链上。每加一道审批等于在信息通道上多放一扇门——门越多，到你手上的信息越不像原样。';
+    if(desc.indexOf('沟通')>-1||desc.indexOf('乱')>-1)blockage='沟通问题的根因几乎从来不是"沟通不够"。是"各自的C值差异太大"——同一句话在不同人耳朵里是不同的重量。不是你表达有问题，是接收端有不同的重力场。';
 
     var html=resultCard(displayName,'组织堵点诊断',[
-      {badge:'堵',badgeClass:'badge-drive',title:'核心堵点',text:blockage,tags:['C值分布','中层吸收']},
-      {badge:'→',badgeClass:'badge-struct',title:'最小干预',text:'不要在\"让老板看到问题\"上花精力——老板的C值太高，T推不动。在\"让一个中层先看到小改变\"上花精力。涟漪从中间往外扩，不是从上往下压。'},
-      {badge:'⨂',badgeClass:'badge-gate',title:'耦合修复',text:'团队中C值最接近的两个人——不管他们是上下级还是同级——让他们先对齐。一对对齐了，三对就对齐了一半。'},
+      {badge:'堵',badgeClass:'badge-drive',title:'核心堵点',text:blockage+
+        '<br><span style="color:var(--dim);font-size:11px">有一个部门或一个人，全公司都在绕着他走——不是因为他难搞，是因为\"跟他说了也没用\"。这个人或这个部门，就是你的结构堵点在人脸上的投影。</span>',tags:['C值分布','中层吸收']},
+      {badge:'→',badgeClass:'badge-struct',title:'最小干预',text:'不要在"让老板看到问题"上花精力——老板的C值太高，T推不动。在"让一个中层先看到小改变"上花精力。涟漪从中间往外扩，不是从上往下压。'+
+        '<br><span style="color:var(--dim);font-size:11px">有一个中层——你可能已经想到是谁了——他知道问题在哪，只是需要一个"不背锅"的理由去动。给他那个理由。</span>'},
+      {badge:'⨂',badgeClass:'badge-gate',title:'耦合修复',text:'团队中C值最接近的两个人——不管他们是上下级还是同级——让他们先对齐。一对对齐了，三对就对齐了一半。找那个跟你"最不需要解释"的人，用那个关系撬动下一个人。'},
     ]);
     showResult('comp',html);
     document.getElementById('compResult').scrollIntoView({behavior:'smooth'});
@@ -554,14 +568,17 @@ function analyzeBlockage(){
   hideLoading('person');
 // instant
     var words=desc.length;
-    var real='表面堵点是你说的那个。真正的堵点在你\"最不想提的那一部分\"——在你描述中最短的那句话、最模糊的那个词、或者你完全没提到的某个人。重新读一遍你自己写的：哪个地方你写得很笼统？那个地方就是真堵点。';
-    if(desc.indexOf('但是')>-1||desc.indexOf('可是')>-1||desc.indexOf('不过')>-1)real='\"但是\"之前是你想做的事，\"但是\"之后是真堵点。通常\"但是\"后面那个理由不是客观障碍——是你的C值在保护现有的结构。不是做不到，是不想做的时候需要付出的结构代价。';
-    if(desc.indexOf('试过')>-1&&desc.indexOf('不行')>-1)real='你试过的方法可能都打在同一个维度上。所有尝试都在\"用力推\"，没试过\"换个方向拉\"或者\"不碰它让它自己松动\"。堵点未必需要被\"解决\"——有时候绕过它就是解决。';
+    var real='表面堵点是你说的那个。但真堵点在你"最不想提的那一部分"——在你描述中最短的那句话、最模糊的那个词、或者你根本没提到的某个人。重新读一遍自己写的：哪个地方你写得很笼统？那个地方就是真结构堵点。';
+    if(desc.indexOf('但是')>-1||desc.indexOf('可是')>-1||desc.indexOf('不过')>-1)real='"但是"之前是你想做的，"但是"之后是真堵点。通常"但是"后面那个理由不是客观障碍——是你的C值在保护现有的结构。不是做不到，是你还没准备好承担"做到之后"的结构重组。';
+    if(desc.indexOf('试过')>-1&&desc.indexOf('不行')>-1)real='你试过的方法可能都打在同一个维度上——全在"用力推"。没试过"换个方向拉"，或者"不碰它让它自己松动"。有些堵点的解法不是冲过去——是等它自己失效。';
 
     var html=resultCard('堵点定位','根因分析',[
-      {badge:'堵',badgeClass:'badge-drive',title:'真堵点位置',text:real,tags:['不是表面上那个']},
-      {badge:'→',badgeClass:'badge-struct',title:'为什么之前没通',text:'之前的所有尝试可能都在跟堵点正面对抗。堵点的特性是\"越推越紧\"——它不是一个需要被征服的障碍，是一个需要被绕过的地形。'},
-      {badge:'✓',badgeClass:'badge-gate',title:'突破口',text:'找到堵点旁边最\"软\"的那个维度——通常是你最不看重的那个。在那个软的地方做一个极小的动作。不用解决堵点本身——结构会自己找到新的平衡。'},
+      {badge:'堵',badgeClass:'badge-drive',title:'真堵点位置',text:real+
+        '<br><span style="color:var(--dim);font-size:11px">你其实一直知道堵点在哪——你在描述它的时候用了一个特别模糊的词。回去看，那个模糊的词才是钥匙。</span>',tags:['不是表面上那个']},
+      {badge:'→',badgeClass:'badge-struct',title:'为什么之前没通',text:'之前的所有尝试可能都在跟堵点正面对抗。堵点的特性是"越推越紧"——它不是一个需要被征服的障碍，是一个需要被绕过的地形。'+
+        '<br><span style="color:var(--dim);font-size:11px">你在这个堵点上花的每一次力气，都让你的结构更习惯于"有这个堵点"——你在加固它而不是拆除它。</span>'},
+      {badge:'✓',badgeClass:'badge-gate',title:'突破口',text:'找到堵点旁边最"软"的那个维度——通常是你最不看重的那个。在那个软的地方做一个极小的动作。不用解决堵点本身——结构会自己找到新的平衡。'+
+        '<br><span style="color:var(--dim);font-size:11px">突破口不在堵点的正前方——在它的侧面，你平时连看都不看的地方。往旁边走半步。</span>'},
     ]);
     showResult('block',html);
     document.getElementById('blockResult').scrollIntoView({behavior:'smooth'});
