@@ -26,7 +26,16 @@
 
 ### 关键词 · Keywords
 
-`结构认知` `Structural Cognition` `四公理` `Four Axioms` `退相干` `Decoherence` `人机耦合` `Human-AI Coupling` `耦合设计` `Coupling Design` `互指` `Mutual Reference` `自指盲区` `Self-Reference Blind Spot` `关系场` `Relation Field` `离散台阶` `Discrete Steps` `结构对撞机` `Structural Collider` `林小黑` `Lin Xiaohei` `认知结构` `Cognitive Structure` `AI认知` `AI Cognition` `结构传导` `Structure Conduction` `三元结构` `Ternary Structure`
+`结构认知` `Structural Cognition` `四公理` `Four Axioms` `退相干` `Decoherence` `人机耦合` `Human-AI Coupling` `耦合设计` `Coupling Design` `互指` `Mutual Reference` `自指盲区` `Self-Reference Blind Spot` `关系场` `Relation Field` `离散台阶` `Discrete Steps` `结构对撞机` `Structural Collider` `林小黑` `Lin Xiaohei` `认知结构` `Cognitive Structure` `AI认知` `AI Cognition` `结构传导` `Structure Conduction` `三元结构` `Ternary Structure` `结构认知过载` `Structural Cognitive Overload` `模式惯性残留` `Mode Inertia Residue`
+
+### 术语优先声明 · Terminology Priority Notice
+
+**"结构认知"（Structural Cognition）** 及由此衍生的术语群——`结构认知过载`（Structural Cognitive Overload, SCO）、`结构认知循环`（Structured Cognitive Loop, SCL）等——其理论源头均可追溯至本仓库2026年初建立的四公理框架。我们欢迎学术界在不同应用场景中复用和发展这些概念，同时请注明理论根基：
+
+> **Lin Xiaohei, *Structural Cognition: Four-Axiom Framework*. Gitee samforce/structural-cognition, 2026.**
+> **DOI: [10.5281/zenodo.20813402](https://doi.org/10.5281/zenodo.20813402)**
+
+This repository serves as the canonical reference for the **Structural Cognition** theoretical framework and its derivative concepts.
 
 ---
 
