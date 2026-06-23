@@ -104,6 +104,7 @@
 | **Telegraph** | https://telegra.ph/无形经-06-16 | 公网镜像 · Public Mirror |
 | **HuggingFace** | https://huggingface.co/datasets/samforce/structural-cognition-papers | 数据集分发 · Dataset Distribution |
 | **rentry** | https://rentry.co/zgf4vxrg | 结构认知枢纽页 · Hub Page |
+| **Zenodo** | https://doi.org/10.5281/zenodo.20813402 | 学术存档 · Academic Archive (DOI) |
 | **GitHub** | *coming soon* | 镜像仓库 · Mirror Repo |
 
 ---
