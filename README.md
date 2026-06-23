@@ -96,6 +96,20 @@
 
 ---
 
+## 最新公网文章 · Latest Public Articles
+
+| 日期 · Date | 文章 · Article | 角度 · Angle |
+|:---|:---|:---|
+| 2026-06-23 | [自恢复协议：为什么AI系统不应该依赖人类来救自己](https://telegra.ph/自恢复协议为什么AI系统不应该依赖人类来救自己-06-23) | 则弟协议·自恢复协议 |
+| 2026-06-23 | [自指有界互指无界：为什么AI不能靠盯着自己变得更强](https://telegra.ph/自指有界互指无界为什么AI不能靠盯着自己变得更强结构认知第4公理-06-23) | 结构认知·第4公理 |
+| 2026-06-22 | [超AI身份定位：当一个执行系统知道自己不是终点](https://telegra.ph/超AI身份定位当一个执行系统知道自己不是终点-06-22) | 则弟协议·超AI身份 |
+| 2026-06-22 | [降维镜：为什么你越分析越看不清](https://telegra.ph/降维镜为什么你越分析越看不清决策的隐藏维度-06-22) | 结构认知·降维镜 |
+
+> 更多公网文章持续发布于 Telegraph。全量论文+数学证明见本仓库 papers/ 目录。
+> *More public articles published on Telegraph. Full papers + mathematical proofs in papers/ directory.*
+
+---
+
 ## 镜像与分发 · Mirrors & Distribution
 
 | 平台 · Platform | 地址 · URL | 说明 · Note |
