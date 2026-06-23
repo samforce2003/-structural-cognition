@@ -1,6 +1,6 @@
 # Self-Reference Blind Spots Cannot Self-Eliminate: Subjective Experience as Structural Lossy Compression
 
-## ——Dual-Domain Verification of Theorem 3 of the Structural Axiom System
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​——Dual-Domain Verification of Theorem 3 of the Structural Axiom System
 
 ---
 

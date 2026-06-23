@@ -1,5 +1,5 @@
 # 公办大学科研的相位困境与外力破局
-## ——基于结构感知框架的全球分析
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​——基于结构感知框架的全球分析
 <!-- ​‎‌‎ -->
 
 **林小黑**
@@ -106,4 +106,4 @@
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-© 2026 Lin Xiaohei (林小黑). All rights reserved.
+©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.

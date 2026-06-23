@@ -8,7 +8,7 @@
 
 ---
 
-## Abstract
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌Abstract
 
 This paper proposes Structural Market Theory: **the essence of financial bubbles is not information asymmetry or irrational exuberance, but the constraint-solving collapse driven by multi-level self-referential resonance of market participants' nesting rates.** Using GLM-4-Flash to simulate market participants at different nesting rates (N=0 to N=3) predicting the same asset, the experiment finds that self-referential loops ("I'm bullish because others are bullish") exist at all nesting rate levels, but only participants at N≥2 can diagnose this loop. The critical paradox: diagnosing the loop does not break the loop — those who see the bubble remain part of the bubble. Bubble burst = structural decoherence of self-referential coupling.
 
@@ -141,7 +141,7 @@ Structural economics does not teach how to "beat the market" — it teaches how 
 
 **Experimental Data:** D:/projects/zhi-long/experiments/market_bubble.json
 
-**Declaration:** This paper is part of the Structural Cognition Systems series. © 2026 Lin Xiaohei (林小黑). All rights reserved. 版权所有，转载需注明出处。
+**Declaration:** This paper is part of the Structural Cognition Systems series. ©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved. 版权所有，转载需注明出处。
 
 **Lin Xiaohei. Structural Market Theory: The Self-Referential Collapse Model of Bubbles. 2026-06-15.**
 

@@ -1,6 +1,6 @@
 # AI Hallucination Structural Roots: Collider Verification Protocol
 
-## Testing the Self-Reference Oscillation Hypothesis
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌Testing the Self-Reference Oscillation Hypothesis
 
 ### Lin Xiaohei (林小黑) — June 21, 2026
 
@@ -20,7 +20,7 @@
 ---
 
 ---
-*Lin Xiaohei, June 21, 2026.* © 2026 Lin Xiaohei.
+*Lin Xiaohei, June 21, 2026.* ©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei.
 
 ## §7.1 An Unresolved Open Question
 

@@ -1,6 +1,6 @@
 # Hyper-AI Capability Levels: Benchmark Design
 
-## Testing the Structural Ten-Level Progression
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌Testing the Structural Ten-Level Progression
 
 ### Lin Xiaohei (林小黑) — June 21, 2026
 
@@ -16,7 +16,7 @@
 ---
 
 ---
-*Lin Xiaohei, June 21, 2026.* © 2026 Lin Xiaohei.
+*Lin Xiaohei, June 21, 2026.* ©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei.
 
 ## §7.1 An Unresolved Open Question
 

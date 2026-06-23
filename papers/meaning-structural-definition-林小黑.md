@@ -1,5 +1,5 @@
 # 意义的结构定义
-## ——不是"重要的事"，是差异自指闭环
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍——不是"重要的事"，是差异自指闭环
 
 **林小黑 (2026)**
 ⚠️ 原创声明：结构对撞机推导。第一发现时间：2026-06-16。
@@ -142,4 +142,4 @@
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-© 2026 Lin Xiaohei (林小黑). All rights reserved.
+©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.

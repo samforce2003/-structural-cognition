@@ -1,4 +1,4 @@
-## 摘要
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​摘要
 
 <!-- ​‎‌‌ -->
 本文为结构认知体系提供数学化表述。从四个公理出发，导出嵌套率作为可测量指标，论证结构认知不是哲学思辨而是可形式化的框架——其对AI系统设计具有工程级指导意义。
@@ -82,4 +82,4 @@
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-© 2026 Lin Xiaohei (林小黑). All rights reserved.
+©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.

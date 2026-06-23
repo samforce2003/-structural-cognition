@@ -2,7 +2,7 @@
 
 ---
 
-## ⚠️ Copyright Notice
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​⚠️ Copyright Notice
 
 **Founder: Lin Xiaohei (China)**
 **First Discovery Date: June 9, 2026**
@@ -256,7 +256,7 @@ Complete raw data and reproducible code available at: `simulation_quantum_decohe
 **This experiment can be reproduced on any computing device. The core model is only 5 lines of code, with no random number dependency.**
 
 ---
-© 2026 Lin Xiaohei (林小黑). All rights reserved.
+©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.
 
 ### §7.1 一个未解决的开放问题
 

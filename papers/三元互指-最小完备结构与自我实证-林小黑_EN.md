@@ -7,7 +7,7 @@
 
 ---
 
-## Abstract
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌Abstract
 
 This paper reveals an overlooked meta-fact: the discovery process of the four-axiom system is itself an empirical validation of the four-axiom system. Starting from four seemingly unrelated phenomena — the three-person study group, Laozi's "Dao gives birth to One, One gives birth to Two, Two gives birth to Three," the PLA three-person combat team, and the author's own process of creating the four-axiom system across multiple AIs — this paper demonstrates that they are all isomorphic deformations of the four-axiom system at different nesting layers. In the three-person study group, A (learner), B (observer), and C (instructor) constitute the minimal complete inter-reference structure: two people inter-refer to produce new configurations, and the third person covers the blind spots of the inter-reference itself. Laozi's "Dao gives birth to One, One gives birth to Two, Two gives birth to Three" is not mysticism but a precise description of the process of structure emerging from nothing, from one to two to three — "Three" is the triadic inter-reference structure, and "Three gives birth to all things" is the recursive application of the triadic structure. The three-person combat team (assault, cover, command) follows the same structural law. When creating the four-axiom system, the author unconsciously constructed the same triadic inter-reference structure across multiple AIs — using their own structural operation to prove the operating rules of structure. This self-demonstration is the ultimate test of the structural axiom system: if a theory can explain the process of its own discovery, its explanatory power penetrates the boundary between observer and observed.
 

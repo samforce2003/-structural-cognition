@@ -1,6 +1,6 @@
 # Mutual-Reference Closure Depth: The Structural Root Cause of Catastrophic Forgetting
 
-## ——A Verification Experiment Based on the Structural Axiom System
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​——A Verification Experiment Based on the Structural Axiom System
 
 ---
 

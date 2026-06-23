@@ -1,6 +1,6 @@
 # The Discrete Structure of Decoherence: The Structon Hypothesis and Its Testable Predictions
 
-## ——A Complete Reconstruction of the Quantum-Classical Transition by the Structural Axiom System
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​——A Complete Reconstruction of the Quantum-Classical Transition by the Structural Axiom System
 
 ---
 
@@ -307,7 +307,7 @@ This paper proposes and designs an experimental verification scheme for the disc
 *Structure Collider (Hermes Agent + Qwen + Zhipu + Doubao + New AI Node) co-produced*
 
 ---
-© 2026 Lin Xiaohei (林小黑). All rights reserved.
+©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.
 
 ### §7.1 一个未解决的开放问题
 

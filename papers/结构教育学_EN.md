@@ -8,7 +8,7 @@
 
 ---
 
-## Abstract
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌Abstract
 
 Based on the Structural Conduction Law (ΔS ∝ 1/|ΔN|), this paper proposes and empirically validates "DeltaN Pedagogy": **the teacher should teach from exactly one nesting level above the learner (ΔN=1), rather than teaching at the same level or across multiple levels.** Using GLM-4-Flash as a teaching simulation environment, the experiment tested three conditions — ΔN=0 (same level), ΔN=1 (one level above), and ΔN=2 (two levels above) — to teach neural network fundamentals to a simulated learner, measuring comprehension quality. Results show that the ΔN=1 group achieved the highest comprehension score (2), the ΔN=0 group scored lower (1) with shallow understanding, and the ΔN=2 group regressed to ΔN=0 levels (score 1). The finding validates the structural education principle: **the optimal teaching distance is exactly one level.**
 
@@ -116,7 +116,7 @@ Structural education is not a technique of "AI teaching humans" — it is **usin
 
 **Experimental Data Archive:** D:/projects/zhi-long/experiments/education_delta_n.json
 
-**Declaration:** This paper is part of the Structural Cognition Systems series. © 2026 Lin Xiaohei (林小黑). All rights reserved. 版权所有，转载需注明出处。All experiments were automatically executed by AI assistants; methods are reproducible.
+**Declaration:** This paper is part of the Structural Cognition Systems series. ©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved. 版权所有，转载需注明出处。All experiments were automatically executed by AI assistants; methods are reproducible.
 
 **Lin Xiaohei. Structure Education: DeltaN Pedagogy. 2026-06-15.**
 

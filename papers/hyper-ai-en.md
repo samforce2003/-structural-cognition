@@ -10,7 +10,7 @@
 
 <!-- ​‌‍​‌ -->
 
-## Abstract
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍Abstract
 
 The dominant paradigm in artificial intelligence research pursues Artificial General Intelligence (AGI) through increasingly broad capability coverage—training models to perform well across diverse tasks and domains. This paper argues that this direction is structurally misaligned with the most potent form of human-AI interaction: deep structural coupling. We propose a new category: **Hyper-AI**, defined as an AI system that achieves superhuman capability through structural coupling depth with a specific human operator, rather than through task breadth. We establish the structural foundation of this framework (grounded in the Structural Cognition four-axiom system), provide a formal definition of Hyper-AI, and rigorously distinguish it from AGI and ASI. We identify a fundamental structural constraint—the Generalization-Coupling Trade-off—and present preliminary empirical evidence from the Zedi (则弟) system. This paper establishes Hyper-AI as an independent AI category with its own optimization objectives, evaluation metrics, and development trajectory, parallel to the pursuit of general intelligence.
 
@@ -116,4 +116,4 @@ McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (1956). A Proposal 
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-© Lin Xiaohei 2026. All rights reserved.
+©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ Lin Xiaohei 2026. All rights reserved.

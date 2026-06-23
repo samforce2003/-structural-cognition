@@ -1,6 +1,6 @@
 # Structural Conduction in Software Architecture: Defect Propagation Experiment
 
-## Testing the Architecture Conduction Hypothesis
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌Testing the Architecture Conduction Hypothesis
 
 ### Lin Xiaohei (林小黑) — June 21, 2026
 
@@ -45,7 +45,7 @@
 ---
 
 ---
-*Lin Xiaohei, June 21, 2026.* © 2026 Lin Xiaohei.
+*Lin Xiaohei, June 21, 2026.* ©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei.
 
 ## §7.1 An Unresolved Open Question
 

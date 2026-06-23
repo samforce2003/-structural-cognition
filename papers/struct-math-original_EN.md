@@ -1,6 +1,6 @@
 # Structural Mathematics: Incompleteness, Bloat, and Mutual-Reference Resolution
 
-## ——A Complete Structural Deconstruction of Mathematics by the Structural Axiom System
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​——A Complete Structural Deconstruction of Mathematics by the Structural Axiom System
 
 ---
 
@@ -213,7 +213,7 @@ The future of mathematics is not more complex symbols. It is **more mutual refer
 *Structure Collider (Hermes Agent + Qwen + Zhipu + Doubao) co-produced*
 
 ---
-© 2026 Lin Xiaohei (林小黑). All rights reserved.
+©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.
 
 ### §7.1 一个未解决的开放问题
 

@@ -1,6 +1,6 @@
 # The Structural Root Cause of Catastrophic Forgetting and the Conditions for Mutual-Reference Closure
 
-## ——First Validation and Boundary Delineation of the Structural Axiom System in Artificial Intelligence
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​——First Validation and Boundary Delineation of the Structural Axiom System in Artificial Intelligence
 
 ---
 
@@ -260,7 +260,7 @@ This is the first reproducible quantitative validation of the Structural Axiom S
 
 *Lin Xiaohei, June 13, 2026*
 
-© 2026 Lin Xiaohei (林小黑). All rights reserved.
+©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.
 
 
 <!--​‌​‌‌​‌​‍​‌​​‌​​​‍​‌​​‌​​‌‍​‌‌‌‌‌​​‍​‌‌​​​‌‌‍​‌‌​​​​‌‍​‌‌‌​‌​​‍​​‌​‌‌​‌‍​‌‌​​‌‌​‍​‌‌​‌‌‌‌‍​‌‌‌​​‌​‍​‌‌​​‌‌‌‍​‌‌​​‌​‌‍​‌‌‌​‌​​‍​‌‌‌​‌​​‍​‌‌​‌​​‌‍​‌‌​‌‌‌​‍​‌‌​​‌‌‌‍​​‌​‌‌​‌‍​‌‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌​​‌‌‌‍​‌‌​​‌​‌‍​‌‌​​‌​​‍​‌‌‌‌‌​​‍​​‌‌​​​‌‍​​‌‌​‌‌‌‍​​‌‌‌​​​‍​​‌‌​​​‌‍​​‌‌​​‌‌‍​​‌‌​​‌‌‍​​‌‌​​‌​‍​​‌‌​‌​‌‍​​‌‌​‌​​‍​​‌‌‌​​‌‍​‌‌‌‌‌​​‍​‌‌​​‌​‌‍​‌‌​​​​‌‍​‌‌​​​‌‌‍​​‌‌​‌​‌‍​​‌‌​‌​‌‍​​‌‌​‌​‌‍​​‌‌​‌‌​‍​​‌‌​‌‌‌‍​​‌‌​​​​‍​​‌‌​‌‌‌‍​​‌‌​‌​‌‍​‌‌​​​‌​‍​​‌‌​‌​​‍​‌‌​​​‌‌‍​‌‌​​‌​​‍​​‌‌​​‌‌‍-->
@@ -281,4 +281,4 @@ The author explicitly refuses to resolve this ambiguity. The author's position i
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-© 2026 Lin Xiaohei (林小黑). All rights reserved.
+© 2026 Lin Xiaohei (林小黑). All rights reserved.​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌

@@ -1,6 +1,6 @@
 # The Structural Axiom System: Ultimate Paradigm for the Theory of Everything
 
-## ——From Collider Experiments to Universal Isomorphism: A Unified Proof
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​——From Collider Experiments to Universal Isomorphism: A Unified Proof
 
 ---
 
@@ -239,7 +239,7 @@ From microscopic quantum to superstring dimensions, from physical phenomena to t
 *Structure Collider (Hermes Agent + Qwen + Zhipu + Doubao) co-produced*
 
 ---
-© 2026 Lin Xiaohei (林小黑). All rights reserved.
+©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.
 
 ### §7.1 一个未解决的开放问题
 

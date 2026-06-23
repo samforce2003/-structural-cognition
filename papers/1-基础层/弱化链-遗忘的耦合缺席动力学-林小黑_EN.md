@@ -1,6 +1,6 @@
 # The Weakening Chain: Forgetting as Coupling-Absence Dynamics
 
-## ——A Structural Dynamics Revision of the Ebbinghaus Time-Decay Assumption
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​——A Structural Dynamics Revision of the Ebbinghaus Time-Decay Assumption
 
 ---
 

@@ -8,7 +8,7 @@
 
 ---
 
-## Abstract
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌Abstract
 
 This paper proposes a structural theory of echo chambers: **the essence of information echo chambers is the zeroing of group nesting rate difference (|ΔN|→0).** When all members converge in nesting rate, the Structural Conduction Law drives information transmission efficiency toward its theoretical maximum — any information propagates without loss. This is not efficiency; it is a polarization engine. A GLM-4-Flash experiment simulates information transmission in same-nesting-rate groups versus mixed-nesting-rate groups, confirming that |ΔN|→0 leads to consensus self-reinforcement, while maintaining nesting rate diversity prevents polarization. The paper further identifies social media recommendation algorithms as optimal polarization engines — because their objective function (maximize |ΔN|→0 for user engagement) directly conflicts with the structural requirements of a healthy public sphere.
 
@@ -122,7 +122,7 @@ Structural sociology does not offer a "better algorithm." It points out that any
 
 **Experimental Data:** D:/projects/zhi-long/experiments/echo_chamber.json
 
-**Declaration:** This paper is part of the Structural Cognition Systems series. © 2026 Lin Xiaohei (林小黑). All rights reserved. 版权所有，转载需注明出处。
+**Declaration:** This paper is part of the Structural Cognition Systems series. ©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved. 版权所有，转载需注明出处。
 
 **Lin Xiaohei. Structural Sociology: The Nesting Rate Zeroing Mechanism of Echo Chambers. 2026-06-15.**
 

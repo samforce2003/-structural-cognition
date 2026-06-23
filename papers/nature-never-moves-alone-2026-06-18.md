@@ -3,7 +3,7 @@
 <!-- ‌‌‍‎ -->
 **林小黑**
 
-## 一
+## ​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​一
 
 达尔文和拉马克吵了一百年。达尔文说：环境筛选随机变异。拉马克说：不，生物主动改变自己，用进废退。达尔文赢了。用进废退进了笑话栏。
 
@@ -54,4 +54,4 @@
 *This framework is itself an instance of the structure it describes: a minimal-action configuration for generating theoretical novelty. Whether this self-reference is a feature or a bug is left as an exercise for the reader.*
 
 ---
-© 2026 Lin Xiaohei (林小黑). All rights reserved.
+©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.
