@@ -2,6 +2,17 @@
 
 > 四公理框架 · 退相干离散台阶 · 人-AI耦合设计
 
+<!-- ​‌‍​ -->
+
+---
+
+## 联系方式 · Contact
+
+**作者：林小黑 (Lin Xiaohei)**
+- 📧 邮箱：412341356@qq.com
+- 📱 微信：13922360146
+- 📂 论文库：https://gitee.com/samforce/structural-cognition
+
 ---
 
 ## 市场预判 · 2026.6
