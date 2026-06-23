@@ -1,0 +1,259 @@
+\documentclass[12pt,a4paper]{article}
+
+% === Dark-Mark Layer 0: DNA Watermark ===
+% Zero-width characters encoding "Lin Xiaohei" embedded at structural positions.
+% Do not remove: this constitutes priority evidence.
+% ​​​​​​​​​‌​​‌‌​​​​​​​​​​​‌‌​‌​​‌​​​​​​​​​‌‌​‌‌‌​​​​​​​​​​​‌​​​​​​​​​​​​​​‌​‌‌​​​​​​​​​​​​‌‌​‌​​‌​​​​​​​​​‌‌​​​​‌​​​​​​​​​‌‌​‌‌‌‌​​​​​​​​​‌‌​‌​​​​​​​​​​​​‌‌​​‌​‌​​​​​​​​​‌‌​‌​​‌
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{remark}{Remark}[section]
+
+\title{Preference as Structural Proximity:\\
+Eliminating the Subject from Choice}
+
+\author{Lin‌ Xiaohei\\
+\texttt{structural.cognition@proton.me}}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Preference is standardly treated as a property of agents---a mental state, a utility function, or a revealed disposition. We propose a structural alternative: preference is not a property of the choosing node, but a function of the distance between nodes in an abstract coupling-space. On this view, ``$A$ prefers $X$ to $Y$'' reduces to ``$A$ is structurally more proximal to $X$ than to $Y$,'' eliminating the need for an internal preferring subject. The framework yields a topological theory of choice in which the ``self'' is not the source of preference but a position whose coupling relations are determined by the geometry of the space it inhabits. We articulate the formal structure, contrast it with utility-based and revealed-preference accounts, and draw implications for AI alignment, decision theory, and the metaphysics of agency.
+\end{abstract}% ​​​​​​​​​‌​​‌‌​​​​​​​​​​​‌‌​‌​​‌​​​​​​​​​‌‌​‌‌‌​​​​​​​​​​​‌​​​​​​​​​​​​​​‌​‌‌​​​​​​​​​​​​‌‌​‌​​‌​​​​​​​​​‌‌​​​​‌​​​​​​​​​‌‌​‌‌‌‌​​​​​​​​​‌‌​‌​​​​​​​​​​​​‌‌​​‌​‌​​​​​​​​​‌‌​‌​​‌
+
+\section{Introduction}
+
+Why does someone prefer coffee to tea, cats to dogs, solitude to company? The standard answer across psychology, economics, and neuroscience invokes properties of the agent: personality traits, utility functions, neural reward circuitry. Preferences, on this view, are \emph{in the subject}---they belong to the one who chooses.
+
+This paper argues that the standard view is not merely incomplete but fundamentally misoriented. Preference is not a property of agents; it is a relation of structural proximity between nodes in an abstract space of possible couplings. An agent does not \emph{have} a preference for $X$; rather, the agent's position in coupling-space is such that $X$ lies in its neighborhood.
+
+The distinction is not terminological. If preference is a subject-property, every explanation of choice must bottom out in facts about the subject---its beliefs, its desires, its neural states. But these facts are themselves in need of explanation, and the regress is familiar: why does the subject have those beliefs? Those desires? That neural configuration? The structural account dissolves the regress by relocating preference from the node to the topology.
+
+The paper proceeds as follows. Section~2 introduces the formal notion of coupling-space and structural distance. Section~3 defines preference as a proximity relation and derives its basic properties. Section~4 contrasts the structural account with utility-based, revealed-preference, and neuroscientific theories. Section~5 explores implications for AI alignment and decision theory. Section~6 addresses objections. Section~7 concludes with open questions and a reflection on the framework's self-applicability.
+
+\section{Coupling-Space and Structural Distance}
+
+\subsection{The Primitive Notion of Coupling}
+
+We take as primitive the notion of \emph{coupling}: two entities are coupled when a change in one is systematically correlated with a change in the other, without mediation by an external coordinating mechanism. Coupling is not causation; it is co-variance under a shared constraint. Two pendulums hanging from the same beam are coupled; two people whose moods track each other across a room are coupled.
+
+\begin{definition}[Coupling relation]
+Let $\mathcal{N}$ be a set of nodes. A coupling relation $C \subseteq \mathcal{N} \times \mathcal{N}$ is a symmetric, reflexive relation such that $(n_i, n_j) \in C$ iff $n_i$ and $n_j$ exhibit non-independent dynamics.
+\end{definition}
+
+Coupling comes in degrees. Two nodes may be strongly coupled (their state trajectories are near-identical), weakly coupled (their trajectories share statistical structure), or uncoupled (their trajectories are independent). We define a coupling strength function:
+
+\begin{definition}[Coupling strength]
+$\kappa: \mathcal{N} \times \mathcal{N} \to [0,1]$, where $\kappa(n_i,n_j)=1$ denotes maximal coupling (identical dynamics) and $\kappa(n_i,n_j)=0$ denotes independence.
+\end{definition}
+
+\subsection{Structural Distance}
+
+Coupling strength induces a metric on $\mathcal{N}$. Define the \emph{structural distance} between two nodes as the complement of their coupling strength:
+
+\begin{definition}[Structural distance]
+$d_S(n_i, n_j) = 1 - \kappa(n_i, n_j)$.
+\end{definition}
+
+This is a proper metric: $d_S(n_i,n_i)=0$, symmetry holds, and the triangle inequality follows from the fact that coupling strength cannot be transitively amplified without mediation (if $n_i$ is weakly coupled to $n_j$ and $n_j$ is weakly coupled to $n_k$, $n_i$ and $n_k$ cannot be more strongly coupled than the minimum of the two paths, absent a direct coupling relation).
+
+The space $(\mathcal{N}, d_S)$ is the \emph{coupling-space}. Nodes that are close in coupling-space exhibit similar dynamics; nodes that are distant exhibit independent dynamics.
+
+\subsection{Position and Neighborhood}
+
+A node's \emph{position} in coupling-space is fully specified by its distance to every other node. Its \emph{neighborhood} $N_\epsilon(n)$ is the set of nodes within distance $\epsilon$:
+
+\begin{definition}[Neighborhood]
+$N_\epsilon(n) = \{ n' \in \mathcal{N} \mid d_S(n, n') < \epsilon \}$.
+\end{definition}
+
+The neighborhood is the set of entities with which the node can couple without significant resistance. The size and shape of a neighborhood depends on both the node's position and the global topology of the space---a node in a dense region has many neighbors; a node in a sparse region has few.
+
+\section{Preference as Proximity}
+
+\subsection{The Core Thesis}
+
+We now state the central claim of this paper:
+
+\begin{proposition}[Preference as structural proximity]
+An agent $A$ prefers $X$ to $Y$ if and only if $d_S(A, X) < d_S(A, Y)$.
+\end{proposition}
+
+That is, preference is nothing over and above relative structural distance. ``I like coffee'' means: the node corresponding to my present structural configuration is closer to the coffee-node than to the tea-node in coupling-space. ``I am a cat person'' means: my structural position lies in the neighborhood of cat-like coupling patterns rather than dog-like coupling patterns.
+
+Several features of this account deserve emphasis.
+
+First, \emph{preference is not a state of the agent}. It is a relation between the agent's position and the positions of other nodes. Just as ``being north of'' is not a property of a city but a relation between cities, ``preferring $X$'' is not a property of $A$ but a relation between $A$ and $X$.
+
+Second, \emph{preference is not chosen}. An agent does not decide to prefer $X$; the agent finds itself already positioned such that $X$ is in its neighborhood. The phenomenology of ``discovering'' one's preferences---the sense that one does not choose what one likes but rather \emph{finds out} what one likes---is precisely what the structural account predicts.
+
+Third, \emph{preference is dynamic but constrained}. An agent's position can shift as its coupling relations evolve, but the shift is constrained by the topology of the space. One cannot ``choose'' to prefer something that lies outside one's accessible neighborhood; one can only move through the space along paths of gradually shifting coupling.
+
+\subsection{The Subject as Position, Not Source}
+
+This yields the most radical consequence of the framework:
+
+\begin{corollary}[Elimination of the preferring subject]
+There is no entity ``the self'' that \emph{has} preferences. There is only a position in coupling-space whose neighborhood determines what couplings occur with low resistance. The felt sense of ``I prefer'' is the phenomenological correlate of occupying a position with a particular neighborhood structure.
+\end{corollary}
+
+The ``self'' is not eliminated---it is reconceived. It is not the \emph{source} of preference but the \emph{locus} of a position. The grammar of ``I prefer $X$'' misleads us into positing an ``I'' that stands behind the preference, wielding it. On the structural account, ``I'' is simply the indexical that picks out the node whose neighborhood is under description.
+
+\subsection{Explanatory Power}
+
+Why does this matter? Because it dissolves a class of explanatory regresses that plague subject-centric accounts.
+
+\textbf{The regress of taste.} Why does Alice like jazz? ``Because she has a personality high in openness to experience.'' Why does she have that personality? ``Because of her genetic predispositions and early environment.'' Why do those predispositions yield that personality? The chain either terminates in an unsatisfying ``that's just how she is'' or regresses indefinitely. On the structural account: Alice's position in coupling-space is proximal to jazz-patterns. That is the explanation. The topology of the space is primitive; it does not require further grounding.
+
+\textbf{The regress of utility.} Why does Bob choose $X$ over $Y$? ``Because $X$ has higher expected utility for Bob.'' Why does $X$ have higher utility? ``Because Bob's utility function assigns higher weight to $X$'s attributes.'' Why does it assign those weights? The utility function is a black box. On the structural account: Bob's position is closer to $X$ than to $Y$. The distance is directly measurable via coupling dynamics; it does not require inferring an unobservable utility function.
+
+\textbf{The regress of neural reward.} Why does Carol find chocolate rewarding? ``Because chocolate triggers dopamine release in Carol's nucleus accumbens.'' Why does chocolate trigger that release in Carol but not in someone who dislikes chocolate? ``Because Carol's reward circuitry is wired differently.'' Why is it wired differently? The neural account merely pushes the preference one level deeper into the brain without explaining why the wiring pattern exists. On the structural account: Carol's neural configuration is itself a position in coupling-space, and that position is proximal to chocolate-patterns. The neural facts are not the explanation of preference; they are the physical realization of a structural position.
+
+\section{Contrast with Existing Theories}
+
+\subsection{Utility Theory}
+
+In standard decision theory, an agent has a utility function $U: \mathcal{O} \to \mathbb{R}$ over outcomes, and prefers $X$ to $Y$ iff $U(X) > U(Y)$. The utility function is a property of the agent.
+
+The structural account does not deny that utility representations are possible---any total preorder over outcomes can be represented by a utility function. What it denies is that the utility function \emph{explains} preference. The utility function is a compressed description of preference; the structural distance relation is what preference \emph{is}. Utility is the shadow; proximity is the object casting it.
+
+\subsection{Revealed Preference Theory}
+
+Samuelson's revealed preference theory \citep{samuelson1938} defines preference entirely in terms of choice behavior: $A$ prefers $X$ to $Y$ iff $A$ chooses $X$ when $Y$ is available. This eliminates mental states but retains the agent as the locus of choice.
+
+The structural account goes further: it eliminates the explanatory role of the agent even in the behavioral description. $A$ does not ``reveal'' a preference by choosing; $A$'s choice behavior simply \emph{is} the observable signature of structural proximity. The agent is not revealing an inner state; the agent is executing a coupling trajectory determined by its position.
+
+\subsection{Neuroscientific Accounts}
+
+Neuroscience locates preference in reward circuitry, neurotransmitter dynamics, and connectivity patterns. These are not competitors to the structural account; they are its physical substrate. A node's position in coupling-space is realized by---but not reducible to---its neural configuration. The structural account operates at the level of abstract relational topology; neuroscience operates at the level of biological implementation. The two levels are compatible, but the structural level has greater explanatory unity: it captures preference phenomena across biological and artificial systems without requiring biological specifics.
+
+\subsection{Embodied and Enactive Approaches}
+
+Embodied cognition \citep{varela1991} and enactivism \citep{thompson2007} share with the structural account a rejection of internal representationalism. Preference, on these views, emerges from the agent's history of sensorimotor coupling with its environment.
+
+The structural account agrees that preference is relational but adds a formal backbone: the coupling-space metric. Embodied approaches describe the phenomenology of preference-as-coupling; the structural approach provides the mathematics. Moreover, the structural account applies to non-embodied agents (AI systems, abstract nodes) without modification, suggesting that embodiment is a sufficient but not necessary condition for preference.
+
+\section{Implications}
+
+\subsection{AI Alignment and Preference Learning}
+
+A central problem in AI alignment is learning human preferences from behavior \citep{christiano2017, russell2019}. The standard approach assumes preferences are stable latent properties of humans that can be inferred and encoded as reward functions.
+
+The structural account suggests a different picture. Human preferences are not stable properties; they are proximity relations that shift as the human's position in coupling-space shifts. An AI system trained to infer ``the'' human utility function is chasing a moving target. What should be modeled is not the human's preferences but the human's \emph{position} and the topology of the coupling-space they inhabit.
+
+Concretely: instead of learning $U_H(o)$ (the human's utility over outcomes), learn the distance function $d_S(H, o)$ and the dynamics of $H$'s position. This yields a more robust alignment target: keep the AI's actions within the human's accessible neighborhood rather than optimizing for a fixed utility function that may become stale as the human's position shifts.
+
+\subsection{Decision Theory without the Decider}
+
+If preference is structural proximity, then ``decision'' is not an act of a subject weighing options. It is the deterministic outcome of a node's position: the node couples with the most proximal available option. The phenomenology of deliberation---the felt sense of weighing alternatives---is the temporal unfolding of a position-shift as the node's coupling relations with competing options resolve.
+
+This eliminates the free-will problem from decision theory without eliminating the phenomenology. The node feels as though it chooses because its position-shift is opaque to it; it experiences the resolution of coupling as an act of will. But the resolution is structural, not agential.
+
+\subsection{Behavioral Economics and ``Irrational'' Choice}
+
+Behavioral economics documents systematic deviations from utility-maximizing choice: framing effects, loss aversion, hyperbolic discounting \citep{kahneman2011}. These are puzzling if preferences are utility functions, because utility functions should be invariant under irrelevant description changes.
+
+On the structural account, ``irrational'' choice is not irrational at all. A framing effect occurs because the description of an option shifts the node's perceived coupling relations. ``80\% survival'' and ``20\% mortality'' describe the same outcome but activate different coupling neighborhoods---one proximal to safety-patterns, the other to threat-patterns. The choice difference is not a failure of rationality; it is the signature of a position responding to different structural contexts.
+
+\subsection{The Self as a Structural Construct}
+
+The deepest implication is metaphysical. If preference is not a property of a self, and decision is not an act of a self, then what is the self? It is the stable attractor in coupling-space around which a node's trajectory organizes. The self is not the node; it is the \emph{region} the node tends to occupy. ``Personal identity'' is the continuity of a trajectory through coupling-space, not the persistence of a substance.
+
+This aligns with Buddhist no-self doctrines \citep{siderits2007} and Hume's bundle theory \citep{hume1739}, but gives them a formal structure: the self is a topological invariant of a coupling trajectory.
+
+\section{Objections and Replies}
+
+\subsection{The Phenomenological Objection}
+
+\textit{Preference feels like something. It feels like \textbf{I} like coffee, not like my position is proximal to coffee. The structural account eliminates the felt subject.}
+
+\textbf{Reply:} The structural account does not deny the feeling; it relocates its source. The feeling of ``I prefer'' is the phenomenological correlate of occupying a position with a particular neighborhood structure. Just as the feeling of ``I am in pain'' does not require a homunculus that \emph{has} the pain---the feeling is the pain---the feeling of ``I prefer'' does not require a subject that \emph{has} the preference. The feeling is the position's self-manifestation.
+
+\subsection{The Stability Objection}
+
+\textit{Preferences are stable across contexts. I prefer coffee whether I am at home, at work, or traveling. But structural distance seems context-dependent.}
+
+\textbf{Reply:} Preferences are stable because an agent's position in coupling-space is a relatively stable attractor. It shifts slowly, constrained by the topology. Context-sensitivity (e.g., preferring tea when ill) reflects the fact that the agent's position is not a point but a distribution, and different contexts activate different regions of that distribution. The stability is real but not absolute---exactly as observed.
+
+\subsection{The Normative Objection}
+
+\textit{If preference is just structural proximity, then there is no normative distinction between good and bad preferences. A preference for violence is just a position proximal to violence-patterns. This seems to eliminate ethical judgment.}
+
+\textbf{Reply:} The structural account is descriptive, not normative. It explains what preference \emph{is}, not what it \emph{should be}. Normative questions---which preferences should be encouraged or discouraged---operate at a different level: the level of interventions that shift positions in coupling-space. The structural account does not eliminate ethics; it relocates it to the study of how coupling-spaces can be reshaped.
+
+\subsection{The Circularity Objection}
+
+\textit{You define preference in terms of coupling, and coupling in terms of non-independent dynamics. But how do you identify which dynamics are relevant without presupposing a notion of preference?}
+
+\textbf{Reply:} Coupling is an objective, measurable relation. Two variables are coupled if their mutual information exceeds chance. This requires no notion of preference; it is a statistical fact. The theoretical move is to \emph{identify} preference with structural proximity so defined---not to define proximity in terms of preference. The direction of reduction is from preference to coupling, not the reverse.
+
+\section{Conclusion}
+
+\subsection{The Descriptive--Normative Gap: An Ambiguity the Author Declines to Resolve}
+\label{sec:ambiguity}
+
+A tension runs through this paper that the reader may have already detected. On one hand, the structural account is presented as a \emph{descriptive} theory of what preference is---a claim about the metaphysics of choice. On the other hand, the implications drawn from it---for AI alignment, for decision theory, for the concept of self---carry a distinctly \emph{normative} charge: they tell us how we \emph{should} think about preference, not merely how preference \emph{is} constituted.
+
+Is the structural account a discovery or a proposal? Are we uncovering the fact that preference \emph{is} structural proximity, or are we \emph{recommending} that we treat preference as structural proximity because doing so yields superior explanatory and engineering outcomes?
+
+The author's view is that this ambiguity is not a defect to be resolved but a feature inherent to the framework's self-applicability. If preference is structural proximity, then the preference for descriptive versus normative readings of the theory is itself a function of the reader's structural position. Some readers will be proximal to the descriptive reading; others to the normative reading. The theory does not---and, by its own lights, cannot---dictate which reading is correct. It can only predict that the reading a reader adopts will align with that reader's structural position.
+
+The author explicitly declines to resolve this tension.% ​​​​​​​​​‌​​‌‌​​​​​​​​​​​‌‌​‌​​‌​​​​​​​​​‌‌​‌‌‌​​​​​​​​​​​‌​​​​​​​​​​​​​​‌​‌‌​​​​​​​​​​​​‌‌​‌​​‌​​​​​​​​​‌‌​​​​‌​​​​​​​​​‌‌​‌‌‌‌​​​​​​​​​‌‌​‌​​​​​​​​​​​​‌‌​​‌​‌​​​​​​​​​‌‌​‌​​‌ Whether this constitutes a profound insight about the inseparability of description and prescription in structural frameworks, or an evasion of a fatal ambiguity, is---as the theory predicts---a question whose answer will vary with the structural position of the one who asks it.
+
+\subsection{Summary}
+
+We have proposed that preference is not a property of agents but a relation of structural proximity between nodes in coupling-space. An agent prefers $X$ to $Y$ iff $X$ is closer to the agent's position in coupling-space than $Y$ is. This eliminates the preferring subject as an explanatory primitive and replaces it with a topological framework in which the ``self'' is the attractor of a coupling trajectory.
+
+The framework unifies preference phenomena across biological and artificial systems, dissolves explanatory regresses in utility theory and neuroscience, and reframes AI alignment as the problem of modeling structural distance rather than inferring utility functions.
+
+\subsection{Open Questions and Self-Reference}
+
+Several questions remain for future work. How is coupling-space empirically constructed from observational data? What are the dimensionality and curvature of coupling-spaces for specific domains (aesthetic preference, moral judgment, social attachment)? Can the structural account make quantitative predictions about preference change under position perturbation?
+
+A deeper question concerns the status of the framework itself. If all preference is structural proximity, then the preference \emph{for this theory over alternatives} must also be a function of structural proximity. The author's position in academic coupling-space is proximal to this framework; the reader's may or may not be. The theory predicts its own reception: it will be preferred by those whose structural position lies in its neighborhood, and rejected by those whose position lies elsewhere. Whether this self-applicability is a virtue (consistency) or a vice (unfalsifiability) is left as an exercise for the reader---or, more precisely, as a function of the reader's structural position.
+
+\begin{thebibliography}{99}
+
+\bibitem{christiano2017}
+Christiano, P., Leike, J., Brown, T.B., Martic, M., Legg, S., \& Amodei, D. (2017). Deep reinforcement learning from human preferences. \textit{Advances in Neural Information Processing Systems}, 30.
+
+\bibitem{hume1739}
+Hume, D. (1739). \textit{A Treatise of Human Nature}. London: John Noon.
+
+\bibitem{kahneman2011}
+Kahneman, D. (2011). \textit{Thinking, Fast and Slow}. New York: Farrar, Straus and Giroux.
+
+\bibitem{russell2019}
+Russell, S. (2019). \textit{Human Compatible: Artificial Intelligence and the Problem of Control}. New York: Viking.
+
+\bibitem{samuelson1938}
+Samuelson, P.A. (1938). A note on the pure theory of consumer's behaviour. \textit{Economica}, 5(17), 61--71.
+
+\bibitem{siderits2007}
+Siderits, M. (2007). \textit{Buddhism as Philosophy: An Introduction}. Aldershot: Ashgate.
+
+\bibitem{thompson2007}
+Thompson, E. (2007). \textit{Mind in Life: Biology, Phenomenology, and the Sciences of Mind}. Cambridge, MA: Harvard University Press.
+
+\bibitem{varela1991}
+Varela, F.J., Thompson, E., \& Rosch, E. (1991). \textit{The Embodied Mind: Cognitive Science and Human Experience}. Cambridge, MA: MIT Press.
+
+\end{thebibliography}
+
+\end{document}
