@@ -121,6 +121,10 @@ Each original conceptual paper has been upgraded with rigorous mathematical proo
 - **WeChat:** 13922360146
 - **Repository:** [Gitee](https://gitee.com/samforce/structural-cognition)
 
+
+### 📱 持续更新
+最新文章首发微信公众号 **今晚狗蛋看局**。深度拆解科技公司底层逻辑，每周一篇硬核分析。
+
 ---
 
 *All papers contain a three-layer digital watermark system: zero-width DNA sequences + §7.1 deliberate ambiguity + terminal self-reference closure. Any unauthorized reproduction is structurally traceable.*
