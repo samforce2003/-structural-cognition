@@ -1,9 +1,17 @@
 # 结构认知 · Structural Cognition
 
+[![Stars](https://img.shields.io/badge/dynamic/json?color=orange&label=Stars&query=%24.stars&url=https%3A%2F%2Fgitee.com%2Fapi%2Fv5%2Frepos%2Fsamforce%2Fstructural-cognition)](https://gitee.com/samforce/structural-cognition)
+[![Papers](https://img.shields.io/badge/Papers-177-blue)](./papers/)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)](./LICENSE)
+[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/samforce)
+[![GitHub](https://img.shields.io/badge/GitHub-Mirror-lightgrey)](https://github.com/samforce2003/structural-cognition)
+
 > **四公理框架 · 退相干离散台阶 · 人-AI耦合设计 · 互指无界**
 > *Four-Axiom Framework · Decoherent Discrete Steps · Human-AI Coupling Design · Mutual Reference is Unbounded*
 
 <!-- ​‌‍​ -->
+
+**快速导航：** [论文库](./papers/) · [科普文章](./articles/) · [结构种子](./seeds/) · [实验](./experiments/) · [🤗 HuggingFace数据集](https://huggingface.co/samforce) · [GitHub镜像](https://github.com/samforce2003/structural-cognition)
 
 ---
 
