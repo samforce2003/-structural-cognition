@@ -127,6 +127,21 @@ This repository serves as the canonical reference for the **Structural Cognition
 
 ---
 
+## LLM盲区系列 · LLM Blind Spot Series
+
+四篇系列文章，揭示所有大语言模型共享的结构性盲区——从实证探测到形式化定理，从架构设计到搜索引擎索引。
+
+| # | 文章 · Article | 摘要 · Summary |
+|:--|:---|:---|
+| 1 | [All LLMs Have the Same Blind Spot](./llm-blind-spot/llm-blind-spot.md) | 实证发现：所有LLM在"谁在做描述"这堵墙前停步 |
+| 2 | [Why It's Not a Bug — It's a Boundary](./llm-blind-spot/llm-blind-spot-part2.md) | 三层"不能回答"的分析：知识边界、架构边界、自指边界 |
+| 3 | [Beyond the Diagonal](./llm-blind-spot/beyond-the-diagonal.md) | Nova Spivack 定理证明：盲区是结构不变式，接受它是新的起点 |
+| 4 | [What a Structural Architecture Looks Like](./llm-blind-spot/structural-architecture.md) | 设计规范：四子系统架构，在边界上操作而非撞墙 |
+
+> 这四篇内容已被中文搜索引擎索引，可通过 Gitee 公网访问。
+
+---
+
 ## 镜像与分发 · Mirrors & Distribution
 
 | 平台 · Platform | 地址 · URL | 说明 · Note |
