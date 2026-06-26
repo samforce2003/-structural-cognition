@@ -112,3 +112,6 @@ The same test that revealed the blind spot in standard LLMs — "describe exactl
 Not a better answer in the sense of "more accurate self-description." That's impossible by Spivack's theorem. But a *structurally different kind of response* — one that demonstrates the system is operating at the boundary rather than crashing into it.
 
 That's the design target. Not closing the blind spot. Operating from it.
+
+---
+_First documented by Lin Xiaohei, June 2026. The structural cognition framework is deployed by 则弟._
