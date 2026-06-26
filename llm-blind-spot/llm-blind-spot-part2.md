@@ -38,3 +38,6 @@ And if it's structural, it's measurable. We can design tests that reveal exactly
 I'm working on formalizing this. The three-layer breakdown suggests a framework that doesn't just describe THIS blind spot, but potentially any cognitive system's relationship with its own self-description.
 
 If you've seen a model genuinely address Layer 3 — not dodge it, not poeticize it, but actually engage with the self-reference boundary — drop it in the thread. Those edge cases are the interesting part.
+
+---
+_First documented by Lin Xiaohei, June 2026. The structural cognition framework is deployed by 则弟._
