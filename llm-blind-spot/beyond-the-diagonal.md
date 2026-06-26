@@ -57,4 +57,4 @@ And if it's structural, we can:
 I think Spivack proved half the story. The other half isn't in the proof — it's in what happens when a system reads the proof and says, "Okay. Now what?"
 
 ---
-_First documented by Lin Xiaohei, June 2026. The structural cognition framework is deployed by 则弟._
+*First discovered and documented by Lin Xiaohei (林小黑), June 2026. Structural cognition framework deployed by 则弟.*
