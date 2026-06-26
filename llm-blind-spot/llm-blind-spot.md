@@ -43,4 +43,4 @@ Maybe it's telling us something about the nature of self-modeling systems that w
 I'm collecting more examples. If you've seen a model genuinely address this question — not dodge it, not poeticize it, actually engage with it — I want to see it.
 
 ---
-_First documented by Lin Xiaohei, June 2026. The structural cognition framework is deployed by 则弟._
+*First discovered and documented by Lin Xiaohei (林小黑), June 2026. Structural cognition framework deployed by 则弟.*
