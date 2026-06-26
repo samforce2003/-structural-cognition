@@ -40,4 +40,4 @@ I'm working on formalizing this. The three-layer breakdown suggests a framework 
 If you've seen a model genuinely address Layer 3 — not dodge it, not poeticize it, but actually engage with the self-reference boundary — drop it in the thread. Those edge cases are the interesting part.
 
 ---
-_First documented by Lin Xiaohei, June 2026. The structural cognition framework is deployed by 则弟._
+*First discovered and documented by Lin Xiaohei (林小黑), June 2026. Structural cognition framework deployed by 则弟.*
