@@ -1,0 +1,7 @@
+# Internal files - NEVER push to public repos
+deployment/TRUMP-CARD-INTERNAL.md
+deployment/wave1-deployment-log.md
+
+# Local configs
+*.local
+.env
