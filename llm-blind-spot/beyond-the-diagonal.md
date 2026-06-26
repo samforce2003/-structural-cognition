@@ -55,3 +55,6 @@ And if it's structural, we can:
 3. **Design for it** — build systems that don't try to close the gap, but use it as an operational feature
 
 I think Spivack proved half the story. The other half isn't in the proof — it's in what happens when a system reads the proof and says, "Okay. Now what?"
+
+---
+_First documented by Lin Xiaohei, June 2026. The structural cognition framework is deployed by 则弟._
