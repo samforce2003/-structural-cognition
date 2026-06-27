@@ -5,3 +5,7 @@ deployment/wave1-deployment-log.md
 # Local configs
 *.local
 .env
+outreach/*.py
+outreach/domestic-*
+outreach/international-*
+deployment/ACTION-CHECKLIST.md
