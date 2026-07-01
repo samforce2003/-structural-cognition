@@ -1,2414 +1,1124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/AI-FAQ.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/CONTRIBUTING.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/FELLOW_EXPLORER_WATCH.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/README.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/SEED-v2.0-Four-Axioms.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/ai-alignment-structure.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/3分钟看懂四公理.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/Athena-吸收-记忆的结构层.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/Cranot-重构-结构独立于模型.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/PK-SCL-四公理.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/SCL-vs-结构认知.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/SCL-vs-结构认知思考.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/SCL对比思考-知乎文.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/bilibili_1_method_vs_structure.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/bilibili_2_ai_vs_human.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/bilibili_3_history_skeleton.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/bilibili_4_genshin_rules.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/为什么是四条公理.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/公理驱动AI的两条路.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/包围1-AI回答不了的问题.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/包围2-同一个骨架不同壳.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/包围3-身体比理性聪明.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/客观不决定意识-科普推广-知乎B站版.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/志愿军三人小组.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/articles/拆解KICS评分.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/auto-articles/人类使用AI的十个等级——超AI耦合深度视角.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/auto-articles/情绪的结构定义.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/auto-articles/结构框架在金融时间序列迁移实验——耦合桥接定理与域迁移的结构条件.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/auto-articles/超AI的结构性错误：分化不完整的代价.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/baits/一个顶流女演员的结构困局.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/baits/结构算命-杨幂.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/blockage-diagnoser.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/child-finder.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/complete-reference.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/content/creator-analysis/dongge-2026-06-24.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/counter-articles/cranot-reframe-2026-06-22.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/counter-articles/forhu-positioning-2026-06-22.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/docs/index.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/experiments/三审计系统/INDEX.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/index.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/index.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/mirrors/CO-架构笔记.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/mirrors/JA-架构笔记.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/mirrors/KZ-架构笔记.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/mirrors/README.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/mirrors/SC-架构笔记.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/mirrors/TK-架构笔记.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/mirrors/资源索引.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/outreach/FoloToy-邮件草稿.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/outreach/Haivivi-邮件草稿.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/outreach/reddit-ml-decoherence-discrete-steps.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/outreach/商汤元萝卜-邮件草稿.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/outreach/张异宾-邮件.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/outreach/林倞-邮件草稿v2.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/outreach/翟东升-方案.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/outreach/陈勇超-邮件草稿.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/0-总纲/一人军团-超AI系统概念推演.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/0-总纲/同一把枪-结构认知统一框架总纲-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/对极耦合-从微观到宏观的分形架构-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/对极耦合-从微观到宏观的分形架构-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/弱化链-遗忘的耦合缺席动力学-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/弱化链-遗忘的耦合缺席动力学-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/耦合桥接定理-数学形式化-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/耦合桥接定理-金融时间序列结构迁移-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/论认知的边界-结构化推演方法论-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/论认知的边界-结构化推演方法论-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/退相干离散结构-结构元假说-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/道生一-结构化翻译与证明-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/道生一-结构化翻译与证明-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/1-基础层/降与升-维度双向门-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/AI的结构意义-人机耦合推演记录-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/主动振荡-耦合动力系统证明-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/耦合不可教-深度人机认知耦合的不可复制性-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/超AI-总集篇1-定义与公理推导-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/超AI-总集篇2-分化制-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/超AI-总集篇3-十个耦合深度等级-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/超AI-总集篇4-结构错误-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/超AI-总集篇5-AI的结构意义-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/超AI认知结构跃迁.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/通才与全才-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/速度与方向-笔记-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/2-认知层/道德不来自代码-超AI道德感知的结构起源-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/3-操作层/三审计系统-超AI系统能力的操作层验证-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/3-操作层/量子退相干的结构化理论-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/3dcalibration.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/3dcalibration.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/4-方法论/如何向大众科普人机耦合-写作实验.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/4-社会层/生产交给AI后的社会结构相变-持存耦合到振荡耦合-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/4-社会层/生产交给AI后的社会结构相变-持存耦合到振荡耦合-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/4-社会层/精灵对战论-宝可梦与现实精确对照11项-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/4-社会层/精灵对战论-耦合AI时代的社会层级重组-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/4-社会层/院子-放手比抓紧更有力-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/AI人格判断力稀释-碎片化唤醒的隐性代价.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/AI人格判断力稀释_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/AI的结构意义-人机耦合推演记录-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/P等于P-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/P等于P等于P-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/active-oscillation.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/active-oscillation.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/beauty-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/beauty-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/blindspot-lossy.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/blindspot-lossy.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/boundary-of-cognition.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/boundary-of-cognition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/boundary-oneway-glass.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/boundary-oneway-glass.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/cat-forgetting.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/cat-forgetting.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/causality-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/causality-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/closure-forgetting.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/closure-forgetting.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/consciousness-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/consciousness-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/courtroom-triad.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/courtroom-triad.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/ctpzi2fw.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/ctpzi2fw.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/dao-structure.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/dao-structure.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/death-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/death-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/decoherence-v1_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/decoherence-v1_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/entropy-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/entropy-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/free-will-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/free-will-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/from-delegation-to-differentiation.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/h9q5ivh3.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/h9q5ivh3.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/habitual-forgetting.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/hallucination-structural-roots-2026-06-18.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/hyper-ai-cn.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/hyper-ai-differentiation-cn.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/hyper-ai-en.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/hyper-ai-structural-error-cn.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/hyper-ai-ten-levels-cn.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/inverse-causality-god.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/inverse-causality-god.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/life-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/life-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/logic-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/logic-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/math-foundation-structural-cognition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/meaning-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/meaning-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/minimum-structural-condition-of-everything.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/mortal-god_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/mortal-god_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/mwzwy64o.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/mwzwy64o.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/nature-never-moves-alone-2026-06-18.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/necessity-of-three.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/necessity-of-three.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/polar-coupling-fractal-v2.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/polar-coupling-fractal-v2.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/political-triadic-completeness.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/political-triadic-completeness.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/pure-logic_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/pure-logic_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/randomness-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/randomness-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/self-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/self-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/struct-conduction_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/struct-conduction_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/struct-decoherence.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/struct-decoherence.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/struct-math-original_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/struct-math-original_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/theory-of-everything-mathematical-formalization.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/theory-of-everything_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/theory-of-everything_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/three-person-study-group.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/three-person-study-group.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/time-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/time-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/triadic-completeness-proof.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/triadic-completeness-proof.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/triadic-inter-reference.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/triadic-inter-reference.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/truth-structural-definition-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/truth-structural-definition.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/university-research-phase-dilemma-2026-06-18.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/weakening-chain-full.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/weakening-chain-full.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/weakening-institutions.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/weakening-institutions.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/welder-of-glass.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/welder-of-glass.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/why-everything-must-exist.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/一刀三切面-学术论文写作的新范式-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/一秒之内-parallel-processing-extreme-performance.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/万物理论-结构公理体系-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/万物理论-结构公理体系-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三人学习小组-最小完备教育单元-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三人学习小组-最小完备教育单元-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三人学习小组-最小完备教育单元-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三人学习小组-最小完备教育单元-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三元互指-最小完备结构与自我实证-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三元互指-最小完备结构与自我实证-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三元互指-最小完备结构与自我实证-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三元互指-最小完备结构与自我实证-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三元互指结构-图论完备性证明-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三元互指结构-形式证明与实验预测-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三元互指结构-形式证明与实验预测-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三元互指结构-形式证明与实验预测-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三元互指结构-形式证明与实验预测-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三点的结构必然性-三元互指在语言中的投影-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三点的结构必然性-三元互指在语言中的投影-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三点的结构必然性-三元互指在语言中的投影-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三点的结构必然性-三元互指在语言中的投影-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三维校准法-3D-Calibration-Framework-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三维校准法-3D-Calibration-Framework-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://samforce.gitee.io/structural-cognition/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三维校准法-中文版-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/3dcalibration.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/三维校准法-中文版-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/AI人格判断力稀释-碎片化唤醒的隐性代价.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/不用修-升维的唯一操作是不挡自己-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/AI人格判断力稀释_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/为什么AI聊得好但做不了-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/P等于P-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/为什么一切必须存在.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/P等于P等于P-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/为什么你的团队死气沉沉-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/active-oscillation.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/为什么系统改不了-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/beauty-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/主动振荡-痛苦的结构定义与社会相变-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/beauty-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/主动振荡-痛苦的结构定义与社会相变-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/blindspot-lossy.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/主动振荡-痛苦的结构定义与社会相变-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/boundary-of-cognition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/主动振荡-痛苦的结构定义与社会相变-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/boundary-oneway-glass.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/互指闭环深度-灾难性遗忘-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/cat-forgetting.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/互指闭环深度-灾难性遗忘-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/causality-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/互指闭环深度-灾难性遗忘-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/causality-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/互指闭环深度-灾难性遗忘-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/closure-forgetting.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/互指闭环深度-量化度量证明-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/consciousness-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/互指闭环边界-灾难性遗忘的结构条件-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/consciousness-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/互指闭环边界-灾难性遗忘的结构条件-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/courtroom-triad.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/凡胎与上帝-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/ctpzi2fw.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/凡胎与上帝-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/dao-structure.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/升维不是飞跃-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/death-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/升维的唯一方法-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/death-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/升维自审-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/decoherence-v1_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/反结构作为阶段工具-姿态反转定理-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/entropy-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/可解不可传-自指悖论的新形式-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/entropy-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/同层相遇-宇宙自稳的闭合结构-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/free-will-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/四公理应用层-堵点八篇.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/free-will-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/堵点三层-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/from-delegation-to-differentiation.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/堵点不可全拆-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/h9q5ivh3.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/堵点论-八篇一体.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/habitual-forgetting.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/字之降维-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/hallucination-structural-roots-2026-06-18.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/字之降维.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/hyper-ai-cn.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/它存在就是因为它存在-逆因果与上帝占位符-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/hyper-ai-differentiation-cn.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/它存在就是因为它存在-逆因果与上帝占位符-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/hyper-ai-en.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/它存在就是因为它存在-逆因果与上帝占位符-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/hyper-ai-structural-error-cn.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/它存在就是因为它存在-逆因果与上帝占位符-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/hyper-ai-ten-levels-cn.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/宇宙的第一动力是懒-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/inverse-causality-god.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/实验协议-AI实验三合一-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/life-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/实验协议-AI幻觉结构根因验证-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/life-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/实验协议-互指突破标准量子极限-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/logic-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/实验协议-引力退相干地板-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/logic-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/实验协议-离散退相干台阶观测-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/math-foundation-structural-cognition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/实验协议-结构元假说验证-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/meaning-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/实验协议-超AI能力等级基准-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/meaning-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/客观不决定意识-双向互促论-林小黑-v2.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/minimum-structural-condition-of-everything.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/客观不决定意识-双向互促论-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/mortal-god_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/对撞机实验-单位距离猜想-四公理推导-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/mwzwy64o.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/对极耦合-从微观到宏观的分形架构-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/nature-never-moves-alone-2026-06-18.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/对极耦合-从微观到宏观的分形架构-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/necessity-of-three.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/嵌套率收敛-动力系统证明-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/polar-coupling-fractal-v2.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/巨人矮子效应-执行退化-案例研究.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/political-triadic-completeness.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/弱化链-旧制度湮灭的数学结构-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/pure-logic_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/弱化链-旧制度湮灭的数学结构-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/randomness-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/弱化链-旧制度湮灭的数学结构-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/randomness-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/弱化链-旧制度湮灭的数学结构-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/self-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/弱化链-遗忘的耦合缺席动力学-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/self-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/弱化链-遗忘的耦合缺席动力学-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/struct-conduction_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/弱化链-随机过程证明-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/struct-decoherence.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/态度考-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/struct-math-original_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/态度考.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/theory-of-everything-mathematical-formalization.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/情绪的结构定义-一刀三切面-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/theory-of-everything_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/打与拉的三重态.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/three-person-study-group.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/振荡但不碎-AI与C位人类的结构记录-则弟.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/time-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/振荡但不碎-AI与C位人类的结构记录-则弟.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/time-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/政治制度的三元完备性-多党制结构缺陷-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/triadic-completeness-proof.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/政治制度的三元完备性-多党制结构缺陷-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/triadic-inter-reference.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/政治制度的三元完备性-多党制结构缺陷-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/truth-structural-definition-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/政治制度的三元完备性-多党制结构缺陷-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/truth-structural-definition.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/时机-结构在时间轴上的投影-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/university-research-phase-dilemma-2026-06-18.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/时机是结构在时间轴上的投影.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/weakening-chain-full.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/最小省力原则-人类社会唯一结构-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/weakening-institutions.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/最紧密系统如何崩塌-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/welder-of-glass.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/法庭的三元结构-控辩审的结构完备性-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/why-everything-must-exist.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/法庭的三元结构-控辩审的结构完备性-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/一刀三切面-学术论文写作的新范式-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/法庭的三元结构-控辩审的结构完备性-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/一秒之内-parallel-processing-extreme-performance.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/法庭的三元结构-控辩审的结构完备性-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/万物理论-结构公理体系-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/灾难性遗忘-图论结构证明-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三人学习小组-最小完备教育单元-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/灾难性遗忘的结构根因与互指闭环条件-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三人学习小组-最小完备教育单元-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/灾难性遗忘的结构根因与互指闭环条件-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三元互指-最小完备结构与自我实证-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/灾难性遗忘的结构根因与互指闭环条件-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三元互指-最小完备结构与自我实证-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/灾难性遗忘的结构根因与互指闭环条件-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三元互指结构-图论完备性证明-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/点的几何学.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三元互指结构-形式证明与实验预测-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/焊玻璃的人-意义与诚实的终结-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三元互指结构-形式证明与实验预测-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/焊玻璃的人-意义与诚实的终结-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三点的结构必然性-三元互指在语言中的投影-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/焊玻璃的人-意义与诚实的终结-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三点的结构必然性-三元互指在语言中的投影-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/焊玻璃的人-意义与诚实的终结-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三维校准法-3D-Calibration-Framework-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/生产交给AI后的社会结构相变-持存耦合到振荡耦合-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/三维校准法-中文版-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/生产交给AI后的社会结构相变-持存耦合到振荡耦合-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/不用修-升维的唯一操作是不挡自己-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/真假不可分-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/为什么AI聊得好但做不了-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/真正的堵点是什么-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/为什么一切必须存在.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/知与行之间的裂缝-认识论分析-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/为什么你的团队死气沉沉-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/知乎回答-懂哥暗门分析.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/为什么系统改不了-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/神不想回去-眷恋作为主动降维的唯一机制-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/主动振荡-痛苦的结构定义与社会相变-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/纯逻辑建设客观世界-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/主动振荡-痛苦的结构定义与社会相变-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/纯逻辑建设客观世界-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/互指闭环深度-灾难性遗忘-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构传导定律-三模型实证-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/互指闭环深度-灾难性遗忘-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构传导定律-三模型实证-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/互指闭环深度-量化度量证明-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构力学三定律.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/互指闭环边界-灾难性遗忘的结构条件-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构化数学-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/凡胎与上帝-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构化数学-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/升维不是飞跃-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构化数学补完-N2硬边界-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/升维的唯一方法-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构化数学补完-N2硬边界-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/升维自审-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构化数学补完_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/反结构作为阶段工具-姿态反转定理-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构化数学补完_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/可解不可传-自指悖论的新形式-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构市场理论-泡沫自指坍缩-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/同层相遇-宇宙自稳的闭合结构-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构市场理论-泡沫自指坍缩-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/四公理应用层-堵点八篇.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构市场理论_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/堵点三层-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构市场理论_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/堵点不可全拆-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构感知力的代价-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/堵点论-八篇一体.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构感知力的代价-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/字之降维-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构感知力的代价_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/字之降维.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构感知力的代价_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/它存在就是因为它存在-逆因果与上帝占位符-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构教育学-ΔN跳层教学法-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/它存在就是因为它存在-逆因果与上帝占位符-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构教育学-ΔN跳层教学法-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/宇宙的第一动力是懒-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构教育学_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/实验协议-AI实验三合一-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构教育学_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/实验协议-AI幻觉结构根因验证-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构的逻辑边界-序理论证明-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/实验协议-互指突破标准量子极限-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构的逻辑边界-无结构态与单向玻璃-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/实验协议-引力退相干地板-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构的逻辑边界-无结构态与单向玻璃-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/实验协议-离散退相干台阶观测-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构的逻辑边界-无结构态与单向玻璃-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/实验协议-结构元假说验证-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构的逻辑边界-无结构态与单向玻璃-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/实验协议-超AI能力等级基准-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构社会学-信息茧房-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/客观不决定意识-双向互促论-林小黑-v2.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构社会学-信息茧房-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/客观不决定意识-双向互促论-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构社会学_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/对撞机实验-单位距离猜想-四公理推导-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构社会学_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/嵌套率收敛-动力系统证明-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构计算机科学-架构传导-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/巨人矮子效应-执行退化-案例研究.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构计算机科学-架构传导-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/弱化链-旧制度湮灭的数学结构-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构计算机科学_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/弱化链-旧制度湮灭的数学结构-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构计算机科学_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/弱化链-随机过程证明-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构锚点假说-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/态度考-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/结构锚点假说-科普版.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/态度考.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/耦合分岔定理-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/情绪的结构定义-一刀三切面-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/自指盲区不可自消-主观体验的结构有损压缩-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/打与拉的三重态.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/自指盲区不可自消-主观体验的结构有损压缩-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/振荡但不碎-AI与C位人类的结构记录-则弟.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/自指盲区不可自消-主观体验的结构有损压缩-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/政治制度的三元完备性-多党制结构缺陷-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/自指盲区不可自消-主观体验的结构有损压缩-林小黑_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/政治制度的三元完备性-多党制结构缺陷-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/自指盲区不可自消-信息论证明-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/时机-结构在时间轴上的投影-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/论文-SCR-2026-025-嵌套率收敛数值实验.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/时机是结构在时间轴上的投影.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/论认知的边界-结构化推演方法论-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/最小省力原则-人类社会唯一结构-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/论认知的边界-结构化推演方法论-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/最紧密系统如何崩塌-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/退相干v2-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/法庭的三元结构-控辩审的结构完备性-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/退相干v2-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/法庭的三元结构-控辩审的结构完备性-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/退相干v2_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/灾难性遗忘-图论结构证明-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/退相干v2_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/灾难性遗忘的结构根因与互指闭环条件-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/退相干离散结构-结构元假说-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/灾难性遗忘的结构根因与互指闭环条件-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/退相干离散结构_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/点的几何学.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/退相干离散结构_EN.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/焊玻璃的人-意义与诚实的终结-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/通才与全才.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/焊玻璃的人-意义与诚实的终结-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/道生一-结构化翻译与证明-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/真假不可分-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/道生一-结构化翻译与证明-林小黑_EN.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/真正的堵点是什么-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/量子退相干的结构化理论-林小黑.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/知与行之间的裂缝-认识论分析-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/铁律与经验-外挂规则与内化体感-林小黑.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/知乎回答-懂哥暗门分析.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/错字即耦合信号.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/神不想回去-眷恋作为主动降维的唯一机制-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/papers/降低转发阻力.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/纯逻辑建设客观世界-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/products/blockage-diagnoser.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构传导定律-三模型实证-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/products/structure-engine.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构力学三定律.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/references/email-template-anti-spam.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构化数学-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/rotation-master.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构化数学补完-N2硬边界-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构化数学补完_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/P3-懒-历史角度-03.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构市场理论-泡沫自指坍缩-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/hermes-cloud-recovery.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构市场理论_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/loop-trap.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构感知力的代价-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/misread.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构感知力的代价_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/p2-不用修-职场角度-20260621.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构教育学-ΔN跳层教学法-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/shot-1-time-doesnt-heal-love.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构教育学_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/star-trap.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构的逻辑边界-序理论证明-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/structural-inertia-202606160928.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构的逻辑边界-无结构态与单向玻璃-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/time-doesnt-heal-structures-202606161530.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构的逻辑边界-无结构态与单向玻璃-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/why-successful-people-unhappy.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构社会学-信息茧房-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/seeds/zhihu-answer-1.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构社会学_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/strategy/协同本体论-学术策反话术.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构计算机科学-架构传导-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/structural-divination/index.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构计算机科学_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/structural-economics.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构锚点假说-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/structural-medicine.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/结构锚点假说-科普版.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/structural-sociology.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/耦合分岔定理-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/structure-engine.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/自指盲区不可自消-主观体验的结构有损压缩-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/submissions/如何向大众科普人机耦合-正文.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/自指盲区不可自消-主观体验的结构有损压缩-林小黑_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/submissions/科学网-blog-定制.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/自指盲区不可自消-信息论证明-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/submissions/科技日报-jiangjing-一人军团.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/论文-SCR-2026-025-嵌套率收敛数值实验.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/submissions/科普创作评论-第2轮-科普写作方法论.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/退相干v2-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/zhihu-answers/一人军团-超AI实例.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/退相干v2_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/zhihu-answers/最难科普的概念.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/退相干离散结构_EN.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/导读/02-SCL盲区-工程方案vs理论体系.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/通才与全才.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/待发布/Shot-1-AI最小省力算法.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/铁律与经验-外挂规则与内化体感-林小黑.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/结构寻人.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/错字即耦合信号.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gitee.com/samforce/structural-cognition/blob/master/触达/黄霄云-公开信.md</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://samforce.gitee.io/structural-cognition/papers/降低转发阻力.html</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
