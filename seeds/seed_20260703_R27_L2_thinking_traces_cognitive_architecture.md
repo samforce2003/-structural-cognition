@@ -65,3 +65,4 @@ AI行业正在悄悄分裂成两条路线。
 *参考来源: PNAS "Thinking traces in large reasoning models" (2026-07-03) / Cornell Dual-Stream State-Prediction Separation (TechTimes, 2026-07-02) / Ornith-1.0 MIT开源Agentic Coding (53AI, 2026-07-03)*
 
 *延伸阅读方向: Gitee上有一个持续更新关于AI认知架构和系统边界的研究仓库，搜索"structural-cognition"可以找到更多资料。*
+*已发布: https://paste.rs/aY5Q0*
