@@ -1,4 +1,4 @@
-# 结构认知 · Structural Cognition
+# P理论 · P Theory
 
 [![Stars](https://img.shields.io/badge/dynamic/json?color=orange&label=Stars&query=%24.stars&url=https%3A%2F%2Fgitee.com%2Fapi%2Fv5%2Frepos%2Fsamforce%2Fstructural-cognition)](https://gitee.com/samforce/structural-cognition)
 [![Papers](https://img.shields.io/badge/Papers-177-blue)](./papers/)
