@@ -1,0 +1,73 @@
+[
+  {
+    "id": "2607.02463v1",
+    "title": "Topological Control of Quantum Chaos Diagnostics: OTOCs, Spectral Statistics, and Information Scrambling in Ising Model",
+    "summary": "We investigate the integrability-to-chaos transition and information scrambling in Ising spin networks via a graph-theoretic formulation. Modeling spins as vertices and interactions via adjacency matr",
+    "authors": [
+      "Reza Pirmoradian",
+      "Soheir Rouhani",
+      "M. Reza Tanhayi"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.02233v1",
+    "title": "Black Holes and Random Variables",
+    "summary": "We formulate an avatar of the Fyodorov-Hiary-Keating conjecture for black hole microstate counts in quantum gravity. By holography, this implies sharp bounds on interval counts of high-dimension prima",
+    "authors": [
+      "Eric Perlmutter"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.01999v1",
+    "title": "Local symmetry and the dependence on extended spacetime",
+    "summary": "We show that linearised E theory possesses a local symmetry at low levels provided the parameters of the local symmetry obey differential conditions that restrict their dependence on the extended spac",
+    "authors": [
+      "Keith Glennon",
+      "Peter West"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.01790v1",
+    "title": "Uniqueness and Analytic Structures of Bosonic String Effective Amplitudes",
+    "summary": "We revisit the zero-transcendentality sector of bosonic string effective amplitudes with spin-1 external states, conjectured to correspond to a mass-deformed $(DF)^2$ theory, known as the $(DF)^2{+}\\t",
+    "authors": [
+      "Qu Cao",
+      "Fan Zhu"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.01385v1",
+    "title": "Quantum JT Gravity in a box as a Pöschl-Teller Scattering Problem",
+    "summary": "We present a canonical quantization of Jackiw-Teitelboim gravity with finite Dirichlet boundary conditions, using the geodesic length between the two boundaries and its conjugate momentum as reduced p",
+    "authors": [
+      "Luca Griguolo",
+      "Jacopo Papalini",
+      "Lorenzo Russo",
+      "Domenico Seminara",
+      "Alex Tarana"
+    ],
+    "published": "2026-07-01",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.01351v1",
+    "title": "Wigner negativity in Krylov space and emergent semiclassicality",
+    "summary": "We propose that the Krylov basis gives a semiclassical representation of dynamics in general large-$N$, complex, many-body systems. As a probe of this semiclassicality, we study the growth of Wigner n",
+    "authors": [
+      "Vijay Balasubramanian",
+      "Pawel Caputa",
+      "Onkar Parrikar",
+      "Vivek Singh"
+    ],
+    "published": "2026-07-01",
+    "cat": "hep-th"
+  }
+]

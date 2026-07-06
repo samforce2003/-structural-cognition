@@ -1,0 +1,221 @@
+{
+  "date": "2026-07-06",
+  "total_scanned": 64,
+  "candidates": [
+    {
+      "rank": 1,
+      "match_score": 2,
+      "matched_keywords": [
+        "self",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.02467v1",
+        "title": "Human Capital, Not Model Benchmarks, Predicts Hybrid Intelligence in Forecasting",
+        "authors": [
+          "Vivienne Ming"
+        ],
+        "published": "2026-07-02",
+        "url": "https://arxiv.org/abs/2607.02467v1",
+        "category": "cs.CY"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 2,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.02462v1",
+        "title": "Quantum mutual information as a robust probe of integrability in open quantum systems",
+        "authors": [
+          "Nirupam Sen",
+          "Keshav Das Agarwal",
+          "Aditi Sen De"
+        ],
+        "published": "2026-07-02",
+        "url": "https://arxiv.org/abs/2607.02462v1",
+        "category": "quant-ph"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 3,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "superposition"
+      ],
+      "arxiv_paper": {
+        "id": "2607.02456v1",
+        "title": "A Quantum-Walk Representation of Color-Ordered MHV Scattering Amplitudes",
+        "authors": [
+          "Anirudh Verma",
+          "C. M. Chandrashekar"
+        ],
+        "published": "2026-07-02",
+        "url": "https://arxiv.org/abs/2607.02456v1",
+        "category": "quant-ph"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 4,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "superposition"
+      ],
+      "arxiv_paper": {
+        "id": "2607.02427v1",
+        "title": "Optimal stellar rank approximation of squeezed cat states with photon catalysis",
+        "authors": [
+          "Julian K. Nauth",
+          "Nathan Walk",
+          "Ananga M. Datta",
+          "Kurt Busch",
+          "Jens Eisert",
+          "Oliver Benson",
+          "Roger A. Kögler"
+        ],
+        "published": "2026-07-02",
+        "url": "https://arxiv.org/abs/2607.02427v1",
+        "category": "quant-ph"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 5,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "deterministic"
+      ],
+      "arxiv_paper": {
+        "id": "2607.02427v1",
+        "title": "Optimal stellar rank approximation of squeezed cat states with photon catalysis",
+        "authors": [
+          "Julian K. Nauth",
+          "Nathan Walk",
+          "Ananga M. Datta",
+          "Kurt Busch",
+          "Jens Eisert",
+          "Oliver Benson",
+          "Roger A. Kögler"
+        ],
+        "published": "2026-07-02",
+        "url": "https://arxiv.org/abs/2607.02427v1",
+        "category": "quant-ph"
+      },
+      "our_ammo": {
+        "id": "decoherence-v2",
+        "title": "Structural Theory of Decoherence v2: Cross-System Validation of Constraint Solving Convergence",
+        "file": "退相干v2_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence rate proportional to nesting rate difference — with triple cross-validation (3 AI models + simulation + collider)."
+      }
+    },
+    {
+      "rank": 6,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "density matrix"
+      ],
+      "arxiv_paper": {
+        "id": "2607.01452v1",
+        "title": "A quantum model of opinion dynamics on networks",
+        "authors": [
+          "Weiqi Chu"
+        ],
+        "published": "2026-07-01",
+        "url": "https://arxiv.org/abs/2607.01452v1",
+        "category": "physics.soc-ph"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 7,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "deterministic"
+      ],
+      "arxiv_paper": {
+        "id": "2607.01452v1",
+        "title": "A quantum model of opinion dynamics on networks",
+        "authors": [
+          "Weiqi Chu"
+        ],
+        "published": "2026-07-01",
+        "url": "https://arxiv.org/abs/2607.01452v1",
+        "category": "physics.soc-ph"
+      },
+      "our_ammo": {
+        "id": "decoherence-v2",
+        "title": "Structural Theory of Decoherence v2: Cross-System Validation of Constraint Solving Convergence",
+        "file": "退相干v2_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence rate proportional to nesting rate difference — with triple cross-validation (3 AI models + simulation + collider)."
+      }
+    },
+    {
+      "rank": 8,
+      "match_score": 2,
+      "matched_keywords": [
+        "self",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.01452v1",
+        "title": "A quantum model of opinion dynamics on networks",
+        "authors": [
+          "Weiqi Chu"
+        ],
+        "published": "2026-07-01",
+        "url": "https://arxiv.org/abs/2607.01452v1",
+        "category": "physics.soc-ph"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    }
+  ]
+}

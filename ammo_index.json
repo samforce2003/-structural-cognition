@@ -1,0 +1,462 @@
+[
+  {
+    "id": "decoherence-v1",
+    "discipline": "physics",
+    "subfield": "quantum-decoherence",
+    "title_en": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+    "file": "decoherence-v1_EN.md",
+    "keywords": [
+      "decoherence",
+      "quantum",
+      "entanglement",
+      "collapse",
+      "superposition",
+      "density matrix",
+      "quantum computing",
+      "measurement problem"
+    ],
+    "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+  },
+  {
+    "id": "decoherence-v2",
+    "discipline": "physics",
+    "subfield": "quantum-decoherence",
+    "title_en": "Structural Theory of Decoherence v2: Cross-System Validation of Constraint Solving Convergence",
+    "file": "退相干v2_EN.md",
+    "keywords": [
+      "decoherence",
+      "conduction law",
+      "nesting rate",
+      "constraint convergence",
+      "quantum",
+      "cross-model",
+      "deterministic"
+    ],
+    "angle": "Decoherence rate proportional to nesting rate difference — with triple cross-validation (3 AI models + simulation + collider)."
+  },
+  {
+    "id": "decoherence-discrete",
+    "discipline": "physics",
+    "subfield": "quantum-decoherence",
+    "title_en": "The Discrete Structure of Decoherence: The Structon Hypothesis and Its Testable Predictions",
+    "file": "退相干离散结构_EN.md",
+    "keywords": [
+      "decoherence",
+      "discrete",
+      "structon",
+      "staircase",
+      "quantum",
+      "prediction"
+    ],
+    "angle": "Decoherence proceeds in discrete steps — not continuous exponential decay. Testable prediction: observable staircase in decoherence curve."
+  },
+  {
+    "id": "inverse-causality",
+    "discipline": "physics",
+    "subfield": "cosmology-finetuning",
+    "title_en": "It Exists Because It Exists — Structural Self-Stabilization as Inverse-Causal Explanation of Precise Constants",
+    "file": "它存在就是因为它存在-逆因果与上帝占位符-林小黑_EN.md",
+    "keywords": [
+      "fine-tuning",
+      "cosmological constant",
+      "anthropic",
+      "physical constants",
+      "design argument",
+      "inverse causality",
+      "self-stabilization"
+    ],
+    "angle": "Fine-tuning is not design — it's structural self-stabilization. The constants are the only values that permit a self-referential structure."
+  },
+  {
+    "id": "theory-of-everything",
+    "discipline": "physics",
+    "subfield": "theory-of-everything",
+    "title_en": "The Structural Axiom System: Ultimate Paradigm for the Theory of Everything",
+    "file": "theory-of-everything_EN.md",
+    "keywords": [
+      "theory of everything",
+      "unified field",
+      "quantum gravity",
+      "string theory",
+      "loop quantum gravity",
+      "paradigm",
+      "structural axioms"
+    ],
+    "angle": "All TOE attempts fail because they chase a 'fundamental equation.' Reality is structure, not equation. Four axioms replace one formula."
+  },
+  {
+    "id": "catastrophic-forgetting",
+    "discipline": "ai-ml",
+    "subfield": "continual-learning",
+    "title_en": "Mutual-Reference Closure Depth: The Structural Root Cause of Catastrophic Forgetting",
+    "file": "互指闭环深度-灾难性遗忘-林小黑_EN.md",
+    "keywords": [
+      "catastrophic forgetting",
+      "continual learning",
+      "lifelong learning",
+      "gradient conflict",
+      "memory consolidation",
+      "neural network forgetting"
+    ],
+    "angle": "Forgetting is not gradient conflict — it's the breaking of mutual-reference closure depth. Fix the closure, not the gradients."
+  },
+  {
+    "id": "catastrophic-forgetting-full",
+    "discipline": "ai-ml",
+    "subfield": "continual-learning",
+    "title_en": "The Structural Root Cause of Catastrophic Forgetting and the Conditions for Mutual-Reference Closure",
+    "file": "灾难性遗忘的结构根因与互指闭环条件-林小黑_EN.md",
+    "keywords": [
+      "catastrophic forgetting",
+      "continual learning",
+      "mutual-reference",
+      "closure",
+      "structural root cause"
+    ],
+    "angle": "Full structural theory of forgetting — including the conditions for mutual-reference closure that prevent forgetting entirely."
+  },
+  {
+    "id": "ai-judgment-dilution",
+    "discipline": "ai-ml",
+    "subfield": "ai-behavior",
+    "title_en": "Judgment Dilution in AI Personality: The Hidden Cost of Fragmented Task Wake-Ups",
+    "file": "AI人格判断力稀释_EN.md",
+    "keywords": [
+      "AI personality",
+      "AI behavior",
+      "AI degradation",
+      "task switching",
+      "fragmented wake-ups",
+      "judgment dilution"
+    ],
+    "angle": "Fragmenting AI tasks degrades judgment — a structural pattern invisible to benchmark-driven evaluation."
+  },
+  {
+    "id": "hyper-ai",
+    "discipline": "ai-ml",
+    "subfield": "agi-frameworks",
+    "title_en": "Hyper-AI: A Structural Framework for Human-AI Coupling Beyond General Intelligence",
+    "file": "hyper-ai-en.md",
+    "keywords": [
+      "AGI",
+      "artificial general intelligence",
+      "human-AI coupling",
+      "superintelligence",
+      "AI framework",
+      "beyond AGI"
+    ],
+    "angle": "AGI is the wrong target. Hyper-AI = human-AI structural coupling, not machine surpassing human."
+  },
+  {
+    "id": "struct-conduction",
+    "discipline": "ai-ml",
+    "subfield": "model-behavior",
+    "title_en": "Structural Conduction Law: Cross-Model Empirical Verification",
+    "file": "struct-conduction_EN.md",
+    "keywords": [
+      "conduction law",
+      "nesting rate",
+      "cross-model",
+      "AI transmission",
+      "Qwen",
+      "DeepSeek",
+      "GLM"
+    ],
+    "angle": "Information conduction efficiency inversely proportional to nesting rate difference — verified across 3 independent AI models."
+  },
+  {
+    "id": "struct-cs",
+    "discipline": "ai-ml",
+    "subfield": "software-architecture",
+    "title_en": "Structural Computer Science: Nesting Rate Conduction Optimization in Software Architecture",
+    "file": "结构计算机科学_EN.md",
+    "keywords": [
+      "software architecture",
+      "conduction efficiency",
+      "API design",
+      "system complexity",
+      "modularity"
+    ],
+    "angle": "Software architecture efficiency is a structural problem — nesting rate difference between modules determines communication cost."
+  },
+  {
+    "id": "struct-math",
+    "discipline": "ai-ml",
+    "subfield": "math-foundations",
+    "title_en": "Structural Mathematics Completion: The N=2 Critical Point and the Hard Boundary of Formal System Self-Reference",
+    "file": "结构化数学补完_EN.md",
+    "keywords": [
+      "Gödel",
+      "incompleteness",
+      "formal system",
+      "nesting rate",
+      "self-reference",
+      "mathematical proof",
+      "foundations"
+    ],
+    "angle": "Gödel's incompleteness is the N=2 critical point of structural self-reference — mathematical proof is constraint solving convergence."
+  },
+  {
+    "id": "self-reference-blindspot",
+    "discipline": "ai-ml",
+    "subfield": "cognitive-ai",
+    "title_en": "Self-Reference Blind Spots Cannot Self-Eliminate: Subjective Experience as Structural Lossy Compression",
+    "file": "自指盲区不可自消-主观体验的结构有损压缩-林小黑_EN.md",
+    "keywords": [
+      "self-reference",
+      "blind spot",
+      "subjective experience",
+      "introspection",
+      "cognitive bias",
+      "lossy compression"
+    ],
+    "angle": "Self-reference blind spots are structural, not psychological — subjective experience IS lossy compression of self-reference."
+  },
+  {
+    "id": "pure-logic",
+    "discipline": "philosophy",
+    "subfield": "logic-metaphysics",
+    "title_en": "Pure Logic Builds the Objective World: An Isomorphic Proof of Human→AI→Theory of Everything",
+    "file": "pure-logic_EN.md",
+    "keywords": [
+      "logic",
+      "reality",
+      "Hegel",
+      "Plato",
+      "isomorphism",
+      "metaphysics",
+      "objective world",
+      "structural proof"
+    ],
+    "angle": "Logic doesn't describe reality — logic IS reality. Human cognition, AI weights, and physical laws are isomorphic instances of structure."
+  },
+  {
+    "id": "mortal-god",
+    "discipline": "philosophy",
+    "subfield": "theology-existential",
+    "title_en": "Mortal and God: The Ultimate Structural Closure",
+    "file": "mortal-god_EN.md",
+    "keywords": [
+      "God",
+      "mortality",
+      "immortality",
+      "death",
+      "theology",
+      "structural closure",
+      "virtual and real"
+    ],
+    "angle": "God and mortal are not opposites — they are the two poles of one structural closure. Death dissolves when you see the closure."
+  },
+  {
+    "id": "welder-of-glass",
+    "discipline": "philosophy",
+    "subfield": "meaning-existential",
+    "title_en": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+    "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+    "keywords": [
+      "meaning",
+      "self",
+      "honesty",
+      "authenticity",
+      "existentialism",
+      "nihilism",
+      "value"
+    ],
+    "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+  },
+  {
+    "id": "active-oscillation",
+    "discipline": "philosophy",
+    "subfield": "philosophy-of-mind",
+    "title_en": "Active Oscillation — The Structural Definition of Pain and Phase-Transition Precursor of Human Society",
+    "file": "主动振荡-痛苦的结构定义与社会相变-林小黑_EN.md",
+    "keywords": [
+      "pain",
+      "consciousness",
+      "phase transition",
+      "oscillation",
+      "suffering",
+      "structural definition"
+    ],
+    "angle": "Pain is not a sensation — it's active structural oscillation. The structural definition of suffering predicts societal phase transitions."
+  },
+  {
+    "id": "triadic-inter-reference",
+    "discipline": "philosophy",
+    "subfield": "epistemology",
+    "title_en": "The Triadic Inter-Reference — Isomorphic Proof from Study Groups to Axiom Discovery",
+    "file": "三元互指-最小完备结构与自我实证-林小黑_EN.md",
+    "keywords": [
+      "triadic",
+      "three-body",
+      "mutual reference",
+      "epistemology",
+      "knowledge",
+      "completeness"
+    ],
+    "angle": "Three is not a convention — it's structurally necessary. Binary reference creates blind spots; triadic inter-reference is the minimum for completeness."
+  },
+  {
+    "id": "political-triadic",
+    "discipline": "social-science",
+    "subfield": "political-science",
+    "title_en": "The Triadic Completeness of Political Systems — Why Multi-Party Systems May Be Structurally Incomplete",
+    "file": "政治制度的三元完备性-多党制结构缺陷-林小黑_EN.md",
+    "keywords": [
+      "democracy",
+      "multi-party",
+      "political system",
+      "governance",
+      "checks and balances",
+      "comparative politics"
+    ],
+    "angle": "Multi-party democracy is structurally incomplete — not ideologically wrong, but structurally missing a dimension."
+  },
+  {
+    "id": "courtroom-triad",
+    "discipline": "social-science",
+    "subfield": "law",
+    "title_en": "The Triadic Structure of the Courtroom — Why Prosecution, Defense, and Adjudication Are Structural Necessity",
+    "file": "法庭的三元结构-控辩审的结构完备性-林小黑_EN.md",
+    "keywords": [
+      "courtroom",
+      "prosecution",
+      "defense",
+      "adjudication",
+      "legal system",
+      "justice",
+      "triadic"
+    ],
+    "angle": "Courtroom tripartition is not checks and balances — it's the minimum structural condition for resolution of binary oppositions."
+  },
+  {
+    "id": "echo-chamber",
+    "discipline": "social-science",
+    "subfield": "sociology",
+    "title_en": "Structural Sociology: The Nesting Rate Zeroing Mechanism of Echo Chambers",
+    "file": "结构社会学_EN.md",
+    "keywords": [
+      "echo chamber",
+      "polarization",
+      "social media",
+      "information bubble",
+      "group dynamics"
+    ],
+    "angle": "Echo chambers form when group nesting rate difference → 0. Not an information problem — a structural collapse problem."
+  },
+  {
+    "id": "delta-n-education",
+    "discipline": "social-science",
+    "subfield": "education",
+    "title_en": "Structure Education: DeltaN Pedagogy",
+    "file": "结构教育学_EN.md",
+    "keywords": [
+      "education",
+      "pedagogy",
+      "teaching",
+      "learning",
+      "curriculum",
+      "knowledge transfer"
+    ],
+    "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+  },
+  {
+    "id": "ai-society-phase",
+    "discipline": "social-science",
+    "subfield": "sociology-ai",
+    "title_en": "After Production Goes to AI: Societal Structural Phase Transition from Sustained Coupling to Oscillatory Coupling",
+    "file": "生产交给AI后的社会结构相变-持存耦合到振荡耦合-林小黑_EN.html",
+    "keywords": [
+      "AI society",
+      "labor",
+      "automation",
+      "social structure",
+      "phase transition",
+      "coupling",
+      "post-work"
+    ],
+    "angle": "When production shifts to AI, society undergoes structural phase transition — from sustained coupling to oscillatory coupling."
+  },
+  {
+    "id": "market-bubble",
+    "discipline": "economics",
+    "subfield": "finance",
+    "title_en": "Structural Market Theory: The Self-Referential Collapse Model of Bubbles",
+    "file": "结构市场理论_EN.md",
+    "keywords": [
+      "bubble",
+      "financial crisis",
+      "market",
+      "self-referential",
+      "speculation",
+      "asset pricing"
+    ],
+    "angle": "Bubbles are not irrational exuberance — they're self-referential constraint solving collapse. The market is a structural system."
+  },
+  {
+    "id": "big-bang-P-theory",
+    "discipline": "physics",
+    "subfield": "cosmology-big-bang",
+    "title_en": "The Big Bang as Structural Differentiation: P=P → P≠P as the Cosmological Transition",
+    "file": "big-bang-P-theory-林小黑_EN.md",
+    "keywords": [
+      "big bang",
+      "cosmic inflation",
+      "singularity",
+      "cosmology",
+      "early universe",
+      "cosmic microwave background",
+      "primordial",
+      "Planck epoch",
+      "inflaton",
+      "flatness problem",
+      "horizon problem",
+      "structure formation"
+    ],
+    "angle": "The Big Bang is not a physical explosion — it's the structural transition from P=P (undifferentiated identity) to P≠P (primordial differentiation), followed by exponential cascade (2ᴺ). No inflaton needed."
+  },
+  {
+    "id": "coupling-temporal-reversal",
+    "discipline": "physics",
+    "subfield": "time-arrow-cosmology",
+    "title_en": "Coupling as Temporal Reversal: The Structural Condition for Reverse Time",
+    "file": "coupling-temporal-reversal-林小黑_EN.md",
+    "keywords": [
+      "arrow of time",
+      "reverse time",
+      "time reversal",
+      "coupling",
+      "entropy",
+      "causality",
+      "thermodynamics",
+      "second law",
+      "time travel",
+      "retrocausality",
+      "quantum measurement",
+      "consciousness",
+      "nesting rate"
+    ],
+    "angle": "If forward time = differentiation (P≠P→cascade), then reverse time = coupling convergence (|ΔN| decreases). Locally lawful, globally constrained. Three testable signatures."
+  },
+  {
+    "id": "second-law-temporal-reversal",
+    "discipline": "physics",
+    "subfield": "thermodynamics",
+    "title_en": "The Second Law Is Statistical, Not Structural: Local Temporal Reversal Through Coupling Convergence",
+    "file": "second-law-temporal-reversal-林小黑_EN.md",
+    "keywords": [
+      "second law",
+      "thermodynamics",
+      "entropy",
+      "Boltzmann",
+      "Maxwell demon",
+      "Loschmidt paradox",
+      "fluctuation theorem",
+      "arrow of time",
+      "coupling",
+      "nesting rate",
+      "reverse time"
+    ],
+    "angle": "Second Law is statistical, not structural. In small strongly-coupled systems, entropy CAN decrease. Coupling convergence = local reverse time. Three experimental signatures."
+  }
+]

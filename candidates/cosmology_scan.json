@@ -1,0 +1,451 @@
+[
+  {
+    "id": "2607.02498v1",
+    "title": "Alleviating prior dependencies for DESI DR1 clustering fits through reparameterization",
+    "summary": "Bayesian analyses of the full-shape clustering of Dark Energy Spectroscopic Instrument (DESI) Data Release 1 (DR1) exhibit prior-volume projection effects, whereby weakly constrained nuisance parameters of the Effective Field Theory of Large Scale Structure (EFTofLSS) shift marginalized cosmological",
+    "authors": [
+      "Marco Bonici",
+      "Simone Paradiso",
+      "Glenn McGee",
+      "Guido D'Amico",
+      "Minas Karamanis",
+      "Hanyu Zhang",
+      "Will Percival",
+      "Jessica Nicole Aguilar",
+      "Steven Ahlen",
+      "Davide Bianchi",
+      "David Brooks",
+      "Francisco Javier Castander",
+      "Todd Claybaugh",
+      "Axel de la Macorra",
+      "Biprateep Dey",
+      "Peter Doel",
+      "Simone Ferraro",
+      "Andreu Font-Ribera",
+      "Jaime E. Forero-Romero",
+      "Enrique Gaztañaga",
+      "Satya Gontcho A Gontcho",
+      "Gaston Gutierrez",
+      "ChangHoon Hahn",
+      "Klaus Honscheid",
+      "Mustapha Ishak",
+      "Dick Joyce",
+      "Robert Kehoe",
+      "Theodore Kisner",
+      "Anthony Kremin",
+      "Ofer Lahav",
+      "Claire Lamman",
+      "Martin Landriau",
+      "Laurent Le Guillou",
+      "Marc Manera",
+      "Aaron Meisner",
+      "Ramon Miquél",
+      "Gustavo Niz",
+      "Francisco Prada",
+      "Ignasi Pérez-Ràfols",
+      "Graziano Rossi",
+      "Lado Samushia",
+      "Eusebio Sanchez",
+      "Edward Schlafly",
+      "David Schlegel",
+      "Joseph Harry Silber",
+      "David Sprayberry",
+      "Gregory Tarlé",
+      "Mariana Vargas Magana",
+      "Benjamin Alan Weaver",
+      "Pauline Zarrouk",
+      "Hu Zou"
+    ],
+    "published": "2026-07-02",
+    "cat": "astro-ph.CO"
+  },
+  {
+    "id": "2607.01818v1",
+    "title": "Gravitational Waves from Primordial Black Holes: Connecting Low-Frequency Scalar-Induced Signatures to High-Frequency Binary Mergers",
+    "summary": "Formation of primordial black holes (PBHs) requires a significant enhancement of curvature perturbations. This mechanism leaves a twofold gravitational-wave (GW) signature: a \\emph{low-frequency} stochastic background of scalar-induced GWs (SIGWs) and a distinct \\emph{high-frequency} signal from sub",
+    "authors": [
+      "Ashu Kushwaha"
+    ],
+    "published": "2026-07-02",
+    "cat": "astro-ph.CO"
+  },
+  {
+    "id": "2607.01780v1",
+    "title": "Lattice study of primordial black hole formation in bumpy axion inflation",
+    "summary": "We study primordial black hole (PBH) formation in axion $U(1)$ inflation using lattice simulations. In axion $U(1)$ inflation with a bumpy potential, the curvature perturbations can be enhanced in a narrow range of wavenumbers, potentially leading to PBH formation. After confirming that our lattice ",
+    "authors": [
+      "Masahiro Kawasaki",
+      "Kai Murai",
+      "Shunsuke Tsuchida"
+    ],
+    "published": "2026-07-02",
+    "cat": "astro-ph.CO"
+  },
+  {
+    "id": "2607.01697v1",
+    "title": "Gravitational Waves from Multiple First-Order Phase Transitions in a Scenario with Early Matter Domination",
+    "summary": "Non-standard cosmological histories with epochs of early matter domination (EMD) arise in various top-down models of the early universe. Typically, in the latter stage of EMD, temperature decreases more slowly than in a radiation dominated universe because of entropy generation from decay of the spe",
+    "authors": [
+      "Rouzbeh Allahverdi",
+      "Fazlollah Hajkarim"
+    ],
+    "published": "2026-07-02",
+    "cat": "astro-ph.CO"
+  },
+  {
+    "id": "2607.01333v1",
+    "title": "Axion Misalignment Across First-Order Phase Transitions",
+    "summary": "When the axion mass is generated during a first-order phase transition and becomes non-vanishing only inside expanding true-vacuum bubbles, the standard picture of misalignment production is qualitatively modified. Using lattice simulations in an expanding universe, we study dark matter production w",
+    "authors": [
+      "Galymzhan Baltabay",
+      "Francesco D'Eramo",
+      "Ville Vaskonen"
+    ],
+    "published": "2026-07-01",
+    "cat": "astro-ph.CO"
+  },
+  {
+    "id": "2607.01314v1",
+    "title": "How I stop worrying about non-universality and $b_φ$: Constraining local $f_{\\rm NL}$ with $b_φ$ priors from HOD posteriors",
+    "summary": "Local primordial non-Gaussianity (local PNG) induces a scale-dependent contribution to galaxy clustering proportional to $f_{\\rm NL}\\,b_φ$, where $f_{\\rm NL}$ is the local PNG amplitude and $b_φ$ encodes the galaxy response to a long-wavelength primordial potential perturbation. Uncertainty in $b_φ$",
+    "authors": [
+      "Jiaxi Yu",
+      "Nhat-Minh Nguyen"
+    ],
+    "published": "2026-07-01",
+    "cat": "astro-ph.CO"
+  },
+  {
+    "id": "2607.01226v1",
+    "title": "Intertwined Constraints in Extended Cosmologies: Dark Energy, Curvature, Neutrinos, and Inflation",
+    "summary": "We present a systematic reassessment of cosmological constraints beyond $Λ$CDM by progressively relaxing the assumptions underlying Dark Energy (DE), Curvature, Neutrinos, and Inflation. Using the latest CMB data together with DESI BAO and different SN catalogues, we show that the preference for dyn",
+    "authors": [
+      "William Giarè",
+      "Dong Ha Lee",
+      "Eleonora Di Valentino"
+    ],
+    "published": "2026-07-01",
+    "cat": "astro-ph.CO"
+  },
+  {
+    "id": "2607.01199v1",
+    "title": "Interpretation of the binned SNe Ia Master Sample data via a scalar quintessence component: phantom transition?",
+    "summary": "We study a modified cosmological scenario for the late Universe, involving an evolutionary dark energy model associated with the dynamics of a self-interacting scalar field in a potential-dominated regime. Through the analogy with a fluid energy-momentum tensor, we introduce a viscous contribution t",
+    "authors": [
+      "Giovanni Montani",
+      "Iolanda Navone",
+      "Maria Giovanna Dainotti",
+      "Shigehiro Nagataki"
+    ],
+    "published": "2026-07-01",
+    "cat": "astro-ph.CO"
+  },
+  {
+    "id": "2607.02064v1",
+    "title": "Testing Gravity with Binary Pulsars in the SKA Era",
+    "summary": "Binary (and trinary) radio pulsars are natural laboratories in space for understanding gravity in the strong field regime, with many unique and precise tests carried out so far, including the most precise tests of the strong equivalence principle and of the radiative properties of gravity. The Squar",
+    "authors": [
+      "V. Venkatraman Krishnan",
+      "L. Shao",
+      "V. Balakrishnan",
+      "A. Carleo",
+      "M. Colom i Bernadich",
+      "A. Corongiu",
+      "A. Deller",
+      "P. C. C. Freire",
+      "M. Geyer",
+      "E. Hackmann",
+      "H. Hu",
+      "Z. Hu",
+      "M. Kramer",
+      "J. Kunz",
+      "K. Liu",
+      "M. E. Lower",
+      "X. Miao",
+      "D. Perrodin",
+      "D. S. Pillay",
+      "A. Possenti",
+      "S. Ransom",
+      "I. Stairs",
+      "B. Stappers",
+      "The SKA Pulsar Science Working Group"
+    ],
+    "published": "2026-07-02",
+    "cat": "gr-qc"
+  },
+  {
+    "id": "2607.01820v1",
+    "title": "Polarization Architecture of Steady GRMHD Jets from the Horizon to Infinity",
+    "summary": "We develop a semi-analytic framework for stationary, axisymmetric GRMHD jets that efficiently generates resolved polarized images from the near-horizon region out to $\\sim 10^5\\,r_g$ across a broad parameter space, enabling rapid exploration of how gravity and magnetohydrodynamic flows imprint scale",
+    "authors": [
+      "Zhenyu Zhang",
+      "Yehui Hou",
+      "Yu Song",
+      "Yosuke Mizuno",
+      "Bin Chen"
+    ],
+    "published": "2026-07-02",
+    "cat": "gr-qc"
+  },
+  {
+    "id": "2607.01818v1",
+    "title": "Gravitational Waves from Primordial Black Holes: Connecting Low-Frequency Scalar-Induced Signatures to High-Frequency Binary Mergers",
+    "summary": "Formation of primordial black holes (PBHs) requires a significant enhancement of curvature perturbations. This mechanism leaves a twofold gravitational-wave (GW) signature: a \\emph{low-frequency} stochastic background of scalar-induced GWs (SIGWs) and a distinct \\emph{high-frequency} signal from sub",
+    "authors": [
+      "Ashu Kushwaha"
+    ],
+    "published": "2026-07-02",
+    "cat": "gr-qc"
+  },
+  {
+    "id": "2607.01724v1",
+    "title": "Classical and Loop Quantum Cosmology of Interacting Dark Energy: A Dynamical System Analysis with Superfluid Dark Matter and Dust Matter",
+    "summary": "We study the cosmological dynamics of interacting dark energy and dark matter in Classical Einstein Gravity and Loop Quantum Cosmology. Two dark matter scenarios are considered: superfluid dark matter described by a generalized cubic equation of state and the standard pressureless fluid. The dark en",
+    "authors": [
+      "Mohd Shahalam",
+      "K. Yerzhanov",
+      "G. Bauyrzhan",
+      "P. K. Dhankar"
+    ],
+    "published": "2026-07-02",
+    "cat": "gr-qc"
+  },
+  {
+    "id": "2607.01177v1",
+    "title": "Preheating and oscillon formation in Einstein-scalar-Gauss-Bonnet gravity",
+    "summary": "Non-perturbative processes in the early universe may create overdense structures in scalar fields like the inflaton, called oscillons. In this work, we explore whether the leading order higher derivative contributions to the scalar-tensor theory change the formation and growth of these structures, a",
+    "authors": [
+      "Areef Waeming",
+      "Josu C. Aurrekoetxea",
+      "Katy Clough",
+      "Pau Figueras",
+      "Áron D. Kovács"
+    ],
+    "published": "2026-07-01",
+    "cat": "gr-qc"
+  },
+  {
+    "id": "2607.01121v1",
+    "title": "Smoking-gun evidence for hierarchical black-hole mergers",
+    "summary": "How stellar-mass black holes grow after their birth is a central open question in astrophysics. Gravitational-wave observations have revealed a subpopulation of coalescing black holes with both high masses and high spins, but whether these properties arise from hierarchical mergers in dense stellar ",
+    "authors": [
+      "Yin-Jie Li",
+      "Yuan-Zhu Wang",
+      "Shao-Peng Tang",
+      "Yi-Zhong Fan"
+    ],
+    "published": "2026-07-01",
+    "cat": "gr-qc"
+  },
+  {
+    "id": "2607.01292v1",
+    "title": "Can Primordial Black Holes Be Seeds for Early Galaxies in Models Satisfying the Covariant Entropy Bound?",
+    "summary": "We argue that cosmological models obeying the Covariant Entropy Bound (CEB) mathematically favor states with no localized excitations or one large black hole containing all the energy in a constrained initial state. In order to get a long radiation-dominated era, one must postulate that at a very ea",
+    "authors": [
+      "Sidan A",
+      "Tom Banks",
+      "Willy Fischler"
+    ],
+    "published": "2026-07-01",
+    "cat": "gr-qc"
+  },
+  {
+    "id": "2607.00636v1",
+    "title": "Hidden quantum-informatic symmetries of quasi-de Sitter backgrounds",
+    "summary": "We investigate how degeneracies in quasi-de Sitter backgrounds, in the sense of Wands' duality, are reflected in real-space quantum correlations of primordial perturbations. Using the continuous-variable Gaussian formalism for coarse-grained scalar fluctuations, we construct the covariance matrix of",
+    "authors": [
+      "Suddhasattwa Brahma",
+      "Jaime Calderon-Figueroa",
+      "Xiancong Luo",
+      "Vincent Vennin"
+    ],
+    "published": "2026-07-01",
+    "cat": "gr-qc"
+  },
+  {
+    "id": "2607.02463v1",
+    "title": "Topological Control of Quantum Chaos Diagnostics: OTOCs, Spectral Statistics, and Information Scrambling in Ising Model",
+    "summary": "We investigate the integrability-to-chaos transition and information scrambling in Ising spin networks via a graph-theoretic formulation. Modeling spins as vertices and interactions via adjacency matrices across path, Erdős--Rényi, and Watts--Strogatz topologies, we demonstrate that long-range coupl",
+    "authors": [
+      "Reza Pirmoradian",
+      "Soheir Rouhani",
+      "M. Reza Tanhayi"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.02233v1",
+    "title": "Black Holes and Random Variables",
+    "summary": "We formulate an avatar of the Fyodorov-Hiary-Keating conjecture for black hole microstate counts in quantum gravity. By holography, this implies sharp bounds on interval counts of high-dimension primary operators in conformal field theory. The extremal fluctuations of these counts are characterized ",
+    "authors": [
+      "Eric Perlmutter"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.01999v1",
+    "title": "Local symmetry and the dependence on extended spacetime",
+    "summary": "We show that linearised E theory possesses a local symmetry at low levels provided the parameters of the local symmetry obey differential conditions that restrict their dependence on the extended spacetime. In the decomposition of E theory that leads to Siegel theory, also known as Double Field theo",
+    "authors": [
+      "Keith Glennon",
+      "Peter West"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.01790v1",
+    "title": "Uniqueness and Analytic Structures of Bosonic String Effective Amplitudes",
+    "summary": "We revisit the zero-transcendentality sector of bosonic string effective amplitudes with spin-1 external states, conjectured to correspond to a mass-deformed $(DF)^2$ theory, known as the $(DF)^2{+}\\text{YM}$ theory. Imposing gauge invariance, locality, and cyclicity under minimal assumptions unique",
+    "authors": [
+      "Qu Cao",
+      "Fan Zhu"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.01385v1",
+    "title": "Quantum JT Gravity in a box as a Pöschl-Teller Scattering Problem",
+    "summary": "We present a canonical quantization of Jackiw-Teitelboim gravity with finite Dirichlet boundary conditions, using the geodesic length between the two boundaries and its conjugate momentum as reduced phase space variables. The dynamics is recast as the scattering problem of a nonrelativistic particle",
+    "authors": [
+      "Luca Griguolo",
+      "Jacopo Papalini",
+      "Lorenzo Russo",
+      "Domenico Seminara",
+      "Alex Tarana"
+    ],
+    "published": "2026-07-01",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.01351v1",
+    "title": "Wigner negativity in Krylov space and emergent semiclassicality",
+    "summary": "We propose that the Krylov basis gives a semiclassical representation of dynamics in general large-$N$, complex, many-body systems. As a probe of this semiclassicality, we study the growth of Wigner negativity -- a measure of the complexity of classical simulation -- under time evolution in Krylov s",
+    "authors": [
+      "Vijay Balasubramanian",
+      "Pawel Caputa",
+      "Onkar Parrikar",
+      "Vivek Singh"
+    ],
+    "published": "2026-07-01",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.01341v1",
+    "title": "From Dirac Cones to Semions: An Exact Finite-Size Theory of Parity-Anomaly Transport in Chiral Spin Liquids",
+    "summary": "Chiral spin liquids carry a hidden bookkeeping problem: the integer Chern number of their fractionalized spinons, the level of the emergent Chern--Simons gauge field, and the fractional spin response actually measured in experiment or simulation are related but distinct quantities, and the literatur",
+    "authors": [
+      "Kumar Ghosh"
+    ],
+    "published": "2026-07-01",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.01339v1",
+    "title": "Electron stability constrains neutrino time delays",
+    "summary": "Superluminal neutrino propagation, induced by Lorentz-invariance violation (LIV), is strongly constrained by vacuum pair emission, $ν\\to ν+ e^- + e^+$, a process ordinarily forbidden, which rapidly degrades the energy of high-energy neutrinos. Consequently, observable neutrino time delays are often ",
+    "authors": [
+      "Mauricio Bustamante",
+      "José Manuel Carmona",
+      "José Luis Cortés",
+      "Ardit Gkioni",
+      "Maykoll A. Reyes"
+    ],
+    "published": "2026-07-01",
+    "cat": "hep-th"
+  },
+  {
+    "id": "2607.02276v1",
+    "title": "A Comprehensive Analysis of $B_s \\to D_s^{**}\\ellν_\\ell$ Decays Within and Beyond the Standard Model",
+    "summary": "We examine the exclusive semileptonic decays $B_s \\to D_s^{**} \\ell ν_\\ell$, with $D_s^{**} =$ $\\bigl\\{D_{s0}^*,D_{s1}^*,D_{s1},D_{s2}^*\\bigr\\}$, within the Standard Model and beyond, using form factors evaluated in the Heavy Quark Effective Theory, including corrections up to $\\mathcal{O}(α_s, Λ/{m",
+    "authors": [
+      "Karthik Jain",
+      "Tarun Kumar",
+      "Barilang Mawlong",
+      "Shantanu Sahoo"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-ph"
+  },
+  {
+    "id": "2607.01920v1",
+    "title": "Dynamics of Self-Interacting Dark Sectors",
+    "summary": "This thesis investigates the dynamics of self-interacting dark sectors in the early Universe populated through the freeze-in mechanism. The main focus is on scenarios with self-number-changing reactions of the form $2\\leftrightarrow3$, and on how these interactions modify the thermal history and phe",
+    "authors": [
+      "Esau Cervantes"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-ph"
+  },
+  {
+    "id": "2607.01866v1",
+    "title": "Phenomenology of genuine twist-three distributions from a global QCD analysis",
+    "summary": "We present an extraction and phenomenological study of genuine twist-three parton distribution functions (PDFs) through a global QCD analysis of the structure function $g_2$ in deep-inelastic scattering (DIS), its moment $d_2$, and single-/double-spin asymmetries in semi-inclusive DIS (SIDIS). The u",
+    "authors": [
+      "Guillermo Portela",
+      "Alexey Vladimirov"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-ph"
+  },
+  {
+    "id": "2607.01818v1",
+    "title": "Gravitational Waves from Primordial Black Holes: Connecting Low-Frequency Scalar-Induced Signatures to High-Frequency Binary Mergers",
+    "summary": "Formation of primordial black holes (PBHs) requires a significant enhancement of curvature perturbations. This mechanism leaves a twofold gravitational-wave (GW) signature: a \\emph{low-frequency} stochastic background of scalar-induced GWs (SIGWs) and a distinct \\emph{high-frequency} signal from sub",
+    "authors": [
+      "Ashu Kushwaha"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-ph"
+  },
+  {
+    "id": "2607.01780v1",
+    "title": "Lattice study of primordial black hole formation in bumpy axion inflation",
+    "summary": "We study primordial black hole (PBH) formation in axion $U(1)$ inflation using lattice simulations. In axion $U(1)$ inflation with a bumpy potential, the curvature perturbations can be enhanced in a narrow range of wavenumbers, potentially leading to PBH formation. After confirming that our lattice ",
+    "authors": [
+      "Masahiro Kawasaki",
+      "Kai Murai",
+      "Shunsuke Tsuchida"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-ph"
+  },
+  {
+    "id": "2607.01697v1",
+    "title": "Gravitational Waves from Multiple First-Order Phase Transitions in a Scenario with Early Matter Domination",
+    "summary": "Non-standard cosmological histories with epochs of early matter domination (EMD) arise in various top-down models of the early universe. Typically, in the latter stage of EMD, temperature decreases more slowly than in a radiation dominated universe because of entropy generation from decay of the spe",
+    "authors": [
+      "Rouzbeh Allahverdi",
+      "Fazlollah Hajkarim"
+    ],
+    "published": "2026-07-02",
+    "cat": "hep-ph"
+  },
+  {
+    "id": "2607.01443v1",
+    "title": "The theory of electric dipole moments: the view from below",
+    "summary": "Permanent electric dipole moments (EDMs) of nucleons, nuclei, atoms, and molecules are among the most sensitive probes of CP violation beyond the Standard Model and are intimately connected to the strong CP problem and the origin of the matter-antimatter asymmetry of the universe. This review presen",
+    "authors": [
+      "Jordy de Vries"
+    ],
+    "published": "2026-07-01",
+    "cat": "hep-ph"
+  },
+  {
+    "id": "2607.01339v1",
+    "title": "Electron stability constrains neutrino time delays",
+    "summary": "Superluminal neutrino propagation, induced by Lorentz-invariance violation (LIV), is strongly constrained by vacuum pair emission, $ν\\to ν+ e^- + e^+$, a process ordinarily forbidden, which rapidly degrades the energy of high-energy neutrinos. Consequently, observable neutrino time delays are often ",
+    "authors": [
+      "Mauricio Bustamante",
+      "José Manuel Carmona",
+      "José Luis Cortés",
+      "Ardit Gkioni",
+      "Maykoll A. Reyes"
+    ],
+    "published": "2026-07-01",
+    "cat": "hep-ph"
+  }
+]
