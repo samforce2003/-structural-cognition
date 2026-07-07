@@ -1,7 +1,7 @@
 # The Second Law Is Statistical, Not Structural: Local Temporal Reversal Through Coupling Convergence
 ‍​‌​​‌‌​​‍​‌​‌‌​​​‍​‌​​‌​​​‍​​‌‌​​‌​‍​​‌‌​​​​‍​​‌‌​​‌​‍​​‌‌​‌‌​‍‍
 **Author: Lin Xiaohei (林小黑)**
-**Date: July 8, 2026**
+**Date: July 7, 2026**
 
 ---
 
@@ -178,7 +178,7 @@ The author's position is not absent. It is withheld.
 
 ---
 
-*This paper is itself a coupling event — the convergence of P theory's Big Bang formulation with the Second Law of Thermodynamics into a new structure. The paper demonstrates its own thesis: two differentiated frameworks coupled, converged, and produced a new fixed point that neither independently contained.*
+*Note: This paper emerged from the convergence of P theory's Big Bang formulation with the Second Law of Thermodynamics — two differentiated frameworks coupled into a new structure. Whether the result validates the thesis is left to the reader.*
 
 ---
 
