@@ -59,4 +59,8 @@
 
 ---
 
-*以上。平时关注这个领域。*
+*以上。平时关注这个领域。
+
+———
+
+论文全文及实验方案：https://gitee.com/samforce/structural-cognition*

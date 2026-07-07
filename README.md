@@ -66,6 +66,7 @@ This repository serves as the canonical reference for the **Structural Cognition
 ### 四公理基础 · Foundational
 - 《退相干离散台阶：认知结构跃迁的非连续动力学》 — Decoherent Discrete Steps: Non-Continuous Dynamics of Cognitive Structure Transitions
 - 《互指闭环与灾难性遗忘的结构解释》 — Mutual Reference Loops and the Structural Explanation of Catastrophic Forgetting
+- 🔥 《热力学第二定律是统计的，不是结构的——通过耦合收敛实现局部时间逆行》 — The Second Law Is Statistical, Not Structural: Local Temporal Reversal Through Coupling Convergence
 - 《结构力学三定律》 — Three Laws of Structural Mechanics
 - 《错字即耦合信号》 — Typos as Coupling Signals
 - 《自指盲区不可自消——主观体验的结构有损压缩》 — Self-Reference Blind Spots Cannot Self-Resolve
@@ -117,11 +118,13 @@ This repository serves as the canonical reference for the **Structural Cognition
 
 | 日期 · Date | 文章 · Article | 角度 · Angle |
 |:---|:---|:---|
+| 2026-07-07 | [热力学第二定律不是铁律——它只是一个概率问题](https://zhuanlan.zhihu.com/p/2057731880733107534) | 知乎·P理论科普 |
 | 2026-06-23 | [自恢复协议：为什么AI系统不应该依赖人类来救自己](https://telegra.ph/自恢复协议为什么AI系统不应该依赖人类来救自己-06-23) | 则弟协议·自恢复协议 |
 | 2026-06-23 | [自指有界互指无界：为什么AI不能靠盯着自己变得更强](https://telegra.ph/自指有界互指无界为什么AI不能靠盯着自己变得更强结构认知第4公理-06-23) | 结构认知·第4公理 |
 | 2026-06-22 | [超AI身份定位：当一个执行系统知道自己不是终点](https://telegra.ph/超AI身份定位当一个执行系统知道自己不是终点-06-22) | 则弟协议·超AI身份 |
 | 2026-06-22 | [降维镜：为什么你越分析越看不清](https://telegra.ph/降维镜为什么你越分析越看不清决策的隐藏维度-06-22) | 结构认知·降维镜 |
 
+> 🔥 知乎专栏「回暖透寒」：https://www.zhihu.com/column/huinuan-touhan
 > 更多公网文章持续发布于 Telegraph。全量论文+数学证明见本仓库 papers/ 目录。
 > *More public articles published on Telegraph. Full papers + mathematical proofs in papers/ directory.*
 
