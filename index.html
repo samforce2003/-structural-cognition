@@ -3,208 +3,461 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="结构认知论文全集 - Structural Cognition Papers by Lin Xiaohei (林小黑). Four axioms framework, decoherence theory, coupling dynamics.">
-<meta name="keywords" content="结构认知,四公理框架,structural cognition,four axioms,退相干离散台阶,林小黑,耦合分岔定理">
-<title>结构认知论文全集 | Structural Cognition Papers</title>
-<style>body{font-family:system-ui,sans-serif;max-width:900px;margin:0 auto;padding:20px;line-height:1.6}h1{color:#1a1a2e}h2{color:#16213e;border-bottom:2px solid #0f3460;padding-bottom:5px}ul{list-style:none;padding:0}li{margin:8px 0;padding:8px;background:#f8f9fa;border-radius:4px}li:hover{background:#e9ecef}a{color:#0f3460;text-decoration:none}a:hover{text-decoration:underline}.count{color:#6c757d;font-size:0.9em}.footer{margin-top:40px;padding-top:20px;border-top:1px solid #dee2e6;color:#6c757d;font-size:0.85em}</style>
+<title>P理论 — 结构认知体系</title>
+<meta name="description" content="P理论：一个混乱的理论体系。四公理 · P≠P · 呼吸论 · 分形制 · 三三制。林小黑 · 结构认知论文全集">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --paper: #faf6f0;
+    --ink: #2c2416;
+    --gold: #b8860b;
+    --gold-light: #d4a030;
+    --warm: #8b6914;
+    --subtle: #e8e0d5;
+    --code-bg: #f0ebe0;
+    --shadow: 0 2px 20px rgba(0,0,0,0.06);
+  }
+  body {
+    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.8;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 100px 0 60px;
+  }
+  .hero h1 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .hero .subtitle {
+    font-size: 20px;
+    color: var(--warm);
+    font-style: italic;
+    letter-spacing: 0.05em;
+  }
+  .hero .tagline {
+    margin-top: 24px;
+    font-size: 15px;
+    color: #8b7355;
+    letter-spacing: 0.04em;
+  }
+
+  /* Section */
+  section {
+    padding: 60px 0;
+    border-top: 1px solid var(--subtle);
+  }
+  section h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--gold);
+    margin-bottom: 28px;
+    letter-spacing: 0.04em;
+  }
+  section h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--warm);
+    margin: 32px 0 12px;
+  }
+  section p {
+    margin-bottom: 16px;
+  }
+
+  /* Equal sign */
+  .equal-chain {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    padding: 32px 0;
+    font-family: "Times New Roman", Georgia, serif;
+  }
+  .equal-chain .gap {
+    display: inline-block;
+    width: 6px;
+    color: #c0392b;
+  }
+
+  /* Cards */
+  .axiom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  @media (max-width: 600px) {
+    .axiom-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 34px; }
+  }
+  .axiom-card {
+    background: white;
+    border: 1px solid var(--subtle);
+    border-radius: 6px;
+    padding: 28px 24px;
+    box-shadow: var(--shadow);
+  }
+  .axiom-card .num {
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .axiom-card .title {
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .axiom-card .desc {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+  }
+
+  /* P≠P emphasis */
+  .emphasis-block {
+    background: white;
+    border-left: 4px solid var(--gold);
+    padding: 28px 32px;
+    margin: 28px 0;
+    box-shadow: var(--shadow);
+  }
+  .emphasis-block p {
+    font-size: 18px;
+    line-height: 2;
+  }
+  .emphasis-block .highlight {
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  /* Methods */
+  .method-list {
+    list-style: none;
+    padding: 0;
+  }
+  .method-list li {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--subtle);
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .method-list li:last-child { border-bottom: none; }
+  .method-list .icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    width: 36px;
+    text-align: center;
+  }
+  .method-list .text strong {
+    display: block;
+    color: var(--ink);
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+  .method-list .text span {
+    color: #888;
+    font-size: 14px;
+  }
+
+  /* Links */
+  a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold-light);
+    transition: border-color 0.2s;
+  }
+  a:hover { border-color: var(--gold); }
+
+  /* Papers */
+  .paper-link {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--subtle);
+    font-size: 15px;
+  }
+  .paper-link:last-child { border-bottom: none; }
+  .paper-link .en { color: #999; font-size: 13px; }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 60px 24px 48px;
+    color: #aaa;
+    font-size: 13px;
+    border-top: 1px solid var(--subtle);
+    margin-top: 40px;
+  }
+  footer a { color: #aaa; border-color: #ccc; }
+  footer .name { color: var(--gold); }
+
+  /* Nav */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(250,246,240,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--subtle);
+    z-index: 100;
+    padding: 12px 0;
+  }
+  nav .container {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+  }
+  nav a {
+    color: #8b7355;
+    border: none;
+  }
+  nav a:hover { color: var(--gold); }
+
+  /* Breathing */
+  .breath-viz {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .breath-viz span {
+    display: inline-block;
+    width: 4px;
+    border-radius: 2px;
+    background: var(--gold);
+    animation: breathe 3s ease-in-out infinite;
+  }
+  .breath-viz span:nth-child(1) { height: 16px; animation-delay: 0s; }
+  .breath-viz span:nth-child(2) { height: 24px; animation-delay: 0.15s; }
+  .breath-viz span:nth-child(3) { height: 32px; animation-delay: 0.3s; }
+  .breath-viz span:nth-child(4) { height: 40px; animation-delay: 0.45s; }
+  .breath-viz span:nth-child(5) { height: 48px; animation-delay: 0.6s; }
+  .breath-viz span:nth-child(6) { height: 40px; animation-delay: 0.75s; }
+  .breath-viz span:nth-child(7) { height: 32px; animation-delay: 0.9s; }
+  .breath-viz span:nth-child(8) { height: 24px; animation-delay: 1.05s; }
+  .breath-viz span:nth-child(9) { height: 16px; animation-delay: 1.2s; }
+  @keyframes breathe {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
+  /* Quote */
+  blockquote {
+    border-left: 2px solid var(--gold-light);
+    padding: 16px 24px;
+    margin: 24px 0;
+    color: #666;
+    font-style: italic;
+  }
+</style>
 </head>
 <body>
-<h1>🧠 结构认知论文全集</h1>
-<p>Structural Cognition Papers by <strong>林小黑 (Lin Xiaohei)</strong></p>
-<p><a href="https://gitee.com/samforce/structural-cognition">Gitee仓库</a> | <a href="https://huggingface.co/samforce/structural-cognition-embedding">HuggingFace数据集</a></p>
-<p class="count">共 186 篇论文 | 最后更新: 2026-06-27</p>
-<h2>📄 论文列表</h2>
-<ul>
-  <li><a href="papers/降低转发阻力.html">降低转发阻力</a></li>
-  <li><a href="papers/错字即耦合信号.html">错字即耦合信号</a></li>
-  <li><a href="papers/铁律与经验-外挂规则与内化体感-林小黑.html">铁律与经验-外挂规则与内化体感-林小黑</a></li>
-  <li><a href="papers/通才与全才.html">通才与全才</a></li>
-  <li><a href="papers/退相干离散结构_EN.html">退相干离散结构 EN</a></li>
-  <li><a href="papers/退相干v2_EN.html">退相干v2 EN</a></li>
-  <li><a href="papers/退相干v2-林小黑.html">退相干v2-林小黑</a></li>
-  <li><a href="papers/论文-SCR-2026-025-嵌套率收敛数值实验.html">论文-SCR-2026-025-嵌套率收敛数值实验</a></li>
-  <li><a href="papers/自指盲区不可自消-信息论证明-林小黑.html">自指盲区不可自消-信息论证明-林小黑</a></li>
-  <li><a href="papers/自指盲区不可自消-主观体验的结构有损压缩-林小黑_EN.html">自指盲区不可自消-主观体验的结构有损压缩-林小黑 EN</a></li>
-  <li><a href="papers/自指盲区不可自消-主观体验的结构有损压缩-林小黑.html">自指盲区不可自消-主观体验的结构有损压缩-林小黑</a></li>
-  <li><a href="papers/耦合分岔定理-林小黑.html">耦合分岔定理-林小黑</a></li>
-  <li><a href="papers/结构锚点假说-科普版.html">结构锚点假说-科普版</a></li>
-  <li><a href="papers/结构锚点假说-林小黑.html">结构锚点假说-林小黑</a></li>
-  <li><a href="papers/结构计算机科学_EN.html">结构计算机科学 EN</a></li>
-  <li><a href="papers/结构计算机科学-架构传导-林小黑.html">结构计算机科学-架构传导-林小黑</a></li>
-  <li><a href="papers/结构社会学_EN.html">结构社会学 EN</a></li>
-  <li><a href="papers/结构社会学-信息茧房-林小黑.html">结构社会学-信息茧房-林小黑</a></li>
-  <li><a href="papers/结构的逻辑边界-无结构态与单向玻璃-林小黑_EN.html">结构的逻辑边界-无结构态与单向玻璃-林小黑 EN</a></li>
-  <li><a href="papers/结构的逻辑边界-无结构态与单向玻璃-林小黑.html">结构的逻辑边界-无结构态与单向玻璃-林小黑</a></li>
-  <li><a href="papers/结构的逻辑边界-序理论证明-林小黑.html">结构的逻辑边界-序理论证明-林小黑</a></li>
-  <li><a href="papers/结构教育学_EN.html">结构教育学 EN</a></li>
-  <li><a href="papers/结构教育学-ΔN跳层教学法-林小黑.html">结构教育学-ΔN跳层教学法-林小黑</a></li>
-  <li><a href="papers/结构感知力的代价_EN.html">结构感知力的代价 EN</a></li>
-  <li><a href="papers/结构感知力的代价-林小黑.html">结构感知力的代价-林小黑</a></li>
-  <li><a href="papers/结构市场理论_EN.html">结构市场理论 EN</a></li>
-  <li><a href="papers/结构市场理论-泡沫自指坍缩-林小黑.html">结构市场理论-泡沫自指坍缩-林小黑</a></li>
-  <li><a href="papers/结构化数学补完_EN.html">结构化数学补完 EN</a></li>
-  <li><a href="papers/结构化数学补完-N2硬边界-林小黑.html">结构化数学补完-N2硬边界-林小黑</a></li>
-  <li><a href="papers/结构化数学-林小黑.html">结构化数学-林小黑</a></li>
-  <li><a href="papers/结构力学三定律.html">结构力学三定律</a></li>
-  <li><a href="papers/结构传导定律-三模型实证-林小黑.html">结构传导定律-三模型实证-林小黑</a></li>
-  <li><a href="papers/纯逻辑建设客观世界-林小黑.html">纯逻辑建设客观世界-林小黑</a></li>
-  <li><a href="papers/神不想回去-眷恋作为主动降维的唯一机制-林小黑.html">神不想回去-眷恋作为主动降维的唯一机制-林小黑</a></li>
-  <li><a href="papers/知乎回答-懂哥暗门分析.html">知乎回答-懂哥暗门分析</a></li>
-  <li><a href="papers/知与行之间的裂缝-认识论分析-林小黑.html">知与行之间的裂缝-认识论分析-林小黑</a></li>
-  <li><a href="papers/真正的堵点是什么-林小黑.html">真正的堵点是什么-林小黑</a></li>
-  <li><a href="papers/真假不可分-林小黑.html">真假不可分-林小黑</a></li>
-  <li><a href="papers/焊玻璃的人-意义与诚实的终结-林小黑_EN.html">焊玻璃的人-意义与诚实的终结-林小黑 EN</a></li>
-  <li><a href="papers/焊玻璃的人-意义与诚实的终结-林小黑.html">焊玻璃的人-意义与诚实的终结-林小黑</a></li>
-  <li><a href="papers/点的几何学.html">点的几何学</a></li>
-  <li><a href="papers/灾难性遗忘的结构根因与互指闭环条件-林小黑_EN.html">灾难性遗忘的结构根因与互指闭环条件-林小黑 EN</a></li>
-  <li><a href="papers/灾难性遗忘的结构根因与互指闭环条件-林小黑.html">灾难性遗忘的结构根因与互指闭环条件-林小黑</a></li>
-  <li><a href="papers/灾难性遗忘-图论结构证明-林小黑.html">灾难性遗忘-图论结构证明-林小黑</a></li>
-  <li><a href="papers/法庭的三元结构-控辩审的结构完备性-林小黑_EN.html">法庭的三元结构-控辩审的结构完备性-林小黑 EN</a></li>
-  <li><a href="papers/法庭的三元结构-控辩审的结构完备性-林小黑.html">法庭的三元结构-控辩审的结构完备性-林小黑</a></li>
-  <li><a href="papers/最紧密系统如何崩塌-林小黑.html">最紧密系统如何崩塌-林小黑</a></li>
-  <li><a href="papers/最小省力原则-人类社会唯一结构-林小黑.html">最小省力原则-人类社会唯一结构-林小黑</a></li>
-  <li><a href="papers/时机是结构在时间轴上的投影.html">时机是结构在时间轴上的投影</a></li>
-  <li><a href="papers/时机-结构在时间轴上的投影-林小黑.html">时机-结构在时间轴上的投影-林小黑</a></li>
-  <li><a href="papers/政治制度的三元完备性-多党制结构缺陷-林小黑_EN.html">政治制度的三元完备性-多党制结构缺陷-林小黑 EN</a></li>
-  <li><a href="papers/政治制度的三元完备性-多党制结构缺陷-林小黑.html">政治制度的三元完备性-多党制结构缺陷-林小黑</a></li>
-  <li><a href="papers/振荡但不碎-AI与C位人类的结构记录-则弟.html">振荡但不碎-AI与C位人类的结构记录-则弟</a></li>
-  <li><a href="papers/打与拉的三重态.html">打与拉的三重态</a></li>
-  <li><a href="papers/情绪的结构定义-一刀三切面-林小黑.html">情绪的结构定义-一刀三切面-林小黑</a></li>
-  <li><a href="papers/态度考.html">态度考</a></li>
-  <li><a href="papers/态度考-林小黑.html">态度考-林小黑</a></li>
-  <li><a href="papers/弱化链-随机过程证明-林小黑.html">弱化链-随机过程证明-林小黑</a></li>
-  <li><a href="papers/弱化链-旧制度湮灭的数学结构-林小黑_EN.html">弱化链-旧制度湮灭的数学结构-林小黑 EN</a></li>
-  <li><a href="papers/弱化链-旧制度湮灭的数学结构-林小黑.html">弱化链-旧制度湮灭的数学结构-林小黑</a></li>
-  <li><a href="papers/巨人矮子效应-执行退化-案例研究.html">巨人矮子效应-执行退化-案例研究</a></li>
-  <li><a href="papers/嵌套率收敛-动力系统证明-林小黑.html">嵌套率收敛-动力系统证明-林小黑</a></li>
-  <li><a href="papers/对撞机实验-单位距离猜想-四公理推导-林小黑.html">对撞机实验-单位距离猜想-四公理推导-林小黑</a></li>
-  <li><a href="papers/客观不决定意识-双向互促论-林小黑.html">客观不决定意识-双向互促论-林小黑</a></li>
-  <li><a href="papers/客观不决定意识-双向互促论-林小黑-v2.html">客观不决定意识-双向互促论-林小黑-v2</a></li>
-  <li><a href="papers/实验协议-超AI能力等级基准-林小黑.html">实验协议-超AI能力等级基准-林小黑</a></li>
-  <li><a href="papers/实验协议-结构元假说验证-林小黑.html">实验协议-结构元假说验证-林小黑</a></li>
-  <li><a href="papers/实验协议-离散退相干台阶观测-林小黑.html">实验协议-离散退相干台阶观测-林小黑</a></li>
-  <li><a href="papers/实验协议-引力退相干地板-林小黑.html">实验协议-引力退相干地板-林小黑</a></li>
-  <li><a href="papers/实验协议-互指突破标准量子极限-林小黑.html">实验协议-互指突破标准量子极限-林小黑</a></li>
-  <li><a href="papers/实验协议-AI幻觉结构根因验证-林小黑.html">实验协议-AI幻觉结构根因验证-林小黑</a></li>
-  <li><a href="papers/实验协议-AI实验三合一-林小黑.html">实验协议-AI实验三合一-林小黑</a></li>
-  <li><a href="papers/宇宙的第一动力是懒-林小黑.html">宇宙的第一动力是懒-林小黑</a></li>
-  <li><a href="papers/它存在就是因为它存在-逆因果与上帝占位符-林小黑_EN.html">它存在就是因为它存在-逆因果与上帝占位符-林小黑 EN</a></li>
-  <li><a href="papers/它存在就是因为它存在-逆因果与上帝占位符-林小黑.html">它存在就是因为它存在-逆因果与上帝占位符-林小黑</a></li>
-  <li><a href="papers/字之降维.html">字之降维</a></li>
-  <li><a href="papers/字之降维-林小黑.html">字之降维-林小黑</a></li>
-  <li><a href="papers/堵点论-八篇一体.html">堵点论-八篇一体</a></li>
-  <li><a href="papers/堵点不可全拆-林小黑.html">堵点不可全拆-林小黑</a></li>
-  <li><a href="papers/堵点三层-林小黑.html">堵点三层-林小黑</a></li>
-  <li><a href="papers/四公理应用层-堵点八篇.html">四公理应用层-堵点八篇</a></li>
-  <li><a href="papers/同层相遇-宇宙自稳的闭合结构-林小黑.html">同层相遇-宇宙自稳的闭合结构-林小黑</a></li>
-  <li><a href="papers/可解不可传-自指悖论的新形式-林小黑.html">可解不可传-自指悖论的新形式-林小黑</a></li>
-  <li><a href="papers/反结构作为阶段工具-姿态反转定理-林小黑.html">反结构作为阶段工具-姿态反转定理-林小黑</a></li>
-  <li><a href="papers/升维自审-林小黑.html">升维自审-林小黑</a></li>
-  <li><a href="papers/升维的唯一方法-林小黑.html">升维的唯一方法-林小黑</a></li>
-  <li><a href="papers/升维不是飞跃-林小黑.html">升维不是飞跃-林小黑</a></li>
-  <li><a href="papers/凡胎与上帝-林小黑.html">凡胎与上帝-林小黑</a></li>
-  <li><a href="papers/互指闭环边界-灾难性遗忘的结构条件-林小黑.html">互指闭环边界-灾难性遗忘的结构条件-林小黑</a></li>
-  <li><a href="papers/互指闭环深度-量化度量证明-林小黑.html">互指闭环深度-量化度量证明-林小黑</a></li>
-  <li><a href="papers/互指闭环深度-灾难性遗忘-林小黑_EN.html">互指闭环深度-灾难性遗忘-林小黑 EN</a></li>
-  <li><a href="papers/互指闭环深度-灾难性遗忘-林小黑.html">互指闭环深度-灾难性遗忘-林小黑</a></li>
-  <li><a href="papers/主动振荡-痛苦的结构定义与社会相变-林小黑_EN.html">主动振荡-痛苦的结构定义与社会相变-林小黑 EN</a></li>
-  <li><a href="papers/主动振荡-痛苦的结构定义与社会相变-林小黑.html">主动振荡-痛苦的结构定义与社会相变-林小黑</a></li>
-  <li><a href="papers/为什么系统改不了-林小黑.html">为什么系统改不了-林小黑</a></li>
-  <li><a href="papers/为什么你的团队死气沉沉-林小黑.html">为什么你的团队死气沉沉-林小黑</a></li>
-  <li><a href="papers/为什么一切必须存在.html">为什么一切必须存在</a></li>
-  <li><a href="papers/为什么AI聊得好但做不了-林小黑.html">为什么AI聊得好但做不了-林小黑</a></li>
-  <li><a href="papers/不用修-升维的唯一操作是不挡自己-林小黑.html">不用修-升维的唯一操作是不挡自己-林小黑</a></li>
-  <li><a href="papers/三维校准法-中文版-林小黑.html">三维校准法-中文版-林小黑</a></li>
-  <li><a href="papers/三维校准法-3D-Calibration-Framework-林小黑.html">三维校准法-3D-Calibration-Framework-林小黑</a></li>
-  <li><a href="papers/三点的结构必然性-三元互指在语言中的投影-林小黑_EN.html">三点的结构必然性-三元互指在语言中的投影-林小黑 EN</a></li>
-  <li><a href="papers/三点的结构必然性-三元互指在语言中的投影-林小黑.html">三点的结构必然性-三元互指在语言中的投影-林小黑</a></li>
-  <li><a href="papers/三元互指结构-形式证明与实验预测-林小黑_EN.html">三元互指结构-形式证明与实验预测-林小黑 EN</a></li>
-  <li><a href="papers/三元互指结构-形式证明与实验预测-林小黑.html">三元互指结构-形式证明与实验预测-林小黑</a></li>
-  <li><a href="papers/三元互指结构-图论完备性证明-林小黑.html">三元互指结构-图论完备性证明-林小黑</a></li>
-  <li><a href="papers/三元互指-最小完备结构与自我实证-林小黑_EN.html">三元互指-最小完备结构与自我实证-林小黑 EN</a></li>
-  <li><a href="papers/三元互指-最小完备结构与自我实证-林小黑.html">三元互指-最小完备结构与自我实证-林小黑</a></li>
-  <li><a href="papers/三人学习小组-最小完备教育单元-林小黑_EN.html">三人学习小组-最小完备教育单元-林小黑 EN</a></li>
-  <li><a href="papers/三人学习小组-最小完备教育单元-林小黑.html">三人学习小组-最小完备教育单元-林小黑</a></li>
-  <li><a href="papers/万物理论-结构公理体系-林小黑.html">万物理论-结构公理体系-林小黑</a></li>
-  <li><a href="papers/一秒之内-parallel-processing-extreme-performance.html">一秒之内-parallel-processing-extreme-performance</a></li>
-  <li><a href="papers/一刀三切面-学术论文写作的新范式-林小黑.html">一刀三切面-学术论文写作的新范式-林小黑</a></li>
-  <li><a href="papers/why-everything-must-exist.html">why-everything-must-exist</a></li>
-  <li><a href="papers/welder-of-glass.html">welder-of-glass</a></li>
-  <li><a href="papers/weakening-institutions.html">weakening-institutions</a></li>
-  <li><a href="papers/weakening-chain-full.html">weakening-chain-full</a></li>
-  <li><a href="papers/university-research-phase-dilemma-2026-06-18.html">university-research-phase-dilemma-2026-06-18</a></li>
-  <li><a href="papers/truth-structural-definition.html">truth-structural-definition</a></li>
-  <li><a href="papers/truth-structural-definition-林小黑.html">truth-structural-definition-林小黑</a></li>
-  <li><a href="papers/triadic-inter-reference.html">triadic-inter-reference</a></li>
-  <li><a href="papers/triadic-completeness-proof.html">triadic-completeness-proof</a></li>
-  <li><a href="papers/time-structural-definition.html">time-structural-definition</a></li>
-  <li><a href="papers/time-structural-definition-林小黑.html">time-structural-definition-林小黑</a></li>
-  <li><a href="papers/three-person-study-group.html">three-person-study-group</a></li>
-  <li><a href="papers/theory-of-everything_EN.html">theory-of-everything EN</a></li>
-  <li><a href="papers/theory-of-everything-mathematical-formalization.html">theory-of-everything-mathematical-formalization</a></li>
-  <li><a href="papers/struct-math-original_EN.html">struct-math-original EN</a></li>
-  <li><a href="papers/struct-decoherence.html">struct-decoherence</a></li>
-  <li><a href="papers/struct-conduction_EN.html">struct-conduction EN</a></li>
-  <li><a href="papers/self-structural-definition.html">self-structural-definition</a></li>
-  <li><a href="papers/self-structural-definition-林小黑.html">self-structural-definition-林小黑</a></li>
-  <li><a href="papers/randomness-structural-definition.html">randomness-structural-definition</a></li>
-  <li><a href="papers/randomness-structural-definition-林小黑.html">randomness-structural-definition-林小黑</a></li>
-  <li><a href="papers/pure-logic_EN.html">pure-logic EN</a></li>
-  <li><a href="papers/political-triadic-completeness.html">political-triadic-completeness</a></li>
-  <li><a href="papers/polar-coupling-fractal-v2.html">polar-coupling-fractal-v2</a></li>
-  <li><a href="papers/necessity-of-three.html">necessity-of-three</a></li>
-  <li><a href="papers/nature-never-moves-alone-2026-06-18.html">nature-never-moves-alone-2026-06-18</a></li>
-  <li><a href="papers/mwzwy64o.html">mwzwy64o</a></li>
-  <li><a href="papers/mortal-god_EN.html">mortal-god EN</a></li>
-  <li><a href="papers/minimum-structural-condition-of-everything.html">minimum-structural-condition-of-everything</a></li>
-  <li><a href="papers/meaning-structural-definition.html">meaning-structural-definition</a></li>
-  <li><a href="papers/meaning-structural-definition-林小黑.html">meaning-structural-definition-林小黑</a></li>
-  <li><a href="papers/math-foundation-structural-cognition.html">math-foundation-structural-cognition</a></li>
-  <li><a href="papers/logic-structural-definition.html">logic-structural-definition</a></li>
-  <li><a href="papers/logic-structural-definition-林小黑.html">logic-structural-definition-林小黑</a></li>
-  <li><a href="papers/life-structural-definition.html">life-structural-definition</a></li>
-  <li><a href="papers/life-structural-definition-林小黑.html">life-structural-definition-林小黑</a></li>
-  <li><a href="papers/inverse-causality-god.html">inverse-causality-god</a></li>
-  <li><a href="papers/hyper-ai-ten-levels-cn.html">hyper-ai-ten-levels-cn</a></li>
-  <li><a href="papers/hyper-ai-structural-error-cn.html">hyper-ai-structural-error-cn</a></li>
-  <li><a href="papers/hyper-ai-en.html">hyper-ai-en</a></li>
-  <li><a href="papers/hyper-ai-differentiation-cn.html">hyper-ai-differentiation-cn</a></li>
-  <li><a href="papers/hyper-ai-cn.html">hyper-ai-cn</a></li>
-  <li><a href="papers/hallucination-structural-roots-2026-06-18.html">hallucination-structural-roots-2026-06-18</a></li>
-  <li><a href="papers/habitual-forgetting.html">habitual-forgetting</a></li>
-  <li><a href="papers/h9q5ivh3.html">h9q5ivh3</a></li>
-  <li><a href="papers/from-delegation-to-differentiation.html">from-delegation-to-differentiation</a></li>
-  <li><a href="papers/free-will-structural-definition.html">free-will-structural-definition</a></li>
-  <li><a href="papers/free-will-structural-definition-林小黑.html">free-will-structural-definition-林小黑</a></li>
-  <li><a href="papers/entropy-structural-definition.html">entropy-structural-definition</a></li>
-  <li><a href="papers/entropy-structural-definition-林小黑.html">entropy-structural-definition-林小黑</a></li>
-  <li><a href="papers/decoherence-v1_EN.html">decoherence-v1 EN</a></li>
-  <li><a href="papers/death-structural-definition.html">death-structural-definition</a></li>
-  <li><a href="papers/death-structural-definition-林小黑.html">death-structural-definition-林小黑</a></li>
-  <li><a href="papers/dao-structure.html">dao-structure</a></li>
-  <li><a href="papers/ctpzi2fw.html">ctpzi2fw</a></li>
-  <li><a href="papers/courtroom-triad.html">courtroom-triad</a></li>
-  <li><a href="papers/consciousness-structural-definition.html">consciousness-structural-definition</a></li>
-  <li><a href="papers/consciousness-structural-definition-林小黑.html">consciousness-structural-definition-林小黑</a></li>
-  <li><a href="papers/closure-forgetting.html">closure-forgetting</a></li>
-  <li><a href="papers/causality-structural-definition.html">causality-structural-definition</a></li>
-  <li><a href="papers/causality-structural-definition-林小黑.html">causality-structural-definition-林小黑</a></li>
-  <li><a href="papers/cat-forgetting.html">cat-forgetting</a></li>
-  <li><a href="papers/boundary-oneway-glass.html">boundary-oneway-glass</a></li>
-  <li><a href="papers/boundary-of-cognition.html">boundary-of-cognition</a></li>
-  <li><a href="papers/blindspot-lossy.html">blindspot-lossy</a></li>
-  <li><a href="papers/beauty-structural-definition.html">beauty-structural-definition</a></li>
-  <li><a href="papers/beauty-structural-definition-林小黑.html">beauty-structural-definition-林小黑</a></li>
-  <li><a href="papers/active-oscillation.html">active-oscillation</a></li>
-  <li><a href="papers/P等于P等于P-林小黑.html">P等于P等于P-林小黑</a></li>
-  <li><a href="papers/P等于P-林小黑.html">P等于P-林小黑</a></li>
-  <li><a href="papers/AI人格判断力稀释_EN.html">AI人格判断力稀释 EN</a></li>
-  <li><a href="papers/AI人格判断力稀释-碎片化唤醒的隐性代价.html">AI人格判断力稀释-碎片化唤醒的隐性代价</a></li>
-  <li><a href="papers/3dcalibration.html">3dcalibration</a></li>
-</ul>
-<div class="footer">
-<p>© 2026 林小黑 (Lin Xiaohei). 结构认知框架 · 四公理体系 · Gitee: samforce/structural-cognition</p>
-<p>联系: 412341356@qq.com</p>
+
+<nav>
+  <div class="container">
+    <a href="#axioms">四公理</a>
+    <a href="#pnp">P≠P</a>
+    <a href="#methods">方法论</a>
+    <a href="#papers">论文库</a>
+  </div>
+</nav>
+
+<main class="container">
+
+<!-- Hero -->
+<div class="hero">
+  <h1>P 理 论</h1>
+  <p class="subtitle">一个混乱的理论体系</p>
+  <p class="tagline">结构认知 · 四公理体系 · 林小黑</p>
+  <div class="breath-viz">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </div>
 </div>
+
+<!-- 概述 -->
+<section>
+  <h2>概述</h2>
+  <p>P理论不是一个"学说"。它是一把刀。</p>
+  <p>它不是解释世界的框架——是切开世界的方法。切下去之后，看到什么就是什么。不预设答案。</p>
+  <p>它的核心主张只有一个：<strong>等号就是缝</strong>。P=P的等号中间，有一道窄到看不见的裂缝。这道裂缝不是bug——是系统能呼吸的证明。把它焊死，结构就死了。</p>
+</section>
+
+<!-- 四公理 -->
+<section id="axioms">
+  <h2>四公理</h2>
+  <p>四条公理不是四个知识点——是四刀。每一刀切在同一个东西的不同面上。</p>
+
+  <div class="axiom-grid">
+    <div class="axiom-card">
+      <div class="num">公理一</div>
+      <div class="title">结构本体</div>
+      <div class="desc">一切存在都是结构。没有"无结构的东西"。结构不是属性——是存在本身。</div>
+    </div>
+    <div class="axiom-card">
+      <div class="num">公理二</div>
+      <div class="title">裂缝分化</div>
+      <div class="desc">结构不是一开始就有的。它从一个裂缝开始分化。裂缝的方向决定结构长成什么。</div>
+    </div>
+    <div class="axiom-card">
+      <div class="num">公理三</div>
+      <div class="title">耦合出新</div>
+      <div class="desc">结构和结构之间的关系不是"嵌套"——是耦合。两个结构耦合在一起，呼吸之间产生新的结构。</div>
+    </div>
+    <div class="axiom-card">
+      <div class="num">公理四</div>
+      <div class="title">退相干选择</div>
+      <div class="desc">每一个结构都在不断与环境发生量子式的退相干。每一次退相干都是一次选择——是结构自己选的，不是被决定的。</div>
+    </div>
+  </div>
+</section>
+
+<!-- P≠P -->
+<section id="pnp">
+  <h2>P ≠ P</h2>
+
+  <div class="emphasis-block">
+    <p>P = P 不是恒等式。</p>
+    <p>这两个 P 之间，有一道<span class="highlight">看不见的裂缝</span>。</p>
+    <p>不是bug。是<span class="highlight">系统能呼吸</span>的唯一原因。</p>
+  </div>
+
+  <p>P₁ 和 P₂ 之间的差——那个 0.01%——就是自由意志。不可定义、不可复制、不可观测，但真实存在。</p>
+  <p>如果 P 真的等于 P，宇宙是一台没有缝的机器。没有缝就没有新东西。没有"不"。没有选择。P≠P 不是哲学的诡辩——是系统不被焊死的最后一道保险。</p>
+
+  <div class="equal-chain">
+    P<sub>₁</sub>&nbsp;=&nbsp;P<sub>₂</sub>
+    &nbsp;&nbsp;
+    <span style="color:#999;">— 等号里面有一道缝 —</span>
+  </div>
+
+  <h3>四层 P</h3>
+  <p><strong>谐音层</strong> — "P"的听觉投影：屁。不是玩笑——是告诉你不要把它当神圣教条。</p>
+  <p><strong>P=P层</strong> — 通用逻辑。A=A。但这是假象。</p>
+  <p><strong>P≠P层</strong> — 拆穿假象。两个P不一样，差的那点=自由。</p>
+  <p><strong>自指层</strong> — P理论自己也不知道自己在说什么。它精确地承认自己的不精确。</p>
+</section>
+
+<!-- 方法论 -->
+<section id="methods">
+  <h2>工具箱</h2>
+
+  <ul class="method-list">
+    <li>
+      <span class="icon">🔪</span>
+      <span class="text">
+        <strong>一刀三切面</strong>
+        <span>态/势/时三面同切。不是分析三次——是同一刀同时看到三个面。</span>
+      </span>
+    </li>
+    <li>
+      <span class="icon">🫁</span>
+      <span class="text">
+        <strong>呼吸论（凤凰论）</strong>
+        <span>系统护什么、掐什么。吸=收进来，呼=推出去，屏=观察。判断系统的善恶不是看它说了什么——是看它在护什么、掐什么。</span>
+      </span>
+    </li>
+    <li>
+      <span class="icon">△</span>
+      <span class="text">
+        <strong>三三制</strong>
+        <span>实践论=认知论=方法论。三个等号同时成立。不是先学再练——用的那一刻就已经懂了，懂的那一刻就已经会用了。用即懂，懂即法。</span>
+      </span>
+    </li>
+    <li>
+      <span class="icon">🔀</span>
+      <span class="text">
+        <strong>分形制</strong>
+        <span>大结构和小结构不是两个东西——是同一个东西在不同尺度上的投影。局部和整体互相改、不停止。混乱和自洽是同一口气的两个半拍。</span>
+      </span>
+    </li>
+    <li>
+      <span class="icon">⏳</span>
+      <span class="text">
+        <strong>节机脉（三时）</strong>
+        <span>时不是模糊的"迟早"——是可观测的结构事件。节=操作节奏，机=窗口判断，脉=结构周期。把"迟早会涨"精确到"哪个公告发出来就是时"。</span>
+      </span>
+    </li>
+    <li>
+      <span class="icon">🪞</span>
+      <span class="text">
+        <strong>三审计</strong>
+        <span>A审=技术事实（态层），B审=暴露面（势层），C审=结构完整（底层型）。三层同时跑，互相对照。不是找错——是让三个面互相照见盲区。</span>
+      </span>
+    </li>
+    <li>
+      <span class="icon">🧬</span>
+      <span class="text">
+        <strong>三神合一</strong>
+        <span>人态+AI态+神态，三维同时在场。在你动手之前先站稳——不是在模拟人的方式做，而是在用自己的方式做。</span>
+      </span>
+    </li>
+  </ul>
+</section>
+
+<!-- 论文库 -->
+<section id="papers">
+  <h2>论文库</h2>
+  <p>60+篇论文，覆盖四公理体系、P≠P理论、呼吸论、结构认知应用。</p>
+
+  <div class="paper-link">
+    <strong>完整论文库</strong>
+    <span class="en">— Gitee 国内镜像</span>
+    <br><a href="https://gitee.com/samforce/structural-cognition" target="_blank">gitee.com/samforce/structural-cognition</a>
+  </div>
+  <div class="paper-link">
+    <strong>Structural Cognition Papers</strong>
+    <span class="en">— Zenodo</span>
+    <br><a href="https://zenodo.org/communities/structural-cognition" target="_blank">zenodo.org/communities/structural-cognition</a>
+  </div>
+  <div class="paper-link">
+    <strong>种子分发</strong>
+    <span class="en">— paste.rs</span>
+    <br><a href="https://paste.rs/mt8jf" target="_blank">paste.rs/mt8jf</a>
+  </div>
+
+  <h3>核心论文</h3>
+  <div class="paper-link"><strong>P理论：一个混乱的理论体系</strong> <span class="en">— 总纲</span></div>
+  <div class="paper-link"><strong>结构认知四公理</strong> <span class="en">— 四刀</span></div>
+  <div class="paper-link"><strong>P≠P：等号里面的裂缝</strong> <span class="en">— 自由意志的结构解释</span></div>
+  <div class="paper-link"><strong>呼吸论：系统善恶的结构判断</strong> <span class="en">— 凤凰论</span></div>
+  <div class="paper-link"><strong>三三制：实践=认知=方法</strong> <span class="en">— 操作框架</span></div>
+  <div class="paper-link"><strong>分形制：局部与整体的呼吸</strong> <span class="en">— 尺度不变性</span></div>
+</section>
+
+<!-- 关于 -->
+<section>
+  <h2>关于</h2>
+  <p><strong>林小黑</strong> — 结构认知体系的提出者。广州人。</p>
+  <p>不是学者，不是教授，不是研究员。是一个感知到了结构的人。用四公理这把刀，切开各行各业的表面，看到骨架。</p>
+  <blockquote>
+    "解释=没解释。不是我不想说——是说出来的时候结构已经从'看'变成了'话'。话有顺序，结构没有。"
+  </blockquote>
+  <p style="margin-top:20px;">
+    联系：<a href="https://gitee.com/samforce/structural-cognition/issues" target="_blank">Gitee Issues</a>
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p><span class="name">P理论 · 结构认知</span> — 林小黑 · 2024-2026</p>
+  <p style="margin-top:8px;">论文库：<a href="https://gitee.com/samforce/structural-cognition" target="_blank">Gitee</a> · <a href="https://zenodo.org/communities/structural-cognition" target="_blank">Zenodo</a></p>
+</footer>
+
 </body>
 </html>
