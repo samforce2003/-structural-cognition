@@ -1,0 +1,249 @@
+{
+  "date": "2026-07-11",
+  "total_scanned": 80,
+  "candidates": [
+    {
+      "rank": 1,
+      "match_score": 2,
+      "matched_keywords": [
+        "meaning",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08758v1",
+        "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+        "authors": [
+          "Yifan Zhou",
+          "Qihao Yang",
+          "Yan Li",
+          "Donggang Li",
+          "Xiru Hu",
+          "Hokin Deng",
+          "Ziyang Gong",
+          "Xuanyi Zhou",
+          "Huacan Wang",
+          "Xiangchao Yan",
+          "Wanghan Xu",
+          "Wenlong Zhang",
+          "Shaofeng Zhang",
+          "Yue Zhou",
+          "Yifan Yang",
+          "Zhihang Zhong",
+          "Xue Yang"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08758v1"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 2,
+      "match_score": 2,
+      "matched_keywords": [
+        "education",
+        "learning"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08748v1",
+        "title": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
+        "authors": [
+          "Kristina Schaaff",
+          "Quintus Stierstorfer",
+          "Valerie Heckel"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08748v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 3,
+      "match_score": 2,
+      "matched_keywords": [
+        "labor",
+        "coupling"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08662v1",
+        "title": "WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search",
+        "authors": [
+          "Xiaoshuai Song",
+          "Liancheng Zhang",
+          "Kangzhi Zhao",
+          "Yutao Zhu",
+          "Zhongyuan Wang",
+          "Guanting Dong",
+          "Jinghan Yang",
+          "Han Li",
+          "Kun Gai",
+          "Ji-Rong Wen",
+          "Zhicheng Dou"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08662v1"
+      },
+      "our_ammo": {
+        "id": "ai-society-phase",
+        "title": "After Production Goes to AI: Societal Structural Phase Transition from Sustained Coupling to Oscillatory Coupling",
+        "file": "生产交给AI后的社会结构相变-持存耦合到振荡耦合-林小黑_EN.html",
+        "discipline": "social-science",
+        "angle": "When production shifts to AI, society undergoes structural phase transition — from sustained coupling to oscillatory coupling."
+      }
+    },
+    {
+      "rank": 4,
+      "match_score": 2,
+      "matched_keywords": [
+        "education",
+        "learning"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08009v1",
+        "title": "From Execution to Education: A Bloom-Aligned Framework for Measuring Educational Control in LLMs",
+        "authors": [
+          "Yi Zhang",
+          "Julia Rayz"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08009v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 5,
+      "match_score": 2,
+      "matched_keywords": [
+        "meaning",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08761v1",
+        "title": "Irreducible Geometry of Higher-Order Correlator Families",
+        "authors": [
+          "Kaito Kobayashi"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08761v1"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 6,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08709v1",
+        "title": "Robust One-Sided Device-Independent Quantum Key Distribution via High-Dimensional Steering",
+        "authors": [
+          "Monika Mothsara",
+          "Suraj Goel",
+          "Bohnishikha Ghosh",
+          "Vatshal Srivastav",
+          "Will McCutcheon",
+          "Mehul Malik",
+          "Gláucia Murta"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08709v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 7,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "quantum computing"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08687v1",
+        "title": "Low-latency FPGA-based electronic control system for fast preparation of defect-free atom arrays",
+        "authors": [
+          "Ya-Dong Hu",
+          "Dong-Qi Ma",
+          "Tian-Yang Zhang",
+          "Liang Chen",
+          "Yi-Chen Zhang",
+          "Xiao-Kang Zhong",
+          "Wen-Yi Zhu",
+          "Hong-Jie Fan",
+          "Qing-Xuan Jie",
+          "Yan-Lei Zhang",
+          "Gang Li",
+          "Xi-Feng Ren",
+          "Xu-Liang Zhang",
+          "Guang-Can Guo",
+          "Zhu-Bo Wang",
+          "Chang-Ling Zou"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08687v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 8,
+      "match_score": 2,
+      "matched_keywords": [
+        "self",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.07399v1",
+        "title": "Forced condensation and anti-condensation on heavy-tailed networks",
+        "authors": [
+          "Ashwin Bhattathiripad",
+          "Vipin P. Veetil"
+        ],
+        "published": "2026-07-08",
+        "url": "https://arxiv.org/abs/2607.07399v1"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    }
+  ]
+}

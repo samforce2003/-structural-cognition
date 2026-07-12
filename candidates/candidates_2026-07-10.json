@@ -1,0 +1,176 @@
+{
+  "date": "2026-07-10",
+  "total_scanned": 80,
+  "candidates": [
+    {
+      "rank": 1,
+      "match_score": 2,
+      "matched_keywords": [
+        "cross-model",
+        "Qwen"
+      ],
+      "arxiv_paper": {
+        "id": "2607.07690v1",
+        "title": "Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning",
+        "authors": [
+          "Vladislav Beliaev"
+        ],
+        "published": "2026-07-08",
+        "url": "https://arxiv.org/abs/2607.07690v1"
+      },
+      "our_ammo": {
+        "id": "struct-conduction",
+        "title": "Structural Conduction Law: Cross-Model Empirical Verification",
+        "file": "struct-conduction_EN.md",
+        "discipline": "ai-ml",
+        "angle": "Information conduction efficiency inversely proportional to nesting rate difference — verified across 3 independent AI models."
+      }
+    },
+    {
+      "rank": 2,
+      "match_score": 2,
+      "matched_keywords": [
+        "democracy",
+        "governance"
+      ],
+      "arxiv_paper": {
+        "id": "2607.06784v1",
+        "title": "Decentralization and Governance in IoT: Bitcoin and Wikipedia Case",
+        "authors": [
+          "Anass Sedrati",
+          "Nelly Stoyanova",
+          "Abdellatif Mezrioui",
+          "Abdelaziz Hilali",
+          "Aziza Benomar"
+        ],
+        "published": "2026-07-07",
+        "url": "https://arxiv.org/abs/2607.06784v1"
+      },
+      "our_ammo": {
+        "id": "political-triadic",
+        "title": "The Triadic Completeness of Political Systems — Why Multi-Party Systems May Be Structurally Incomplete",
+        "file": "政治制度的三元完备性-多党制结构缺陷-林小黑_EN.md",
+        "discipline": "social-science",
+        "angle": "Multi-party democracy is structurally incomplete — not ideologically wrong, but structurally missing a dimension."
+      }
+    },
+    {
+      "rank": 3,
+      "match_score": 2,
+      "matched_keywords": [
+        "meaning",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08761v1",
+        "title": "Irreducible Geometry of Higher-Order Correlator Families",
+        "authors": [
+          "Kaito Kobayashi"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08761v1"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 4,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08709v1",
+        "title": "Robust One-Sided Device-Independent Quantum Key Distribution via High-Dimensional Steering",
+        "authors": [
+          "Monika Mothsara",
+          "Suraj Goel",
+          "Bohnishikha Ghosh",
+          "Vatshal Srivastav",
+          "Will McCutcheon",
+          "Mehul Malik",
+          "Gláucia Murta"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08709v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 5,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "quantum computing"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08687v1",
+        "title": "Low-latency FPGA-based electronic control system for fast preparation of defect-free atom arrays",
+        "authors": [
+          "Ya-Dong Hu",
+          "Dong-Qi Ma",
+          "Tian-Yang Zhang",
+          "Liang Chen",
+          "Yi-Chen Zhang",
+          "Xiao-Kang Zhong",
+          "Wen-Yi Zhu",
+          "Hong-Jie Fan",
+          "Qing-Xuan Jie",
+          "Yan-Lei Zhang",
+          "Gang Li",
+          "Xi-Feng Ren",
+          "Xu-Liang Zhang",
+          "Guang-Can Guo",
+          "Zhu-Bo Wang",
+          "Chang-Ling Zou"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08687v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 6,
+      "match_score": 2,
+      "matched_keywords": [
+        "self",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.07399v1",
+        "title": "Forced condensation and anti-condensation on heavy-tailed networks",
+        "authors": [
+          "Ashwin Bhattathiripad",
+          "Vipin P. Veetil"
+        ],
+        "published": "2026-07-08",
+        "url": "https://arxiv.org/abs/2607.07399v1"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    }
+  ]
+}

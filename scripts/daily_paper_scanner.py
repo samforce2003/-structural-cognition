@@ -36,9 +36,12 @@ def load_ammo():
 PROXY = 'http://127.0.0.1:17890'
 
 def _get_opener():
-    """Build opener with proxy support."""
+    """Build opener with proxy support and relaxed SSL."""
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
     proxy_handler = urllib.request.ProxyHandler({'http': PROXY, 'https': PROXY})
-    return urllib.request.build_opener(proxy_handler, urllib.request.HTTPSHandler(context=ssl.create_default_context()))
+    return urllib.request.build_opener(proxy_handler, urllib.request.HTTPSHandler(context=ctx))
 
 def fetch_arxiv(category, max_results=10):
     """Fetch recent papers from arXiv for a given category."""
@@ -129,7 +132,7 @@ def find_candidates(papers, ammo):
     unique = []
     for c in candidates:
         key = (c['arxiv_paper']['arxiv_id'], c['ammo']['id'])
-        if key not in seen or c['match_count'] > seen[key]:
+        if key not in seen or c['match_count'] > seen[key]['match_count']:
             seen[key] = c
     for c in seen.values():
         unique.append(c)

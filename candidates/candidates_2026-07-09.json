@@ -1,0 +1,297 @@
+{
+  "date": "2026-07-09",
+  "total_scanned": 80,
+  "candidates": [
+    {
+      "rank": 1,
+      "match_score": 3,
+      "matched_keywords": [
+        "quantum",
+        "entanglement",
+        "collapse"
+      ],
+      "arxiv_paper": {
+        "id": "2607.07603v1",
+        "title": "Operational Collapse Region in Repeaterless Loss-Dephasing Quantum Channels",
+        "authors": [
+          "Ufuk Korkmaz",
+          "S. Elham Mousavigharalari",
+          "Deniz Türkpençe"
+        ],
+        "published": "2026-07-08",
+        "url": "https://arxiv.org/abs/2607.07603v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 2,
+      "match_score": 3,
+      "matched_keywords": [
+        "decoherence",
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.07597v1",
+        "title": "Quantum Software Engineering in Practice: FPGA and AI Integration for Quantum Certification",
+        "authors": [
+          "Marcos Guillermo Lammers",
+          "José Manuel Suárez",
+          "Adrián Pousa",
+          "Luis Mariano Bibbó",
+          "Alejandro Fernández"
+        ],
+        "published": "2026-07-08",
+        "url": "https://arxiv.org/abs/2607.07597v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 3,
+      "match_score": 2,
+      "matched_keywords": [
+        "democracy",
+        "governance"
+      ],
+      "arxiv_paper": {
+        "id": "2607.06784v1",
+        "title": "Decentralization and Governance in IoT: Bitcoin and Wikipedia Case",
+        "authors": [
+          "Anass Sedrati",
+          "Nelly Stoyanova",
+          "Abdellatif Mezrioui",
+          "Abdelaziz Hilali",
+          "Aziza Benomar"
+        ],
+        "published": "2026-07-07",
+        "url": "https://arxiv.org/abs/2607.06784v1"
+      },
+      "our_ammo": {
+        "id": "political-triadic",
+        "title": "The Triadic Completeness of Political Systems — Why Multi-Party Systems May Be Structurally Incomplete",
+        "file": "政治制度的三元完备性-多党制结构缺陷-林小黑_EN.md",
+        "discipline": "social-science",
+        "angle": "Multi-party democracy is structurally incomplete — not ideologically wrong, but structurally missing a dimension."
+      }
+    },
+    {
+      "rank": 4,
+      "match_score": 2,
+      "matched_keywords": [
+        "decoherence",
+        "quantum"
+      ],
+      "arxiv_paper": {
+        "id": "2607.07642v1",
+        "title": "Acoustic-phonon-driven spin-lattice relaxation of the hBN boron vacancy in the sub-THz regime",
+        "authors": [
+          "Priyo Adhikary",
+          "Pramey Upadhyaya"
+        ],
+        "published": "2026-07-08",
+        "url": "https://arxiv.org/abs/2607.07642v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 5,
+      "match_score": 2,
+      "matched_keywords": [
+        "decoherence",
+        "quantum"
+      ],
+      "arxiv_paper": {
+        "id": "2607.07642v1",
+        "title": "Acoustic-phonon-driven spin-lattice relaxation of the hBN boron vacancy in the sub-THz regime",
+        "authors": [
+          "Priyo Adhikary",
+          "Pramey Upadhyaya"
+        ],
+        "published": "2026-07-08",
+        "url": "https://arxiv.org/abs/2607.07642v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v2",
+        "title": "Structural Theory of Decoherence v2: Cross-System Validation of Constraint Solving Convergence",
+        "file": "退相干v2_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence rate proportional to nesting rate difference — with triple cross-validation (3 AI models + simulation + collider)."
+      }
+    },
+    {
+      "rank": 6,
+      "match_score": 2,
+      "matched_keywords": [
+        "decoherence",
+        "quantum"
+      ],
+      "arxiv_paper": {
+        "id": "2607.07642v1",
+        "title": "Acoustic-phonon-driven spin-lattice relaxation of the hBN boron vacancy in the sub-THz regime",
+        "authors": [
+          "Priyo Adhikary",
+          "Pramey Upadhyaya"
+        ],
+        "published": "2026-07-08",
+        "url": "https://arxiv.org/abs/2607.07642v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-discrete",
+        "title": "The Discrete Structure of Decoherence: The Structon Hypothesis and Its Testable Predictions",
+        "file": "退相干离散结构_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence proceeds in discrete steps — not continuous exponential decay. Testable prediction: observable staircase in decoherence curve."
+      }
+    },
+    {
+      "rank": 7,
+      "match_score": 2,
+      "matched_keywords": [
+        "decoherence",
+        "quantum"
+      ],
+      "arxiv_paper": {
+        "id": "2607.07597v1",
+        "title": "Quantum Software Engineering in Practice: FPGA and AI Integration for Quantum Certification",
+        "authors": [
+          "Marcos Guillermo Lammers",
+          "José Manuel Suárez",
+          "Adrián Pousa",
+          "Luis Mariano Bibbó",
+          "Alejandro Fernández"
+        ],
+        "published": "2026-07-08",
+        "url": "https://arxiv.org/abs/2607.07597v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v2",
+        "title": "Structural Theory of Decoherence v2: Cross-System Validation of Constraint Solving Convergence",
+        "file": "退相干v2_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence rate proportional to nesting rate difference — with triple cross-validation (3 AI models + simulation + collider)."
+      }
+    },
+    {
+      "rank": 8,
+      "match_score": 2,
+      "matched_keywords": [
+        "decoherence",
+        "quantum"
+      ],
+      "arxiv_paper": {
+        "id": "2607.07597v1",
+        "title": "Quantum Software Engineering in Practice: FPGA and AI Integration for Quantum Certification",
+        "authors": [
+          "Marcos Guillermo Lammers",
+          "José Manuel Suárez",
+          "Adrián Pousa",
+          "Luis Mariano Bibbó",
+          "Alejandro Fernández"
+        ],
+        "published": "2026-07-08",
+        "url": "https://arxiv.org/abs/2607.07597v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-discrete",
+        "title": "The Discrete Structure of Decoherence: The Structon Hypothesis and Its Testable Predictions",
+        "file": "退相干离散结构_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence proceeds in discrete steps — not continuous exponential decay. Testable prediction: observable staircase in decoherence curve."
+      }
+    },
+    {
+      "rank": 9,
+      "match_score": 2,
+      "matched_keywords": [
+        "self",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.05954v1",
+        "title": "The Ramsey community number as a renormalization-group crossing",
+        "authors": [
+          "Alexei Vazquez"
+        ],
+        "published": "2026-07-07",
+        "url": "https://arxiv.org/abs/2607.05954v1"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 10,
+      "match_score": 2,
+      "matched_keywords": [
+        "coupling",
+        "entropy"
+      ],
+      "arxiv_paper": {
+        "id": "2607.05695v1",
+        "title": "Structural Divergence of the Roman--Byzantine Trade Network, 0--1453\\,CE: Persistent Homology, Topological Velocity, and Criticality Indicators of Imperial Collapse",
+        "authors": [
+          "Jose de Jesus Bernal-Alvarado",
+          "David Delepine",
+          "Carlos Pinedo Guadarrama"
+        ],
+        "published": "2026-07-06",
+        "url": "https://arxiv.org/abs/2607.05695v1"
+      },
+      "our_ammo": {
+        "id": "coupling-temporal-reversal",
+        "title": "Coupling as Temporal Reversal: The Structural Condition for Reverse Time",
+        "file": "coupling-temporal-reversal-林小黑_EN.md",
+        "discipline": "physics",
+        "angle": "If forward time = differentiation (P≠P→cascade), then reverse time = coupling convergence (|ΔN| decreases). Locally lawful, globally constrained. Three testable signatures."
+      }
+    },
+    {
+      "rank": 11,
+      "match_score": 2,
+      "matched_keywords": [
+        "entropy",
+        "coupling"
+      ],
+      "arxiv_paper": {
+        "id": "2607.05695v1",
+        "title": "Structural Divergence of the Roman--Byzantine Trade Network, 0--1453\\,CE: Persistent Homology, Topological Velocity, and Criticality Indicators of Imperial Collapse",
+        "authors": [
+          "Jose de Jesus Bernal-Alvarado",
+          "David Delepine",
+          "Carlos Pinedo Guadarrama"
+        ],
+        "published": "2026-07-06",
+        "url": "https://arxiv.org/abs/2607.05695v1"
+      },
+      "our_ammo": {
+        "id": "second-law-temporal-reversal",
+        "title": "The Second Law Is Statistical, Not Structural: Local Temporal Reversal Through Coupling Convergence",
+        "file": "second-law-temporal-reversal-林小黑_EN.md",
+        "discipline": "physics",
+        "angle": "Second Law is statistical, not structural. In small strongly-coupled systems, entropy CAN decrease. Coupling convergence = local reverse time. Three experimental signatures."
+      }
+    }
+  ]
+}

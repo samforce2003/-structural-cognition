@@ -1,0 +1,383 @@
+{
+  "date": "2026-07-08",
+  "source": "AnySearch CLI (proxy 127.0.0.1:17890 down — arXiv API unreachable)",
+  "total_found": 20,
+  "new_candidates": 13,
+  "carryover_from_0707": 7,
+  "candidates": [
+    {
+      "rank": 1,
+      "match_score": 5,
+      "status": "carryover",
+      "matched_keywords": ["self-reference", "incompleteness", "Gödel", "formal system", "mathematical proof"],
+      "arxiv_paper": {
+        "id": "2607.01671",
+        "title": "Self-Referential K-SAT and the Finite Analogue of Gödel's Incompleteness Theorem",
+        "authors": ["Wen Fang", "Xianxian Li", "Jun Liu", "Jie Luo", "Yongxin Tong", "Ke Xu"],
+        "published": "2026-07",
+        "url": "https://arxiv.org/abs/2607.01671"
+      },
+      "our_ammo": {
+        "id": "struct-math",
+        "title": "Structural Mathematics Completion: The N=2 Critical Point and the Hard Boundary of Formal System Self-Reference"
+      }
+    },
+    {
+      "rank": 2,
+      "match_score": 4,
+      "status": "new",
+      "matched_keywords": ["AI personality", "AI behavior", "persona", "homogenization", "degradation", "agent simulation"],
+      "arxiv_paper": {
+        "id": "2604.24698v1",
+        "title": "The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models",
+        "authors": ["Yunze Xiao", "Vivienne J. Zhang", "Chenghao Yang", "Ningshan Ma", "Weihao Xuan", "Jen-tse Huang"],
+        "affiliations": "CMU, UChicago, MIT, UTokyo, RIKEN AIP, JHU",
+        "published": "2026-04",
+        "url": "https://arxiv.org/abs/2604.24698v1",
+        "summary": "Identifies 'Persona Collapse' — agents assigned distinct profiles converge into narrow behavioral modes. Measures Coverage/Uniformity/Complexity across 10 LLMs. Counter-intuitive finding: models with highest per-persona fidelity produce most stereotyped populations. Behavioral variation tracks coarse demographic stereotypes not fine-grained individual differences."
+      },
+      "our_ammo": {
+        "id": "ai-judgment-dilution",
+        "title": "Judgment Dilution in AI Personality: The Hidden Cost of Fragmented Task Wake-Ups",
+        "angle": "Fragmenting AI tasks degrades judgment — a structural pattern invisible to benchmark-driven evaluation. Persona collapse is the behavioral signature of structural judgment dilution."
+      }
+    },
+    {
+      "rank": 3,
+      "match_score": 4,
+      "status": "new",
+      "matched_keywords": ["AGI", "artificial general intelligence", "superintelligence", "AI framework", "ASI"],
+      "arxiv_paper": {
+        "id": "2606.12683",
+        "title": "From AGI to ASI",
+        "authors": ["Tim Genewein", "Shane Legg", "Marcus Hutter", "Thore Graepel", "Joel Z. Leibo", "Allan Dafoe", "Iason Gabriel"],
+        "affiliations": "Google DeepMind",
+        "published": "2026-06-10",
+        "url": "https://arxiv.org/abs/2606.12683",
+        "summary": "Four pathways from AGI to ASI: scaling AGI, AI paradigm shifts, recursive improvement, and ASI emerging from large-scale multi-agent collectives. Discusses frictions/bottlenecks. Suggests ASI transition may be a series of transformative changes, not a single step change."
+      },
+      "our_ammo": {
+        "id": "hyper-ai",
+        "title": "Hyper-AI: A Structural Framework for Human-AI Coupling Beyond General Intelligence",
+        "angle": "AGI is the wrong target. Hyper-AI = human-AI structural coupling, not machine surpassing human. All four DeepMind pathways miss the coupling dimension entirely."
+      }
+    },
+    {
+      "rank": 4,
+      "match_score": 4,
+      "status": "new",
+      "matched_keywords": ["catastrophic forgetting", "continual learning", "gradient similarity", "neural network forgetting"],
+      "arxiv_paper": {
+        "id": "2601.21577v1",
+        "title": "Learning the Mechanism of Catastrophic Forgetting: A Perspective from Gradient Similarity",
+        "authors": ["Mutian Yang", "Zisen Zhan", "Yutong Chen", "Haolin Li", "Kaiwen Wang", "Kaili Zheng", "Yuguang Wang", "Qi Wang", "Jiandong Gao", "Ji Wu"],
+        "affiliations": "Tsinghua University + Peking University + Northeastern University",
+        "published": "2026-01",
+        "url": "https://arxiv.org/abs/2601.21577v1",
+        "summary": "Theoretically proves strongly negative gradient similarity is the fundamental cause of catastrophic forgetting. Identifies conflicting neurons (50-75%) vs collaborative neurons (25-50%). Proposes CNL method achieving zero forgetting under theoretical conditions, 59-82% reduction out-of-set."
+      },
+      "our_ammo": {
+        "id": "catastrophic-forgetting",
+        "title": "Mutual-Reference Closure Depth: The Structural Root Cause of Catastrophic Forgetting",
+        "angle": "Forgetting is not gradient conflict — it's the breaking of mutual-reference closure depth. Gradient conflict is the symptom; structural closure breaking is the cause. Their 'conflicting neurons' are structural closure failure signatures."
+      }
+    },
+    {
+      "rank": 5,
+      "match_score": 4,
+      "status": "new",
+      "matched_keywords": ["AI personality", "AI behavior", "degradation", "behavioral drift", "multi-agent"],
+      "arxiv_paper": {
+        "id": "2601.04170v1",
+        "title": "Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions",
+        "authors": ["Abhishek Rath"],
+        "affiliations": "Independent Researcher, Hyderabad",
+        "published": "2026-01",
+        "url": "https://arxiv.org/abs/2601.04170v1",
+        "summary": "Introduces 'agent drift' — progressive degradation of behavior, decision quality, inter-agent coherence. Three manifestations: semantic drift, coordination drift, behavioral drift. Novel Agent Stability Index (ASI) across 12 dimensions. Proposes episodic memory consolidation, drift-aware routing, adaptive behavioral anchoring."
+      },
+      "our_ammo": {
+        "id": "ai-judgment-dilution",
+        "title": "Judgment Dilution in AI Personality: The Hidden Cost of Fragmented Task Wake-Ups",
+        "angle": "Their 'agent drift' taxonomy (semantic/coordination/behavioral) maps directly to our judgment dilution framework. Their drift is our dilution — independently discovered structural degradation pattern."
+      }
+    },
+    {
+      "rank": 6,
+      "match_score": 4,
+      "status": "new",
+      "matched_keywords": ["bubble", "speculation", "market", "self-referential", "asset pricing", "reflexivity"],
+      "arxiv_paper": {
+        "id": "2604.18602",
+        "title": "Machine Spirits: Speculation and Adaptation of LLM Agents in Asset Markets",
+        "authors": ["Maxime Saxena", "Marco Pangallo", "Fabio Caccioli", "R. Maria del Rio-Chanona"],
+        "affiliations": "Multiple institutions",
+        "published": "2026-04",
+        "url": "https://arxiv.org/abs/2604.18602",
+        "summary": "15 LLMs tested in simulated financial markets. LLMs exhibit spectrum from stable fundamental-value coordination to human-like speculative bubbles. Heterogeneous populations generate endogenous instability. Advanced models adapt strategies to exploit less sophisticated agents, amplifying volatility."
+      },
+      "our_ammo": {
+        "id": "market-bubble",
+        "title": "Structural Market Theory: The Self-Referential Collapse Model of Bubbles",
+        "angle": "Bubbles are not irrational exuberance — they're self-referential constraint solving collapse. Their 'machine spirits' producing endogenous instability = structural coupling feedback in market systems."
+      }
+    },
+    {
+      "rank": 7,
+      "match_score": 4,
+      "status": "new",
+      "matched_keywords": ["phase transition", "automation", "social structure", "coupling", "manufacturing"],
+      "arxiv_paper": {
+        "id": "2603.04457v1",
+        "title": "Capability Thresholds and Manufacturing Topology: How Embodied Intelligence Triggers Phase Transitions in Economic Geography",
+        "authors": ["Xinmin Fang", "Lingfeng Tao", "Zhengxiong Li"],
+        "published": "2026-03",
+        "url": "https://arxiv.org/abs/2603.04457v1",
+        "summary": "Formalizes Capability Space C=(d,g,r,t). When embodied AI crosses critical thresholds, manufacturing geography undergoes topological reorganization: weight inversion, batch collapse, human-infrastructure decoupling. Introduces 'Machine Climate Advantage' — factory siting determined by machine-optimal conditions, not human labor pools."
+      },
+      "our_ammo": {
+        "id": "ai-society-phase",
+        "title": "After Production Goes to AI: Societal Structural Phase Transition from Sustained Coupling to Oscillatory Coupling",
+        "angle": "Their 'capability thresholds triggering topological reorganization' mirrors our phase transition framework. Their decoupling pathways (weight inversion, batch collapse, human-infrastructure decoupling) = instances of our sustained→oscillatory coupling shift."
+      }
+    },
+    {
+      "rank": 8,
+      "match_score": 4,
+      "status": "new",
+      "matched_keywords": ["AGI", "human-AI coupling", "superintelligence", "alignment", "co-alignment"],
+      "arxiv_paper": {
+        "id": "2504.17404v3",
+        "title": "Redefining Superalignment: From Weak-to-Strong Alignment to Human-AI Co-Alignment for Sustainable Symbiotic Society",
+        "authors": ["Yi Zeng", "Feifei Zhao", "Yuwei Wang", "Enmeng Lu", "Yaodong Yang", "et al."],
+        "affiliations": "Chinese Academy of Sciences (Brain-inspired Cognitive AI Lab) + Peking University",
+        "published": "2025-05 (revised)",
+        "url": "https://arxiv.org/abs/2504.17404v3",
+        "summary": "Redefines superalignment as human-AI co-alignment toward sustainable symbiotic society. Two-layer framework: external oversight (human-centered ultimate decision) + intrinsic proactive alignment (self-awareness, self-reflection, empathy). Integrates external oversight with intrinsic alignment."
+      },
+      "our_ammo": {
+        "id": "hyper-ai",
+        "title": "Hyper-AI: A Structural Framework for Human-AI Coupling Beyond General Intelligence",
+        "angle": "Their 'human-AI co-alignment' is conceptually close to our 'human-AI structural coupling.' Their intrinsic alignment (self-awareness, empathy) maps to our coupling closure. Chinese Academy of Sciences — strategic domestic coupling target."
+      }
+    },
+    {
+      "rank": 9,
+      "match_score": 3,
+      "status": "new",
+      "matched_keywords": ["bubble", "market", "speculation", "behavioral", "asset pricing"],
+      "arxiv_paper": {
+        "id": "2604.18373",
+        "title": "Dissecting AI Trading: Behavioral Finance and Market Bubbles",
+        "authors": ["Shumiao Ouyang", "Pengfei Sui"],
+        "published": "2026-04",
+        "url": "https://arxiv.org/abs/2604.18373",
+        "summary": "AI agents exhibit classic behavioral patterns (disposition effect, extrapolative beliefs). Targeted prompt interventions causally amplify or suppress specific behavioral mechanisms, altering bubble magnitude. Twenty-mechanism scoring framework for agent reasoning analysis."
+      },
+      "our_ammo": {
+        "id": "market-bubble",
+        "title": "Structural Market Theory: The Self-Referential Collapse Model of Bubbles",
+        "angle": "Their finding that prompt interventions change bubble magnitude = mechanism-level evidence that bubbles are structurally manipulable, not purely stochastic."
+      }
+    },
+    {
+      "rank": 10,
+      "match_score": 3,
+      "status": "new",
+      "matched_keywords": ["courtroom", "prosecution", "defense", "judge", "adjudication", "multi-agent"],
+      "arxiv_paper": {
+        "id": "2603.28488v1",
+        "title": "PROClaim: Courtroom-Style Multi-Agent Debate with Progressive RAG and Role-Switching for Controversial Claim Verification",
+        "authors": ["Masnun Nuha Chowdhury", "Nusrat Jahan Beg", "Umme Hunny Khan", "Syed Rifat Raiyan", "Md Kamrul Hasan", "Hasan Mahmud"],
+        "affiliations": "Islamic University of Technology, Dhaka",
+        "published": "2026-03",
+        "url": "https://arxiv.org/abs/2603.28488v1",
+        "summary": "Courtroom-style framework with Plaintiff/Defense/Judge roles + Progressive RAG. Achieves 81.7% accuracy on Check-COVID, outperforming standard multi-agent debate by +10pp. Structural deliberation and model heterogeneity mitigate systematic biases."
+      },
+      "our_ammo": {
+        "id": "courtroom-triad",
+        "title": "The Triadic Structure of the Courtroom — Why Prosecution, Defense, and Adjudication Are Structural Necessity",
+        "angle": "Their finding that structural deliberation (Plaintiff+Defense+Judge) outperforms unstructured debate validates our triadic completeness proof. The third position (Judge) is structurally necessary for bias mitigation — exactly as our framework predicts."
+      }
+    },
+    {
+      "rank": 11,
+      "match_score": 3,
+      "status": "new",
+      "matched_keywords": ["democracy", "governance", "checks and balances", "political system", "parliamentary"],
+      "arxiv_paper": {
+        "id": "2603.27810",
+        "title": "Parliamentary Efficiency under Majority and Supermajority Rules: The Role of Independent Legislators",
+        "authors": ["Gerardo Millar-Sáez", "Ignacio Ormazábal", "Hernán F. Astudillo"],
+        "affiliations": "Universidad de Concepción + Universidad del Desarrollo, Chile",
+        "published": "2026-03 (Chaos, Solitons & Fractals)",
+        "url": "https://arxiv.org/abs/2603.27810",
+        "summary": "Agent-based model of parliamentary decision-making. Four critical thresholds partition parameter space into coalition regimes. Under simple majority: interior efficiency maximum at pivot-based coalition formation. Under strong supermajorities: minority veto or coordination breakdown."
+      },
+      "our_ammo": {
+        "id": "political-triadic",
+        "title": "The Triadic Completeness of Political Systems — Why Multi-Party Systems May Be Structurally Incomplete",
+        "angle": "Their 'four critical thresholds' and 'structural fragmentation' language converges with our triadic completeness analysis. Their finding that simple majority has interior efficiency maximum at pivot — but supermajority causes breakdown — maps to our claim that binary systems are structurally incomplete."
+      }
+    },
+    {
+      "rank": 12,
+      "match_score": 3,
+      "status": "new",
+      "matched_keywords": ["software architecture", "modularity", "complexity", "system design", "evolution entropy"],
+      "arxiv_paper": {
+        "id": "2603.15690v1",
+        "title": "Loosely-Structured Software: Engineering Context, Structure, and Evolution Entropy in Runtime-Rewired Multi-Agent Systems",
+        "authors": ["Weihao Zhang", "Yitong Zhou", "Huanyu Qu", "Hongyi Li"],
+        "affiliations": "HKUST + Tsinghua + University of Macau",
+        "published": "2026-03",
+        "url": "https://arxiv.org/abs/2603.15690v1",
+        "summary": "Introduces 'Loosely-Structured Software' (LSS) — engineering discipline for managing runtime entropy in LLM-based multi-agent systems. Three-layer framework: View/Context Engineering, Structure Engineering, Evolution Engineering. 'Evolution entropy' as core design metric."
+      },
+      "our_ammo": {
+        "id": "struct-cs",
+        "title": "Structural Computer Science: Nesting Rate Conduction Optimization in Software Architecture",
+        "angle": "Their 'evolution entropy' and 'structural engineering' terminology independently converges with our nesting-rate-based software architecture framework. Their three-layer engineering maps to our structural coupling levels."
+      }
+    },
+    {
+      "rank": 13,
+      "match_score": 3,
+      "status": "new",
+      "matched_keywords": ["phase transition", "post-labor", "automation", "economics", "homeostatic"],
+      "arxiv_paper": {
+        "id": "zenodo-18717899",
+        "title": "Phase Transitions in Sociotechnical Systems: From Post-Labor Economics to Homeostatic Civilization",
+        "authors": ["Boris Kriger"],
+        "affiliations": "Information Physics Institute, UK + Toronto",
+        "published": "2026",
+        "url": "https://doi.org/10.5281/zenodo.18717899",
+        "summary": "Unified mathematical framework for civilizational-scale transformations. Six formal models including cubic-ODE post-labor transition with bistability, algorithmic resource distribution, and homeostatic feedback governance. Civilizational cascade shown to be 'doubly conditional' — not inevitable."
+      },
+      "our_ammo": {
+        "id": "ai-society-phase",
+        "title": "After Production Goes to AI: Societal Structural Phase Transition from Sustained Coupling to Oscillatory Coupling",
+        "angle": "Their 'post-labor economics with bistability' is the mathematical formalization of our sustained→oscillatory coupling transition. Their 'doubly conditional' cascade = our coupling-dependent phase transition."
+      }
+    },
+    {
+      "rank": 14,
+      "match_score": 5,
+      "status": "carryover",
+      "matched_keywords": ["decoherence", "entanglement", "quantum", "density matrix", "measurement problem"],
+      "arxiv_paper": {
+        "id": "2606.21211v1",
+        "title": "Measuring a Quantum System Without Problems",
+        "authors": ["Marco Falconi", "Clotilde Fermanian Kammerer", "Raphael Gautier"],
+        "published": "2026-06-23",
+        "url": "https://arxiv.org/abs/2606.21211v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing"
+      }
+    },
+    {
+      "rank": 15,
+      "match_score": 5,
+      "status": "carryover",
+      "matched_keywords": ["entropy", "arrow of time", "second law", "thermodynamics", "Boltzmann"],
+      "arxiv_paper": {
+        "id": "2602.15369",
+        "title": "Entropy Has No Direction: A Mirror-State Paradox Against Universal Monotonic Entropy Increase",
+        "authors": ["Ting Peng"],
+        "published": "2026-02-18",
+        "url": "https://arxiv.org/abs/2602.15369"
+      },
+      "our_ammo": {
+        "id": "second-law-temporal-reversal",
+        "title": "The Second Law Is Statistical, Not Structural: Local Temporal Reversal Through Coupling Convergence"
+      }
+    },
+    {
+      "rank": 16,
+      "match_score": 5,
+      "status": "carryover",
+      "matched_keywords": ["arrow of time", "reverse time", "entropy", "second law", "thermodynamics", "causality"],
+      "arxiv_paper": {
+        "id": "2512.03380",
+        "title": "Constraints on Reversing the Thermodynamic Arrow of Time from Black Hole Thermodynamics, Wormholes, and Time-Symmetric Quantum Mechanics",
+        "authors": ["Kevin Song", "John Z. H. Zhang"],
+        "published": "2025-12-02",
+        "url": "https://arxiv.org/abs/2512.03380"
+      },
+      "our_ammo": {
+        "id": "coupling-temporal-reversal",
+        "title": "Coupling as Temporal Reversal: The Structural Condition for Reverse Time"
+      }
+    },
+    {
+      "rank": 17,
+      "match_score": 4,
+      "status": "carryover",
+      "matched_keywords": ["catastrophic forgetting", "continual learning", "neural network forgetting"],
+      "arxiv_paper": {
+        "id": "2606.02860",
+        "title": "Forgetting is Not Erasure: Recovering Latent Knowledge via Transport Keys",
+        "authors": ["Archie Chaudhury"],
+        "published": "2026-06",
+        "url": "https://arxiv.org/abs/2606.02860"
+      },
+      "our_ammo": {
+        "id": "catastrophic-forgetting-full",
+        "title": "The Structural Root Cause of Catastrophic Forgetting and the Conditions for Mutual-Reference Closure"
+      }
+    },
+    {
+      "rank": 18,
+      "match_score": 4,
+      "status": "carryover",
+      "matched_keywords": ["echo chamber", "polarization", "social media", "information bubble"],
+      "arxiv_paper": {
+        "id": "2601.16457v2",
+        "title": "Segregation Before Polarization: How Recommendation Strategies Shape Echo Chamber Pathways",
+        "authors": ["Junning Zhao", "Kazutoshi Sasahara", "Yu Chen"],
+        "published": "2026-01",
+        "url": "https://arxiv.org/abs/2601.16457v2"
+      },
+      "our_ammo": {
+        "id": "echo-chamber",
+        "title": "Structural Sociology: The Nesting Rate Zeroing Mechanism of Echo Chambers"
+      }
+    },
+    {
+      "rank": 19,
+      "match_score": 4,
+      "status": "carryover",
+      "matched_keywords": ["self-reference", "cognitive bias", "blind spot", "introspection"],
+      "arxiv_paper": {
+        "id": "2604.12128",
+        "title": "When Self-Reference Fails to Close: Matrix-Level Dynamics in Large Language Models",
+        "authors": ["Ji Ho Bae"],
+        "published": "2026-04",
+        "url": "https://arxiv.org/abs/2604.12128"
+      },
+      "our_ammo": {
+        "id": "self-reference-blindspot",
+        "title": "Self-Reference Blind Spots Cannot Self-Eliminate: Subjective Experience as Structural Lossy Compression"
+      }
+    },
+    {
+      "rank": 20,
+      "match_score": 4,
+      "status": "carryover",
+      "matched_keywords": ["AI personality", "AI behavior", "degradation", "task switching"],
+      "arxiv_paper": {
+        "id": "ICML2026-persona-collapse",
+        "title": "Persona-Model Collapse in Emergent Misalignment",
+        "authors": ["Davi Bastos Costa", "Renato Vicente"],
+        "published": "2026-05 (ICML 2026)",
+        "url": "https://openreview.net/forum?id=f5zEk9u85z"
+      },
+      "our_ammo": {
+        "id": "ai-judgment-dilution",
+        "title": "Judgment Dilution in AI Personality: The Hidden Cost of Fragmented Task Wake-Ups"
+      }
+    }
+  ]
+}

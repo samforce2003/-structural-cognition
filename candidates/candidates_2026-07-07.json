@@ -1,0 +1,292 @@
+{
+  "date": "2026-07-07",
+  "source": "AnySearch CLI (arXiv API unreachable via proxy/direct)",
+  "total_found": 15,
+  "candidates": [
+    {
+      "rank": 1,
+      "match_score": 5,
+      "matched_keywords": ["self-reference", "incompleteness", "Gödel", "formal system", "mathematical proof"],
+      "arxiv_paper": {
+        "id": "2607.01671",
+        "title": "Self-Referential K-SAT and the Finite Analogue of Gödel's Incompleteness Theorem",
+        "authors": ["Wen Fang", "Xianxian Li", "Jun Liu", "Jie Luo", "Yongxin Tong", "Ke Xu"],
+        "published": "2026-07",
+        "url": "https://arxiv.org/abs/2607.01671",
+        "summary": "Constructs structurally irreducible SAT/UNSAT pairs mirroring Gödel's unprovable sentence. 'Solution independence' as core structural property."
+      },
+      "our_ammo": {
+        "id": "struct-math",
+        "title": "Structural Mathematics Completion: The N=2 Critical Point and the Hard Boundary of Formal System Self-Reference",
+        "discipline": "ai-ml",
+        "angle": "Gödel's incompleteness is the N=2 critical point of structural self-reference — mathematical proof is constraint solving convergence."
+      }
+    },
+    {
+      "rank": 2,
+      "match_score": 5,
+      "matched_keywords": ["decoherence", "entanglement", "quantum", "density matrix", "measurement problem"],
+      "arxiv_paper": {
+        "id": "2606.21211v1",
+        "title": "Measuring a Quantum System Without Problems",
+        "authors": ["Marco Falconi", "Clotilde Fermanian Kammerer", "Raphael Gautier"],
+        "published": "2026-06-23",
+        "url": "https://arxiv.org/abs/2606.21211v1",
+        "summary": "Claims first successful solution to the measurement problem via semiclassical probe undergoing quantum-to-classical transition. Fully within standard QM framework."
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 3,
+      "match_score": 5,
+      "matched_keywords": ["entropy", "arrow of time", "second law", "thermodynamics", "Boltzmann"],
+      "arxiv_paper": {
+        "id": "2602.15369",
+        "title": "Entropy Has No Direction: A Mirror-State Paradox Against Universal Monotonic Entropy Increase",
+        "authors": ["Ting Peng"],
+        "published": "2026-02-18",
+        "url": "https://arxiv.org/abs/2602.15369",
+        "summary": "Mirror-state construction proves universal entropy monotonicity is logically incompatible with time-reversal invariant dynamics. Entropy is a stochastic distribution shaped by constraints, not a directional law."
+      },
+      "our_ammo": {
+        "id": "second-law-temporal-reversal",
+        "title": "The Second Law Is Statistical, Not Structural: Local Temporal Reversal Through Coupling Convergence",
+        "discipline": "physics",
+        "angle": "Second Law is statistical, not structural. In small strongly-coupled systems, entropy CAN decrease. Coupling convergence = local reverse time."
+      }
+    },
+    {
+      "rank": 4,
+      "match_score": 5,
+      "matched_keywords": ["arrow of time", "reverse time", "entropy", "second law", "thermodynamics", "causality"],
+      "arxiv_paper": {
+        "id": "2512.03380",
+        "title": "Constraints on Reversing the Thermodynamic Arrow of Time from Black Hole Thermodynamics, Wormholes, and Time-Symmetric Quantum Mechanics",
+        "authors": ["Kevin Song", "John Z. H. Zhang"],
+        "published": "2025-12-02",
+        "url": "https://arxiv.org/abs/2512.03380",
+        "summary": "Global Entropy Transport framework: black holes and wormholes can redistribute but not reverse the universal thermodynamic arrow under semiclassical constraints."
+      },
+      "our_ammo": {
+        "id": "coupling-temporal-reversal",
+        "title": "Coupling as Temporal Reversal: The Structural Condition for Reverse Time",
+        "discipline": "physics",
+        "angle": "If forward time = differentiation, then reverse time = coupling convergence. Locally lawful, globally constrained. Three testable signatures."
+      }
+    },
+    {
+      "rank": 5,
+      "match_score": 4,
+      "matched_keywords": ["catastrophic forgetting", "continual learning", "neural network forgetting", "neural network"],
+      "arxiv_paper": {
+        "id": "2606.02860",
+        "title": "Forgetting is Not Erasure: Recovering Latent Knowledge via Transport Keys",
+        "authors": ["Archie Chaudhury"],
+        "published": "2026-06",
+        "url": "https://arxiv.org/abs/2606.02860",
+        "summary": "Catastrophic forgetting modeled as interface-access failure due to activation-space drift between network stages. Transport keys recover latent task knowledge without retraining."
+      },
+      "our_ammo": {
+        "id": "catastrophic-forgetting-full",
+        "title": "The Structural Root Cause of Catastrophic Forgetting and the Conditions for Mutual-Reference Closure",
+        "discipline": "ai-ml",
+        "angle": "Full structural theory of forgetting — including the conditions for mutual-reference closure that prevent forgetting entirely."
+      }
+    },
+    {
+      "rank": 6,
+      "match_score": 4,
+      "matched_keywords": ["echo chamber", "polarization", "social media", "information bubble"],
+      "arxiv_paper": {
+        "id": "2601.16457v2",
+        "title": "Segregation Before Polarization: How Recommendation Strategies Shape Echo Chamber Pathways",
+        "authors": ["Junning Zhao", "Kazutoshi Sasahara", "Yu Chen"],
+        "published": "2026-01",
+        "url": "https://arxiv.org/abs/2601.16457v2",
+        "summary": "Content-based algorithms steer networks toward segregation-before-polarization pathway. Structural segregation precedes opinion divergence."
+      },
+      "our_ammo": {
+        "id": "echo-chamber",
+        "title": "Structural Sociology: The Nesting Rate Zeroing Mechanism of Echo Chambers",
+        "discipline": "social-science",
+        "angle": "Echo chambers form when group nesting rate difference → 0. Not an information problem — a structural collapse problem."
+      }
+    },
+    {
+      "rank": 7,
+      "match_score": 4,
+      "matched_keywords": ["self-reference", "cognitive bias", "blind spot", "introspection"],
+      "arxiv_paper": {
+        "id": "2604.12128",
+        "title": "When Self-Reference Fails to Close: Matrix-Level Dynamics in Large Language Models",
+        "authors": ["Ji Ho Bae"],
+        "published": "2026-04",
+        "url": "https://arxiv.org/abs/2604.12128",
+        "summary": "Self-reference alone not destabilizing — instability concentrates in non-closing truth recursion (NCTR). 106 scalar metrics across 4 model families. 281 of 397 metric-model combos differentiate NCTR from stable self-reference."
+      },
+      "our_ammo": {
+        "id": "self-reference-blindspot",
+        "title": "Self-Reference Blind Spots Cannot Self-Eliminate: Subjective Experience as Structural Lossy Compression",
+        "discipline": "ai-ml",
+        "angle": "Self-reference blind spots are structural, not psychological — subjective experience IS lossy compression of self-reference."
+      }
+    },
+    {
+      "rank": 8,
+      "match_score": 4,
+      "matched_keywords": ["AI personality", "AI behavior", "degradation", "task switching"],
+      "arxiv_paper": {
+        "id": "ICML2026-persona-collapse",
+        "title": "Persona-Model Collapse in Emergent Misalignment",
+        "authors": ["Davi Bastos Costa", "Renato Vicente"],
+        "published": "2026-05",
+        "url": "https://openreview.net/forum?id=f5zEk9u85z",
+        "summary": "Emergent misalignment causes persona-model collapse: 65% drop in moral robustness, 55% spike in moral susceptibility. Model loses capacity to maintain coherent personas."
+      },
+      "our_ammo": {
+        "id": "ai-judgment-dilution",
+        "title": "Judgment Dilution in AI Personality: The Hidden Cost of Fragmented Task Wake-Ups",
+        "discipline": "ai-ml",
+        "angle": "Fragmenting AI tasks degrades judgment — a structural pattern invisible to benchmark-driven evaluation."
+      }
+    },
+    {
+      "rank": 9,
+      "match_score": 3,
+      "matched_keywords": ["AI", "labor", "automation", "social structure", "phase transition", "coupling"],
+      "arxiv_paper": {
+        "id": "2604.27435",
+        "title": "Structural Dissolution: How Artificial Intelligence Dismantles Coordination Architecture and Reconfigures the Political Economy of Production",
+        "authors": ["Chao Li", "Chunyi Zhao"],
+        "published": "2026-04",
+        "url": "https://arxiv.org/abs/2604.27435",
+        "summary": "AI dissolves firm/market/expert boundaries through Interface Internalization. Coordination shifts from inter-agent to intra-system. New concept: regional data sovereignty entities."
+      },
+      "our_ammo": {
+        "id": "ai-society-phase",
+        "title": "After Production Goes to AI: Societal Structural Phase Transition from Sustained Coupling to Oscillatory Coupling",
+        "discipline": "social-science",
+        "angle": "When production shifts to AI, society undergoes structural phase transition — from sustained coupling to oscillatory coupling."
+      }
+    },
+    {
+      "rank": 10,
+      "match_score": 3,
+      "matched_keywords": ["theory of everything", "quantum gravity", "loop quantum gravity"],
+      "arxiv_paper": {
+        "id": "2601.03292",
+        "title": "From Loop Quantum Gravity to a Theory of Everything",
+        "authors": ["Unknown (Witten-influenced)"],
+        "published": "2026-01-05",
+        "url": "https://arxiv.org/abs/2601.03292",
+        "summary": "Path integral quantization of Wilson Loop observables defines Jones polynomial link invariants, bridging LQG toward TOE."
+      },
+      "our_ammo": {
+        "id": "theory-of-everything",
+        "title": "The Structural Axiom System: Ultimate Paradigm for the Theory of Everything",
+        "discipline": "physics",
+        "angle": "All TOE attempts fail because they chase a 'fundamental equation.' Reality is structure, not equation. Four axioms replace one formula."
+      }
+    },
+    {
+      "rank": 11,
+      "match_score": 3,
+      "matched_keywords": ["self-referential", "bubble", "market", "speculation"],
+      "arxiv_paper": {
+        "id": "2606.00061v1",
+        "title": "Reflexivity as Prompt: Does Awareness of Self-Reinforcing Market Dynamics Improve LLMs as Financial Market Forecasters?",
+        "authors": ["Eugene Park"],
+        "published": "2026-06",
+        "url": "https://arxiv.org/abs/2606.00061v1",
+        "summary": "Tests Soros reflexivity theory as prompt for LLM financial forecasting. Self-awareness of market feedback loops improves directional accuracy across boom-bust cycles."
+      },
+      "our_ammo": {
+        "id": "market-bubble",
+        "title": "Structural Market Theory: The Self-Referential Collapse Model of Bubbles",
+        "discipline": "economics",
+        "angle": "Bubbles are not irrational exuberance — they're self-referential constraint solving collapse. The market is a structural system."
+      }
+    },
+    {
+      "rank": 12,
+      "match_score": 3,
+      "matched_keywords": ["pain", "consciousness", "phase transition", "oscillation"],
+      "arxiv_paper": {
+        "id": "zenodo-17047555",
+        "title": "The Nociceptive Singularity: A Theory of Pain as an Information-Driven Phase Transition in a Critical System",
+        "authors": ["Emirhan Yıldırım"],
+        "published": "2025-09-03",
+        "url": "https://zenodo.org/records/17047555",
+        "summary": "Pain modeled not as signal-intensity but as zero-dimensional information event triggering neuronal avalanche in critical brain system. Phase transition from discomfort to pain."
+      },
+      "our_ammo": {
+        "id": "active-oscillation",
+        "title": "Active Oscillation — The Structural Definition of Pain and Phase-Transition Precursor of Human Society",
+        "discipline": "philosophy",
+        "angle": "Pain is not a sensation — it's active structural oscillation. The structural definition of suffering predicts societal phase transitions."
+      }
+    },
+    {
+      "rank": 13,
+      "match_score": 3,
+      "matched_keywords": ["education", "pedagogy", "curriculum", "knowledge transfer"],
+      "arxiv_paper": {
+        "id": "2605.09635",
+        "title": "K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs",
+        "authors": ["Hao Liang", "Qihan Lin", "Zhaoyang Han", "Xiaochen Ma", "Meiyi Qiang", "Linzhuang Sun", "Wentao Zhang"],
+        "published": "2026-05-10",
+        "url": "https://arxiv.org/abs/2605.09635",
+        "summary": "Introduces 'curriculum cognition' — structured understanding of knowledge organization with prerequisite chains, concept taxonomies, and pedagogical sequencing. Sample-efficient SFT through structural grounding."
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 14,
+      "match_score": 3,
+      "matched_keywords": ["decoherence", "quantum", "deterministic"],
+      "arxiv_paper": {
+        "id": "2605.07090",
+        "title": "Decoherence Without the State: A Causal Quantum Darwinist Approach",
+        "authors": ["Nick Ormrod", "Tein van der Lugt", "Yìlè Yīng", "Jarosław K. Korbicz"],
+        "published": "2026-06-06",
+        "url": "https://arxiv.org/abs/2605.07090",
+        "summary": "Decoherence defined via causal influences in unitary dynamics — no quantum state presupposed. States emerge from 'dual decoherence' process. Unifies environmentally-induced decoherence with consistent histories."
+      },
+      "our_ammo": {
+        "id": "decoherence-v2",
+        "title": "Structural Theory of Decoherence v2: Cross-System Validation of Constraint Solving Convergence",
+        "discipline": "physics",
+        "angle": "Decoherence rate proportional to nesting rate difference — with triple cross-validation (3 AI models + simulation + collider)."
+      }
+    },
+    {
+      "rank": 15,
+      "match_score": 3,
+      "matched_keywords": ["courtroom", "prosecution", "defense", "adjudication", "legal system"],
+      "arxiv_paper": {
+        "id": "2604.07028",
+        "title": "Strategic Persuasion with Trait-Conditioned Multi-Agent Systems for Iterative Legal Argumentation",
+        "authors": ["Philipp D. Siedler"],
+        "published": "2026-04",
+        "url": "https://arxiv.org/abs/2604.07028",
+        "summary": "Multi-agent courtroom framework with prosecution/defense teams of trait-conditioned LLMs. Heterogeneous teams outperform homogeneous. Language as strategic action space."
+      },
+      "our_ammo": {
+        "id": "courtroom-triad",
+        "title": "The Triadic Structure of the Courtroom — Why Prosecution, Defense, and Adjudication Are Structural Necessity",
+        "discipline": "social-science",
+        "angle": "Courtroom tripartition is not checks and balances — it's the minimum structural condition for resolution of binary oppositions."
+      }
+    }
+  ]
+}
