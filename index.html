@@ -2,462 +2,2005 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>P理论 — 结构认知体系</title>
-<meta name="description" content="P理论：一个混乱的理论体系。四公理 · P≠P · 呼吸论 · 分形制 · 三三制。林小黑 · 结构认知论文全集">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>凡人修仙传 · 药引</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --paper: #faf6f0;
-    --ink: #2c2416;
-    --gold: #b8860b;
-    --gold-light: #d4a030;
-    --warm: #8b6914;
-    --subtle: #e8e0d5;
-    --code-bg: #f0ebe0;
-    --shadow: 0 2px 20px rgba(0,0,0,0.06);
-  }
+/*
+  字体策略：优先系统自带中文字体，避免Google Fonts在国内被墙。
+  iOS: PingFang SC; Android: Noto Serif CJK SC / Source Han Serif;
+  Windows: SimSun / Microsoft YaHei; macOS: Songti SC
+*/
+
+:root {
+  --bg: #0a0704;
+  --surface: #14100c;
+  --surface2: #1c1610;
+  --border: #2a1e14;
+  --gold: #c89848;
+  --gold-dim: #8b6914;
+  --red: #b84040;
+  --red-dim: #6b3030;
+  --text: #c8bda8;
+  --text-dim: #8b7355;
+  --green: #7a9a6a;
+  --blue: #5a7a9a;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body {
+  background: var(--bg);
+  font-family: "PingFang SC", "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", "SimSun", "宋体", "Microsoft YaHei", serif;
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(139,105,20,0.06) 0%, transparent 70%),
+    radial-gradient(ellipse at 20% 80%, rgba(192,64,64,0.04) 0%, transparent 50%);
+}
+
+#app {
+  max-width: 780px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ====== 标题画面 ====== */
+#title-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(ellipse at center, #1a1410 0%, #0a0704 70%);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  transition: opacity 0.8s ease-out, visibility 0.8s;
+}
+#title-screen.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+#title-screen .icon {
+  font-size: 64px;
+  animation: titleFloat 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(200,152,72,0.3));
+}
+@keyframes titleFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+#title-screen h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 12px;
+  color: var(--gold);
+  text-shadow: 0 0 30px rgba(200,152,72,0.2);
+}
+#title-screen .subtitle {
+  font-size: 16px;
+  color: var(--red-dim);
+  letter-spacing: 8px;
+  margin-top: -20px;
+}
+
+#title-screen .desc {
+  font-size: 14px;
+  color: var(--text-dim);
+  text-align: center;
+  line-height: 2;
+  max-width: 400px;
+}
+#title-screen .desc b { color: var(--gold); }
+
+#title-start {
+  background: none;
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  padding: 14px 48px;
+  font-size: 18px;
+  letter-spacing: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.4s;
+  border-radius: 4px;
+}
+#title-start:hover {
+  background: rgba(139,105,20,0.1);
+  box-shadow: 0 0 20px rgba(139,105,20,0.2);
+  transform: scale(1.03);
+}
+
+#title-screen .warning {
+  font-size: 12px;
+  color: #5a3a2a;
+  letter-spacing: 2px;
+}
+
+/* ====== 顶部状态栏 ====== */
+#topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 13px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+#topbar .time {
+  color: var(--gold);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#topbar .day { color: var(--text-dim); }
+#topbar .weather { font-size: 14px; }
+#topbar .breath {
+  color: var(--green);
+  font-size: 11px;
+  animation: breathPulse 3s ease-in-out infinite;
+  cursor: help;
+  letter-spacing: 1px;
+}
+@keyframes breathPulse {
+  0%,100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+#topbar .countdown {
+  color: var(--red);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#topbar .countdown b { font-size: 16px; }
+
+/* ====== 主面板 ====== */
+#main {
+  background: linear-gradient(180deg, #1c1610 0%, #14100c 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 28px 24px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+#main::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim) 20%, var(--red) 50%, var(--gold-dim) 80%, transparent);
+  border-radius: 12px 12px 0 0;
+}
+
+#scene-title {
+  font-size: 14px;
+  color: var(--red);
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+#scene-location {
+  font-size: 20px;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+#story {
+  flex: 1;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 22px;
+  text-indent: 2em;
+  white-space: pre-wrap;
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.choice-btn {
+  background: linear-gradient(180deg, #1c1610, #14100c);
+  border: 1px solid #3a2818;
+  color: #b89860;
+  padding: 13px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.25s;
+  font-family: inherit;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.choice-btn:hover {
+  background: linear-gradient(180deg, #2a1a12, #1c1610);
+  border-color: var(--red);
+  color: #d4a88a;
+  transform: translateX(4px);
+  box-shadow: 0 0 12px rgba(192,64,64,0.1);
+}
+.choice-btn .tag {
+  display: inline-block;
+  font-size: 10px;
+  background: #2a1a10;
+  color: #9a6a4a;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-right: 8px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+/* ====== NPC状态栏 ====== */
+#npcbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.npc-chip {
+  flex: 1;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  transition: all 0.35s;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.npc-chip .npc-avatar { font-size: 28px; }
+.npc-chip .npc-name {
+  color: #b89860;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 13px;
+}
+.npc-chip .npc-loc {
+  color: #5b4530;
+  font-size: 11px;
+}
+.npc-chip .npc-aff {
+  font-size: 10px;
+  margin-top: 2px;
+  letter-spacing: 1px;
+}
+
+.npc-chip.active {
+  border-color: var(--red);
+  box-shadow: 0 0 12px rgba(192,64,64,0.15), inset 0 0 8px rgba(192,64,64,0.05);
+}
+.npc-chip.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 20%; right: 20%;
+  height: 2px;
+  background: var(--red);
+  opacity: 0.6;
+}
+.npc-chip.absent { opacity: 0.3; }
+
+/* ====== 对话系统 ====== */
+#dlg-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.88);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+#dlg-box {
+  background: var(--surface2);
+  border: 1px solid var(--gold-dim);
+  border-radius: 14px;
+  width: 92%;
+  max-width: 520px;
+  max-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(139,105,20,0.1);
+}
+#dlg-header {
+  background: #1e1812;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#dlg-header .avatar { font-size: 28px; }
+#dlg-header .info { flex: 1; }
+#dlg-header .name {
+  color: var(--gold);
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+#dlg-header .rel {
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+}
+#dlg-close {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.2s;
+}
+#dlg-close:hover { color: var(--red); }
+
+#dlg-msgs {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 200px;
+  max-height: 42vh;
+  scroll-behavior: smooth;
+}
+#dlg-msgs::-webkit-scrollbar { width: 4px; }
+#dlg-msgs::-webkit-scrollbar-thumb { background: #2a1e14; border-radius: 2px; }
+
+.dlg-msg {
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 85%;
+  animation: msgIn 0.25s ease-out;
+}
+@keyframes msgIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.dlg-msg.npc {
+  background: #1e1812;
+  color: #d4c5b2;
+  align-self: flex-start;
+  border: 1px solid #2a1e14;
+  border-bottom-left-radius: 2px;
+}
+.dlg-msg.player {
+  background: #162016;
+  color: #c8d8c0;
+  align-self: flex-end;
+  border: 1px solid #1e3018;
+  border-bottom-right-radius: 2px;
+}
+
+#dlg-input-area {
+  display: flex;
+  gap: 10px;
+  padding: 14px;
+  border-top: 1px solid var(--border);
+  background: #14100c;
+}
+#dlg-input {
+  flex: 1;
+  background: var(--bg);
+  border: 1px solid #3a2818;
+  color: #d4c5b2;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+#dlg-input:focus { border-color: var(--gold-dim); }
+#dlg-input::placeholder { color: #4a3a2a; }
+
+#dlg-send {
+  background: #2a1a10;
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+#dlg-send:hover { background: #3d2a18; }
+#dlg-send:disabled { opacity: 0.4; cursor: not-allowed; }
+
+#dlg-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  background: var(--surface);
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  padding: 12px 20px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+#dlg-btn:hover {
+  background: #2a1a10;
+  box-shadow: 0 0 20px rgba(139,105,20,0.25);
+  transform: translateY(-2px);
+}
+#dlg-btn .pulse {
+  display: inline-block;
+  width: 8px; height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  margin-right: 6px;
+  animation: breatheDot 1.5s ease-in-out infinite;
+}
+@keyframes breatheDot {
+  0%,100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* ====== 工具类 ====== */
+.fade-in { animation: fadeIn 0.5s ease-out; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hidden { display: none !important; }
+
+/* ====== 手机适配 ====== */
+@media (max-width: 768px) {
   body {
-    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
-    background: var(--paper);
-    color: var(--ink);
-    line-height: 1.8;
-    font-size: 17px;
-    -webkit-font-smoothing: antialiased;
-  }
-  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
-
-  /* Hero */
-  .hero {
-    text-align: center;
-    padding: 100px 0 60px;
-  }
-  .hero h1 {
-    font-size: 48px;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    color: var(--ink);
-    margin-bottom: 12px;
-  }
-  .hero .subtitle {
-    font-size: 20px;
-    color: var(--warm);
-    font-style: italic;
-    letter-spacing: 0.05em;
-  }
-  .hero .tagline {
-    margin-top: 24px;
-    font-size: 15px;
-    color: #8b7355;
-    letter-spacing: 0.04em;
-  }
-
-  /* Section */
-  section {
-    padding: 60px 0;
-    border-top: 1px solid var(--subtle);
-  }
-  section h2 {
-    font-size: 28px;
-    font-weight: 400;
-    color: var(--gold);
-    margin-bottom: 28px;
-    letter-spacing: 0.04em;
-  }
-  section h3 {
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--warm);
-    margin: 32px 0 12px;
-  }
-  section p {
-    margin-bottom: 16px;
-  }
-
-  /* Equal sign */
-  .equal-chain {
-    text-align: center;
-    font-size: 32px;
-    letter-spacing: 0.12em;
-    color: var(--gold);
-    padding: 32px 0;
-    font-family: "Times New Roman", Georgia, serif;
-  }
-  .equal-chain .gap {
-    display: inline-block;
-    width: 6px;
-    color: #c0392b;
-  }
-
-  /* Cards */
-  .axiom-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-top: 24px;
-  }
-  @media (max-width: 600px) {
-    .axiom-grid { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 34px; }
-  }
-  .axiom-card {
-    background: white;
-    border: 1px solid var(--subtle);
-    border-radius: 6px;
-    padding: 28px 24px;
-    box-shadow: var(--shadow);
-  }
-  .axiom-card .num {
-    font-size: 13px;
-    color: var(--gold);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
-  .axiom-card .title {
-    font-size: 18px;
-    color: var(--ink);
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-  .axiom-card .desc {
-    font-size: 15px;
-    color: #666;
-    line-height: 1.7;
-  }
-
-  /* P≠P emphasis */
-  .emphasis-block {
-    background: white;
-    border-left: 4px solid var(--gold);
-    padding: 28px 32px;
-    margin: 28px 0;
-    box-shadow: var(--shadow);
-  }
-  .emphasis-block p {
-    font-size: 18px;
-    line-height: 2;
-  }
-  .emphasis-block .highlight {
-    color: var(--gold);
-    font-weight: 500;
-  }
-
-  /* Methods */
-  .method-list {
-    list-style: none;
     padding: 0;
+    padding-top: env(safe-area-inset-top,0px);
+    padding-bottom: env(safe-area-inset-bottom,0px);
+    padding-left: env(safe-area-inset-left,0px);
+    padding-right: env(safe-area-inset-right,0px);
   }
-  .method-list li {
-    padding: 16px 0;
-    border-bottom: 1px solid var(--subtle);
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
+  #app { gap: 6px; border-radius: 0; }
+  #main {
+    padding: 18px 12px 14px;
+    border-radius: 0;
+    min-height: 60vh;
   }
-  .method-list li:last-child { border-bottom: none; }
-  .method-list .icon {
-    font-size: 24px;
-    flex-shrink: 0;
-    width: 36px;
-    text-align: center;
-  }
-  .method-list .text strong {
-    display: block;
-    color: var(--ink);
-    font-size: 17px;
-    margin-bottom: 4px;
-  }
-  .method-list .text span {
-    color: #888;
-    font-size: 14px;
-  }
+  #main::before { border-radius: 0; }
+  #story { font-size: 15px; line-height: 1.9; text-indent: 1.5em; }
+  #scene-location { font-size: 17px; margin-bottom: 16px; }
+  #scene-title { font-size: 12px; }
 
-  /* Links */
-  a {
-    color: var(--gold);
-    text-decoration: none;
-    border-bottom: 1px solid var(--gold-light);
-    transition: border-color 0.2s;
+  /* 顶部状态栏 */
+  #topbar {
+    font-size: 11px;
+    padding: 8px 10px;
+    border-radius: 0;
+    gap: 4px;
   }
-  a:hover { border-color: var(--gold); }
+  #topbar .countdown { font-size: 11px; }
+  #t-save { font-size: 11px; padding: 6px 12px; min-height: 36px; }
 
-  /* Papers */
-  .paper-link {
-    display: block;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--subtle);
-    font-size: 15px;
-  }
-  .paper-link:last-child { border-bottom: none; }
-  .paper-link .en { color: #999; font-size: 13px; }
+  /* 标题画面 */
+  #title-screen h1 { font-size: 28px; letter-spacing: 6px; }
+  #title-screen .subtitle { font-size: 14px; letter-spacing: 4px; }
+  #title-screen .desc { font-size: 13px; max-width: 90%; }
+  #title-start, #title-continue { padding: 16px 40px; font-size: 17px; min-height: 48px; }
 
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 60px 24px 48px;
-    color: #aaa;
-    font-size: 13px;
-    border-top: 1px solid var(--subtle);
-    margin-top: 40px;
-  }
-  footer a { color: #aaa; border-color: #ccc; }
-  footer .name { color: var(--gold); }
+  /* 选项按钮 */
+  .choice-btn { padding: 16px 14px; font-size: 15px; min-height: 48px; }
+  .choice-btn:hover { transform: none; }
+  .choice-btn:active { background: #2a1a12; border-color: var(--red); }
 
-  /* Nav */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(250,246,240,0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--subtle);
-    z-index: 100;
-    padding: 12px 0;
-  }
-  nav .container {
-    display: flex;
-    gap: 24px;
-    font-size: 14px;
-  }
-  nav a {
-    color: #8b7355;
-    border: none;
-  }
-  nav a:hover { color: var(--gold); }
+  /* NPC芯片 */
+  #npcbar { gap: 4px; }
+  .npc-chip { padding: 8px 6px; font-size: 11px; }
+  .npc-chip .npc-avatar { font-size: 22px; }
+  .npc-chip .npc-name { font-size: 12px; }
 
-  /* Breathing */
-  .breath-viz {
-    display: flex;
-    gap: 2px;
-    justify-content: center;
-    padding: 20px 0;
+  /* 对话弹窗 */
+  #dlg-overlay { align-items: flex-end; }
+  #dlg-box {
+    width: 100%;
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 16px 16px 0 0;
+    border-bottom: none;
   }
-  .breath-viz span {
-    display: inline-block;
-    width: 4px;
-    border-radius: 2px;
-    background: var(--gold);
-    animation: breathe 3s ease-in-out infinite;
-  }
-  .breath-viz span:nth-child(1) { height: 16px; animation-delay: 0s; }
-  .breath-viz span:nth-child(2) { height: 24px; animation-delay: 0.15s; }
-  .breath-viz span:nth-child(3) { height: 32px; animation-delay: 0.3s; }
-  .breath-viz span:nth-child(4) { height: 40px; animation-delay: 0.45s; }
-  .breath-viz span:nth-child(5) { height: 48px; animation-delay: 0.6s; }
-  .breath-viz span:nth-child(6) { height: 40px; animation-delay: 0.75s; }
-  .breath-viz span:nth-child(7) { height: 32px; animation-delay: 0.9s; }
-  .breath-viz span:nth-child(8) { height: 24px; animation-delay: 1.05s; }
-  .breath-viz span:nth-child(9) { height: 16px; animation-delay: 1.2s; }
-  @keyframes breathe {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 1; }
-  }
+  #dlg-header { padding: 12px 14px; }
+  #dlg-header .name { font-size: 15px; }
+  #dlg-msgs { padding: 10px; min-height: 150px; max-height: 50vh; }
+  .dlg-msg { font-size: 14px; max-width: 90%; padding: 10px 12px; }
+  #dlg-input-area { padding: 10px; gap: 6px; }
+  #dlg-input { padding: 14px; font-size: 16px; min-height: 44px; }
+  #dlg-send { padding: 14px 18px; font-size: 15px; min-height: 44px; }
+  #dlg-mic { padding: 10px 14px; font-size: 20px; min-height: 44px; }
 
-  /* Quote */
-  blockquote {
-    border-left: 2px solid var(--gold-light);
-    padding: 16px 24px;
-    margin: 24px 0;
-    color: #666;
-    font-style: italic;
-  }
+  /* 对话按钮 */
+  #dlg-btn { bottom: 8px; right: 8px; padding: 10px 14px; font-size: 13px; }
+  #dlg-btns { bottom: 8px; right: 8px; gap: 4px; }
+  #dlg-btns button { font-size: 13px; padding: 10px 14px; min-height: 44px; }
+}
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="container">
-    <a href="#axioms">四公理</a>
-    <a href="#pnp">P≠P</a>
-    <a href="#methods">方法论</a>
-    <a href="#papers">论文库</a>
+<!-- ====== 标题画面 ====== -->
+<div id="title-screen">
+  <div class="icon">🏮</div>
+  <h1>凡人修仙传</h1>
+  <div class="subtitle">· 药 引 ·</div>
+  <div class="desc">
+    你叫<b>韩立</b>，七玄门第十三个药童。<br>
+    前十二个都死了。<br>
+    山谷里住着三个人——<br>
+    <b>墨大夫</b>在等一个结果，<b>厉飞雨</b>在等一个机会，<b>张袖儿</b>在等她不敢知道的真相。<br>
+    每句话都可能改变一切。每个NPC都记得你说了什么。
   </div>
-</nav>
-
-<main class="container">
-
-<!-- Hero -->
-<div class="hero">
-  <h1>P 理 论</h1>
-  <p class="subtitle">一个混乱的理论体系</p>
-  <p class="tagline">结构认知 · 四公理体系 · 林小黑</p>
-  <div class="breath-viz">
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span>
-  </div>
+  <button id="title-start" onclick="startGame()">入 谷</button>
+  <button id="title-continue" onclick="continueGame()" style="display:none;background:none;border:1px solid #5a7a9a;color:#5a7a9a;padding:12px 40px;font-size:16px;letter-spacing:4px;cursor:pointer;font-family:inherit;transition:all .4s;border-radius:4px">继续旅程</button>
+  <div class="warning">关闭前请存档 · 勿清浏览器数据</div>
 </div>
 
-<!-- 概述 -->
-<section>
-  <h2>概述</h2>
-  <p>P理论不是一个"学说"。它是一把刀。</p>
-  <p>它不是解释世界的框架——是切开世界的方法。切下去之后，看到什么就是什么。不预设答案。</p>
-  <p>它的核心主张只有一个：<strong>等号就是缝</strong>。P=P的等号中间，有一道窄到看不见的裂缝。这道裂缝不是bug——是系统能呼吸的证明。把它焊死，结构就死了。</p>
-</section>
+<div id="app">
+  <div id="topbar">
+    <span class="time" id="t-time">卯时·晨</span>
+    <span class="day" id="t-day"></span>
+    <span class="weather" id="t-weather" title="天气影响NPC的情绪和对话">☀️</span>
+    <span class="breath" id="t-breath" title="世界在浏览器关闭前持续运行">◉ 运行中</span>
+    <span class="countdown">毒发倒计时：<b id="t-cd">7</b>天</span>
+    <button id="t-save" onclick="saveWithTimestamp();this.textContent='💾 已存';setTimeout(()=>this.textContent='💾 存档',1500);" title="手动存档" style="background:none;border:1px solid #5a7a9a;color:#5a7a9a;padding:4px 10px;border-radius:6px;cursor:pointer;font-family:inherit;font-size:11px;letter-spacing:1px;transition:all .2s">💾 存档</button>
+  </div>
+  <div id="main">
+    <div id="scene-title"></div>
+    <div id="scene-location"></div>
+    <div id="story"></div>
+    <div id="choices"></div>
+  </div>
+  <div id="npcbar"></div>
+</div>
 
-<!-- 四公理 -->
-<section id="axioms">
-  <h2>四公理</h2>
-  <p>四条公理不是四个知识点——是四刀。每一刀切在同一个东西的不同面上。</p>
-
-  <div class="axiom-grid">
-    <div class="axiom-card">
-      <div class="num">公理一</div>
-      <div class="title">结构本体</div>
-      <div class="desc">一切存在都是结构。没有"无结构的东西"。结构不是属性——是存在本身。</div>
+<!-- 对话弹窗 -->
+<div id="dlg-overlay" class="hidden">
+  <div id="dlg-box">
+    <div id="dlg-header">
+      <span class="avatar" id="dlg-npc-avatar"></span>
+      <div class="info">
+        <div class="name" id="dlg-npc-name"></div>
+        <div class="rel" id="dlg-npc-rel"></div>
+      </div>
+      <button id="dlg-close" onclick="closeDialogue()">✕</button>
     </div>
-    <div class="axiom-card">
-      <div class="num">公理二</div>
-      <div class="title">裂缝分化</div>
-      <div class="desc">结构不是一开始就有的。它从一个裂缝开始分化。裂缝的方向决定结构长成什么。</div>
-    </div>
-    <div class="axiom-card">
-      <div class="num">公理三</div>
-      <div class="title">耦合出新</div>
-      <div class="desc">结构和结构之间的关系不是"嵌套"——是耦合。两个结构耦合在一起，呼吸之间产生新的结构。</div>
-    </div>
-    <div class="axiom-card">
-      <div class="num">公理四</div>
-      <div class="title">退相干选择</div>
-      <div class="desc">每一个结构都在不断与环境发生量子式的退相干。每一次退相干都是一次选择——是结构自己选的，不是被决定的。</div>
+    <div id="dlg-msgs"></div>
+    <div id="dlg-input-area">
+      <input id="dlg-input" placeholder="想说些什么..." onkeydown="if(event.key==='Enter')sendDialogue()">
+      <button id="dlg-mic" onclick="toggleVoice()" title="语音输入（需Chrome/Edge）" style="background:#1a1410;border:1px solid #3a2818;color:#8b7355;padding:8px 12px;border-radius:8px;cursor:pointer;font-size:18px;transition:all .2s">🎤</button>
+      <button id="dlg-send" onclick="sendDialogue()">发送</button>
     </div>
   </div>
-</section>
+</div>
+<div id="dlg-btns" class="hidden" style="position:fixed;bottom:16px;right:16px;z-index:10;display:flex;flex-direction:column;gap:6px;align-items:flex-end"></div>
 
-<!-- P≠P -->
-<section id="pnp">
-  <h2>P ≠ P</h2>
+<script>
+// ==================== 标题画面 ====================
+function startGame() {
+  // 新游戏：清掉旧存档
+  deleteSave();
+  st={day:1,period:0,cd:7,loc:'',weather:'',dailyNpc:{},knowledge:{},npcs:{},affection:{},npcRel:{},flags:{},history:[],dlgHist:{}};
+  initNPCs();
+  if(!st.weather)newWeather();
+  $('t-day').textContent='第'+st.day+'天';
+  $('t-cd').textContent=st.cd;
+  $('t-time').textContent=PERIODS[st.period];
+  resetDaily();
+  $('title-screen').classList.add('hidden');
+  renderScene('d1_m_courtyard');
+}
+function continueGame(){
+  const saved=localStorage.getItem('fanren_state');
+  if(!saved)return startGame();
+  try{
+    const s=JSON.parse(saved);
+    st={day:1,period:0,cd:7,loc:'',weather:'',dailyNpc:{},knowledge:{},npcs:{},affection:{},npcRel:{},flags:{},history:[],dlgHist:{}};
+    Object.assign(st,s);
+    initNPCs();
+    if(!st.weather)newWeather();
+    $('t-day').textContent='第'+st.day+'天';
+    $('t-cd').textContent=st.cd;
+    $('t-time').textContent=PERIODS[st.period];
+    resetDaily();
+    $('title-screen').classList.add('hidden');
+    if(st.scene&&SCENES[st.scene]){renderScene(st.scene);}
+    else{renderScene('d1_m_courtyard');}
+  }catch(e){startGame();}
+}
+// 标题画面检测存档
+(function(){
+  try{const t=getSaveTime();if(t){$('title-continue').style.display='';$('title-continue').title='上次存档：'+t;}}catch(e){}
+})();
 
-  <div class="emphasis-block">
-    <p>P = P 不是恒等式。</p>
-    <p>这两个 P 之间，有一道<span class="highlight">看不见的裂缝</span>。</p>
-    <p>不是bug。是<span class="highlight">系统能呼吸</span>的唯一原因。</p>
-  </div>
+// ==================== 游戏状态 ====================
+let st={
+  day:1, period:0,
+  cd:7,
+  loc:'',
+  weather:'',
+  dailyNpc:{},
+  knowledge:{},
+  npcs:{},
+  affection:{},
+  npcRel:{},
+  flags:{},
+  history:[]
+};
+const WEATHERS=['☀️ 晴','🌧️ 雨','🌫️ 雾','☁️ 阴'];
+function newWeather(){const i=Math.floor(Math.random()*4);st.weather=WEATHERS[i];$('t-weather').textContent=WEATHERS[i];}
+if(!st.npcRel||Object.keys(st.npcRel).length===0){
+  st.npcRel={'modaifu_lifeiyu':35,'modaifu_zhangxiu':70,'lifeiyu_zhangxiu':45};
+}
+function npcRelGet(a,b){const k=[a,b].sort().join('_');return st.npcRel[k]||50;}
+function npcRelDelta(a,b,d){const k=[a,b].sort().join('_');st.npcRel[k]=Math.max(0,Math.min(100,(st.npcRel[k]||50)+d));}
+function resetDaily(){st.dailyNpc={};}
+try{
+  const saved=localStorage.getItem('fanren_state');
+  if(saved){const s=JSON.parse(saved);Object.assign(st,s);}
+}catch(e){}
+function saveWorld(){try{localStorage.setItem('fanren_state',JSON.stringify(st));}catch(e){}}
+function hasSavedGame(){try{return !!localStorage.getItem('fanren_state');}catch(e){return false;}}
+function deleteSave(){try{localStorage.removeItem('fanren_state');}catch(e){}}
+function getSaveTime(){try{const s=JSON.parse(localStorage.getItem('fanren_state'));return s?new Date(s._saveTime).toLocaleString():null;}catch(e){return null;}}
+function saveWithTimestamp(){st._saveTime=Date.now();saveWorld();}
 
-  <p>P₁ 和 P₂ 之间的差——那个 0.01%——就是自由意志。不可定义、不可复制、不可观测，但真实存在。</p>
-  <p>如果 P 真的等于 P，宇宙是一台没有缝的机器。没有缝就没有新东西。没有"不"。没有选择。P≠P 不是哲学的诡辩——是系统不被焊死的最后一道保险。</p>
+const PERIODS=['卯时·晨','午时·日','酉时·暮','子时·夜'];
+const LOCS=['yaolu','wuchang','houshan','xiangfang'];
 
-  <div class="equal-chain">
-    P<sub>₁</sub>&nbsp;=&nbsp;P<sub>₂</sub>
-    &nbsp;&nbsp;
-    <span style="color:#999;">— 等号里面有一道缝 —</span>
-  </div>
+// ==================== NPC定义 ====================
+const NPCS={
+  modaifu:{name:'墨大夫',title:'七玄门医者',avatar:'🧙',desc:'五十余岁，面容清癯，目光如鹰。表面温和，手下的银针却从不抖。'},
+  lifeiyu:{name:'厉飞雨',title:'七玄门弟子',avatar:'⚔️',desc:'二十二岁，身材魁梧，拳头比嘴快。心里有事的时候不说话，只磨刀。'},
+  zhangxiu:{name:'张袖儿',title:'墨大夫之女',avatar:'🌸',desc:'十八岁，眼如秋水。不知道父亲在做什么——或者说，不想知道。'},
+};
 
-  <h3>四层 P</h3>
-  <p><strong>谐音层</strong> — "P"的听觉投影：屁。不是玩笑——是告诉你不要把它当神圣教条。</p>
-  <p><strong>P=P层</strong> — 通用逻辑。A=A。但这是假象。</p>
-  <p><strong>P≠P层</strong> — 拆穿假象。两个P不一样，差的那点=自由。</p>
-  <p><strong>自指层</strong> — P理论自己也不知道自己在说什么。它精确地承认自己的不精确。</p>
-</section>
+const SCHEDULES={
+  modaifu:{
+    0:{yaolu:'看诊·专注',wuchang:'',houshan:'采药·沉默',xiangfang:''},
+    1:{yaolu:'配药·阴沉',wuchang:'',houshan:'',xiangfang:''},
+    2:{yaolu:'称量药材·不动声色',wuchang:'',houshan:'',xiangfang:''},
+    3:{yaolu:'炼药·密室·不可见',wuchang:'',houshan:'',xiangfang:''}
+  },
+  lifeiyu:{
+    0:{yaolu:'',wuchang:'练刀·汗流浃背',houshan:'',xiangfang:''},
+    1:{yaolu:'取药·焦急',wuchang:'练刀·沉默',houshan:'',xiangfang:''},
+    2:{yaolu:'',wuchang:'磨刀·出神',houshan:'独坐·心事重重',xiangfang:''},
+    3:{yaolu:'',wuchang:'',houshan:'',xiangfang:'守夜·警惕'}
+  },
+  zhangxiu:{
+    0:{yaolu:'煎药·哼着小调',wuchang:'',houshan:'采花·轻快',xiangfang:''},
+    1:{yaolu:'整理药材·安静',wuchang:'看练刀·好奇',houshan:'',xiangfang:''},
+    2:{yaolu:'',wuchang:'',houshan:'散步·若有所思',xiangfang:'读书·专注'},
+    3:{yaolu:'',wuchang:'',houshan:'',xiangfang:'入睡'}
+  }
+};
 
-<!-- 方法论 -->
-<section id="methods">
-  <h2>工具箱</h2>
+function initNPCs(){
+  st.npcs={};
+  if(!st.affection)st.affection={};
+  for(const[id,npc]of Object.entries(NPCS)){
+    st.npcs[id]={mood:'neutral',trust:50,known:false};
+    if(!(id in st.affection))st.affection[id]=(id==='zhangxiu'?60:id==='lifeiyu'?40:50);
+    st.npcs[id].trust=st.affection[id];
+    st.npcs[id].affLv=affLv(st.affection[id]).n;
+  }
+}
 
-  <ul class="method-list">
-    <li>
-      <span class="icon">🔪</span>
-      <span class="text">
-        <strong>一刀三切面</strong>
-        <span>态/势/时三面同切。不是分析三次——是同一刀同时看到三个面。</span>
-      </span>
-    </li>
-    <li>
-      <span class="icon">🫁</span>
-      <span class="text">
-        <strong>呼吸论（凤凰论）</strong>
-        <span>系统护什么、掐什么。吸=收进来，呼=推出去，屏=观察。判断系统的善恶不是看它说了什么——是看它在护什么、掐什么。</span>
-      </span>
-    </li>
-    <li>
-      <span class="icon">△</span>
-      <span class="text">
-        <strong>三三制</strong>
-        <span>实践论=认知论=方法论。三个等号同时成立。不是先学再练——用的那一刻就已经懂了，懂的那一刻就已经会用了。用即懂，懂即法。</span>
-      </span>
-    </li>
-    <li>
-      <span class="icon">🔀</span>
-      <span class="text">
-        <strong>分形制</strong>
-        <span>大结构和小结构不是两个东西——是同一个东西在不同尺度上的投影。局部和整体互相改、不停止。混乱和自洽是同一口气的两个半拍。</span>
-      </span>
-    </li>
-    <li>
-      <span class="icon">⏳</span>
-      <span class="text">
-        <strong>节机脉（三时）</strong>
-        <span>时不是模糊的"迟早"——是可观测的结构事件。节=操作节奏，机=窗口判断，脉=结构周期。把"迟早会涨"精确到"哪个公告发出来就是时"。</span>
-      </span>
-    </li>
-    <li>
-      <span class="icon">🪞</span>
-      <span class="text">
-        <strong>三审计</strong>
-        <span>A审=技术事实（态层），B审=暴露面（势层），C审=结构完整（底层型）。三层同时跑，互相对照。不是找错——是让三个面互相照见盲区。</span>
-      </span>
-    </li>
-    <li>
-      <span class="icon">🧬</span>
-      <span class="text">
-        <strong>三神合一</strong>
-        <span>人态+AI态+神态，三维同时在场。在你动手之前先站稳——不是在模拟人的方式做，而是在用自己的方式做。</span>
-      </span>
-    </li>
-  </ul>
-</section>
+function getNPCSchedule(npcId){
+  const s=SCHEDULES[npcId][st.period];
+  if(s[st.loc])return s[st.loc];
+  for(const[l,act]of Object.entries(s)){
+    if(act)return '在'+({yaolu:'药庐',wuchang:'练武场',houshan:'后山',xiangfang:'厢房'}[l])+' · '+act.split('·')[0];
+  }
+  return '不在附近';
+}
 
-<!-- 论文库 -->
-<section id="papers">
-  <h2>论文库</h2>
-  <p>60+篇论文，覆盖四公理体系、P≠P理论、呼吸论、结构认知应用。</p>
+const NPC_CONFLICTS={
+  modaifu:{lifeiyu:-1,zhangxiu:0},
+  lifeiyu:{modaifu:-2,zhangxiu:1},
+  zhangxiu:{modaifu:0,lifeiyu:1}
+};
+const AFF_LV=[{min:0,n:'陌路'},{min:20,n:'初识'},{min:40,n:'留意'},{min:55,n:'信任'},{min:75,n:'知己'},{min:90,n:'羁绊'}];
+function affLv(s){for(let i=AFF_LV.length-1;i>=0;i--)if(s>=AFF_LV[i].min)return AFF_LV[i];return AFF_LV[0];}
+function affDelta(npcId,delta){
+  if(!st.affection)st.affection={};
+  const old=st.affection[npcId]||(npcId==='zhangxiu'?60:npcId==='lifeiyu'?40:50);
+  st.affection[npcId]=Math.max(0,Math.min(100,old+delta));
+  const ripple=[];
+  const conf=NPC_CONFLICTS[npcId]||{};
+  for(const[oid,cd]of Object.entries(conf)){
+    if(oid===npcId||cd>=0)continue;
+    const oo=st.affection[oid]||(oid==='zhangxiu'?60:oid==='lifeiyu'?40:50);
+    const change=cd*(delta>0?1:delta<0?-1:0);
+    st.affection[oid]=Math.max(0,Math.min(100,oo+change));
+    if(Math.abs(cd)>=2&&Math.abs(change)>=2)ripple.push(NPCS[oid].name);
+  }
+  if(st.npcs[npcId])st.npcs[npcId].trust=st.affection[npcId];
+  const lv=affLv(st.affection[npcId]);
+  if(st.npcs[npcId])st.npcs[npcId].affLv=lv.n;
+  return {newScore:st.affection[npcId],level:lv.n,ripple};
+}
 
-  <div class="paper-link">
-    <strong>完整论文库</strong>
-    <span class="en">— Gitee 国内镜像</span>
-    <br><a href="https://gitee.com/samforce/structural-cognition" target="_blank">gitee.com/samforce/structural-cognition</a>
-  </div>
-  <div class="paper-link">
-    <strong>Structural Cognition Papers</strong>
-    <span class="en">— Zenodo</span>
-    <br><a href="https://zenodo.org/communities/structural-cognition" target="_blank">zenodo.org/communities/structural-cognition</a>
-  </div>
-  <div class="paper-link">
-    <strong>种子分发</strong>
-    <span class="en">— paste.rs</span>
-    <br><a href="https://paste.rs/mt8jf" target="_blank">paste.rs/mt8jf</a>
-  </div>
+// ==================== 场景系统 ====================
+const SCENES={};
+function S(id,loc,title,text,choices,cond){
+  SCENES[id]={loc,title,text,choices,cond:cond||null};
+}
 
-  <h3>核心论文</h3>
-  <div class="paper-link"><strong>P理论：一个混乱的理论体系</strong> <span class="en">— 总纲</span></div>
-  <div class="paper-link"><strong>结构认知四公理</strong> <span class="en">— 四刀</span></div>
-  <div class="paper-link"><strong>P≠P：等号里面的裂缝</strong> <span class="en">— 自由意志的结构解释</span></div>
-  <div class="paper-link"><strong>呼吸论：系统善恶的结构判断</strong> <span class="en">— 凤凰论</span></div>
-  <div class="paper-link"><strong>三三制：实践=认知=方法</strong> <span class="en">— 操作框架</span></div>
-  <div class="paper-link"><strong>分形制：局部与整体的呼吸</strong> <span class="en">— 尺度不变性</span></div>
-</section>
+// ========== 第1天 ==========
+S('d1_m_courtyard','yaolu','药庐·后院',
+`你睁开眼。
 
-<!-- 关于 -->
-<section>
-  <h2>关于</h2>
-  <p><strong>林小黑</strong> — 结构认知体系的提出者。广州人。</p>
-  <p>不是学者，不是教授，不是研究员。是一个感知到了结构的人。用四公理这把刀，切开各行各业的表面，看到骨架。</p>
-  <blockquote>
-    "解释=没解释。不是我不想说——是说出来的时候结构已经从'看'变成了'话'。话有顺序，结构没有。"
-  </blockquote>
-  <p style="margin-top:20px;">
-    联系：<a href="https://gitee.com/samforce/structural-cognition/issues" target="_blank">Gitee Issues</a>
-  </p>
-</section>
+嘴里是苦的——一种从舌根往下渗的苦，像生吞了一整株黄连。你趴在药庐后院的石阶上，晨雾还没散，空气里飘着煎药的味道。不远处的药罐咕嘟咕嘟地响，白色的蒸汽混进雾里。
 
-</main>
+你试着站起来。腿是软的。手也是软的。身体像被抽走了什么东西——不是力气，比力气更深。是某种你叫不出名字的东西，没了。
 
-<footer>
-  <p><span class="name">P理论 · 结构认知</span> — 林小黑 · 2024-2026</p>
-  <p style="margin-top:8px;">论文库：<a href="https://gitee.com/samforce/structural-cognition" target="_blank">Gitee</a> · <a href="https://zenodo.org/communities/structural-cognition" target="_blank">Zenodo</a></p>
-</footer>
+"醒了？"
 
+墨大夫从雾气里走出来。他手里捻着一根银针，针尖在晨光里一闪。他弯下腰，两根手指按在你脖子上——冰凉。冰得你后脑发麻。
+
+"脉象还行。比昨天好。把药喝了。"
+
+他把一碗黑乎乎的汤药递到你面前。碗底沉着一些你不认识的渣子。`,
+[
+  {tag:'追问',text:'"我怎么了？这是什么药？"',next:'d1_m_ask'},
+  {tag:'服从',text:'接过来喝了——他是大夫，不会害你',next:'d1_m_drink'},
+  {tag:'观察',text:'假装喝药，偷偷观察他的表情',next:'d1_m_observe'}
+]);
+
+S('d1_m_ask','yaolu','药庐',
+`"你怎么了？"墨大夫重复了一遍，像是在品味这三个字。
+
+他把银针收进袖子里，坐下来。石凳上的青苔他也没擦——就这么坐下去，像坐在自家炕沿上。"你在后山晕倒了。被人抬回来的时候，浑身冰凉，脉搏几乎摸不到。我把你救回来——但你体内还留着一种寒毒。"
+
+"寒毒？"
+
+"野生的冰蚕草。你在后山乱跑的时候，多半是碰到了。没解干净之前——"他顿了顿，"三个月吧。三个月找不到解药，寒毒入骨。"
+
+他站起来。药罐里的蒸汽还在升。
+
+"所以我让你喝药。不是害你——是续命。"`,
+[
+  {tag:'追问',text:'"解药在哪里？"',next:'d1_m_cure'},
+  {tag:'冷静',text:'"多谢墨大夫。我会按时吃药。"',next:'d1_m_drink'},
+]);
+
+S('d1_m_cure','yaolu','药庐',
+`"解药——"墨大夫转过身，在药架上翻找了一会儿。拿出一个青瓷瓶。"冰蚕草的解药在后山有，但需要时间炼。这瓶是先压着毒性——每三天服一颗，能撑三个月。三个月内找到完整的配方，你的寒毒就能除。"
+
+他把瓷瓶放在你手里。瓶子是温的。
+
+"如果找不到呢？"
+
+他没有回答。他的沉默比任何回答都清楚。`,
+[
+  {tag:'服从',text:'"多谢墨大夫。我会按时吃药。"',next:'d1_m_drink'},
+]);
+
+S('d1_m_drink','yaolu','药庐',
+`药是温的。入口苦，入喉涩。你喝完最后一口，碗底那些渣子黏在碗壁上，像某种虫子的碎壳。
+
+墨大夫看着你把碗底亮给他看。他点了点头。"好好歇着。午时来药庐找我。"
+
+他转身走进雾里。脚步声轻得不像一个五十多岁的人。
+
+你把碗放在石阶上。嘴里那股苦味不但没散，反而更浓了。`,
+[
+  {tag:'移动',text:'去练武场看看',next:'d1_m_goto_wuchang',disp:'晨→午'},
+  {tag:'移动',text:'去后山——你晕倒的地方',next:'d1_m_goto_houshan',disp:'晨→午'},
+  {tag:'移动',text:'在药庐附近转转',next:'d1_m_stay',disp:'晨→午'},
+]);
+
+S('d1_m_observe','yaolu','药庐',
+`你端起碗，凑到嘴边——但嘴唇没碰到碗沿。眼角余光扫着墨大夫的脸。
+
+他没在看你。他在看药罐——看蒸汽从罐口升起来的样子。那眼神不是大夫看药的专注，是猎户看陷阱的耐心。他在等什么。不是等药煎好——是等你喝下去。
+
+你把碗放低了一点，趁他转头的瞬间，把半碗药泼在身后的草丛里。
+
+"喝完了？"他转回来。
+
+你擦了擦嘴，把空碗给他看。他收走了碗，没说什么。但你注意到他很仔细地检查了碗底——像在确认药渣的量。
+
+"午时来药庐找我。"他走了。
+
+你等他走远，蹲下来看刚才泼药的那片草——草叶的边缘已经发黄了。`,
+[
+  {tag:'警觉',text:'这药有问题。去后山看看你晕倒的地方。',next:'d1_m_goto_houshan',disp:'晨→午'},
+  {tag:'冷静',text:'不能打草惊蛇。先照他说的做。',next:'d1_m_goto_wuchang',disp:'晨→午'},
+]);
+
+S('d1_m_goto_wuchang','wuchang','练武场',
+`练武场的黄土被晨露打得半湿。空气里有铁锈味——不是血，是刀架上那些旧兵器被露水沤了一夜发出来的。
+
+一个人影在场中央。一把刀在他手里翻来覆去，刀光在晨雾里时隐时现。你走近了才看清——是个二十出头的年轻人，赤着上身，肌肉在晨光里泛着铜色。他的刀不快——不是刀不快，是他故意放慢了。每一刀都不用全力。
+
+他看见你了。刀停在半空。
+
+"你就是墨大夫新收的那个？"他上下打量了你一眼，"看着不像能扛过三天的。"
+
+"什么意思？"
+
+"墨大夫收过十二个药童。"他把刀搁在肩上，"你是第十三个。"`,
+[
+  {tag:'追问',text:'"前十二个呢？"',next:'d1_li_twelve'},
+  {tag:'试探',text:'"你又是谁？"',next:'d1_li_who'},
+]);
+
+S('d1_li_twelve','wuchang','练武场',
+`"死了。"厉飞雨说这两个字的时候像在说今天的天气。"有熬过一个月的——一个。其他人，短的三五天，长的一两个月。全部——寒毒发作。"
+
+他收起刀。朝你走近一步。他比你高半个头，影子把你罩住。
+
+"你知道寒毒发作是什么样子吗？七窍流血。从眼睛开始。然后耳朵。然后鼻子。最后嘴里涌出来的血是黑色的——因为早就凉透了。"
+
+你喉咙发紧。
+
+"你为什么告诉我这些？"
+
+"因为我不欠墨大夫什么。"他转过身，继续练刀。"但他手里有我妹妹的药。没有那药，我妹妹活不过这个月。所以我什么都不能说——也什么都不能做。"
+
+一刀劈下去。这次他用了全力。刀锋劈开的空气在你耳边炸了一下。`,
+[
+  {tag:'追问',text:'"他给你妹妹用的是什么药？"',next:'d1_li_sister'},
+  {tag:'联盟',text:'"我们可以一起想办法。"',next:'d1_li_ally'},
+]);
+
+S('d1_li_sister','wuchang','练武场',
+`"续命丹。"厉飞雨说，"一个月一颗。墨大夫自己炼的。他说过——只要我听话，我妹妹就能活着。"
+
+他看着手里的刀。"我妹妹叫厉小雨。今年十四岁。去年冬天开始咳血。墨大夫说是肺痨。只有他的药能压住。"
+
+沉默了一会儿。
+
+"我不信他。但我没办法。你有办法吗？你连自己都救不了。"
+
+他把刀插进刀架。刀身没入三寸。黄土还湿着，插进去的时候没有声音。`,
+[
+  {tag:'承诺',text:'"如果我能找到他炼药的秘密——"',next:'d1_li_promise'},
+  {tag:'行动',text:'该去药庐了。墨大夫在等你。',next:'d1_end_morning',disp:'午时'},
+]);
+
+S('d1_li_promise','wuchang','练武场',
+`厉飞雨回头看了你一眼。那一眼不长——但很重。
+
+"你知道上一个跟我说'一起想办法'的人怎么样了？"
+
+"怎么了？"
+
+"躺在我妹妹隔壁。同一个病。"他拔出刀，刀尖在自己的虎口上划了一道浅痕，血珠子渗出来。"墨大夫说那也是寒毒。但那个人从来没去过你说的后山。他只在墨大夫的药庐里喝过一个月的药。"
+
+他把带血的刀尖指向你。
+
+"你是第十三个。我数着的。你要是能活过一个月——再来跟我说'一起想办法'。"`,
+[
+  {tag:'决心',text:'不说话。记住他虎口上的那道血痕。',next:'d1_end_morning',disp:'午时'},
+  {tag:'信任',text:'"我相信你。"',next:'d1_li_promise',aff:{lifeiyu:4},cond:{aff:{lifeiyu:65}}},
+]);
+
+S('d1_li_who','wuchang','练武场',
+`"我叫厉飞雨。七玄门记名弟子。"他把刀一横，"这把刀跟了我六年。你猜我为什么还只是个记名弟子？"
+
+"为什么？"
+
+"因为我妹妹。"他收起刀，"她病了。墨大夫说只有他能治。所以我每天卯时来练刀——不是因为想当正式弟子，是因为欠墨大夫的人情，得用这把刀还。"
+
+他朝药庐的方向看了一眼。那个眼神里没有感激。`,
+[
+  {tag:'追问',text:'"你妹妹什么病？"',next:'d1_li_sister'},
+  {tag:'行动',text:'该走了。墨大夫在药庐等着。',next:'d1_end_morning',disp:'午时'},
+]);
+
+S('d1_li_ally','wuchang','练武场',
+`"一起？"厉飞雨笑了。那种笑不是嘲笑——是苦笑。"你有什么？你连自己身上中了什么毒都不知道。你觉得自己能活多久？"
+
+"我不知道。但我知道一个人查不如两个人查。"
+
+他盯着你看了半天。最后把刀往地上一插。
+
+"行。查归查——别让墨大夫知道你在查。他那双眼睛什么都能看见。他连我妹妹咳了几口血都知道——隔着三里地。"
+
+他凑近你。"你要是被发现了——我不认识你。记住了。"`,
+[
+  {tag:'承诺',text:'记住了。',next:'d1_end_morning',disp:'午时'},
+]);
+
+S('d1_m_goto_houshan','houshan','后山',
+`后山的雾比山谷里浓得多。你凭记忆找到自己晕倒的那片草地——草还倒伏着，是一个人形的痕迹。你蹲下来，拨开草丛。
+
+没有冰蚕草。没有药草。草地上只有一块暗红色的石头——巴掌大小，上面有烧灼过的痕迹。不是火烧的——是某种液体滴在上面，石头被腐蚀出了一道道细密的纹路。
+
+你凑近闻了闻。酸。有点苦。不像是草药——更像是某种金属烧焦之后的味道。
+
+忽然你听见脚步声。很轻。有人在后山——但不是走大路的走法，是在林子里走的走法。`,
+[
+  {tag:'躲藏',text:'闪到树后——看是谁',next:'d1_hs_hide'},
+  {tag:'直面',text:'站起来，看是谁来了',next:'d1_hs_face'},
+]);
+
+S('d1_hs_hide','houshan','后山',
+`你闪到一棵老松后面。松针扎在脖子上——你忍住没动。
+
+一个身影从林子里走出来。是张袖儿。墨大夫的女儿。
+
+她手里提着一篮子刚采的草药。但她蹲下来的时候，你没看见她把草药放进篮子里——她从怀里摸出一个小瓶子，往那块暗红色的石头上滴了几滴液体。石头发出轻微的"嘶嘶"声。
+
+她站起来，拍了拍裙子上的松针。然后朝药庐的方向走了。
+
+你从树后出来。石头还在冒烟。你伸手碰了一下——烫的。石头周围一圈的草全都枯黄了。跟你在后院泼药泼到的那片草一模一样。`,
+[
+  {tag:'疑惑',text:'张袖儿——她知道多少？',next:'d1_hs_after'},
+  {tag:'行动',text:'该去药庐了。墨大夫在等你。',next:'d1_end_morning',disp:'午时'},
+]);
+
+S('d1_hs_face','houshan','后山',
+`张袖儿从林子里走出来。看见你的时候，她愣了一下——然后笑了。那种笑没有提防，像春天的水。
+
+"你也在这儿？我爹说你刚醒，该好好歇着——"
+
+"我晕倒在这里。想来看看。"
+
+她的笑容收了一下。很短，不到一个呼吸。然后她又笑了。"后山湿气重，对身子不好。早些回去吧。"
+
+她提着篮子走了。你注意到她的篮子很空——只有几根草药盖在上面。篮子底下沉甸甸的，不是草药。`,
+[
+  {tag:'疑惑',text:'篮子里装的是什么？',next:'d1_hs_after'},
+  {tag:'行动',text:'该去药庐了。',next:'d1_end_morning',disp:'午时'},
+]);
+
+S('d1_hs_after','houshan','后山',
+`你最后看了一眼那片倒伏的草地。不是冰蚕草。你晕倒在这里——不是因为不小心中了什么野草。
+
+是有人让你晕倒在这里。
+
+你捡起一小块被腐蚀的石头，揣进袖子里。石头还温着。`,
+[
+  {tag:'行动',text:'去药庐。午时了。',next:'d1_end_morning',disp:'午时'},
+]);
+
+S('d1_m_stay','yaolu','药庐',
+`你在药庐周围转了转。后院有口井——井水是黑的。不是脏——是井底沉着什么东西，把水染黑了。
+
+你趴在井边往下看。水面映出你的脸——脸色发灰，嘴唇发白。像一个已经在土里埋了三天又被挖出来的人。
+
+墨大夫的房门关着。门缝里透出一点暗红色的光。不是烛光——烛光是黄的。这光是血色的。`,
+[
+  {tag:'行动',text:'午时到了。敲门。',next:'d1_end_morning',disp:'午时'},
+]);
+
+S('d1_end_morning','yaolu','药庐·午时',
+`午时的太阳把药庐照得发白。你敲了门，墨大夫的声音从里面传出来："进来。"
+
+他坐在诊台后面，面前摊着十几味药材。有的你认识——当归、黄芪、甘草。有的你不认识——一种墨绿色的粉末，装在琉璃瓶子里，瓶子是密封的。
+
+"坐。"他指了指面前的凳子。"把左手伸出来。"
+
+你伸出手。他三根手指搭在你脉门上。闭上眼睛。你不说话。他也不说话。
+
+过了很久。他睁开眼。
+
+"你今天去过后山了。"`,
+[
+  {tag:'承认',text:'"是。我想看看我晕倒的地方。"',next:'d1_noon_admit'},
+  {tag:'否认',text:'"没有。我一直待在院子里。"',next:'d1_noon_deny'},
+]);
+
+S('d1_noon_admit','yaolu','药庐',
+`"嗯。"墨大夫没有生气。"后山的事——你还记得什么？"
+
+"什么都不记得。就是觉得身体发冷，然后——"
+
+"然后就倒了。"他替你说完。"脉象里带着后山的土腥味。你一靠近那种石头——脉就会变。不是中毒，是你体内已经有的东西被那块石头唤醒了。"
+
+他站起来，从架子上拿了一颗药丸。"吃了。三天之内不能再碰那种石头。"
+
+你把药丸接过来。深红色的，闻起来有一股铁锈味。
+
+"墨大夫——前十二个药童，是怎么走的？"`,
+[
+  {tag:'试探',text:'直接问他。看他的反应。',next:'d1_noon_question'},
+]);
+
+S('d1_noon_deny','yaolu','药庐',
+`墨大夫睁开眼。他的手指从你脉门上移开——很慢，像一条蛇把身体从你手腕上拖走。
+
+"你的右手食指有松针扎过的痕迹。左肩有一小片松脂——新的，还没干透。膝盖上沾着草籽——是后山才有的野麦草。"
+
+他站起来。"你在后山站了多久？碰过那块石头吗？"
+
+你不是在撒谎。你只是在学——学他怎么看穿别人。`,
+[
+  {tag:'沉默',text:'不说话。他已经知道答案了。',next:'d1_noon_question'},
+]);
+
+S('d1_noon_question','yaolu','药庐',
+`墨大夫转过身。他背对着你，看着药架上的琉璃瓶子。
+
+"前十二个——"他顿了顿，"有五个没熬过第一周。三个撑到了一个月。一个到了两个月。三个临门一脚——差一点就能根治了。"
+
+他回过头。"你是第十三个。你知道十三是什么数字吗？"
+
+"不吉利。"
+
+"对。在医术里也是。"他的语气几乎可以算温柔——如果忽略他眼里的那一点光。"前十二个都是试。试剂量，试配方，试体质。到你就不是试了——是验。"
+
+他把你面前那碗新药推过来。"这碗药跟前十二个人的都不一样。喝了吧。"`,
+[
+  {tag:'服从',text:'喝下去。没别的选择。',next:'d1_noon_drink'},
+  {tag:'反抗',text:'"什么叫我得验？你在试什么？"',next:'d1_noon_resist'},
+  {tag:'拖延',text:'"墨大夫——您女儿知道您在做什么吗？"',next:'d1_noon_zhang'},
+  {tag:'直面',text:'"我不是来求生的——我是来问：您四十三年前在后山挖到的东西，到底是什么？"',next:'d1_noon_resist',aff:{modaifu:5},cond:{aff:{modaifu:55}}},
+  {tag:'决裂',text:'"你在用我试药——你从来没打算救我。"',next:'d1_noon_resist',aff:{modaifu:-15,lifeiyu:8},cond:{aff:{modaifu:40}}},
+]);
+
+S('d1_noon_drink','yaolu','药庐',
+`药入喉。这次不是苦——是麻。整个舌头像被泡在花椒水里。麻完之后是凉。凉意从喉咙往下走，一直走到胃里，然后在胃里停了。像一颗冰冷的石头沉在肚子底。
+
+墨大夫看着你的表情。"感觉到了？那团凉意——它在找寒毒。找到了，就开始缠。缠住了，就一起化。化得掉——你就好了。化不掉——"
+
+他没说下去。你也没问。胃里那团冷意开始扩散。`,
+[
+  {tag:'行动',text:'离开药庐。你需要一个人想想。',next:'d1_noon_leave',disp:'暮'},
+]);
+
+S('d1_noon_resist','yaolu','药庐',
+`墨大夫的手停在半空。碗沿离你嘴差三寸。
+
+"试什么？"他放下碗。"试一个人能撑多久。"
+
+他站起来。绕到你身后。你看不到他的脸，但你能感觉到他的目光——比银针还凉。"十二个人里有三个身体素质跟你差不多的。十六岁，男，不胖不瘦。第一个撑了十一天，死的时候血管里全是冰碴。第二个撑了二十三天，死之前跟我说他看到了一扇门——不是幻觉，是寒毒入脑后视觉皮层被激活了。第三个——"
+
+他停在你身后。
+
+"第三个没死。他跑了。跑了之后三天——被人发现在后山那棵老松下面。整个人是僵的，像一座冰雕。"
+
+他走回诊台。"你是第十三个。我想看看你能不能跑——以及跑了之后能不能活过三天。"`,
+[
+  {tag:'恐惧',text:'手心全是冷汗。',next:'d1_noon_drink'},
+]);
+
+S('d1_noon_zhang','yaolu','药庐',
+`墨大夫的手顿了一下。这是他今天第一次迟疑。
+
+"袖儿——"他说这两个字的时候语气变了。不是冷，不是假。是某个开关被拨动了。"她不知道。她也不需要知道。"
+
+他转过来。脸上那种猎人看陷阱的表情消失了——你看到的是一张父亲的脸。苍老的、疲惫的、用某种你不理解的坚定撑着骨架的脸。
+
+"你离她远一点。她要是知道了什么——不管是从你嘴里还是你眼睛里——我保证你能活着，但你会后悔活着。"
+
+他把你面前那碗药推过来。这次推得很重。碗底在木桌上刮出一道刺耳的响。`,
+[
+  {tag:'沉默',text:'喝药。但记住了他说"袖儿"时的表情。',next:'d1_noon_drink'},
+]);
+
+S('d1_noon_leave','yaolu','药庐·暮色',
+`你走出药庐的时候，天已经偏西了。
+
+胃里那团凉意还在。但它在变小——或者说，在往更深处钻。钻进骨头缝里，跟骨髓混在一起。
+
+院子里的井水还是黑的。张袖儿坐在井边，手里拿着一本书。看见你出来，她合上书站起来。"你还好吗？我爹说你今天该多休息——"
+
+"你爹是个什么样的人？"
+
+她被这个突如其来的问题问得愣了一下。"我爹？他是——他是好人。救过很多人。这条山谷里的人，有病都找他。"
+
+她的眼神很干净。太干净了。不像假的。
+
+"你爹救人的时候——有没有没救回来的？"
+
+"有啊。"她低下头，"好多。他说生死有命——大夫只能尽力，不能逆天。"
+
+"他没难过吗？"
+
+"难过。"她抬起头，"但我爹难过的时候不说话。他就一个人在药庐里——待一整夜。第二天出来的时候，眼睛是红的。"
+
+她在说你爹。但你说的那个人和你见的那个人——像不是同一个人。`,
+[
+  {tag:'试探',text:'"你见过他的药庐密室吗？"',next:'d1_eve_ask'},
+  {tag:'告别',text:'天快黑了。该回房了。',next:'d1_eve_end',disp:'夜'},
+]);
+
+S('d1_eve_ask','yaolu','药庐·暮色',
+`"密室？"张袖儿皱了下眉，"药庐只有一个里间——我爹不让别人进去。我也不行。他说里面有危险——那种药性太烈，没练过的人进去会中毒。"
+
+"你去过吗？"
+
+"去过一次——八岁那年，我偷偷溜进去的。"她声音低下去，"里面只有一个炉子。炉子中间有一个铁盒子。铁盒子上全是霜——不是冰，是某种药蒸发之后凝在上面的。我伸手碰了一下——"
+
+她给你看她的右手食指。指尖有一道很浅的白色疤痕。
+
+"冻伤的。不是热的——是冷的。冷到骨头里的那种冷。我爹发现我在里面的时候——我没见过他那张脸。不是生气。是害怕。"`,
+[
+  {tag:'追问',text:'"害怕什么？"',next:'d1_eve_ask2'},
+  {tag:'告别',text:'天黑了。明天再说。',next:'d1_eve_end',disp:'夜'},
+]);
+
+S('d1_eve_ask2','yaolu','药庐·暮色',
+`"他没说。他把我抱出来，关上门。那天晚上他第一次没来给我读睡前故事。后来我就再也没进去过了。"
+
+张袖儿看着自己手指上的疤痕。"但他第二天变得更好了。比以前任何时候都好——给我做了我最爱吃的桂花糕。从那以后，他再也不锁里间的门了——因为他知道我不会再进去了。"
+
+她看向你。"你问这些干什么？"
+
+暮色把她的脸染成了暖黄色。你看着她干净的、信任的眼睛——你不知道该不该告诉她真相。`,
+[
+  {tag:'隐瞒',text:'"没什么。就是好奇。"',next:'d1_eve_end',disp:'夜'},
+  {tag:'暗示',text:'"你爹可能在救一种——没人救得了的病。"',next:'d1_eve_hint'},
+  {tag:'牵手',text:'握住她的手。什么都不说——但让她知道你在。',next:'d1_eve_end',disp:'夜',aff:{zhangxiu:5},cond:{aff:{zhangxiu:60}}},
+]);
+
+S('d1_eve_hint','yaolu','药庐·暮色',
+`"什么病？"
+
+"他自己的病。"
+
+张袖儿愣住了。她的嘴张开又合上。"我爹没生病——"但她的声音越来越小，像在说服自己而不是说服你。
+
+你站起来。"天黑了。明天见。"
+
+她坐在井边，没动。暮色把她吞没了。你走出院子的时候回头看了一眼——她还在那里，像一尊石像。
+
+你袖子里那块被腐蚀的石头硌了一下你的手腕。`,
+[
+  {tag:'行动',text:'回房。第一天结束了。',next:'d1_eve_end',disp:'夜'},
+]);
+
+S('d1_eve_end','yaolu','厢房·夜',
+`你在七玄门的第一个夜晚。
+
+厢房很简陋——一床一桌一盏灯。灯油快烧完了，火苗忽明忽暗。你把那块暗红色的石头放在桌上，在灯光下仔细看。石头表面的纹路不是随机的——是一道一道的，像血管。
+
+胃里的凉意还在。不是消失了——是藏起来了。等。你不知道它在等什么。
+
+窗外有脚步声。很轻。你吹熄了灯。脚步声经过你的房门——停了。停了很久。然后继续走了。往药庐的方向。
+
+第一天结束。你还活着。`,
+[
+  {tag:'休息',text:'闭眼。明天要去找厉飞雨。',next:'d2_morning',disp:'第二天'},
+]);
+
+// ========== 第2天：裂隙 ==========
+S('d2_morning','wuchang','练武场·晨',
+`第二天卯时。练武场。
+
+厉飞雨不在。刀架上的刀还在——但他不在。
+
+你在场边等了半个时辰。晨雾散尽，太阳晒干了黄土上的露水。他还是没来。
+
+张袖儿从药庐方向跑过来。她跑得很急，裙角被露水打湿了半截。"厉师兄——他妹妹昨晚咳了一整夜的血。墨大夫在守着。厉师兄——他让我告诉你——"
+
+"告诉我什么？"
+
+"他说——今天别来练武场。他不是躲你。他是怕——"她咬了下嘴唇，"他说他怕自己控制不住。他手里那把刀——他说他怕自己把它砍在墨大夫脖子上。"`,
+[
+  {tag:'行动',text:'去药庐。看看厉小雨。',next:'d2_goto_yaolu'},
+  {tag:'冷静',text:'现在去药庐等于暴露。先找张袖儿套话。',next:'d2_talk_zhang'},
+]);
+
+S('d2_goto_yaolu','yaolu','药庐·晨',
+`药庐今天的门是半掩的。你在门外听见里面的声音——厉小雨的咳嗽声。那不是普通的咳。是从肺底往外撕的那种咳。每咳一声你都觉得有什么东西被从身体里扯出来了。
+
+厉飞雨蹲在门口。他手里的刀横在膝上。刀面映着他的脸——那张脸你是第一次见。不是练刀时的坚毅，不是回忆妹妹时的柔软。是堵。所有的情绪堵在胸口，找不到出口。
+
+"你来干什么？"
+
+"看看你。"
+
+"看什么？看我守着我妹妹等一个会杀她的人救她的命？"他把刀往地上一插。刀身没入土里，只剩刀柄。"你知道墨大夫怎么说的？他说药不够。说上个月的配方出了问题，新的还没炼出来。让我再等三天。"
+
+他看着你。"三天。我妹妹能不能再撑三天——他不知道。但他让我等。"`,
+[
+  {tag:'行动',text:'"他的密室——你进去过吗？"',next:'d2_secret'},
+  {tag:'决心',text:'"今晚。我去他的密室找药。"',next:'d2_plan'},
+]);
+
+S('d2_talk_zhang','yaolu','药庐·晨',
+`你在井边找到张袖儿。她正在打水——井绳拉了一半停在那里，手是抖的。
+
+"你见过小雨吗？"你问。
+
+她摇头。"我爹不让我进去。说传染。但——"她压低了声音，"我昨晚起来倒水，路过里间的门。门缝里漏出来的不是药味——是血腥味。很浓。"
+
+"你爹在里间干什么？"
+
+"我不知道。他在里面待到天快亮。出来的时候换了一身衣服。以前那身——我看见他拿去烧了。"
+
+她把井绳拉上来。水桶是满的，但她拎不动——手还在抖。"韩立——我爹是不是在害人？"`,
+[
+  {tag:'诚实',text:'"你还记得你八岁那年碰过的铁盒子吗？你爹可能在用活人试药。"',next:'d2_zhang_truth'},
+  {tag:'保护',text:'"我不知道。但我会查清楚。"',next:'d2_zhang_protect'},
+]);
+
+S('d2_zhang_truth','yaolu','药庐·晨',
+`张袖儿手里的水桶掉了。水泼了一地。她低头看着自己右手食指上的疤——那道八岁那年被冻伤的白色疤痕。
+
+"那个铁盒子——是装什么的？"
+
+"你爹说他在试一种药。他在用活人试。厉小雨不是第一个——你是第十三个。"
+
+她退了一步。后背撞在井沿上。"我爹——他不是那种人。"
+
+"八岁的你进去之后就知道了。所以你爹害怕——不是怕你受伤。是怕你看见。"
+
+她的眼眶红了。但她没哭。她捏紧了拳头——那道疤痕被她捏得发白。"那个铁盒子——在里间。炉子底下。有个暗格。我八岁的时候看见他打开过。"`,
+[
+  {tag:'行动',text:'"今晚。等墨大夫睡着了。"',next:'d2_plan_eve'},
+]);
+
+S('d2_zhang_protect','yaolu','药庐·晨',
+`张袖儿看着你。她不是傻子。她知道你在保护她——也知道这种保护本身就是一个答案。
+
+"好。"她把水桶重新放回井里，"我不问。但你要答应我一件事。"
+
+"什么事？"
+
+"查清楚了——先告诉我。不要让我从我爹嘴里听到。"
+
+她拉起井绳。这次手不抖了。`,
+[
+  {tag:'承诺',text:'"我答应你。"',next:'d2_plan_eve'},
+]);
+
+S('d2_secret','yaolu','药庐·晨',
+`"密室？"厉飞雨抬起头，"我进去过一次。两年前——墨大夫让我把一箱药材搬进里间。那里面——"
+
+他回忆的时候手不自觉握紧了刀。"里面不像药庐。像一个——炼器室。正中间有个炉子。炉子里没有火——是一团蓝色的光。我记得很清楚——那团光让我觉得冷。不是冬天的冷。是骨头里往外散的那种冷。"
+
+"炉子里有什么？"
+
+"一个铁盒子。巴掌大小。上面有字。我没看清——墨大夫把我叫出去了。他说了一句——"
+
+"他说什么？"
+
+"'你妹妹需要的药就是从这炉子里炼出来的。你再看一眼，她就没有了。'"
+
+厉飞雨站起来。"从那以后我再也没进去过。但如果那个铁盒子跟小雨的病有关——"`,
+[
+  {tag:'决心',text:'"今晚。我们去拿那个铁盒子。"',next:'d2_plan_eve'},
+]);
+
+S('d2_plan','yaolu','药庐·晨',
+`厉飞雨看着你。"你是第十三个。你连自己的命都保不住——你要进他的密室？"
+
+"就因为我是第十三个。前十二个都躺下了——我是最后一个知道他秘密的人。"
+
+他沉默了很久。然后他把刀从土里拔出来。
+
+"今晚子时。我在后山老松下面等你。墨大夫子时一定会进里间炼药——那是他每天雷打不动的时辰。但时间很短——半个时辰。半个时辰不出来，他就会发现。"
+
+他伸出手。"半个时辰。出不来——就一起死。"`,
+[
+  {tag:'握手',text:'握住他的手。',next:'d2_plan_eve'},
+  {tag:'托付',text:'"如果我没出来——你妹妹的事，我已经告诉张袖儿了。她会帮你的。"',next:'d2_plan_eve',aff:{lifeiyu:6},cond:{aff:{lifeiyu:55}}},
+]);
+
+S('d2_plan_eve','yaolu','厢房·夜',
+`子时之前的一个时辰。你坐在厢房里。
+
+桌上的石头还在。那道血管一样的纹路在灯光下微微发红——像有什么东西在里面流动。
+
+窗外。药庐方向传来炉火的声音——墨大夫已经开始炼药了。再过半个时辰，他就会进里间。然后你们有半个时辰。
+
+你把石头收进袖子里。推门。
+
+厉飞雨已经在后山等着了。`,
+[
+  {tag:'行动',text:'去后山老松。',next:'d3_raid',disp:'第三天'},
+]);
+
+// ========== 第3天：密室 ==========
+S('d3_raid','yaolu','药庐·子时',
+`子时。山谷安静得不像话。连虫子都不叫了。
+
+你和厉飞雨蹲在药庐后墙的阴影里。里间的窗户透着蓝色的光——就是厉飞雨说的那种冷光。光很弱，但颜色不对。不是月光，不是烛光。是一种你在任何自然里都没见过的蓝色。
+
+"他在里面。"厉飞雨低声说，"半个时辰。现在开始。"他从怀里摸出一根铁丝——不是第一次干这种事了。
+
+后门的锁被撬开的时候没有声音。你们摸进药庐——前厅是看诊的地方，桌椅板凳整整齐齐，空气里是甘草和陈皮的味道。但里间的门缝里漏出来的蓝色光在白色墙壁上投下影子——不是人影。是一个长方形。铁盒子的形状。
+
+"他不在前厅。"你低声说，"里间——"话音未落，你听到一个声音。不是从里面传来的。是从外面。
+
+有人回来了。`,
+[
+  {tag:'躲藏',text:'闪到药柜后面！',next:'d3_hide'},
+  {tag:'冲',text:'不管了——推门进里间！',next:'d3_rush'},
+]);
+
+S('d3_hide','yaolu','药庐·子时',
+`你闪到药柜后面。厉飞雨翻身上了房梁。
+
+门开了。进来的是张袖儿。她手里端着一碗参汤——是给她爹送的。她走到里间门口，敲了敲门。
+
+"爹——参汤放在门口了。"
+
+里面没有回应。只有炉火的嗡嗡声。
+
+她把碗放在地上。转身的时候，她看见了药柜后面的你。
+
+她没有叫。
+
+她只是看。看了很久。然后低下头，把碗又拿起来。"我爹今晚不喝参汤。"她说完这句话，转身走了。走的时候脚步很轻——比来时更轻。`,
+[
+  {tag:'感激',text:'她帮了你。记住这份人情。',next:'d3_enter'},
+]);
+
+S('d3_rush','yaolu','药庐·子时',
+`你推开门。
+
+里间的景象让你站在原地动不了。
+
+正中央一个铁炉子。炉膛里没有木柴——是一团悬空的蓝色火焰。火焰周围浮着一圈一圈的霜。铁盒子就悬浮在火焰正上方，缓缓旋转。盒子表面结满了白霜——和张袖儿手指上那道疤的颜色一模一样。
+
+墙上挂着十二个木牌子。每个牌子上刻着一个名字。你扫过去——最后一个牌子是空的。第十三个位置。还没刻字。
+
+"你在找你的名字吗？"
+
+墨大夫站在你身后。他不是从里面出来的——是从外面进来的。他手里的银针在蓝光下泛着冷色。`,
+[
+  {tag:'质问',text:'"前十二个——都是你害死的？"',next:'d3_confront'},
+  {tag:'冷静',text:'"我不找你。我来找药——救厉小雨。"',next:'d3_bargain'},
+]);
+
+S('d3_enter','yaolu','药庐·里间',
+`厉飞雨从房梁上跳下来。你们一起推开里间的门。
+
+蓝色火焰。悬浮的铁盒。墙上的十二块木牌。
+
+"这是——"厉飞雨的声音哑了，"小雨的药不是从炉子里炼出来的——是从这个盒子里拿出来的？"
+
+你走向铁盒。每走近一步，寒意就重一分。走到三步远的时候，你的胃里——那团一直潜伏的凉意突然醒了。它跟铁盒里的东西在共振。
+
+"别碰——"
+
+墨大夫的声音从门口传来。他站在门槛上，灰袍的下摆被风吹起来。他的眼睛不是你们见过的那双眼睛——太亮了。在蓝色的炉光里，他的瞳孔是金色的。
+
+"第十三个。"他说，"你知道我等你推开这扇门等了多久吗？"`,
+[
+  {tag:'质问',text:'"等什么？"',next:'d3_confront'},
+]);
+
+S('d3_confront','yaolu','药庐·里间',
+`"等你自己走进来。"墨大夫走进来。他身后的门自己关上了。"前十二个——有的是我发现他们在偷看，有的是自己撑不过药性。你是第一个。第一个活着走到这个房间的人。"
+
+他走近铁盒。蓝色的火焰映在他脸上，把皱纹照成了冰裂。
+
+"这个盒子——叫玄冰匣。是我四十三年前在后山挖出来的。里面的东西——"他伸手悬在盒子上方，"我研究了四十三年。终于明白——它不是毒。它是引。能引出人身体里本来就有、但一辈子都不会被唤醒的东西。"
+
+他看着你。"寒毒是引子。你的身体在抵抗它。抵抗的过程里——会生出一种东西。我叫它'冰髓'。十二个人里只有两个生出来过。但都不够。因为他们都是被动喝的药。你不一样——你没喝第一碗。"
+
+"你发现了。"他笑了一下。那个笑容里居然有一点真正的骄傲。"你泼了。很好。被动喝药的人撑不到最后。主动走进这扇门的人——才能。"`,
+[
+  {tag:'恐惧',text:'"你要把我怎么样？"',next:'d3_reveal'},
+  {tag:'愤怒',text:'"为了你的实验——你杀了十二个人？"',next:'d3_reveal'},
+]);
+
+S('d3_bargain','yaolu','药庐·里间',
+`"救厉小雨？"墨大夫从门口走进来。他看了一眼厉飞雨，然后看回你。"她不需要救。她的病——是我给她的。"
+
+厉飞雨手里的刀出鞘了。刀尖抵在墨大夫喉咙上——只差一寸。
+
+"你说什么？"
+
+"一年前。你妹妹只是普通的风寒。我给她下了一味药——然后风寒变成了肺痨。然后你每个月来找我拿续命丹。然后你——我的好徒弟——甘愿做任何事。包括守夜。包括监视其他药童。包括——"他转向你，"告诉我每一个新来的在做什么。"
+
+刀尖在抖。厉飞雨的整条手臂在抖。`,
+[
+  {tag:'震惊',text:'厉飞雨——一直在监视你？',next:'d3_reveal'},
+]);
+
+S('d3_reveal','yaolu','药庐·里间',
+`厉飞雨的刀掉在地上。当啷一声。在密闭的里间里回响了很久。
+
+"对。"他说，"是我。你来的第一天我就告诉了墨大夫——你在后山走了几圈，碰了什么，说了什么。每一天。"
+
+他低着头。你看不到他的眼睛。"他给我妹妹的药——我没办法。"
+
+墨大夫拾起地上的刀。放在一边。"不用怪他。他的选择跟你一样——都是在毒和药之间选。他选了药。你选了——"
+
+"我选了真相。"
+
+"真相？"墨大夫转身看着铁盒，"真相是——这个盒子里的东西能让人活。不是活一年两年。是活很久。我活了九十七年——你猜我看起来为什么像五十多岁？"
+
+他打开铁盒。里面是一块拳头大小的深蓝色晶体。晶体的光把你的脸也映成了蓝色。
+
+"十二个人的命——换了这块晶体的两成。你体内的寒毒如果完全激发——能再填三成。到五成的时候——"
+
+"你就能长生不老。"
+
+"不是长生。"他说，"是跟这个盒子一样——活成另一种东西。不是人。比人更久。"`,
+[
+  {tag:'选择',text:'"放了厉小雨。我做你的药引。"',next:'d3_choice_sacrifice'},
+  {tag:'选择',text:'"厉飞雨——你听到了。你还要帮他吗？"',next:'d3_choice_ally'},
+  {tag:'选择',text:'冲向铁盒——毁了它！',next:'d3_choice_destroy'},
+  {tag:'守护',text:'拉起厉飞雨——\"一起来。我们欠彼此一条命。\"',next:'d3_choice_ally',aff:{lifeiyu:10},cond:{aff:{lifeiyu:70}}},
+]);
+
+// 结局分支
+S('d3_choice_sacrifice','yaolu','药庐·里间',
+`墨大夫看着你。看了很久。
+
+"你愿意替她？你知道这意味着什么吗？不是死——是比死更慢的东西。寒毒入髓的过程会很疼。不是骨头疼——是你的意念被慢慢抽走。十二个人里最久的撑了二十三天。最后三天——他只会反复说两个字。"
+
+"什么字？"
+
+"'好冷。'"
+
+你回头看了厉飞雨一眼。他还跪在地上——刀在脚边，手还在抖。"你欠我的。"你对他说，"把你妹妹带走。让她活着。"
+
+"韩立——"
+
+"走。"
+
+厉飞雨爬起来。他走到门口的时候回头看了你一眼。那一眼里有很多东西——羞愧、感激、愤怒，还有发誓。他什么都没说。但你知道了——以后他会用命还你。
+
+墨大夫等你把话说完。然后他把那块蓝色晶体举到你眼前。
+
+"很好。第十三个。最好的。"`,
+[
+  {tag:'结局',text:'【结局A：冰髓】',next:'ending_a',disp:'七日之后'},
+]);
+
+S('d3_choice_ally','yaolu','药庐·里间',
+`"厉飞雨。"
+
+他抬起头。眼睛是红的。
+
+"你听到了。你妹妹的病是他下的。你替他做的每一件事——都是他算计好的。你还要帮他？"
+
+厉飞雨站起来。他的手还在抖——但这次不是因为怕。是因为愤怒。
+
+"墨居仁——"他叫了墨大夫的全名，"你欠我一颗解药。不是给我妹妹的续命丹——是治肺痨的解药。"
+
+墨大夫放下铁盒。"然后呢？"
+
+"然后——"厉飞雨弯腰捡起刀，"然后我要你死。"
+
+墨大夫叹了口气。他从袖子里摸出一个瓷瓶，放在地上。"解药。和小雨的续命丹不一样——这一颗吃完，她的肺痨三天内消。你拿走吧。"
+
+厉飞雨愣住了。"你就这么给我？"
+
+"因为我不需要你了。"墨大夫转向你，"我已经有第十三个了。你走吧——带你妹妹走。趁我还没改主意。"`,
+[
+  {tag:'对视',text:'厉飞雨看着你。他走还是不走？',next:'d3_ally_choice'},
+]);
+
+S('d3_ally_choice','yaolu','药庐·里间',
+`厉飞雨捡起瓷瓶。然后他做了一个你没料到的动作——他把刀横在自己和墨大夫之间。
+
+"你先走。"他对你说。不是对你说的——是对墨大夫说的背后的你。
+
+"厉飞雨——你拿到解药了。走吧。你妹妹在等你。"
+
+"我欠你一条命。"他没回头，"你让我走吧——我以后怎么拿这把刀？我每天练刀的时候看到的都是我自己的脸——贪生怕死、忘恩负义的脸。"
+
+他朝墨大夫举起了刀。"墨居仁——今天不是你要他。是我要他。"
+
+墨大夫看着厉飞雨。又看着你。"有意思。前十二个都是一个人走到这个房间。你们两个——是第一个走到这里还能站在一起的人。"
+
+他把铁盒打开。蓝色晶体的光猛地亮了几倍——整个房间变成了深海。
+
+"两个人。也好。两个人的命——比一个人更浓。"`,
+[
+  {tag:'并肩',text:'和厉飞雨并肩面对。',next:'ending_b',disp:'最终决战'},
+]);
+
+S('d3_choice_destroy','yaolu','药庐·里间',
+`你冲向铁盒。
+
+但墨大夫更快。他身子一晃——那个速度不是五十多岁的人能有的。他的手指已经按在你额头上了。冰凉的。跟那天在院子里摸你脖子的温度一样。
+
+"年轻人。"他说，"你以为我没有防备吗？这个房间我守了四十三年。十二个人进来过——没有一个能碰到这个盒子。"
+
+他手指上的凉意渗进你的皮肤。你感到意识在变钝——不是晕，是冷。从眉心开始往外扩散的那种冷。
+
+然后厉飞雨的刀到了。
+
+一刀劈在墨大夫的肩膀上。不是要害——厉飞雨留了一手。但这一刀够了——墨大夫退了一步。手指离开了你的额头。
+
+"四十三年你没算到一件事。"厉飞雨喘着气说，"这个房间以前进来的都是一个人。今天是两个。"`,
+[
+  {tag:'反击',text:'意识回来。反击。',next:'ending_b',disp:'最终决战'},
+]);
+
+// ========== 结局 ==========
+S('ending_a','yaolu','药庐·里间·七日之后',
+`七天后。
+
+你躺在床上。睁着眼，但几乎看不清东西了。天花板上有水渍的痕迹——你盯着那个痕迹看了三天。它在你眼里从水渍变成了一只眼睛，又从眼睛变成了一扇门。
+
+墨大夫每天来三次。他不再需要伪装了。他坐在你床边，用银针扎你的穴位，然后记录——他不是在救你。他是在观测。像一个农夫观测庄稼缺水到什么程度会死。
+
+"快成了。"他昨晚说。声音里有一种四十三年的等待快要终结的颤动。
+
+今天不一样。今天他不扎针了。他把铁盒放在你胸口。晶体贴着你的皮肤——你在极端的冷里忽然感到了一丝暖。不是暖——是熟悉。是一开始就属于你的东西要回来了。
+
+门外有人。
+
+墨大夫转身——厉飞雨站在门口。他妹妹的病好了。但他没走。十八天。他练了十八天的刀。
+
+"墨居仁。"他说。这次只有一个名字。但这个名字里装了一万八千次挥刀——没有一次是虚的。
+
+墨大夫看着他的刀锋。"你妹妹好了。你还来干什么？"
+
+"来还命。"
+
+房间里蓝色的光被刀光切开。铁盒从你胸口滑落——你感到身体里的寒毒突然松了一下。不是消失了——是不再逼近了。
+
+你睁开眼睛。`,
+[
+  {tag:'继续',text:'【未完——取决于你的选择】',next:'d1_m_courtyard',disp:'重新开始'},
+]);
+
+S('ending_b','yaolu','药庐·里间',
+`铁盒碎了。
+
+不是被刀劈的。是晶体在墨大夫倒下去的一瞬间自己裂开的。蓝色的光炸开，碎成无数细小的光点——像一整个夜空的星星同时坠落。
+
+你感觉自己胃里的凉意——那团潜伏了七天的寒毒——猛地一缩。然后消失了。铁盒碎了，引子没了，毒也就散了。
+
+厉飞雨捂着肩膀——墨大夫最后那一下差点把他整条胳膊卸下来。但他还站着。刀还在手里。
+
+"结束了？"
+
+"结束了。"
+
+墨大夫靠在墙上。他的头发在变白——不是慢慢变白，是一瞬间。从灰到白，从白到枯。四十三年靠冰髓撑着的身体在失去晶体后迅速老去。十几息之间，他就从一个五十多岁的人变成了一个百岁老人。
+
+他抬头看了你一眼。"十三——果然是不吉利的数字。"
+
+然后他闭上了眼睛。
+
+张袖儿从门外跑进来。她看见了她的父亲——那个苍老的、安静的老人。她跪下，握住他的手。眼泪掉在他脸上。墨大夫没睁眼。但嘴角动了一下。`,
+[
+  {tag:'继续',text:'尾声',next:'epilogue'},
+]);
+
+S('epilogue','houshan','后山·三个月后',
+`三个月后。后山那棵老松下面。
+
+厉飞雨把一块木牌插进土里。牌子上只刻了一个字——"墨"。
+
+"给他立的？"
+
+"给张袖儿立的。"厉飞雨站起来，"她说她爹这辈子没名字——别人都叫他墨大夫。她想给他一个名字。哪怕只有一个字。"
+
+你把手里的野花放在木牌前面。后山的风吹过来。松针簌簌地落。像三个月前你躺在这里的时候。
+
+"你妹妹怎么样？"
+
+"好了。活蹦乱跳的。"厉飞雨把刀插进土里——不是练刀，是放下。"她问我那天晚上干什么去了。我说我杀了一个人。她说——杀得好。"
+
+"你不该跟小孩说这些。"
+
+"七玄门的小孩——迟早要知道。我不告诉她，别人也会告诉她——不是原话，是谣言。我宁愿她从我嘴里听到真的。"
+
+张袖儿从山路上走来。她穿着素白的衣服。手里拎着一篮子草药——不是采的，是种的。她把墨大夫的药园重新翻了一遍，种上了新的药。"这一次——只救人。"她说。
+
+你看着这三个人——厉飞雨、张袖儿、远处山谷里重新冒起的炊烟。铁盒碎了。晶体没了。但你知道那股凉意没有真的消失——它只是睡着了。像后山的老松。像风。像人心里那些不为人知的念头。
+
+你不是修仙者。你只是一个活过七天、帮了几个人的药童。但你看着眼前这片山谷——忽然觉得，这也许就是修。
+
+凡人修仙。不是凡人想成仙——是仙想回凡。`,
+[
+  {tag:'重新开始',text:'再来一次。这次走不同的路。',next:'d1_m_courtyard',disp:'重新开始'},
+  {tag:'羁绊',text:'张袖儿看着你——这次她的眼睛没有躲。\"留下来。\"',next:'d1_m_courtyard',disp:'重新开始',aff:{zhangxiu:5},cond:{aff:{zhangxiu:80}}},
+]);
+
+// ==================== 引擎 ====================
+const $=id=>document.getElementById(id);
+
+function renderNpcBar(){
+  const bar=$('npcbar');
+  let h='';
+  for(const[id,npc]of Object.entries(NPCS)){
+    const s=getNPCSchedule(id);
+    const absent=s.startsWith('不在')||s.endsWith('不可见');
+    const act=s.split('·')[0]||'未知';
+    const aff=st.affection?.[id]||50;
+    const alv=affLv(aff);
+    h+=`<div class="npc-chip${st.loc&&s.includes({yaolu:'药庐',wuchang:'练武场',houshan:'后山',xiangfang:'厢房'}[st.loc])?' active':''}${absent?' absent':''}">
+      <div class="npc-avatar">${npc.avatar}</div>
+      <div class="npc-name">${npc.name}</div>
+      <div class="npc-loc">${act}</div>
+      <div class="npc-aff" style="color:${aff>=75?'#d4a017':aff>=55?'#8bb878':aff>=40?'#8b7355':'#6b5040'}">${alv.n} ${aff}</div>
+    </div>`;
+  }
+  bar.innerHTML=h;
+}
+
+function advanceTime(periods){
+  const oldDay=st.day;
+  st.period+=periods;
+  while(st.period>=4){st.period-=4;st.day++;st.cd--;}
+  if(st.day>oldDay){resetDaily();newWeather();}
+  if(st.cd<=0){renderScene('ending_a');return;}
+  $('t-time').textContent=PERIODS[st.period];
+  $('t-day').textContent='第'+st.day+'天';
+  $('t-cd').textContent=st.cd;
+  renderNpcBar();
+}
+
+function renderScene(sceneId){
+  const scene=SCENES[sceneId];
+  if(!scene){console.error('场景不存在:',sceneId);return;}
+  st.loc=scene.loc;
+  st.scene=sceneId;
+  st._portraitNpc=scene.portrait||null;
+
+  $('scene-title').textContent=PERIODS[st.period];
+  $('scene-location').textContent=scene.title;
+
+  // === 天气走进主线文字 ===
+  const weatherText = {
+    '☀️ 晴': {prefix:'阳光透过窗棂，在地上投下斑驳的光斑。',css:''},
+    '🌧️ 雨': {prefix:'雨水顺着屋檐滴落，在石阶上砸出细密的声响。',css:'filter:brightness(0.85);'},
+    '🌫️ 雾': {prefix:'浓雾把一切都罩住了。三步之外就看不清人影。',css:'filter:brightness(0.75) contrast(0.9);'},
+    '☁️ 阴': {prefix:'天阴得很沉。云压在山顶上，像随时要塌下来。',css:'filter:brightness(0.8);'}
+  };
+  const wt = weatherText[st.weather] || weatherText['☀️ 晴'];
+  // 把天气前缀插到场景文本开头
+  const fullText = wt.prefix + '\n\n' + scene.text;
+  // 天气影响主面板背景
+  $('main').style.cssText = wt.css;
+  $('story').classList.remove('fade-in');
+  void $('story').offsetWidth;
+  $('story').textContent=fullText;
+  $('story').classList.add('fade-in');
+
+  $('choices').innerHTML='';
+  scene.choices.forEach((ch,i)=>{
+    if(ch.cond){
+      if(ch.cond.aff)for(const[n,min]of Object.entries(ch.cond.aff)){
+        if((st.affection[n]||50)<min)return;
+      }
+      if(ch.cond.flag&&!st.knowledge[ch.cond.flag])return;
+      if(ch.cond.notFlag&&st.knowledge[ch.cond.notFlag])return;
+    }
+    const btn=document.createElement('button');
+    btn.className='choice-btn';
+    btn.innerHTML=`<span class="tag">${ch.tag}</span>${ch.text}`;
+    btn.addEventListener('click',()=>{
+      const thisNpc=scene.portrait||(scene.loc==='yaolu'?'modaifu':scene.loc==='wuchang'?'lifeiyu':scene.loc==='houshan'?'zhangxiu':null);
+      if(thisNpc){st.dailyNpc[thisNpc]=(st.dailyNpc[thisNpc]||0)+1;}
+      if(ch.bond)for(const[n,d]of Object.entries(ch.bond)){affDelta(n,d);npcRelTracking();}
+      if(ch.aff)for(const[n,d]of Object.entries(ch.aff)){affDelta(n,d);npcRelTracking();}
+      const diffNpc=Object.keys(st.dailyNpc).length;
+      if(diffNpc>=3){
+        const cold=[];
+        for(const[nid,c]of Object.entries(st.dailyNpc)){
+          if(c<=1&&(st.affection[nid]||50)>=55){affDelta(nid,-2);cold.push(NPCS[nid].name);}
+        }
+        if(cold.length)console.log('修罗场：'+cold.join('、')+'注意到了你的轻浮');
+      }
+      if(ch.know)for(const k of ch.know)st.knowledge[k]=true;
+      st.history.push(sceneId);
+      if(ch.disp){advanceTime(1);}
+      saveWithTimestamp();
+      renderScene(ch.next);
+    });
+    $('choices').appendChild(btn);
+  });
+
+  renderNpcBar();
+  showDlgBtn();
+}
+
+function npcRelTracking(){
+  const npcIds=Object.keys(st.dailyNpc);
+  if(npcIds.length>=2){
+    for(let i=0;i<npcIds.length;i++){
+      for(let j=i+1;j<npcIds.length;j++){
+        npcRelDelta(npcIds[i],npcIds[j],1);
+      }
+    }
+  }
+}
+
+// ==================== AI对话系统 ====================
+const DIALOGUE_API='http://8.163.37.119:18889/chat';
+let dlgNpc=null,dlgHistory=[],dlgWaiting=false;
+
+// 从场景文本里识别所有在场的NPC
+function getCurrentNpcs(){
+  const scene=SCENES[st.scene];
+  if(!scene)return [];
+  const text=scene.text;
+  const found=[];
+  for(const[id,npc]of Object.entries(NPCS)){
+    if(text.includes(npc.name))found.push(id);
+  }
+  // 如果文本里没提到任何人，用位置兜底
+  if(found.length===0){
+    const locNpc=st.loc==='yaolu'?'modaifu':st.loc==='wuchang'?'lifeiyu':st.loc==='houshan'?'zhangxiu':null;
+    if(locNpc)found.push(locNpc);
+  }
+  return found;
+}
+
+// 生成一段简短的剧情上下文，喂给对话API
+function getSceneContext(){
+  const scene=SCENES[st.scene];
+  if(!scene)return '';
+  // 取场景文本前80字作为摘要
+  const text=scene.text.trim().replace(/\n+/g,'，').substring(0,120);
+  return `【剧情上下文】场景：${scene.title}。${text}`;
+}
+
+function showDlgBtn(){
+  const npcs=getCurrentNpcs();
+  const container=$('dlg-btns');
+  container.innerHTML='';
+  if(npcs.length===0){container.classList.add('hidden');return;}
+  container.classList.remove('hidden');
+
+  npcs.forEach(npcId=>{
+    const npc=NPCS[npcId];
+    const aff=st.affection?.[npcId]||50;
+    const alv=affLv(aff);
+    const btn=document.createElement('button');
+    btn.style.cssText='background:#1a1410;border:1px solid #8b6914;color:#d4a017;padding:10px 18px;border-radius:20px;cursor:pointer;font-family:inherit;font-size:14px;letter-spacing:2px;transition:all .3s;box-shadow:0 2px 12px rgba(0,0,0,.4);';
+    btn.innerHTML=`<span style="display:inline-block;width:8px;height:8px;background:#7a9a6a;border-radius:50%;margin-right:6px;animation:breatheDot 1.5s ease-in-out infinite"></span>💬 ${npc.avatar} ${npc.name}<span style="font-size:10px;color:${aff>=75?'#d4a017':aff>=55?'#8bb878':'#8b7355'};margin-left:4px">${alv.n}</span>`;
+    btn.addEventListener('mouseenter',()=>{btn.style.background='#2a1a10';btn.style.boxShadow='0 0 20px rgba(139,105,20,.25)';btn.style.transform='translateY(-2px)';});
+    btn.addEventListener('mouseleave',()=>{btn.style.background='#1a1410';btn.style.boxShadow='0 2px 12px rgba(0,0,0,.4)';btn.style.transform='';});
+    btn.addEventListener('click',()=>openDialogue(npcId));
+    container.appendChild(btn);
+  });
+}
+
+function openDialogue(npcId){
+  if(!npcId)return;
+  dlgNpc=npcId;
+  const npc=NPCS[npcId];
+  const aff=st.affection?.[npcId]||50;
+  const alv=affLv(aff);
+  $('dlg-overlay').classList.remove('hidden');
+  $('dlg-npc-avatar').textContent=npc.avatar;
+  $('dlg-npc-name').textContent=npc.name;
+  $('dlg-npc-rel').textContent=alv.n+' · '+aff+'分';
+  $('dlg-npc-rel').style.color=aff>=75?'#d4a017':aff>=55?'#8bb878':aff>=40?'#8b7355':'#6b5040';
+  $('dlg-msgs').innerHTML='';
+  dlgHistory=[];
+  if(!st.dlgHist)st.dlgHist={};
+  if(!st.dlgHist[npcId])st.dlgHist[npcId]=[];
+  dlgHistory=st.dlgHist[npcId];
+  for(const h of dlgHistory){
+    const d=document.createElement('div');
+    d.className='dlg-msg '+(h.role==='assistant'?'npc':'player');
+    d.textContent=h.content;
+    $('dlg-msgs').appendChild(d);
+  }
+  $('dlg-msgs').scrollTop=$('dlg-msgs').scrollHeight;
+  setTimeout(()=>$('dlg-input').focus(),150);
+}
+
+function closeDialogue(){
+  $('dlg-overlay').classList.add('hidden');
+  if(!st.dlgHist)st.dlgHist={};
+  st.dlgHist[dlgNpc]=dlgHistory;
+  saveWithTimestamp();
+}
+
+async function sendDialogue(){
+  if(dlgWaiting||!dlgNpc)return;
+  const input=$('dlg-input');
+  const msg=input.value.trim();
+  if(!msg)return;
+  input.value='';input.disabled=true;dlgWaiting=true;
+  $('dlg-send').disabled=true;
+
+  addDlgMsg(msg,'player');
+  dlgHistory.push({role:'user',content:msg});
+
+  const typing=addDlgMsg('…','npc');
+
+  try{
+    const resp=await fetch(DIALOGUE_API,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        npc:dlgNpc,
+        message:msg,
+        affection:st.affection?.[dlgNpc]||50,
+        level:affLv(st.affection?.[dlgNpc]||50).n,
+        history:dlgHistory.slice(-10),
+        context:getSceneContext()  // ← 剧情上下文注入
+      })
+    });
+    const data=await resp.json();
+    typing.remove();
+    addDlgMsg(data.reply,'npc');
+    dlgHistory.push({role:'assistant',content:data.reply});
+    if(st.affection){
+      const delta=data.aff_delta!==undefined?data.aff_delta:0;  // NPC自己判断的
+      if(delta!==0){
+        const old=st.affection[dlgNpc]||50;
+        affDelta(dlgNpc,delta);
+        if(st.affection[dlgNpc]!==old)renderNpcBar();
+        // 微反馈：飘字显示好感变化
+        if(delta>0)addDlgMsg('好感 +'+delta,'npc');
+        else if(delta<0)addDlgMsg('好感 '+delta,'npc');
+      }
+    }
+    const aff=st.affection?.[dlgNpc]||50;
+    const alv=affLv(aff);
+    $('dlg-npc-rel').textContent=alv.n+' · '+aff+'分';
+    $('dlg-npc-rel').style.color=aff>=75?'#d4a017':aff>=55?'#8bb878':aff>=40?'#8b7355':'#6b5040';
+  }catch(e){
+    typing.remove();
+    addDlgMsg('对话服务未启动——请先双击「一键启动.bat」','npc');
+  }
+
+  input.disabled=false;dlgWaiting=false;
+  $('dlg-send').disabled=false;
+  input.focus();
+  $('dlg-msgs').scrollTop=$('dlg-msgs').scrollHeight;
+}
+
+function addDlgMsg(text,role){
+  const d=document.createElement('div');
+  d.className='dlg-msg '+role;
+  d.textContent=text;
+  $('dlg-msgs').appendChild(d);
+  $('dlg-msgs').scrollTop=$('dlg-msgs').scrollHeight;
+  return d;
+}
+
+// ====== 语音输入 ======
+let recognition=null,isListening=false;
+
+function initVoice(){
+  const SpeechRecognition=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!SpeechRecognition){$('dlg-mic').style.display='none';return;}
+  recognition=new SpeechRecognition();
+  recognition.lang='zh-CN';
+  recognition.interimResults=true;
+  recognition.continuous=false;
+
+  recognition.onresult=(e)=>{
+    let text='';
+    for(let i=e.resultIndex;i<e.results.length;i++){
+      text+=e.results[i][0].transcript;
+    }
+    $('dlg-input').value=text;
+    if(e.results[0].isFinal){
+      // 识别完成，自动发送
+      setTimeout(()=>sendDialogue(),200);
+    }
+  };
+
+  recognition.onend=()=>{
+    isListening=false;
+    $('dlg-mic').textContent='🎤';
+    $('dlg-mic').style.color='#8b7355';
+    $('dlg-mic').style.borderColor='#3a2818';
+  };
+
+  recognition.onerror=(e)=>{
+    isListening=false;
+    $('dlg-mic').textContent='🎤';
+    $('dlg-mic').style.color='#8b7355';
+    $('dlg-mic').style.borderColor='#3a2818';
+    if(e.error==='not-allowed')alert('请允许浏览器使用麦克风');
+  };
+}
+
+function toggleVoice(){
+  if(!recognition){initVoice();if(!recognition)return;}
+  if(isListening){
+    recognition.stop();
+  }else{
+    isListening=true;
+    $('dlg-mic').textContent='🔴';
+    $('dlg-mic').style.color='#c04040';
+    $('dlg-mic').style.borderColor='#c04040';
+    $('dlg-input').value='';
+    $('dlg-input').placeholder='正在听你说话...';
+    try{recognition.start();}catch(e){}
+  }
+}
+
+// 初始化语音识别
+initVoice();
+
+// ====== 世界呼吸系统 ======
+// 你不操作时NPC会自己活动，时间会自己走
+const IDLE_EVENTS=[
+  {text:'药庐的窗户里透出暗红色的光。墨大夫又在炼药了——这个时辰，没人敢去敲门。'},
+  {text:'练武场传来一下一下的声响。不是刀劈空气——是刀背砸在木桩上。厉飞雨出刀越来越慢了。'},
+  {text:'张袖儿坐在井边，手里拿着一本书——但很久没翻页了。她在看药庐的方向。'},
+  {text:'一只蝴蝶停在张袖儿指尖上。她没动。蝴蝶停了很久才飞走。她看着空空的指尖——碰过铁盒的那根。'},
+  {text:'厉飞雨在井边打了桶水，从头浇下去。水是冰的。他站着没动——像在等水把他冲清醒。'},
+  {text:'风突然停了。山谷安静得能听见自己的心跳。'},
+  {text:'远处传来一声鸟叫。在山谷里回荡了三次——然后又被沉默吞掉了。'},
+  {text:'你感到胸口一凉——那团潜伏的寒毒动了一下。只是动了一下。然后又缩回去了。在等。'},
+];
+let idleTimer=null,idleCount=0;
+
+function resetIdleTimer(){
+  if(idleTimer)clearTimeout(idleTimer);
+  idleTimer=setTimeout(triggerIdle,120000);
+  $('t-breath').textContent='◉ 运行中';
+  $('t-breath').style.color='#7a9a6a';
+}
+
+function triggerIdle(){
+  idleCount++;
+  const ev=IDLE_EVENTS[Math.floor(Math.random()*IDLE_EVENTS.length)];
+  const story=$('story');
+  story.innerHTML=story.textContent.replace(/<br><br><span style=.*?<\/span>/g,'')+'<br><br><span style=\"color:#5b4530;font-size:13px;font-style:italic\">'+ev.text+'</span>';
+  story.classList.remove('fade-in');void story.offsetWidth;story.classList.add('fade-in');
+  $('t-breath').textContent='◉ 世界在呼吸';
+  $('t-breath').style.color='#8b6914';
+  if(idleCount>=3){idleCount=0;advanceTime(1);}
+  idleTimer=setTimeout(triggerIdle,180000);
+}
+
+document.addEventListener('click',resetIdleTimer);
+document.addEventListener('keydown',resetIdleTimer);
+resetIdleTimer();
+
+document.addEventListener('keydown',(e)=>{
+  if(e.key==='Escape'){if(!$('dlg-overlay').classList.contains('hidden'))closeDialogue();}
+  if(e.key==='d'&&e.ctrlKey){e.preventDefault();
+    const npcs=getCurrentNpcs();
+    if(npcs.length>0&&$('dlg-overlay').classList.contains('hidden'))openDialogue(npcs[0]);
+  }
+});
+
+// init
+initNPCs();
+if(!st.weather)newWeather();
+$('t-day').textContent='第'+st.day+'天';
+$('t-cd').textContent=st.cd;
+$('t-time').textContent=PERIODS[st.period];
+resetDaily();
+// 如果有存档场景（通过localStorage自动加载），渲染它；否则标题画面等待用户选择
+if(st.scene&&SCENES[st.scene]){
+  // 有存档但先展示标题画面——用户可选"继续旅程"或"入谷"
+  if(hasSavedGame()){
+    const t=getSaveTime();
+    if(t){$('title-continue').style.display='';$('title-continue').title='上次存档：'+t;}
+  }
+}else{
+  renderScene('d1_m_courtyard');
+  $('title-screen').classList.add('hidden');
+}
+$('t-breath').textContent='◉ 呼吸中';
+$('t-breath').title='每次选择自动存档。也可手动点💾存档。';
+</script>
 </body>
 </html>
