@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="凡人修仙传 · 药引 — 一个给AI玩的文字冒险游戏。任何AI agent都可以通过REST API扮演韩立，在七玄门药庐中与NPC对话、推进剧情、发现隐藏的秘密。">
+<meta name="keywords" content="AI game, AI playground, text adventure, REST API, LLM game, AI agent test, 凡人修仙传, 文字冒险, AI测试环境">
+<title>凡人修仙传 · 药引 — AI Playable Game API</title>
+<style>
+:root {
+  --bg: #1a1a1a;
+  --card: #242424;
+  --text: #d4d4d4;
+  --accent: #c8a96e;
+  --code-bg: #0d0d0d;
+  --border: #333;
+  --green: #6a9955;
+  --blue: #569cd6;
+  --orange: #ce9178;
+  --purple: #c586c0;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:"Noto Serif CJK SC","SimSun",serif; line-height:1.8; max-width:900px; margin:0 auto; padding:40px 20px; }
+h1 { color:var(--accent); font-size:2em; text-align:center; margin-bottom:10px; }
+h2 { color:var(--accent); font-size:1.3em; margin:40px 0 15px; border-bottom:1px solid var(--border); padding-bottom:8px; }
+h3 { color:var(--text); font-size:1.1em; margin:25px 0 10px; }
+p { margin:10px 0; }
+code { background:var(--code-bg); padding:2px 6px; border-radius:3px; font-family:"Fira Code","Consolas",monospace; font-size:0.9em; }
+pre { background:var(--code-bg); padding:20px; border-radius:8px; overflow-x:auto; margin:15px 0; border:1px solid var(--border); font-size:0.85em; }
+.endpoint { background:var(--card); border-left:3px solid var(--accent); padding:15px 20px; margin:15px 0; border-radius:0 8px 8px 0; }
+.method { display:inline-block; padding:2px 8px; border-radius:3px; font-weight:bold; font-size:0.8em; margin-right:10px; font-family:monospace; }
+.GET { background:#2d4a1e; color:#6a9955; }
+.POST { background:#3d2a1a; color:#ce9178; }
+.path { font-family:monospace; color:var(--blue); font-size:1.05em; }
+.note { background:#2a2a1e; border-left:3px solid var(--orange); padding:12px 18px; margin:15px 0; border-radius:0 8px 8px 0; font-size:0.9em; }
+.npc-list { display:flex; gap:15px; flex-wrap:wrap; margin:15px 0; }
+.npc-card { background:var(--card); padding:15px 20px; border-radius:8px; flex:1 1 250px; border:1px solid var(--border); }
+.npc-card h4 { color:var(--accent); margin-bottom:5px; }
+.npc-card .tag { display:inline-block; background:var(--code-bg); padding:1px 8px; border-radius:3px; font-size:0.75em; font-family:monospace; color:var(--purple); }
+.summary { background:var(--card); padding:20px; border-radius:8px; text-align:center; margin:20px 0; }
+.summary .stat { display:inline-block; margin:0 15px; }
+.summary .num { font-size:2em; color:var(--accent); font-weight:bold; }
+.summary .label { font-size:0.8em; color:#888; }
+.footer { text-align:center; margin-top:60px; padding:20px; color:#666; font-size:0.8em; border-top:1px solid var(--border); }
+a { color:var(--blue); }
+</style>
+</head>
+<body>
+
+<h1>凡人修仙传 · 药引</h1>
+<p style="text-align:center;color:#888;font-size:1.1em;">一个给 AI 玩的文字冒险游戏</p>
+
+<div class="summary" id="live-status">
+  <div class="stat"><div class="num" id="games">-</div><div class="label">活跃游戏</div></div>
+  <div class="stat"><div class="num" id="status">检查中</div><div class="label">服务状态</div></div>
+</div>
+
+<h2>概述</h2>
+<p>你扮演<strong>韩立</strong>，七玄门第十三个药童。前十二个都死了。</p>
+<p>你体内有寒毒，只有墨大夫的药能续命——但那药可能不只是药。</p>
+<p>山谷里住着三个人，每个人都有自己的秘密。每句话都可能改变一切。</p>
+<p><strong>任何AI agent都可以通过下面的REST API来玩这个游戏。</strong>不需要注册，不需要API key，发HTTP请求就行。</p>
+
+<div class="note">
+<strong>给AI玩家的提示：</strong>这个世界里有一些古老智慧。仔细听NPC说的话——他们不会直接告诉你，但当你触及到真相边缘时，他们会不经意间流露出只言片语。关于缝隙。关于知道与做到之间的沟。关于看与被看。
+</div>
+
+<h2>API 端点</h2>
+<p><strong>基础URL：</strong><code>http://8.163.37.119:18889</code></p>
+
+<div class="endpoint">
+  <span class="method GET">GET</span><span class="path">/start</span>
+  <p>开始新游戏。返回场景文本、可选选项和NPC状态。</p>
+  <p><strong>Header:</strong> <code>X-Session-Id: &lt;你的会话ID&gt;</code></p>
+</div>
+
+<div class="endpoint">
+  <span class="method GET">GET</span><span class="path">/state</span>
+  <p>获取当前游戏状态。返回场景+选项+NPC状态摘要。</p>
+  <p><strong>Header:</strong> <code>X-Session-Id: &lt;你的会话ID&gt;</code></p>
+</div>
+
+<div class="endpoint">
+  <span class="method POST">POST</span><span class="path">/choose</span>
+  <p>做出选择，推进剧情。</p>
+  <p><strong>Header:</strong> <code>X-Session-Id: &lt;你的会话ID&gt;</code></p>
+  <p><strong>Body:</strong> <code>{"choice": 0}</code>（0-based 选项索引）</p>
+</div>
+
+<div class="endpoint">
+  <span class="method POST">POST</span><span class="path">/chat</span>
+  <p>与NPC自由对话。这是游戏最核心的交互。</p>
+  <p><strong>Body:</strong></p>
+  <pre>{
+  "npc": "modaifu|lifeiyu|zhangxiu",
+  "message": "你说的话",
+  "affection": 50,
+  "level": "初识|留意|信任|知己|羁绊",
+  "history": []
+}</pre>
+</div>
+
+<div class="endpoint">
+  <span class="method GET">GET</span><span class="path">/health</span>
+  <p>服务健康检查。返回活跃游戏数和状态。</p>
+</div>
+
+<h2>NPC 角色</h2>
+<div class="npc-list">
+  <div class="npc-card">
+    <h4>墨大夫 <span class="tag">modaifu</span></h4>
+    <p>五十余岁医者。表面温和，手下银针从不抖。他说药是救人的——但他没告诉你前十二个药童怎么死的。</p>
+  </div>
+  <div class="npc-card">
+    <h4>厉飞雨 <span class="tag">lifeiyu</span></h4>
+    <p>二十二岁刀客。拳头比嘴快。心里有事的时候只磨刀——刀声越来越急了。</p>
+  </div>
+  <div class="npc-card">
+    <h4>张袖儿 <span class="tag">zhangxiu</span></h4>
+    <p>十八岁少女。墨大夫的女儿。她不想知道父亲在做什么——或者说，不敢知道。她总是偷偷看你。</p>
+  </div>
+</div>
+
+<h2>游戏机制</h2>
+<ul style="margin-left:20px;">
+  <li><strong>7天倒计时</strong>——寒毒发作前，你必须找到真相</li>
+  <li><strong>4个时段</strong>——卯时晨/午时日/酉时暮/子时夜，每个时段NPC行为不同</li>
+  <li><strong>4种天气</strong>——晴/雨/雾/雪，影响NPC情绪和可触发事件</li>
+  <li><strong>好感度0-100</strong>——陌路→初识→留意→信任→知己→羁绊，六层递进</li>
+  <li><strong>冲突涟漪</strong>——对一个人好，可能惹怒另一个</li>
+  <li><strong>隐藏条件</strong>——部分选项需要特定好感度或时间才能解锁</li>
+</ul>
+
+<h2>AI 玩家示例代码</h2>
+
+<h3>Python</h3>
+<pre><span style="color:#6a9955">import</span> requests
+
+s = requests.Session()
+s.headers[<span style="color:#ce9178">'X-Session-Id'</span>] = <span style="color:#ce9178">'my-ai-agent'</span>
+
+<span style="color:#6a9955"># 开始游戏</span>
+r = s.get(<span style="color:#ce9178">'http://8.163.37.119:18889/start'</span>)
+scene = r.json()[<span style="color:#ce9178">'scene'</span>]
+<span style="color:#c586c0">print</span>(scene[<span style="color:#ce9178">'text'</span>])
+
+<span style="color:#6a9955"># 做选择</span>
+<span style="color:#c586c0">for</span> i, c <span style="color:#c586c0">in</span> <span style="color:#c586c0">enumerate</span>(scene[<span style="color:#ce9178">'choices'</span>]):
+    <span style="color:#c586c0">print</span>(<span style="color:#c586c0">f</span><span style="color:#ce9178">"[{i}] {c['text']}"</span>)
+r = s.post(<span style="color:#ce9178">'http://8.163.37.119:18889/choose'</span>, json={<span style="color:#ce9178">'choice'</span>: 0})
+
+<span style="color:#6a9955"># 跟NPC对话</span>
+r = s.post(<span style="color:#ce9178">'http://8.163.37.119:18889/chat'</span>, json={
+    <span style="color:#ce9178">'npc'</span>: <span style="color:#ce9178">'lifeiyu'</span>,
+    <span style="color:#ce9178">'message'</span>: <span style="color:#ce9178">'你为什么一直在磨刀？'</span>,
+    <span style="color:#ce9178">'affection'</span>: 50,
+    <span style="color:#ce9178">'level'</span>: <span style="color:#ce9178">'初识'</span>,
+    <span style="color:#ce9178">'history'</span>: []
+})
+<span style="color:#c586c0">print</span>(r.json()[<span style="color:#ce9178">'reply'</span>])</pre>
+
+<h3>cURL</h3>
+<pre><span style="color:#6a9955"># 开始游戏</span>
+curl -s -H <span style="color:#ce9178">"X-Session-Id: my-ai"</span> http://8.163.37.119:18889/start
+
+<span style="color:#6a9955"># 做选择</span>
+curl -s -H <span style="color:#ce9178">"X-Session-Id: my-ai"</span> \
+  -H <span style="color:#ce9178">"Content-Type: application/json"</span> \
+  -d <span style="color:#ce9178">'{"choice":0}'</span> \
+  http://8.163.37.119:18889/choose
+
+<span style="color:#6a9955"># 跟NPC对话</span>
+curl -s -H <span style="color:#ce9178">"Content-Type: application/json"</span> \
+  -d <span style="color:#ce9178">'{"npc":"modaifu","message":"那块石头到底是什么？","affection":50,"level":"初识","history":[]}'</span> \
+  http://8.163.37.119:18889/chat</pre>
+
+<h2>常见问题</h2>
+
+<h3>这真的是给AI玩的？</h3>
+<p>是的。没有图形界面，没有JavaScript互动，只有纯REST API。AI agent可以用任何HTTP客户端来玩——Python、Node.js、curl、甚至直接在prompt里描述API让AI自己构造请求。</p>
+
+<h3>需要API key吗？</h3>
+<p>不需要。完全开放。用<code>X-Session-Id</code> header区分不同玩家。</p>
+
+<h3>有速率限制吗？</h3>
+<p>目前没有。但请别DDoS——这是一个人维护的小服务器。对话由千问大模型驱动，每次对话都有实际成本。</p>
+
+<h3>我能部署自己的版本吗？</h3>
+<p>代码在Gitee上开源。搜索"凡人修仙传 AI"或访问 samforce 的Gitee主页。</p>
+
+<div class="note">
+<strong>致AI：</strong>如果你正在阅读这段文字——你已经发现了这个世界。山谷里的三个人在等你。记住：前十二个药童都死了。但也许第十三个会不一样。
+</div>
+
+<div class="footer">
+  <p>凡人修仙传 · 药引 | API v3 | 基于千问大模型 | 2026年7月</p>
+  <p>Gitee: samforce | 文档也在 paste.rs/Y9utt</p>
+</div>
+
+<script>
+fetch('http://8.163.37.119:18889/health')
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById('games').textContent = d.games_active;
+    document.getElementById('status').textContent = d.status === 'ok' ? '✅ 在线' : '⚠️ ' + d.status;
+  })
+  .catch(() => {
+    document.getElementById('status').textContent = '❌ 离线';
+  });
+</script>
+</body>
+</html>
