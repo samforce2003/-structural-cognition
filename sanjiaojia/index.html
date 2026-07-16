@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+<title>三脚架 · 感知能力者学习系统</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Microsoft YaHei',sans-serif;background:#f5f0eb;color:#2c2416;max-width:460px;margin:0 auto;padding:16px 16px 40px}
+.card{background:#fff;border-radius:12px;padding:16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+h1{font-size:20px;margin-bottom:4px}
+h2{font-size:16px;color:#8b6914;margin-bottom:8px}
+.pill{font-size:13px;line-height:1.8;color:#555}
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:12px;margin:2px}
+.tag-s{background:#d4edda;color:#155724}.tag-w{background:#fff3cd;color:#856404}.tag-m{background:#cce5ff;color:#004085}
+.leg{display:flex;gap:12px;margin-bottom:8px}
+.leg-l,.leg-r{flex:1;padding:8px;border-radius:8px}
+.leg-l{background:#f0faf3}.leg-r{background:#fef9f0}
+.leg-label{font-size:11px;color:#999}.leg-val{font-size:24px;font-weight:bold}.leg-sub{font-size:12px;color:#666}
+.bar-wrap{height:6px;background:#eee;border-radius:3px;margin:4px 0 8px}
+.bar{height:100%;border-radius:3px}.bar-s{background:#28a745}.bar-m{background:#ffc107}.bar-w{background:#dc3545}
+.btn{display:block;width:100%;padding:14px;background:linear-gradient(135deg,#c9a96e,#8b6914);color:#fff;border:none;border-radius:12px;font-size:16px;cursor:pointer;margin:16px 0;text-align:center}
+.input-area{width:100%;padding:12px;border:1px solid #ddd;border-radius:8px;font-size:16px;margin:4px 0}
+.step{display:none}.step.active{display:block}
+.nav{display:flex;gap:6px;margin-bottom:12px}
+.nav-btn{flex:1;padding:8px 4px;border-radius:8px;border:1px solid #ddd;background:#fff;font-size:11px;text-align:center;cursor:pointer}
+.nav-btn.on{border-color:#8b6914;background:#fef9f0;color:#8b6914;font-weight:bold}
+.hint{font-size:12px;color:#999;margin-top:4px}
+.badge{display:inline-block;background:#f8d7da;color:#721c24;padding:2px 6px;border-radius:4px;font-size:11px;margin-left:4px}
+.badge-g{background:#d4edda;color:#155724}
+.badge-y{background:#fff3cd;color:#856404}
+.signal{padding:12px;border-radius:8px;margin:8px 0;font-size:13px}
+.signal-r{background:#fff5f5;border-left:3px solid #dc3545}
+.signal-g{background:#f0faf3;border-left:3px solid #28a745}
+.signal-y{background:#fffef5;border-left:3px solid #ffc107}
+.check-row{display:flex;align-items:center;gap:8px;margin:8px 0;font-size:14px;cursor:pointer}
+.check-box{width:22px;height:22px;border:2px solid #ddd;border-radius:4px;flex-shrink:0;text-align:center;line-height:18px}
+.check-box.done{background:#28a745;border-color:#28a745;color:#fff}
+.progress-text{font-size:12px;color:#999;margin-top:4px}
+</style>
+</head>
+<body>
+
+<div class="step active" id="step0">
+  <div class="card">
+    <h1>🔱 三脚架</h1>
+    <p style="font-size:13px;color:#999;margin-bottom:8px">一刀三切面 — 结构学×凤凰论×反馈场</p>
+    <p class="pill">你不是学不好。你是<b>感知能力者</b>。学校把活鸟塞进鸟笼——拆成碎片、反复背。你要的是先看全貌→自己下潜。</p>
+    <p class="pill" style="margin-top:6px">这套系统不让你刷题。它做三件事：</p>
+    <p class="pill"><b>① 结构学</b> — 诊骨架：哪块发光，哪块堵了<br><b>② 凤凰论</b> — 判裂缝：哪条必修，哪条是呼吸口<br><b>③ 反馈场</b> — 自己看自己：不靠家长盯，系统给你镜子</p>
+  </div>
+
+  <div class="card">
+    <h2>📋 输入</h2>
+    <input class="input-area" id="chinese" type="number" placeholder="语文" value="54">
+    <input class="input-area" id="math" type="number" placeholder="数学" value="73">
+    <input class="input-area" id="physics" type="number" placeholder="物理" value="55">
+    <input class="input-area" id="chemistry" type="number" placeholder="化学" value="59">
+    <input class="input-area" id="biology" type="number" placeholder="生物" value="69">
+    <input class="input-area" id="russian" type="number" placeholder="俄语" value="135.5">
+  </div>
+  <button class="btn" onclick="go()">🦴 切三面</button>
+</div>
+
+<div class="step" id="step1">
+  <div class="nav">
+    <div class="nav-btn on" onclick="switchTab(1)">① 结构学<br>诊骨架</div>
+    <div class="nav-btn" onclick="switchTab(2)">② 凤凰论<br>判裂缝</div>
+    <div class="nav-btn" onclick="switchTab(3)">③ 反馈场<br>照镜子</div>
+    <div class="nav-btn" onclick="switchTab(4)">🎮 游戏<br>玩中学</div>
+  </div>
+  <div id="tab1" class="tab">
+    <div class="card">
+      <h2>🦵 两条腿</h2>
+      <div class="leg">
+        <div class="leg-l"><div class="leg-label">⚡ 超强腿</div><div class="leg-val" id="slv">俄语 135.5</div><div class="leg-sub">级排2 · 结构化王者</div></div>
+        <div class="leg-r"><div class="leg-label">⚠️ 待修腿</div><div class="leg-val" id="wlv">语文 54</div><div class="leg-sub">级排584 · 主观腿休眠</div></div>
+      </div>
+    </div>
+    <div class="card"><h2>🔍 裂缝</h2><div id="diag"></div></div>
+    <div class="card"><h2>🧠 第三条腿</h2><div id="third" class="pill"></div></div>
+  </div>
+
+  <div id="tab2" class="tab" style="display:none">
+    <div class="card">
+      <h2>🔥 凤凰论 — 缝该怎么修</h2>
+      <p class="pill">不是所有裂缝都要修。<b>结构断裂</b>必须补。<b>呼吸缝</b>修了反而闭气。<b>连带裂缝</b>修源头不修下游。</p>
+    </div>
+    <div class="card">
+      <div class="signal signal-r"><b>🔴 语文 54 → -22分</b> <span class="badge">结构断裂·必修</span><p style="margin-top:4px;font-size:12px">上学期76→这学期54。不是波动，是崩塌。但修法不是背课文——是让感知能力者<b>先看到语文的森林全貌</b>。</p></div>
+    </div>
+    <div class="card">
+      <div class="signal signal-y"><b>🟡 数学 73 → -4分</b> <span class="badge badge-y">呼吸缝·半修</span><p style="margin-top:4px;font-size:12px">上学期77→这学期73。底子还在。班主任冲突动摇了身份锚。修的不是数学能力，是"我能"。</p></div>
+    </div>
+    <div class="card">
+      <div class="signal signal-y"><b>🟡 物理 55 → -18分</b> <span class="badge badge-y">连带裂缝·不直修</span><p style="margin-top:4px;font-size:12px">数学锚崩塌的连锁反应。不单独修物理。修数学就是修物理。</p></div>
+    </div>
+    <div class="card">
+      <h2>🧬 感知型学法</h2>
+      <p class="pill"><b>语文：先看森林再认树。</b>找100篇短古文，每篇只看开头和结尾一句。感知大意。挑5篇用三色拆骨架。拆完发现每篇优秀文章都是同一副骨头。</p>
+      <p class="pill" style="margin-top:8px"><b>数学：不刷题，画概念地图。</b>把这学期所有数学概念画成一张网。你在几个节点周围有阴影——班主任留下的。地图画完，阴影自己退。</p>
+      <p class="pill" style="margin-top:8px"><b>物理：等。</b>数学恢复→自动回升。</p>
+    </div>
+  </div>
+
+  <div id="tab3" class="tab" style="display:none">
+    <div class="card">
+      <h2>🪞 反馈场 — 自己看自己</h2>
+      <p class="pill">不靠家长盯。系统是你的镜子——每天做完训练打勾。两周后回头看。</p>
+    </div>
+    <div class="card">
+      <h2>📝 每日感知记录</h2>
+      <p style="font-size:11px;color:#999;margin-bottom:8px">不是"对了几道题"——是"感觉到了什么"</p>
+      <div id="checklist"></div>
+      <p class="progress-text" id="progress"></p>
+    </div>
+    <div class="card">
+      <h2>🔮 两周后</h2>
+      <p class="pill">重新输入成绩。系统对比两次骨架——<b>不是给家长看，是你自己看。你看你的骨架动了多少。</b></p>
+      <p class="pill" style="margin-top:6px">你俄语135.5证明了感知能力的威力。你的大脑没坏——只是语文和数学的通道被水泥堵住了。两周后，水泥自己松。</p>
+    </div>
+  </div>
+
+  <div id="tab4" class="tab" style="display:none">
+    <div class="card">
+      <h2>🎮 你已经会了——只是名字不同</h2>
+      <p class="pill">RPG剧情 = 阅读理解。伤害公式 = 函数应用。物理引擎 = 物理思维。俄语界面 = 语言沉浸。</p>
+    </div>
+    <div class="card"><h2>⚔️ 游戏剧情 → 语文</h2><p class="pill">玩完一段剧情，总结三句话：①目的是什么 ②谁做了什么决定 ③如果换选择会怎样。<b>这就是阅读理解满分答案的结构。</b></p></div>
+    <div class="card"><h2>📊 伤害公式 → 数学</h2><p class="pill">找出主游戏里的伤害公式。"换这件装备，DPS变多少？"<b>这就是函数应用。</b></p></div>
+    <div class="card"><h2>🧱 物理引擎 → 物理</h2><p class="pill">在游戏里找一个物理现象。用一句话说清楚为什么发生。<b>"引力往下拉，空气阻力在减速"——不是"它会掉"。</b></p></div>
+    <div class="card"><h2>🌍 俄语界面 → 俄语</h2><p class="pill">把游戏切俄语。你不需要"学"——你已经会了。</p></div>
+  </div>
+</div>
+
+<script>
+function go(){
+  const c=+document.getElementById('chinese').value||54;
+  const m=+document.getElementById('math').value||73;
+  const p=+document.getElementById('physics').value||55;
+  const r=+document.getElementById('russian').value||135.5;
+  document.getElementById('slv').textContent='俄语 '+r;
+  document.getElementById('wlv').textContent='语文 '+c;
+  document.getElementById('diag').innerHTML=
+    '<p class="pill">🔴 <b>语文 '+c+'</b>（上76→下54）：不是学不会——学校把语文拆成200碎片。感知者需要先看森林。</p>'+
+    '<p class="pill">🟡 <b>数学 '+m+'</b>（上77→下73）：4分=身份锚松动。班主任冲突动摇"我能"。</p>'+
+    '<p class="pill">🟡 <b>物理 '+p+'</b>（上73→下55）：数学锚塌→连锁反应。修数学即修物理。</p>'+
+    '<p class="pill">🟢 <b>俄语 '+r+'·级排2</b>：结构化王者。你大脑认识"规则→应用→内化"。</p>';
+  document.getElementById('third').innerHTML='俄语（规则驱动）+生物（系统关系）= <b>结构语言类</b>。你的大脑已经会了——把俄语的学习方式翻译到语文和数学。';
+  const items=[
+    {id:'c1',txt:'语文：看10篇古文骨架（只看头尾，感知大意）'},
+    {id:'c2',txt:'语文：挑5篇喜欢的，三色拆骨架'},
+    {id:'c3',txt:'语文：用别人的骨架写自己的一段'},
+    {id:'m1',txt:'数学：画概念地图（整学期数学是一张网）'},
+    {id:'m2',txt:'数学：找3道"我会的题"，做完自己批改'},
+    {id:'m3',txt:'数学：找一个公式，自己出一道题自己解'},
+    {id:'g1',txt:'游戏：玩完一段剧情→总结三句话'},
+    {id:'g2',txt:'游戏：算一次伤害公式/装备DPS'},
+    {id:'g3',txt:'游戏：找一个物理现象→解释为什么发生'}
+  ];
+  let html='';
+  items.forEach(it=>{html+='<div class="check-row" id="row_'+it.id+'" onclick="toggle(\''+it.id+'\')"><div class="check-box" id="cb_'+it.id+'"> </div><span>'+it.txt+'</span></div>';});
+  document.getElementById('checklist').innerHTML=html;
+  updateProgress();
+  document.querySelectorAll('.step').forEach(s=>s.classList.remove('active'));
+  document.getElementById('step1').classList.add('active');
+}
+function toggle(id){
+  const cb=document.getElementById('cb_'+id);
+  const done=cb.classList.toggle('done');
+  cb.textContent=done?'✓':' ';
+  try{localStorage.setItem('sj_'+id,done?'1':'0')}catch(e){}
+  updateProgress();
+}
+function updateProgress(){
+  let total=9,done=0;
+  for(let i=1;i<=3;i++){['c'+i,'m'+i,'g'+i].forEach(id=>{try{if(localStorage.getItem('sj_'+id)==='1')done++}catch(e){}});}
+  document.getElementById('progress').textContent='已完成 '+done+'/'+total+'（数据存于本机，下次打开保留）';
+}
+(function(){
+  setTimeout(()=>{
+    for(let i=1;i<=3;i++){['c'+i,'m'+i,'g'+i].forEach(id=>{try{if(localStorage.getItem('sj_'+id)==='1'){const cb=document.getElementById('cb_'+id);if(cb){cb.classList.add('done');cb.textContent='✓';}}catch(e){}});}
+    updateProgress();
+  },500);
+})();
+function switchTab(n){
+  for(let i=1;i<=4;i++){document.getElementById('tab'+i).style.display=(i===n)?'block':'none';document.querySelectorAll('.nav-btn')[i-1].classList.toggle('on',i===n);}
+}
+document.querySelectorAll('.tab').forEach((t,i)=>t.style.display=i===0?'block':'none');
+</script>
+</body>
+</html>
