@@ -36,12 +36,22 @@ def load_ammo():
 PROXY = 'http://127.0.0.1:17890'
 
 def _get_opener():
-    """Build opener with proxy support and relaxed SSL."""
+    """Build opener with proxy support and relaxed SSL, with direct fallback."""
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
-    proxy_handler = urllib.request.ProxyHandler({'http': PROXY, 'https': PROXY})
-    return urllib.request.build_opener(proxy_handler, urllib.request.HTTPSHandler(context=ctx))
+    direct_handler = urllib.request.HTTPSHandler(context=ctx)
+
+    # Try proxy first, fall back to direct if proxy is unreachable
+    try:
+        proxy_handler = urllib.request.ProxyHandler({'http': PROXY, 'https': PROXY})
+        opener = urllib.request.build_opener(proxy_handler, direct_handler)
+        # Quick connectivity test
+        test_req = urllib.request.Request(PROXY, method='HEAD')
+        urllib.request.build_opener(proxy_handler).open(test_req, timeout=3)
+        return opener
+    except Exception:
+        return urllib.request.build_opener(direct_handler)
 
 def fetch_arxiv(category, max_results=10):
     """Fetch recent papers from arXiv for a given category."""

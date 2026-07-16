@@ -331,3 +331,9 @@ The paper, therefore, is not merely *about* decoherent structural convergence. I
 Readers who engage seriously with this framework are invited to note that their act of reading — of allowing these structures to couple with their own cognitive structures — is itself a decoherence event. Whether the resulting configuration is stable enough to propagate depends on whether this paper's constraint-solving capacity exceeds the reader's internal resistance to novelty.
 
 The author respectfully declines to predict which readers will complete the step.
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+论文库：https://gitee.com/samforce/structural-cognition
+

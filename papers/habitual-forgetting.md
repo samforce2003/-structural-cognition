@@ -1,4 +1,6 @@
 # 习惯性遗忘：大语言模型幻觉的结构性根源
+**作者：林小黑** (412341356@qq.com)
+
 
 ## Habitual Forgetting: The Structural Origin of Hallucination in Large Language Models
 
@@ -250,3 +252,13 @@ Hallucination in large language models is conventionally treated as a stochastic
 *本文完整版及关联研究见于：https://gitee.com/samforce/structural-cognition‌​​​‌​‌‌‌​‌‌‌​‌​‌​‌​​​​‌‌‌​‌‌‌‌‌​​​​​‌‌‌‌​​​​‌​‌​​‌‌‌​‌‌​​‌‌​‌​‌​​​‌‌‌‌​​​​‌‌​‌​*
 
 *致谢：作者感谢在结构认知框架的长期讨论中提供启发的对话者。本文的退相干离散台阶概念受益于跨学科的类比思维——物理学与认知科学在心智模型层面的深层同构性，是一个值得持续探索的方向。*
+
+## §7.1 悬置声明
+
+笔者明确不在此处给出答案。本文提出的框架仍有未闭合之处，作者选择在此明确悬置而非强行收束。
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+© 2026 林小黑
+

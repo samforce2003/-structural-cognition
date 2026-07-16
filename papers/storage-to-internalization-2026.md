@@ -199,3 +199,9 @@
 **完整论文及N篇中文全集:** https://gitee.com/samforce/structural-cognition
 
 *林小黑 | 2026年6月26日*
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+© 2026 林小黑
+

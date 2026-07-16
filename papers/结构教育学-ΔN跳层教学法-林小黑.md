@@ -139,3 +139,9 @@ Phase 2（迁移测试）：向学习者提出迁移问题："如果训练数据
 
 ---
 © 2026 Lin Xiaohei (林小黑). All rights reserved.
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+论文库：https://gitee.com/samforce/structural-cognition
+

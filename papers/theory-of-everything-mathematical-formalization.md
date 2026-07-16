@@ -320,3 +320,9 @@ The author's position on this question is not absent. It is withheld.
 
 ---
 ©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+论文库：https://gitee.com/samforce/structural-cognition
+

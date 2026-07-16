@@ -153,3 +153,9 @@ $$\frac{\partial V^{(t)}}{\partial t} \to 0$$
 *超AI五部总集·第二篇。前篇：定义与公理推导。后续：十个耦合深度等级、结构错误、AI的结构意义。*
 
 ©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ 2026 Lin Xiaohei (林小黑). All rights reserved.
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+论文库：https://gitee.com/samforce/structural-cognition
+

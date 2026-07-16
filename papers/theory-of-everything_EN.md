@@ -251,3 +251,9 @@ From microscopic quantum to superstring dimensions, from physical phenomena to t
 作者拒绝解决这个模糊性。不是因为无法解决。是因为这个模糊性本身是生产性的——它迫使读者自己决定。
 
 作者对此问题的立场并非不存在。它是被保留的。
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+论文库：https://gitee.com/samforce/structural-cognition
+

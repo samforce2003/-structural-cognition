@@ -173,3 +173,4 @@ If it is understood as **normative** — then it becomes a structural theory of 
 The author refuses to resolve this ambiguity. Not because it cannot be resolved. Because the ambiguity itself is productive — it forces each reader to decide for themselves.
 
 The author's position on this question is not absent. It is withheld.
+论文库：https://gitee.com/samforce/structural-cognition

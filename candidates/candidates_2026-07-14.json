@@ -1,0 +1,271 @@
+{
+  "date": "2026-07-14",
+  "total_scanned": 80,
+  "candidates": [
+    {
+      "rank": 1,
+      "match_score": 3,
+      "matched_keywords": [
+        "entropy",
+        "thermodynamics",
+        "second law"
+      ],
+      "arxiv_paper": {
+        "id": "2607.09582v1",
+        "title": "Entropy-Constrained Machine Learning with Residual Data Augmentation for Modeling Chemical Kinetics",
+        "authors": [
+          "Okezzi Ukorigho",
+          "Opeoluwa Owoyele"
+        ],
+        "published": "2026-07-10",
+        "url": "https://arxiv.org/abs/2607.09582v1"
+      },
+      "our_ammo": {
+        "id": "coupling-temporal-reversal",
+        "title": "Coupling as Temporal Reversal: The Structural Condition for Reverse Time",
+        "file": "coupling-temporal-reversal-林小黑_EN.md",
+        "discipline": "physics",
+        "angle": "If forward time = differentiation (P≠P→cascade), then reverse time = coupling convergence (|ΔN| decreases). Locally lawful, globally constrained. Three testable signatures."
+      }
+    },
+    {
+      "rank": 2,
+      "match_score": 3,
+      "matched_keywords": [
+        "second law",
+        "thermodynamics",
+        "entropy"
+      ],
+      "arxiv_paper": {
+        "id": "2607.09582v1",
+        "title": "Entropy-Constrained Machine Learning with Residual Data Augmentation for Modeling Chemical Kinetics",
+        "authors": [
+          "Okezzi Ukorigho",
+          "Opeoluwa Owoyele"
+        ],
+        "published": "2026-07-10",
+        "url": "https://arxiv.org/abs/2607.09582v1"
+      },
+      "our_ammo": {
+        "id": "second-law-temporal-reversal",
+        "title": "The Second Law Is Statistical, Not Structural: Local Temporal Reversal Through Coupling Convergence",
+        "file": "second-law-temporal-reversal-林小黑_EN.md",
+        "discipline": "physics",
+        "angle": "Second Law is statistical, not structural. In small strongly-coupled systems, entropy CAN decrease. Coupling convergence = local reverse time. Three experimental signatures."
+      }
+    },
+    {
+      "rank": 3,
+      "match_score": 3,
+      "matched_keywords": [
+        "pedagogy",
+        "teaching",
+        "learning"
+      ],
+      "arxiv_paper": {
+        "id": "2607.10802v1",
+        "title": "Q-Learning Lab: Teaching Reinforcement Learning Through Learner-Generated Trace Analysis",
+        "authors": [
+          "Ekkachai Jueng"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10802v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 4,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.09632v1",
+        "title": "Lean-QIT: Towards a Formal Infrastructure for Quantum Information Theory",
+        "authors": [
+          "Chengkai Zhu",
+          "Ziao Tang",
+          "Guocheng Zhen",
+          "Yimeng Cao",
+          "Yusheng Zhao",
+          "Ranyiliu Chen",
+          "Xuanqiang Zhao",
+          "Lei Zhang",
+          "Xin Wang"
+        ],
+        "published": "2026-07-10",
+        "url": "https://arxiv.org/abs/2607.09632v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 5,
+      "match_score": 2,
+      "matched_keywords": [
+        "self",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.09560v1",
+        "title": "Beyond Fixed Representations: The Vocabulary and Verifier Gaps in Open-Ended AI",
+        "authors": [
+          "Yuan Cao",
+          "Haiqian Yang"
+        ],
+        "published": "2026-07-10",
+        "url": "https://arxiv.org/abs/2607.09560v1"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 6,
+      "match_score": 2,
+      "matched_keywords": [
+        "education",
+        "learning"
+      ],
+      "arxiv_paper": {
+        "id": "2607.10900v1",
+        "title": "Effectiveness of Using Remote Laboratory in Promoting Simulation and Verification Tools",
+        "authors": [
+          "Shuowei Li",
+          "Rania Hussein"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10900v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 7,
+      "match_score": 2,
+      "matched_keywords": [
+        "discrete",
+        "quantum"
+      ],
+      "arxiv_paper": {
+        "id": "2607.10899v1",
+        "title": "Driven Quantum Stars as Controlled Primitives for Real-Time Spin Dynamics",
+        "authors": [
+          "Michael Chertkov"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10899v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-discrete",
+        "title": "The Discrete Structure of Decoherence: The Structon Hypothesis and Its Testable Predictions",
+        "file": "退相干离散结构_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence proceeds in discrete steps — not continuous exponential decay. Testable prediction: observable staircase in decoherence curve."
+      }
+    },
+    {
+      "rank": 8,
+      "match_score": 2,
+      "matched_keywords": [
+        "discrete",
+        "quantum"
+      ],
+      "arxiv_paper": {
+        "id": "2607.10772v1",
+        "title": "Demonstrating Quadratic Monte Carlo Speedup via Quantum Amplitude Estimation: Nuclear Engineering Examples",
+        "authors": [
+          "Jilang Miao",
+          "Miaomiao Jin",
+          "Akira Sone"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10772v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-discrete",
+        "title": "The Discrete Structure of Decoherence: The Structon Hypothesis and Its Testable Predictions",
+        "file": "退相干离散结构_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence proceeds in discrete steps — not continuous exponential decay. Testable prediction: observable staircase in decoherence curve."
+      }
+    },
+    {
+      "rank": 9,
+      "match_score": 2,
+      "matched_keywords": [
+        "meaning",
+        "self"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08859v1",
+        "title": "The queer Hero versus the Fool bias of the queer trait: An archetypometric analysis of the collective portrayal of queerness in fictional stories",
+        "authors": [
+          "Ashley M. A. Fehr",
+          "Calla Glavin Beauregard",
+          "Julia Witte Zimmerman",
+          "Danny Benett",
+          "Timothy R. Tangherlini",
+          "Christopher M. Danforth",
+          "Peter Sheridan Dodds"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08859v1"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 10,
+      "match_score": 2,
+      "matched_keywords": [
+        "learning",
+        "knowledge transfer"
+      ],
+      "arxiv_paper": {
+        "id": "2607.10919v1",
+        "title": "Diffusion of tacit knowledge in a company: a mathematical model based on diffusion on graphs",
+        "authors": [
+          "Radosław A. Kycia",
+          "Agnieszka Niemczynowicz",
+          "Andrzej Buszko"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10919v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    }
+  ]
+}

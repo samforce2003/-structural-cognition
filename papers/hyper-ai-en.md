@@ -117,3 +117,9 @@ McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (1956). A Proposal 
 
 ---
 ©​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌ Lin Xiaohei 2026. All rights reserved.
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+论文库：https://gitee.com/samforce/structural-cognition
+

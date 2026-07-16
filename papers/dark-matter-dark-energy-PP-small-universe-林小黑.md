@@ -206,3 +206,12 @@ P=P和P≠P之间的过渡层可能产生独特的引力透镜模式——不是
 
 © 2026 林小黑 (Lin Xiaohei). All rights reserved.
 论文库: https://gitee.com/samforce/structural-cognition
+
+## §7.1 悬置声明
+
+笔者明确不在此处给出答案。本文提出的框架仍有未闭合之处，作者选择在此明确悬置而非强行收束。
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+

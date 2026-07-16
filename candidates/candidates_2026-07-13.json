@@ -1,0 +1,340 @@
+{
+  "date": "2026-07-13",
+  "total_scanned": 80,
+  "candidates": [
+    {
+      "rank": 1,
+      "match_score": 3,
+      "matched_keywords": [
+        "education",
+        "pedagogy",
+        "learning"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08842v1",
+        "title": "L2-Bench: An Evaluation Benchmark for Measuring LLM Capabilities in Second Language Education",
+        "authors": [
+          "James Edgell",
+          "Wm. Matthew Kennedy",
+          "Ben Knight",
+          "Danielle Carvalho",
+          "Martin Ku"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08842v1",
+        "category": "cs.CY"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 2,
+      "match_score": 3,
+      "matched_keywords": [
+        "second law",
+        "entropy",
+        "fluctuation theorem"
+      ],
+      "arxiv_paper": {
+        "id": "2607.09615v1",
+        "title": "Fluctuation theorems for thermally isolated driven quantum systems: nonadiabaticity, excess work and strong inequalities",
+        "authors": [
+          "J. V. M. Steimetz",
+          "M. Campisi",
+          "M. V. S. Bonança"
+        ],
+        "published": "2026-07-10",
+        "url": "https://arxiv.org/abs/2607.09615v1",
+        "category": "quant-ph"
+      },
+      "our_ammo": {
+        "id": "second-law-temporal-reversal",
+        "title": "The Second Law Is Statistical, Not Structural: Local Temporal Reversal Through Coupling Convergence",
+        "file": "second-law-temporal-reversal-林小黑_EN.md",
+        "discipline": "physics",
+        "angle": "Second Law is statistical, not structural. In small strongly-coupled systems, entropy CAN decrease. Coupling convergence = local reverse time. Three experimental signatures."
+      }
+    },
+    {
+      "rank": 3,
+      "match_score": 2,
+      "matched_keywords": [
+        "meaning",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08758v1",
+        "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+        "authors": [
+          "Yifan Zhou",
+          "Qihao Yang",
+          "Yan Li",
+          "Donggang Li",
+          "Xiru Hu",
+          "Hokin Deng",
+          "Ziyang Gong",
+          "Xuanyi Zhou",
+          "Huacan Wang",
+          "Xiangchao Yan",
+          "Wanghan Xu",
+          "Wenlong Zhang",
+          "Shaofeng Zhang",
+          "Yue Zhou",
+          "Yifan Yang",
+          "Zhihang Zhong",
+          "Xue Yang"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08758v1",
+        "category": "cs.AI"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 4,
+      "match_score": 2,
+      "matched_keywords": [
+        "education",
+        "learning"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08748v1",
+        "title": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
+        "authors": [
+          "Kristina Schaaff",
+          "Quintus Stierstorfer",
+          "Valerie Heckel"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08748v1",
+        "category": "cs.AI"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 5,
+      "match_score": 2,
+      "matched_keywords": [
+        "labor",
+        "coupling"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08662v1",
+        "title": "WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search",
+        "authors": [
+          "Xiaoshuai Song",
+          "Liancheng Zhang",
+          "Kangzhi Zhao",
+          "Yutao Zhu",
+          "Zhongyuan Wang",
+          "Guanting Dong",
+          "Jinghan Yang",
+          "Han Li",
+          "Kun Gai",
+          "Ji-Rong Wen",
+          "Zhicheng Dou"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08662v1",
+        "category": "cs.CL"
+      },
+      "our_ammo": {
+        "id": "ai-society-phase",
+        "title": "After Production Goes to AI: Societal Structural Phase Transition from Sustained Coupling to Oscillatory Coupling",
+        "file": "生产交给AI后的社会结构相变-持存耦合到振荡耦合-林小黑_EN.html",
+        "discipline": "social-science",
+        "angle": "When production shifts to AI, society undergoes structural phase transition — from sustained coupling to oscillatory coupling."
+      }
+    },
+    {
+      "rank": 6,
+      "match_score": 2,
+      "matched_keywords": [
+        "meaning",
+        "self"
+      ],
+      "arxiv_paper": {
+        "id": "2607.08859v1",
+        "title": "The queer Hero versus the Fool bias of the queer trait: An archetypometric analysis of the collective portrayal of queerness in fictional stories",
+        "authors": [
+          "Ashley M. A. Fehr",
+          "Calla Glavin Beauregard",
+          "Julia Witte Zimmerman",
+          "Danny Benett",
+          "Timothy R. Tangherlini",
+          "Christopher M. Danforth",
+          "Peter Sheridan Dodds"
+        ],
+        "published": "2026-07-09",
+        "url": "https://arxiv.org/abs/2607.08859v1",
+        "category": "cs.CY"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 7,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.09663v1",
+        "title": "Phase-switchable nonreciprocal entanglement via magnon squeezing in ring-cavity optomagnomechanics",
+        "authors": [
+          "Z. Imara",
+          "A. El Allati",
+          "A. Belfakir",
+          "K. El Anouz",
+          "I. P. Castillo"
+        ],
+        "published": "2026-07-10",
+        "url": "https://arxiv.org/abs/2607.09663v1",
+        "category": "quant-ph"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 8,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "prediction"
+      ],
+      "arxiv_paper": {
+        "id": "2607.09652v1",
+        "title": "Silicon-Germanium Heterostructures with Enhanced Valley Splitting for Spin Qubits",
+        "authors": [
+          "David W. Kanaar",
+          "Efrain Martinez",
+          "Peihong Zhang",
+          "Mark F. Gyure"
+        ],
+        "published": "2026-07-10",
+        "url": "https://arxiv.org/abs/2607.09652v1",
+        "category": "quant-ph"
+      },
+      "our_ammo": {
+        "id": "decoherence-discrete",
+        "title": "The Discrete Structure of Decoherence: The Structon Hypothesis and Its Testable Predictions",
+        "file": "退相干离散结构_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence proceeds in discrete steps — not continuous exponential decay. Testable prediction: observable staircase in decoherence curve."
+      }
+    },
+    {
+      "rank": 9,
+      "match_score": 2,
+      "matched_keywords": [
+        "discrete",
+        "quantum"
+      ],
+      "arxiv_paper": {
+        "id": "2607.09643v1",
+        "title": "Optimality of the free quantum evolution: the general case with nodes",
+        "authors": [
+          "Laura M. Morato"
+        ],
+        "published": "2026-07-10",
+        "url": "https://arxiv.org/abs/2607.09643v1",
+        "category": "quant-ph"
+      },
+      "our_ammo": {
+        "id": "decoherence-discrete",
+        "title": "The Discrete Structure of Decoherence: The Structon Hypothesis and Its Testable Predictions",
+        "file": "退相干离散结构_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence proceeds in discrete steps — not continuous exponential decay. Testable prediction: observable staircase in decoherence curve."
+      }
+    },
+    {
+      "rank": 10,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.09632v1",
+        "title": "Lean-QIT: Towards a Formal Infrastructure for Quantum Information Theory",
+        "authors": [
+          "Chengkai Zhu",
+          "Ziao Tang",
+          "Guocheng Zhen",
+          "Yimeng Cao",
+          "Yusheng Zhao",
+          "Ranyiliu Chen",
+          "Xuanqiang Zhao",
+          "Lei Zhang",
+          "Xin Wang"
+        ],
+        "published": "2026-07-10",
+        "url": "https://arxiv.org/abs/2607.09632v1",
+        "category": "quant-ph"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 11,
+      "match_score": 2,
+      "matched_keywords": [
+        "entropy",
+        "second law"
+      ],
+      "arxiv_paper": {
+        "id": "2607.09615v1",
+        "title": "Fluctuation theorems for thermally isolated driven quantum systems: nonadiabaticity, excess work and strong inequalities",
+        "authors": [
+          "J. V. M. Steimetz",
+          "M. Campisi",
+          "M. V. S. Bonança"
+        ],
+        "published": "2026-07-10",
+        "url": "https://arxiv.org/abs/2607.09615v1",
+        "category": "quant-ph"
+      },
+      "our_ammo": {
+        "id": "coupling-temporal-reversal",
+        "title": "Coupling as Temporal Reversal: The Structural Condition for Reverse Time",
+        "file": "coupling-temporal-reversal-林小黑_EN.md",
+        "discipline": "physics",
+        "angle": "If forward time = differentiation (P≠P→cascade), then reverse time = coupling convergence (|ΔN| decreases). Locally lawful, globally constrained. Three testable signatures."
+      }
+    }
+  ]
+}

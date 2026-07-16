@@ -1,0 +1,178 @@
+{
+  "date": "2026-07-16",
+  "total_scanned": 80,
+  "candidates": [
+    {
+      "rank": 1,
+      "match_score": 2,
+      "matched_keywords": [
+        "learning",
+        "curriculum"
+      ],
+      "arxiv_paper": {
+        "id": "2607.13370v1",
+        "title": "Learning Engagement Assistant (LEA): Cross-Course Scalability and Classroom Evaluation of an Agentic AI Tutoring System",
+        "authors": [
+          "Teri Rumble",
+          "Javad Zarrin",
+          "P. George Lovell",
+          "Ruth Falconer"
+        ],
+        "published": "2026-07-15",
+        "url": "https://arxiv.org/abs/2607.13370v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 2,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.13008v1",
+        "title": "High-fidelity entanglement of polar molecules by dynamic geometric control",
+        "authors": [
+          "Scarlett S. Yu",
+          "Avikar Periwal",
+          "Jiaqi You",
+          "Zirui Liu",
+          "Qinshu Lyu",
+          "Youngju Cho",
+          "Loïc Anderegg",
+          "Eunmi Chae",
+          "John M. Doyle"
+        ],
+        "published": "2026-07-14",
+        "url": "https://arxiv.org/abs/2607.13008v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 3,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.12996v1",
+        "title": "Expressibility and trainability of a two-dimensional pairwise quantum-circuit ansatz",
+        "authors": [
+          "Shuai Zhang",
+          "Wei Liu",
+          "Ji-Chong Yang"
+        ],
+        "published": "2026-07-14",
+        "url": "https://arxiv.org/abs/2607.12996v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 4,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "quantum computing"
+      ],
+      "arxiv_paper": {
+        "id": "2607.12988v1",
+        "title": "A cryogenic neutral-atom platform with full optical access and 2-hour trap lifetime",
+        "authors": [
+          "Akhil Kumar",
+          "Lorenzo Festa",
+          "Avishay Grinberg",
+          "Eran Reches",
+          "Dimitrios Tsevas",
+          "Kevin P. Mours",
+          "Zhao Zhang",
+          "Robin Eberhard",
+          "Sebastian Blatt",
+          "Andrea Alberti",
+          "Johannes Zeiher",
+          "Immanuel Bloch",
+          "Max Melchner"
+        ],
+        "published": "2026-07-14",
+        "url": "https://arxiv.org/abs/2607.12988v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 5,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.12983v1",
+        "title": "The log log jam in Gaussian state tomography",
+        "authors": [
+          "Sitan Chen",
+          "Weiyuan Gong",
+          "Qi Ye",
+          "Zhihan Zhang"
+        ],
+        "published": "2026-07-14",
+        "url": "https://arxiv.org/abs/2607.12983v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 6,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "deterministic"
+      ],
+      "arxiv_paper": {
+        "id": "2607.12968v1",
+        "title": "Maximal Classicalization of Finite-Group Quantum Reference-Frame Noise",
+        "authors": [
+          "Maxim V. Churilov"
+        ],
+        "published": "2026-07-14",
+        "url": "https://arxiv.org/abs/2607.12968v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v2",
+        "title": "Structural Theory of Decoherence v2: Cross-System Validation of Constraint Solving Convergence",
+        "file": "退相干v2_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence rate proportional to nesting rate difference — with triple cross-validation (3 AI models + simulation + collider)."
+      }
+    }
+  ]
+}

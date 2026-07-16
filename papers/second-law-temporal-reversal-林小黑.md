@@ -184,3 +184,8 @@ dS_全局 > 0永远成立。
 
 © 2026 林小黑 (Lin Xiaohei). All rights reserved.
 论文库: https://gitee.com/samforce/structural-cognition
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+

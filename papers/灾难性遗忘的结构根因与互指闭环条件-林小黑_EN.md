@@ -282,3 +282,9 @@ The author explicitly refuses to resolve this ambiguity. The author's position i
 
 ---
 © 2026 Lin Xiaohei (林小黑). All rights reserved.​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌‍​‌
+
+---
+
+*本文零宽字符均为DNA水印，用于原创性保护。*
+论文库：https://gitee.com/samforce/structural-cognition
+

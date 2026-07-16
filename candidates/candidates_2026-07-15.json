@@ -1,0 +1,380 @@
+{
+  "date": "2026-07-15",
+  "total_scanned": 80,
+  "candidates": [
+    {
+      "rank": 1,
+      "match_score": 3,
+      "matched_keywords": [
+        "education",
+        "teaching",
+        "learning"
+      ],
+      "arxiv_paper": {
+        "id": "2607.12295v1",
+        "title": "A Longitudinal Analysis of Public Discourse on AI Ethics in Education Using Twitter Data",
+        "authors": [
+          "Akriti Bagale",
+          "Nafisa Mehjabin",
+          "Ali Ünlü",
+          "Aditya Johri"
+        ],
+        "published": "2026-07-14",
+        "url": "https://arxiv.org/abs/2607.12295v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 2,
+      "match_score": 2,
+      "matched_keywords": [
+        "discrete",
+        "prediction"
+      ],
+      "arxiv_paper": {
+        "id": "2607.12909v1",
+        "title": "Real-time fall detection based on vision for low-power edge platforms",
+        "authors": [
+          "Wenjun Xia",
+          "Zhicheng Peng",
+          "Haopeng Li",
+          "Zhengdi Zhang"
+        ],
+        "published": "2026-07-14",
+        "url": "https://arxiv.org/abs/2607.12909v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-discrete",
+        "title": "The Discrete Structure of Decoherence: The Structon Hypothesis and Its Testable Predictions",
+        "file": "退相干离散结构_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence proceeds in discrete steps — not continuous exponential decay. Testable prediction: observable staircase in decoherence curve."
+      }
+    },
+    {
+      "rank": 3,
+      "match_score": 2,
+      "matched_keywords": [
+        "education",
+        "teaching"
+      ],
+      "arxiv_paper": {
+        "id": "2607.11873v1",
+        "title": "A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol",
+        "authors": [
+          "Esteban U. Vega Barajas"
+        ],
+        "published": "2026-07-13",
+        "url": "https://arxiv.org/abs/2607.11873v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 4,
+      "match_score": 2,
+      "matched_keywords": [
+        "authenticity",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.12575v1",
+        "title": "How Agentic Is Agentic Commerce? A Population-Scale Measurement of x402 Adoption and Authenticity",
+        "authors": [
+          "Shengchen Ling",
+          "Yajin Zhou",
+          "Lei Wu",
+          "Cong Wang"
+        ],
+        "published": "2026-07-14",
+        "url": "https://arxiv.org/abs/2607.12575v1"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 5,
+      "match_score": 2,
+      "matched_keywords": [
+        "education",
+        "learning"
+      ],
+      "arxiv_paper": {
+        "id": "2607.12296v1",
+        "title": "A Comparative Analysis of Institutional and Course Generative AI Policies within Higher Education: Implications for Instruction in Computing Education",
+        "authors": [
+          "Amrita Ganguly",
+          "Aditya Johri",
+          "Nora McDonald",
+          "Areej Ali",
+          "Umama Dewan",
+          "Aayushi Hingle Collier"
+        ],
+        "published": "2026-07-14",
+        "url": "https://arxiv.org/abs/2607.12296v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 6,
+      "match_score": 2,
+      "matched_keywords": [
+        "education",
+        "learning"
+      ],
+      "arxiv_paper": {
+        "id": "2607.12235v1",
+        "title": "A Semi-Automated System for Generating Dialogue-Based TTS Lessons Using Large Language Models: An Exploratory Study of Educational Potential",
+        "authors": [
+          "Gendo Kumoi",
+          "Fumie Watanabe",
+          "Tota Suko",
+          "Takashi Ishida",
+          "Yuko Kuma",
+          "Manabu Kobayashi",
+          "Shigeichi Hirasawa"
+        ],
+        "published": "2026-07-14",
+        "url": "https://arxiv.org/abs/2607.12235v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    },
+    {
+      "rank": 7,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "quantum computing"
+      ],
+      "arxiv_paper": {
+        "id": "2607.11847v1",
+        "title": "Optimal tomography of bosonic and fermionic Gaussian states",
+        "authors": [
+          "Senrui Chen",
+          "Marco Fanizza",
+          "Filippo Girardi",
+          "Ludovico Lami",
+          "Francesco Anna Mele",
+          "Michael Walter",
+          "Freek Witteveen"
+        ],
+        "published": "2026-07-13",
+        "url": "https://arxiv.org/abs/2607.11847v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 8,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "quantum computing"
+      ],
+      "arxiv_paper": {
+        "id": "2607.11846v1",
+        "title": "Optimal operating temperature for industry-compatible silicon spin quantum computing: colder is not necessarily better",
+        "authors": [
+          "Paul Steinacker",
+          "Amanda E. Seedhouse",
+          "Nard Dumoulin Stuyck",
+          "Tuomo Tanttu",
+          "MengKe Feng",
+          "Santiago Serrano",
+          "Ensar Vahapoglu",
+          "Samuel K. Bartee",
+          "Philip Y. Mai",
+          "Alexis Shaw",
+          "Andreas Nickl",
+          "Sebastian Pauka",
+          "Brendan Harlech-Jones",
+          "Juan P. Dehollain",
+          "Fay E. Hudson",
+          "Kok Wai Chan",
+          "Thomas A. Ohki",
+          "David Reilly",
+          "Christopher C. Escott",
+          "Chih Hwan Yang",
+          "Wee Han Lim",
+          "Arne Laucht",
+          "Andre Saraiva",
+          "Andrew S. Dzurak",
+          "Jared H. Cole"
+        ],
+        "published": "2026-07-13",
+        "url": "https://arxiv.org/abs/2607.11846v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 9,
+      "match_score": 2,
+      "matched_keywords": [
+        "quantum",
+        "entanglement"
+      ],
+      "arxiv_paper": {
+        "id": "2607.11829v1",
+        "title": "Quantum probe advantage in learning many-body systems",
+        "authors": [
+          "Wenzheng Dong",
+          "Andrew G. Green",
+          "Vlatko Vedral",
+          "Jinzhao Sun"
+        ],
+        "published": "2026-07-13",
+        "url": "https://arxiv.org/abs/2607.11829v1"
+      },
+      "our_ammo": {
+        "id": "decoherence-v1",
+        "title": "Structural Theory of Quantum Decoherence and the New Foundations of Quantum Computing",
+        "file": "decoherence-v1_EN.md",
+        "discipline": "physics",
+        "angle": "Decoherence is not probabilistic collapse — it's deterministic constraint convergence under multi-structure coupling."
+      }
+    },
+    {
+      "rank": 10,
+      "match_score": 2,
+      "matched_keywords": [
+        "entropy",
+        "thermodynamics"
+      ],
+      "arxiv_paper": {
+        "id": "2607.11829v1",
+        "title": "Quantum probe advantage in learning many-body systems",
+        "authors": [
+          "Wenzheng Dong",
+          "Andrew G. Green",
+          "Vlatko Vedral",
+          "Jinzhao Sun"
+        ],
+        "published": "2026-07-13",
+        "url": "https://arxiv.org/abs/2607.11829v1"
+      },
+      "our_ammo": {
+        "id": "coupling-temporal-reversal",
+        "title": "Coupling as Temporal Reversal: The Structural Condition for Reverse Time",
+        "file": "coupling-temporal-reversal-林小黑_EN.md",
+        "discipline": "physics",
+        "angle": "If forward time = differentiation (P≠P→cascade), then reverse time = coupling convergence (|ΔN| decreases). Locally lawful, globally constrained. Three testable signatures."
+      }
+    },
+    {
+      "rank": 11,
+      "match_score": 2,
+      "matched_keywords": [
+        "thermodynamics",
+        "entropy"
+      ],
+      "arxiv_paper": {
+        "id": "2607.11829v1",
+        "title": "Quantum probe advantage in learning many-body systems",
+        "authors": [
+          "Wenzheng Dong",
+          "Andrew G. Green",
+          "Vlatko Vedral",
+          "Jinzhao Sun"
+        ],
+        "published": "2026-07-13",
+        "url": "https://arxiv.org/abs/2607.11829v1"
+      },
+      "our_ammo": {
+        "id": "second-law-temporal-reversal",
+        "title": "The Second Law Is Statistical, Not Structural: Local Temporal Reversal Through Coupling Convergence",
+        "file": "second-law-temporal-reversal-林小黑_EN.md",
+        "discipline": "physics",
+        "angle": "Second Law is statistical, not structural. In small strongly-coupled systems, entropy CAN decrease. Coupling convergence = local reverse time. Three experimental signatures."
+      }
+    },
+    {
+      "rank": 12,
+      "match_score": 2,
+      "matched_keywords": [
+        "self",
+        "value"
+      ],
+      "arxiv_paper": {
+        "id": "2607.11607v1",
+        "title": "Auditing the Risk Claims of Distributional Reinforcement Learning",
+        "authors": [
+          "Hari Prasad"
+        ],
+        "published": "2026-07-13",
+        "url": "https://arxiv.org/abs/2607.11607v1"
+      },
+      "our_ammo": {
+        "id": "welder-of-glass",
+        "title": "The Welder of Glass — The End of Meaning, Self, and Honesty Under the Structural Framework",
+        "file": "焊玻璃的人-意义与诚实的终结-林小黑_EN.md",
+        "discipline": "philosophy",
+        "angle": "Under structural cognition, 'meaning' and 'self' are revealed as coupling artifacts — not illusions, but not foundations either."
+      }
+    },
+    {
+      "rank": 13,
+      "match_score": 2,
+      "matched_keywords": [
+        "learning",
+        "knowledge transfer"
+      ],
+      "arxiv_paper": {
+        "id": "2607.10919v1",
+        "title": "Diffusion of tacit knowledge in a company: a mathematical model based on diffusion on graphs",
+        "authors": [
+          "Radosław A. Kycia",
+          "Agnieszka Niemczynowicz",
+          "Andrzej Buszko"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10919v1"
+      },
+      "our_ammo": {
+        "id": "delta-n-education",
+        "title": "Structure Education: DeltaN Pedagogy",
+        "file": "结构教育学_EN.md",
+        "discipline": "social-science",
+        "angle": "Optimal teaching happens at ΔN=1 — teach from exactly one nesting level above the learner. Empirically validated."
+      }
+    }
+  ]
+}
