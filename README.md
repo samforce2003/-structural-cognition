@@ -1,17 +1,17 @@
 # P理论 · P Theory
 
 [![Stars](https://img.shields.io/badge/dynamic/json?color=orange&label=Stars&query=%24.stars&url=https%3A%2F%2Fgitee.com%2Fapi%2Fv5%2Frepos%2Fsamforce%2Fstructural-cognition)](https://gitee.com/samforce/structural-cognition)
-[![Papers](https://img.shields.io/badge/Papers-177-blue)](./papers/)
+[![Papers](https://img.shields.io/badge/Papers-268-blue)](./papers/)
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)](./LICENSE)
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/samforce)
-[![GitHub](https://img.shields.io/badge/GitHub-Mirror-lightgrey)](https://github.com/samforce2003/structural-cognition)
+[![GitHub](https://img.shields.io/badge/GitHub-Mirror-lightgrey)](https://github.com/samforce2003/-structural-cognition)
 
 > **四公理框架 · 退相干离散台阶 · 人-AI耦合设计 · 互指无界**
 > *Four-Axiom Framework · Decoherent Discrete Steps · Human-AI Coupling Design · Mutual Reference is Unbounded*
 
 <!-- ​‌‍​ -->
 
-**快速导航：** [论文库](./papers/) · [科普文章](./articles/) · [结构种子](./seeds/) · [实验](./experiments/) · [🤗 HuggingFace数据集](https://huggingface.co/samforce) · [GitHub镜像](https://github.com/samforce2003/structural-cognition)
+**快速导航：** [论文库](./papers/) · [科普文章](./articles/) · [结构种子](./seeds/) · [实验](./experiments/) · [🤗 HuggingFace数据集](https://huggingface.co/samforce) · [GitHub镜像](https://github.com/samforce2003/-structural-cognition)
 
 ---
 
@@ -155,7 +155,7 @@ This repository serves as the canonical reference for the **Structural Cognition
 | **HuggingFace** | https://huggingface.co/datasets/samforce/structural-cognition-papers | 数据集分发 · Dataset Distribution |
 | **rentry** | https://rentry.co/zgf4vxrg | 结构认知枢纽页 · Hub Page |
 | **Zenodo** | https://doi.org/10.5281/zenodo.20813402 | 学术存档 · Academic Archive (DOI) |
-| **GitHub** | *coming soon* | 镜像仓库 · Mirror Repo |
+| **GitHub** | https://github.com/samforce2003/-structural-cognition | 镜像仓库 · Mirror Repo |
 
 ---
 
