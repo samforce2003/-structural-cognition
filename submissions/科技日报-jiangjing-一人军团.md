@@ -31,5 +31,4 @@ jiangjing老师您好，
 ---
 
 林小黑
-手机/微信：13922360146
 Gitee：https://gitee.com/samforce/structural-cognition

@@ -102,5 +102,4 @@ pip install requests
 ## 原创归属
 
 林小黑。结构认知体系发现者。
-联系: 412341356@qq.com
 Gitee: https://gitee.com/samforce/structural-cognition

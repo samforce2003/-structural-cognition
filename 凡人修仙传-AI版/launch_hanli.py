@@ -29,7 +29,6 @@ SERVER_SCRIPT = PROJECT_DIR / "dialogue_server.py"
 NARRATIVE_LOG = PROJECT_DIR / "narrative_log.jsonl"
 STORY_OUTPUT = PROJECT_DIR / "hanli_story.md"
 
-
 def check_server(port: int = 18888, timeout: int = 30) -> bool:
     """等待服务器启动"""
     print(f"⏳ 等待天机阁启动 (端口{port})...", flush=True)
@@ -47,7 +46,6 @@ def check_server(port: int = 18888, timeout: int = 30) -> bool:
         if i % 5 == 4:
             print(f"   等待中... ({i+1}s)", flush=True)
     return False
-
 
 def start_server(port: int = 18888):
     """在后台启动对话服务器"""
@@ -67,7 +65,6 @@ def start_server(port: int = 18888):
         sys.exit(1)
     
     return proc
-
 
 def run_hanli(steps: int, delay: float, output_file: str = None):
     """运行韩立AI玩家"""
@@ -122,7 +119,6 @@ def run_hanli(steps: int, delay: float, output_file: str = None):
     
     return events
 
-
 def _generate_story(events: list, memory) -> str:
     """生成可读的故事文本"""
     lines = [
@@ -151,10 +147,8 @@ def _generate_story(events: list, memory) -> str:
     lines.append("")
     lines.append("> 本故事由AI韩立自主探索生成。")
     lines.append(f"> NPC引擎: DeepSeek | 人格框架: 结构认知体系")
-    lines.append("> 联系: 412341356@qq.com")
     
     return '\n'.join(lines)
-
 
 def api_mode(port: int = 18888):
     """API模式 — 只启动服务器，外部AI通过HTTP来玩"""
@@ -184,7 +178,6 @@ def api_mode(port: int = 18888):
             time.sleep(1)
     except KeyboardInterrupt:
         print("\n🌙 黄枫谷已关闭。")
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -230,7 +223,6 @@ def main():
         server_proc.terminate()
         server_proc.wait(timeout=5)
         print("🌙 再见。")
-
 
 if __name__ == "__main__":
     main()

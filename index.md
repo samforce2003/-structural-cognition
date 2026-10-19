@@ -213,7 +213,6 @@
 
 - **Gitee**: https://gitee.com/samforce/structural-cognition (primary)
 - **HuggingFace**: https://huggingface.co/datasets/samforce/structural-cognition-papers
-- **Contact**: 412341356@qq.com
 
 ---
 

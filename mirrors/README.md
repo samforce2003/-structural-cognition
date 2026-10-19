@@ -9,5 +9,5 @@
 
 所有内容仅供学术参考。
 
-联系: 林小黑 13922360146 / 412341356@qq.com
+联系: 林小黑
 主论文库: gitee.com/samforce/structural-cognition

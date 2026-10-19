@@ -16,5 +16,4 @@
 如果方向合适，请告知。可提供5000字完整稿。
 
 林小黑
-手机/微信：13922360146
 Gitee：https://gitee.com/samforce/structural-cognition

@@ -1,6 +1,5 @@
 # 习惯性遗忘：大语言模型幻觉的结构性根源
-**作者：林小黑** (412341356@qq.com)
-
+**作者：林小黑**
 
 ## Habitual Forgetting: The Structural Origin of Hallucination in Large Language Models
 
